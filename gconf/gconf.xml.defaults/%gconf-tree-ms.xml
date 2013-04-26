@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="break_time">
+						<local_schema short_desc="Masa rehat">
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Masa menaip">
+							<longdesc>Bilangan minit oleh masa menaip sebelum mod rehat bermula.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Bunyi bagi acara">
+							<longdesc>Samada memainkan bunyi pada acara pengguna.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Hidupkan ESD">
+							<longdesc>Hidupkan permulaan pelayan bunyi.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Saiz Kursor">
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema kursor">
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Font kursor">
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Cari Pentuding">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Masa Dwi-Klik">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema>
+								<longdesc>Jarak dalam piksel dimana pentuding mesti gerak sebelum pergerakan tetikus dipecut diaktifkan. Nilai -1 adalah default sistem</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Klik Tunggal">
+								<longdesc>Pendarab pemecut bagi pergerakan tetikus. Nilai -1 adalah default sistem.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Klik Tunggal">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Orientasi butang tetikus">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Namafail Loceng tersendiri Papankekunci">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>nilai yang boleh adalah &quot;on&quot;, &quot;off&quot; dan &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="interface">
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Bar Status pada Kanan">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Guna Font Tersendiri">
+							<longdesc>Samada untuk menggunakan font sendiri pada aplikasi gtk+</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Font monoruang">
+							<longdesc>Nama bagi font monoruang (lebar-tetap) untuk digunakan pada lokasi seperti terminal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Gaya Status IM GTK">
+							<longdesc>Nama bagi Gaya Status kaedah input GTK+ digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Gaya Preedit Im GTK">
+							<longdesc>Nama Gaya Preedit kaedah input GTK+ digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Font default">
+							<longdesc>Nama fonr default digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tema GTK">
+							<longdesc>Nama dasar bagi tema default digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tema GTK">
+							<longdesc>Nama dasar bagi tema default digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema Ikon">
+							<longdesc>Tema ikon untuk digunakan pada panel, nautilus dll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Masa Kelipan Kursor">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Kelipan Kursor">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Saiz Ikon Toolbar">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Toolbar bolehdilerai">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Bar Menu bolehdilerai">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menu Mempunyai Ikon">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Gaya Toolbar">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Boleh Tukar Pemecut">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menu mempunyai pengoyak">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Hidupkan animasi">
+							<longdesc>Samada animasi patut dipaparkan. Nota: Ini adalah kekunci global, ia menukar kelakuan bagi pengurus tetingkap, panel dll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Hidupkan kebolehcapaian">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema Ikon Fail">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Jenis Kesuraman Warna">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Warna Sekunder">
+							<longdesc>warna Kanan atau Bawah bila melukis gradien, tak digunakan untuk warna tegar.Warna Kanan atau Bawah bila melukis gradien, tidak digunakan untuk warna tegar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Warna Utama">
+							<longdesc>Warna kiri atau atas bila melukis gradien, atau warna tegar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Opacity Gambar">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Namafail Gambar">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Opsyen Gambar">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Lukis LatarBelakang Desktop">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Permulaan Aplikasi Teknologi Penolong">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Dimatikan jika dua kekunci ditekan serentak.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="Selangmasa minimum dalam saat">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Pelungsur memahami jauh">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Pelungsur memerlukan terminal">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Pelungsur default">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Hujah Exec">
+								<longdesc>Hujah digunakan untuk melaksanakan program pada terminal ditakrifkan dengan kekunci &apos;exec&apos;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplikasi terminal">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Kekunci pintasan untuk menjadikan font saiz-normal.">
+							<longdesc>Kekunci pintasan untuk menjadikan font bersaiz normal. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Kekunci pintasan untuk menjadikan font lebih kecil.">
+							<longdesc>Kekunci pintasan untuk menjadikan font lebih kecil. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Kekunci pintasanuntuk menjadikan font lebih besar">
+							<longdesc>Kekunci pintasan untuk menjadikan font lebih kecil. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Kekunci pintasan untuk melancarkan bantuan">
+							<longdesc>Kekunci pintasan untuk melancarkan batuan. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 12">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 12. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 11">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 11. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 10">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 10. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 9">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 9. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 8">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 8. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 7">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 7. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 6">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 6. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 5">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 5. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 4">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 4. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 3">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 3. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 2">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 2. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab 1">
+							<longdesc>Kekunci pintasan untuk beralih ke tab 1. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab berikutnya">
+							<longdesc>Kekunci pintasan untuk beralih ke tab berikutnya. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Kekunci pintasan untuk beralih ke tab terdahulu">
+							<longdesc>Kekunci pintasan untuk beralih ke tab terdahulu. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Kekunci pintasan untuk ulangtetap dan kosongkan terminal">
+							<longdesc>Kekunci pintasan untuk mengulangtetap dan kosongkan terminal. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Kekunci pintasan untuk ulangtetap terminal">
+							<longdesc>Kekunci pintasan untuk mengulangtetap terminal. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Kekunci pintasan untuk menetapkan tajuk terminal">
+							<longdesc>Kekunci pintasan untuk menetapkan tajuk terminal. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Kekunci pintasan untuk togol ketampakan bar menu">
+							<longdesc>Kekunci pintasan untuk mentogol ketampakan bar menu. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Kekunci pintasan untuk togol mod skrin penuh">
+							<longdesc>Kekunci pintasan untuk mentogol mod skrin penuh. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Kekunci pintasan untuk menepek teks">
+							<longdesc>Kekunci pintasan  untuk menepek kandungan drpd papanklip. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Kekunci  pintasan untuk menyalin teks">
+							<longdesc>Kekunci pintasan untuk menyalin teks dipilih ke papanklip. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Kekunci pintasan untuk menutup tetingkap.">
+							<longdesc>Kekunci pintasan untuk menutup tetingkap. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Pitasan papan kekunci untuk menutup tab">
+							<longdesc>Kekunci pintasan  untuk menutup tab. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Kekunci pintasan  untuk mencipta profil baru.">
+							<longdesc>Kekunci pintasan  untuk menaikkan dialog penciptaan profil. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Kekunci pintasan untuk membuka tetingkap baru.">
+							<longdesc>Kekunci pintasan untuk membuka tetingkap. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Kekunci pintasan untuk membuka tab baru">
+							<longdesc>Kekunci pintasan untuk membuka tab baru. Diungkapkan sebagai rentetan dlm format sama dgn yg digunakan dalam fail sumber GTK+. Jika anda menetapkan opsyen ke rentetan istimewa &quot;disabled&quot;, maka tiada ikatan kekunci bagi aksi ini.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Samada mengguna font sistem">
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Samada mengguna warna drpd tema bagi wiget terminal">
+								<longdesc>Jika benar, skema warna tema digunat bagi kotak kemasukan teks akan digunakan untuk terminal, selain drpd warna dibekalkan pengguna.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Kesan bagi kekunci Delete">
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Kesan bagi kekunci Backspace">
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Berapa gelap imej latarbelakang">
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Samada mengskrol imej latar belakang">
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Imej latar_belakang">
+								<longdesc>Namafail bagi Imej latar_belakang.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Jenis latar_belakang">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Font">
+								<longdesc>Nama font pango. Contoh adalah &quot;Sans 12&quot; atau &quot;Monospace Bold 14&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palet bagi aplikasi terminal">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ikon bagi tetingkap terminal">
+								<longdesc>Ikon digunakan oleh tab/tetingkap yang mengandungi profil ini.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Arahan tersendiri selain daripada shell">
+								<longdesc>Laksana arahan ini pada tempat shell, jika use_custom_command adalah benar.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Samada mengelip kursor">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Samada melaksanakan arahan tersendiri selain drpd shell">
+								<longdesc>Jika benar, nilai bagi tetapan custom_command yg akan digunakan di tempat shell terlaksana.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Samada mengemaskini rekod logmasuk bila melancar arahan terminal">
+								<longdesc>Jika benar, rekod sistem logmasuk utmp/wtmp akan dikemaskini bila arahan di dalam terminal dilancarkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Samada melancarkan arahan pada terminal sebagai shell logmasuk">
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Apa dilakukan dengan terminal bila arahan anak keluar">
+								<longdesc>Nilai yang boleh adalah &quot;close&quot; untuk menutup terminal, dan &quot;restart&quot; untuk ulanghidup arahan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Samada skrol ke bawah bila ada output baru">
+								<longdesc>Jika benar, apabila terdapat output baru terminal akan skrol ke bawah.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Samada skrol ke bawah bila kekunci ditekan">
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Bilangan baris disimpan pada skrol belakang">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posisi bagi bar skrol">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Aksara yang dikira sebagai &quot;part of a word&quot;">
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Samada menyenyapkan locang terminal">
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Samada izinkan teks bold">
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Tajuk bagi terminal">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Apa dilakukan dengan tajuk dinamik">
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Warna default bagi latarbelakang terminal">
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Warna default bagi teks pada terminal">
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Samada memapar bar menu pada tetingkap/tab baru">
+								<longdesc>Benar jika bar menu patut dipaparkan pada tetingkap baru, bagi tetingkap/tab dengan profil ini.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Nama bolehdibaca-manusia bagi profil">
+								<longdesc>Nama bolehdibaca-manusia bagi profil.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Samada tanya kepastian bila menutup terminal">
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Senarai pengengkodan yang ada">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Samada pintasan piawai GTK bagi bar menu akses dihidupkan">
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Samada bar menu mempunyai kekunci akses">
+							<longdesc>Samada mempunyai kekunci akses Alt+huruf bagi bar menu. Ia mungkin menggangu aplikasi yang terlaksana di dalam terminal jadi ia boleh juga dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profail digunakan oleh terminal baru">
+							<longdesc>Profil untuk digunakan bila membuka tetingkap atau tab baru. Mesti dalam profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Senarai profil">
+							<longdesc>Senarai profil dikenali oleh gnome-terminal. Senarai mengandungi rentetan nama subdirektori relatif kepada /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

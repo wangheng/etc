@@ -1,0 +1,991 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Vondron-tsolosaina SMB">
+						<longdesc>Ny vondron-tsolosaina mifandray na domenan&apos;ny Windows misy ilay mpampiasa. Mety mila mivoaka ary miverina miditra indray ilay mpampiasa mba ahafahan&apos;ny vondrona vaovao iray miasa tanteraka.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domena fanampiny hitadiavana sampan&apos;asa DNS-SD">
+						<longdesc>Domena DNS-SD saraham-paingo izay tokony ho hita ao amin&apos;ny &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Ny fomba fanehoana sampan&apos;asa DNS-SD">
+						<longdesc>&quot;merged&quot;, &quot;separate&quot; ary &quot;disabled&quot; no sanda mety ampiasaina.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL fikirakirana proxy avy hatrany">
+						<longdesc>URL manome sandan-kirakira-na proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Iriky ny proxy SOCKS">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/proxy/socks_host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy SOCKS">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Iriky ny proxy FTP">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/proxy/ftp_host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy FTP">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Iriky ny proxy HTTP azo antoka">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/proxy/secure_host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy HTTP azo antoka">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy HTTP azo antoka.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Fomba fikirakirana ny proxy">
+						<longdesc>Safidio ny fomba hikirakirana ny proxy. Ireto ireo sanda raisina an-tànana: &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Mpampiantrano tsy proxy">
+						<longdesc>Ity famaha ity dia misy ireo mpampiantrano ifandraisana mivantana fa tsy amin&apos;ny alalan&apos;ny proxy (raha toa ka mandeha). Mety ho anaram-pampiantrano, domena (mampiasa marika manokana toy ny *.foo.com), adiresim-pampiantrano IP (IPv4 sy IPv6) ary adiresin-drezo misy sarona (zavatra tahaka ny 192.168.0.0/24) ilay sanda.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Teny fanalahidin&apos;ny proxy HTTP">
+						<longdesc>Ny teny fanalahidy omena hamarinina rehefa manao proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Anaran&apos;ny mpampiasan&apos;ny proxy HTTP">
+						<longdesc>Anaram-pampiasa omena hamarinina rehefa manao proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Manamarina ny fifandraisana amin&apos;ny mpizara proxy">
+						<longdesc>Raha toa ka marina, dia mila fanamarinana ny fifandraisana amin&apos;ilay mpizara proxy. Ny &quot;/system/http_proxy/authentication_user&quot; sy ny &quot;/system/http_proxy/authentication_password&quot; no mamaritra ny amboara anaran&apos;ny mpampiasa/teny fanalahidy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Iriky ny proxy HTTP">
+						<longdesc>Ny irik&apos;ilay milina voafaritry ny &quot;/system/http_proxy/host&quot; hampiasaina amin&apos;ny proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Anaran&apos;ny mpampiantrano proxy HTTP">
+						<longdesc>Ny anaran&apos;ilay milina hampiasana proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Hampiasa proxy HTTP">
+						<longdesc>Mandefa ny kirakiran&apos;ny proxy rehefa mampiasa HTTP amin&apos;ny Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Raha alefa na tsia ny fangejana ny fafana">
+							<longdesc>Raha alefa na tsia ny fangejana ny fafana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Ekeo ny fanemorana ny fiatoana">
+							<longdesc>Raha azo ahemotra ny fisehon&apos;ny efijerin&apos;ny fiatoana fanoratana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Faharetan&apos;ny fiatoana">
+							<longdesc>Ny faharetan&apos;ny fiatoan&apos;ny fanoratana (minitra).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Faharetan&apos;ny fanoratana">
+							<longdesc>Ny faharetan&apos;ny fanoratana (minitra) alohan&apos;ny iantombohan&apos;ny fiatoana.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Ajanony ny mpanao sary madinika ivelany rehetra">
+							<longdesc>Ataovy marina raha hanajanona ny rindranasa mpanao sary madinika rehetra; tsy miankina amin&apos;ny fandefasana/fanajanona azy manokana any.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Feon-java-mitranga">
+							<longdesc>Raha tokony hampaneno feo amin&apos;ny zava-mitranga (mpampiasa).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Alefaso ny ESD">
+							<longdesc>Alefaso eny am-piantombohana ny mpizara feo.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Haben&apos;ny kitondro">
+								<longdesc>ny haben&apos;ny kitondro lazain&apos;ny cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Endriky ny kitondro">
+								<longdesc>Anaran&apos;ny endriky ny kitondro. Tsy miasa afa-tsy amin&apos;ny Xserver mandray an-tànana Xcursor, toy ny XFree86 4.3 na mahery.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Endri-tsoratry ny kitondro">
+								<longdesc>Ny anaran&apos;ny endri-tsoratr&apos;ilay kitondro. Raha foanana io, dia ny endri-tsoratra lasitra no ampiasaina. Ny fanombohan&apos;ny mpizara X ihany no andefasana io sanda io; noho izany, tsy hiantraika amin&apos;ilay session izy io raha tsy miditra amin&apos;ny manaraka indray ianao.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Hizaha izay misy ny kitondro">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Ny elanelam-potoanan&apos;ny kiti-droa">
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Ny fetran&apos;ny famindrana">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Fetran&apos;ny hetsika">
+								<longdesc>Ny dingana (pixel) tsy maintsy vitan&apos;ny kitondro alohan&apos;ny andefasana ny fanafainganana ny hetsiky ny totozy. -1 no sanda lasitry ny rafitra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Kitika tokana">
+								<longdesc>Mpampitombo ny hafaingananan&apos;ny hetsiky ny totozy. -1 no sanda lasitry ny rafitra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Kitika tokana">
+								<longdesc>Kitika tokana no manokatra kisary</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Fitodiky ny tsindrin&apos;ny totozy">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Tadidio ny toetran&apos;ny Verr Num">
+								<longdesc>Raha atao marina, dia hotadidian&apos;ny GNOME ny toetran&apos;ny jirokelin&apos;ny Verr Num antenantenan&apos;ny session.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Anarana safidy omena ny feon&apos;ny fafana">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>&quot;on&quot;, &quot;off&quot;, ary &quot;custom&quot; no sanda mety ampiasaina.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Aza alefa ny fikirakirana ny fanontana">
+							<longdesc>Manakana ny fanovana ireo kirakiran&apos;ny fanontana. Izany, ohatra, dia hanafoana ny fahafahan&apos;ny mpampiasa manokatra ny takila &quot;Fikirakirana ny fanontana&quot; amin&apos;ny rindranasa rehetra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Aza alefa ny fanontana">
+							<longdesc>Manakana ny fanontana. Izany, ohatra, dia hanafoana ny fahafahan&apos;ny mpampiasa manokatra ny takila &quot;Atontay&quot; amin&apos;ny rindranasa rehetra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Aza alefa ny fahafahana mandraikitra rakitra amin&apos;ny kapila">
+							<longdesc>Manakana ny fandraiketana rakitra amin&apos;ny kapila. Izany, ohatra, dia hanafoana ny fahafahan&apos;ny mpampiasa manokatra ny takila &quot;Raiketo toy izao&quot; amin&apos;ny rindranasa rehetra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Aza alefa ny lazam-baiko">
+							<longdesc>Manakana ny fampiasana ny terminal na fampidirana lazam-baiko hotanterahina. Izany, ohatra, dia hanafoana ny fahafahan&apos;ny mpampiasa manokatra ny takila &quot;Handefa rindranasa&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Maneho ny tolotra &apos;Fomba Fanoratana&apos;">
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Mpanafaingana anjan-tolotra">
+							<longdesc>Hitsin-dàlan&apos;ny fafana hanehoana ny anjan&apos;ny tolotra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Singa mpiorina ho an&apos;ny GtkFileChooser">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Anjan&apos;ny toetra eo an-kavanana">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Endri-tsoratra safidy ampiasaina">
+							<longdesc>Raha tokony hampiasa endri-tsoratra safidy amin&apos;ny rindranasa gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Endri-tsoratra tokan&apos;indra">
+							<longdesc>Anaran&apos;endri-tsoratra tokan&apos;indra ampiasaina amin&apos;ny toerana toy ny terminal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Endri-tsoratry ny tahirin-kevitra">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM Status Style">
+							<longdesc>Anaran&apos;ny fomba fanoratana Status Stylle GTK+ ampiasain&apos;ny gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM Preedit Style">
+							<longdesc>Ny anaran&apos;ny fomba fanoratana GTK+ Preedit Style ampiasain&apos;ny gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Endri-tsoratra lasitra">
+							<longdesc>Anaran&apos;ny endri-tsoratra lasitra ampiasain&apos;ny gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Endrika Gtk+">
+							<longdesc>Anarana fototry ny endrika lasitra ampiasain&apos;ny gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Endrika Gtk+">
+							<longdesc>Anarana fototry ny endrika lasitra ampiasain&apos;ny gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Endriky ny kisary">
+							<longdesc>ny endriky ny kisary ampiasaina amin&apos;ny tontonana, nautilus, sns.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Fotoana fipin&apos;ny kitondro">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Fipin&apos;ny kitondro">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Haben&apos;ny kisarin&apos;ny anjam-pitaovana">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Anjam-pitaovana azo vahana">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Anjan-tolotra azo vahana">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Misy kisary ny tolotra">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Endriky ny anjam-pitaovana">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Afaka manova mpanafaingana">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Misy faritra famahana azy ny tolotra">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Mandefa ny sary mihetsika">
+							<longdesc>Raha tokony haseho ny sary mihetsika. Fanamarihana: mahaova zavatra maro toy ny fiasan&apos;ny mpandrindra fikandrana, tontonana, sns io famaha io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Mandefa ny fanamorana">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Endriky ny kisarin-drakitra">
+							<longdesc>Ny endrika ampiasaina hanehoana kisarin-drakitra</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Karazam-panalofana loko">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Loko manarakaraka">
+							<longdesc>Loko havanana na ambany rehefa manao ny lafy misompirana, tsy mety atao loko tokana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Loko lohalaharana">
+							<longdesc>Loko havia na havanana rehefa manao ny lafy misompirana, na ny loko tokana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Ny hatevin&apos;ilay sary">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Anaran-drakitr&apos;ilay sary">
+							<longdesc>Rakitra ho ampiasaina amin&apos;ny sary afara</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Safidy momba ilay sary">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Hamboatra ny sary afaran&apos;ny sehatrasa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Rindranasan&apos;ny haitao fanamorana alefa am-piantombohana">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Tsy mandeha raha toa ka misy kitendry voatsindry miaraka.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Fotoana iandrasana voalohany amin&apos;ny milisegaondra">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixels isan-tsegaondra">
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="Elanelam-potoana ambany indrindra (milisegaondra)">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Ny anaran&apos;ireo sehatr&apos;asa (tsy ampiasaina intsony)">
+								<longdesc>Lisitra misy ny anaran&apos;ny sehatr&apos;asan&apos;ny mpandrindra fikandrana voalohany. Efa hatramin&apos;ny GNOME 2.12 no tsy nampisana io famaha io intsony.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Ny isan&apos;ireo sehatr&apos;asa (tsy ampisaina intsony)">
+								<longdesc>Ny isan&apos;ireo sehatr&apos;asa tokony hampisain&apos;ny mpandrindra fikandrana. Efa hatramin&apos;ny GNOME 2.12 no tsy nampisana io famaha io intsony.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Mpandrindra fikandran&apos;ny mpampiasa (tsy ampiasaina intsony)">
+								<longdesc>Ny mpandrindra fikandrana andramana voalohany. Efa hatramin&apos;ny GNOME 2.12 no tsy nampiasana io famaha io intsony.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Mpandrindra fikandrana fiandry (tsy ampiasaina intsony)">
+								<longdesc>Mpandrindra fikandrana azo ampiasaina raha tsy hita ny mpandrindra fikandran&apos;ny mpampiasa. Efa hatramin&apos;ny GNOME 2.12 no tsy nampisana io famaha io intsony.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Azo baikoana avy lavitra ny mpitety">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Mila terminal ny mpitety">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Mpitety lasitra">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Rindranasa fizahana singa fototra lasitra">
+								<longdesc>Ny rindranasa ampiasaina hizahana ireo rakitra mila singa fototra raha hizaha azy ireo. Hosoloina ny URIn&apos;ilay rakitra ny mpizahaka %s; hosoloina ny IIDn&apos;ilay singa fototra ny mpizahaka %c.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Tondriky Exec">
+								<longdesc>Ny tondriky andefasana rindranasa amin&apos;ny terminal voafaritry ny famaha &apos;exec&apos;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="rindranasan-terminal">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;h323&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;h323&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;h323&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;h323&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;callto&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;callto&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;callto&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;callto&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;aim&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;aim&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;aim&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;aim&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;mailto&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;mailto&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;mailto&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;mailto&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;https&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;https&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;https&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;https&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;http&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;http&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;http&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;http&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;man&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;man&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;man&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;man&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;info&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;info&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;info&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;info&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;ghelp&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;ghelp&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;ghelp&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;ghelp&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Alefaso anaty terminal ilay baiko">
+								<longdesc>Marina raha toa tokony halefa amin&apos;ny alalan&apos;ny terminal ny baiko ifehezana io karazan&apos;URL io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ny mpifehy URL &quot;trash&quot;">
+								<longdesc>Ny baiko omena hifehezana URL &quot;trash&quot;, raha alefa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Raha tokony hifehy URL &quot;trash&quot; ny baiko voalaza">
+								<longdesc>Marina raha toa ka tokony hifehy URL &quot;trash&quot; ny baiko voalaza ao amin&apos;ny famaha &quot;command&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanaovana ny haben&apos;ny endri-tsoratra amin&apos;ny antonony">
+							<longdesc>Kitendry hitsin-dàlana fanaovana ny haben&apos;ny endri-tsoratra amin&apos;ny antonony, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanakelezana ny endri-tsoratra">
+							<longdesc>Kitendry hitsin-dàlana fanakelezana ny endri-tsoratra, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanabeazana ny endri-tsoratra">
+							<longdesc>Kitendry hitsin-dàlana fanalehibiazana ny endri-tsoratra, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanokafana ny toro-làlana">
+							<longdesc>Kitendry hitsin-dàlana fanokafana ny toro-làlana, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 12">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 12, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 11">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 11, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 10">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 10, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 9">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 9, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 8">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 8, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 7">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 7, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 6">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 6, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 5">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 5, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 4">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 4, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 3">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 3, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 2">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 2, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro 1">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro 1, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Mpanafaingana hanatsoahana ity vakizoro ity.">
+							<longdesc>Kitendry mpanafaingana hanatsoahana ity vakizoro ity, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Mpanafaingana hamindrana ity vakizoro ity eo ankavanana.">
+							<longdesc>Kitendry mpanafaingana hamindrana ity vakizoro ity eo ankavanana, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Mpanafaingana hamindrana ity vakizoro ity eo ankavia.">
+							<longdesc>Kitendry mpanafaingana hamindrana ity vakizoro ity eo ankavia, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro eo ankavanana">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro eo ankavanana, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanasongadinana ny vakizoro eo ankavia">
+							<longdesc>Kitendry hitsin-dàlana fanasongadinana ny vakizoro eo ankavia, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Kitendry hitsin-dàlana famerenana sy fanafoanana ilay terminal">
+							<longdesc>Kitendry hitsin-dàlana famerenana sy fanafoanana ilay terminal, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Kitendry hitsin-dàlana famerenana ilay terminal">
+							<longdesc>Kitendry hitsin-dàlana famerenana ilay terminal, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Kitendry hitsin-dàlana famaritana ny lohatenin&apos;ilay terminal">
+							<longdesc>Kitendry hitsin-dàlana famaritana ny lohatenin&apos;ilay terminal, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Kitendry hitsin-dàlana famaritana ny fahitana ny anjan&apos;ny tolotra">
+							<longdesc>Kitendry hitsin-dàlana famaritana ny fahitana ny anjan&apos;ny tolotra, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Kitendry hitsin-dàlana fiovana fomba mameno/tsy mameno efijery">
+							<longdesc>Kitendry hitsin-dàlana fiovana fomba mameno/tsy mameno efijery, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Kitendry hitsin-dàlana fametahana lahabolana">
+							<longdesc>Kitendry hitsin-dàlana fametahana izay ao anatin&apos;ny fanindri-taratasy eo amin&apos;ilay terminal, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Kitendry hitsin-dàlana fandikana lahabolana">
+							<longdesc>Kitendry hitsin-dàlana fandikana ny lahabolana voafaritra anatin&apos;ny fanindri-taratasy, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanidiana fikandrana">
+							<longdesc>Kitendry hitsin-dàlana fanidiana fikandrana, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanidiana vakizoro">
+							<longdesc>Kitendry hitsin-dàlana fanidiana vakizoro, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Kitendry hitsin-dàlana famoronana profil vaovao">
+							<longdesc>Kitendry hitsin-dàlana fiantsoana ny takila famoronana profil, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanokafana fikandrana vaovao">
+							<longdesc>Kitendry hitsin-dàlana fanokafana fikandrana vaovao, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Kitendry hitsin-dàlana fanokafana vakizoro vaovao">
+							<longdesc>Kitendry hitsin-dàlana fanokafana vakizoro vaovao, izay voalaza amin&apos;ny endri-daha-daza manana lamina mitovy amin&apos;ny ampiasaina amin&apos;ny rakitra ressource GTK+. Raha toa ka ataonao ilay laha-daza manokana &quot;disabled&quot; ilay safidy, dia tsy hisy fitambaran-kitendry ho an&apos;io asa io.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Raha tokony hampiasa ny endri-tsoratry ny rafitra">
+								<longdesc>Raha marina, dia ny endri-tsoratra tsotran&apos;ny desktop-global no hampiasain&apos;ilay terminal raha toa monospace ilay izy (izay endri-tsoratra mitovy kokoa amin&apos;ny raha tsy misy izany).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Raha tokony hampiasa lokon&apos;endrika ho an&apos;ny widgetn&apos;ilay terminal">
+								<longdesc>Raha marina, dia ny amboaran-dokon&apos;endrika ampiasaina amin&apos;ny takilam-pari-tsoratra no ampiasaina amin&apos;ilay terminal, fa tsy izay loko lazain&apos;ny mpampiasa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Vokatry ny fanindriana ny kitendry Mamafa">
+								<longdesc>Mamaritra ny famaha foronin&apos;ny kitendry mamafa. Ireto ireo sanda mety ampiasaina: &quot;ascii-del&quot; ho an&apos;ny marika ASCII DEL, &quot;control-h&quot; ho an&apos;ny Control-H (AKA izany hoe ny marika ASCII BS), &quot;escape-sequence&quot; ho an&apos;ny Echap misesisesy izay mifamatotra amin&apos;ny kitendry miverina na mamafa. Raha ny tokony ho izy, dia &quot;escape-sequence&quot; no sandan&apos;ny kitendry mamafa heverina fa marina.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Vokatry fanindriana ny kitendry Miverina">
+								<longdesc>Mamaritra ny famaha foronin&apos;ny kitendry miverina. Ireto ireo sanda mety ampiasaina: &quot;ascii-del&quot; ho an&apos;ny marika ASCII DEL, &quot;control-h&quot; ho an&apos;ny Control-H (AKA izany hoe ny marika ASCII BS), &quot;escape-sequence&quot; ho an&apos;ny Echap misesisesy izay mifamatotra amin&apos;ny kitendry miverina na mamafa. Raha ny tokony ho izy, dia &quot;ascii-del&quot; no sandan&apos;ny kitendry miverina heverina fa marina.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Famaritana ny hamatroky ny sary afara">
+								<longdesc>Sanda anatin&apos;ny 0.0 sy 1.0 mamaritra ny hamatroky ny sary afara. Tsy matroka izy raha 0.0 ilay sanda; matroka tanteraka raha toa ka 1.0 izany. Roa ihany ny dingam-pahamatrohana misy anatin&apos;ity fametrahana ity. Manaraka fiasa boleanina ilay fandrindrana izany, ka ny 0.0 dia manafoana ilay fanamtrohana.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Raha tokony hiaka-midina ny sary afara">
+								<longdesc>Raha marina, dia mampiaka-midina ny sary miaraka amin&apos;ny soratra eo anoloana. Raha diso, dia ny soratra eo ambonin&apos;ilay sary fotsiny no miaka-midina .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Sary afara">
+								<longdesc>Anaran-drakitry ny sary afara.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Karazan&apos;afara">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Endri-tsoratra">
+								<longdesc>Anaran&apos;endri-tsoratra Pango. Ohatra amin&apos;izany ny &quot;Sans 12&quot; na ny &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Takela-pisaka ho an&apos;ny rindranasan&apos;ilay terminal">
+								<longdesc>Manana takela-pisaka misy loko 16 azon&apos;ireo rindranasa anaty ampiasaina ny terminal. Io izany takela-pisaka izany, miendrika andian&apos;anarana sarahan-teboka roa. Tokony hanaraka lamina hexadecimal toy ny hoe &quot;#FF00FF&quot; ireo anaran-doko.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Kisary ho an&apos;ny fikandran&apos;ny terminal">
+								<longdesc>Kisary ho an&apos;ny vakizoro/fikandrana ahitana io profil io.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Baiko safidy ampiasaina amin&apos;ny toeran&apos;ny akora">
+								<longdesc>Ity baiko ity alefa fa tsy ilay akora, raha toa ka marina ny use_custom_command.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Raha tokony apipy ny kitondro">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Raha handefa baiko safidy fa tsy ilay akora">
+								<longdesc>Raha marina, dia ny sandan&apos;ny fandrindran&apos;ny custom_command no ampiasaina, fa tsy ilay akora mandeha.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Raha tokony havaozina ny lazam-pidirana rehefa mandefa baikon-terminal">
+								<longdesc>Raha marina, dia havaozina ny lazam-pidirana utmp sy wtmp rehefa alefa ny baiko anatin&apos;ilay terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Raha alefa toy ny akoram-pidirana ny baiko anatin&apos;ilay terminal">
+								<longdesc>Raha marina, dia halefa toy ny akoram-pidirana ny baiko anatin&apos;ilay terminal. (hisy tsipi-panohizana eo alohan&apos;ny argv[0].)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Ny atao amin&apos;ny terminal rehefa mijanona ilay zana-baiko">
+								<longdesc>Ireto ireo sanda mety ampiasaina: &quot;close&quot; raha anidy ilay terminal ary &quot;restart&quot; raha hamerina ilay baiko.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Raha tokony haneho izay voasoratra eny ambanyrehefa ny misy laza vaovao">
+								<longdesc>Raha marina, dia maneho izay voasoratra eny ambany ilay terminal isaka ny misy laza vaovao.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Raha tokony haneho izay voasoratra eny ambany rehefa misy kitendry voatsindry">
+								<longdesc>Raha marina, dia mampitsambikina ny scrollbar eny ambany ny fanindriana kitendry iray.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Isan&apos;ny andalan-teny tanana anatin&apos;ny scrollback">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Toerana misy ny scrollbar">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Marika raisina toy ny &quot;ampahan-teny iray&quot;">
+								<longdesc>Rehefa mamaritra lahabolana, dia raisina ho toy ny teny tokana ireto marika ireto raha mifanaraka. Azo atao ho &quot;A-Z&quot; ilay andiana marika. Ny tsipi-panohizana heverina ho soratra (izay tsy mamaritra andiana marika) dia tokony soratana aloha.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Raha tokony vonoina ny feon&apos;ilay terminal">
+								<longdesc>Raha marina, dia aza mamoaka feo rehefa mampaneno ny feon&apos;ny terminal amin&apos;ny alalan&apos;ny Echap misesisesy ny rindranasa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Raha ekena ny soratra matevina">
+								<longdesc>Raha marina, dia avelao hatevina ny endri-tsoratra ny rindranasa anatin&apos;ny terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Lohateny ho an&apos;ilay terminal">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Ny anaovana ny lohateny faritan-drindranasa">
+								<longdesc>Raha toa ka ilay rindranasa ao amin&apos;ilay terminal no mamaritra ny lohateny (ny akora mazana no voakirakira hanao izany), dia afaka mamafa, mankeo aloha, mankao afara, na misolo ilay lohateny misoratra io lohateny faritana io. &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, and &quot;ignore&quot; no sanda mety ampiasaina.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Loko tsotran&apos;ny afaran&apos;ny terminal">
+								<longdesc>Famaritana ny loko tsotran&apos;ny afaran&apos;ny terminal (mety ho hexadecimal tahaka ny amin&apos;ny HTML na anaran-doko toy ny &quot;mena&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Loko tsotran&apos;ny soratra amin&apos;ilay terminal">
+								<longdesc>Famaritana ny loko tsotran&apos;ny soratra amin&apos;ilay terminal (mety ho hexadecimal tahaka ny amin&apos;ny HTML na anaran-doko toy ny &quot;mena&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Raha tokony aseho anaty fikandrana/vakizoro vaovao ny anjan&apos;ny tolotra">
+								<longdesc>Marina raha toa ka tokony haseho anatin&apos;ny fikandrana vaovao ny anjan&apos;ny tolotra, ho an&apos;ny fikandrana/vakizoro manana ity profil ity.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Anaran&apos;ilay profil azon&apos;ny olona vakiana">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Raha mila mangataka fanamafisana rehefa manidy fikandran-terminal">
+							<longdesc>Raha mila mangataka fanamafisana rehefa manidy fikandran-terminal misy vakizoro misokatra maherin&apos;ny iray.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Lisitr&apos;ireo fanafangoana misy">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Raha mandeha ny hitsin-dàlana GTK tsotra fanokafana ny anjan&apos;ny tolotra">
+							<longdesc>Azonao aseho amin&apos;ny alalan&apos;ny F10 ny anjan&apos;ny tolotra raha ny tokony ho izy. Azo ovaina amin&apos;ny alalan&apos;ny gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;) koa io hitsin-dàlana io. Io safidy farany io dia ahafahana manatsahatra ny mpanafaingan&apos;ny anjan&apos;ny tolotra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Raha toa ka manana kitendry mpanokatra ny anjan&apos;ny tolotra">
+							<longdesc>Raha hatao Alt+litera ny kitendry fanokafana ny anjan&apos;ny tolotra. Azo atao ny manatsahatra ireo kitendry ireo satria mety hifanosona amin&apos;ny rindranasa anatin&apos;ilay terminal izy ireo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Ny profil ampiasaina amin&apos;ny terminal vaovao">
+							<longdesc>Ny profil ampiasaina rehefa manokatra fikandrana na vakizoro iray. Tsy maintsy ao anatin&apos;ny profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Lisitry ny profil">
+							<longdesc>Lisitry ny profil fantatry ny gnome-terminal. Misy laha-daza manome anarana zana-dahatahiry mifandraika amin&apos;ny /apps/gnome-terminal/profiles io lisitra io.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

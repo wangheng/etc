@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+    <name>uReport</name>
+    <name xml:lang="bg">uReport</name>
+    <name xml:lang="bn_IN">uReport</name>
+    <name xml:lang="cs">uReport</name>
+    <name xml:lang="de">uReport</name>
+    <name xml:lang="es">uReport</name>
+    <name xml:lang="eu">uReport</name>
+    <name xml:lang="fi">uReport</name>
+    <name xml:lang="hu">uReport</name>
+    <name xml:lang="ja">uReport</name>
+    <name xml:lang="nl">uReport</name>
+    <name xml:lang="or">uReport</name>
+    <name xml:lang="pl">uReport</name>
+    <name xml:lang="pt_BR">uReport</name>
+    <name xml:lang="ru">uReport</name>
+    <name xml:lang="uk">uReport</name>
+    <name xml:lang="zh_CN">uReport</name>
+    <name xml:lang="zh_TW">uReport</name>
+    <description>Sends ureports to FAF server</description>
+    <description xml:lang="bg">Изпраща ureport-и към FAF сървър</description>
+    <description xml:lang="bn_IN">FAF সার্ভারে ureport পাঠানো হবে</description>
+    <description xml:lang="de">Ureports an FAF-Server senden</description>
+    <description xml:lang="es">Enviar ureports al servidor FAF</description>
+    <description xml:lang="eu">Bidali uReport-ak FAF zerbitzarira</description>
+    <description xml:lang="fi">Lähettää ureportit FAF-palvelimelle</description>
+    <description xml:lang="hu">uReport küldése a FAF kiszolgálónak</description>
+    <description xml:lang="ja">ureports を FAF サーバーに送信します</description>
+    <description xml:lang="nl">Stuurt ureports naar FAF server</description>
+    <description xml:lang="or">ureports କୁ FAF ସର୍ଭରକୁ ପଠାନ୍ତୁ</description>
+    <description xml:lang="pl">Wysyła zgłoszenia do serwera FAF</description>
+    <description xml:lang="ru">Отправка ureports на FAF сервер</description>
+    <description xml:lang="uk">Надсилає звіти ureport на сервер FAF</description>
+    <description xml:lang="zh_CN">发送 uReports 到 FAF 服务器</description>
+    <description xml:lang="zh_TW">傳送 ureport 至 FAF 伺服器</description>
+
+    <requires-items>analyzer,reason,executable,pkg_epoch,pkg_name,pkg_version,pkg_release,pkg_arch,os_release,architecture,core_backtrace</requires-items>
+    <gui-review-elements>no</gui-review-elements>
+
+    <options>
+        <option type="text" name="uReport_URL">
+            <label>uReport Server URL</label>
+            <label xml:lang="bg">URL на uReport сървър</label>
+            <label xml:lang="bn_IN">uReport সার্ভারের URL</label>
+            <label xml:lang="de">uReport Server-URL</label>
+            <label xml:lang="es">URL del servidor uReport</label>
+            <label xml:lang="fi">uReport-palvelimen URL</label>
+            <label xml:lang="hu">uReport kiszolgáló URL</label>
+            <label xml:lang="ja">uReport Server URL</label>
+            <label xml:lang="nl">uReport server URL</label>
+            <label xml:lang="or">uReport ସର୍ଭର URL</label>
+            <label xml:lang="pl">Adres URL serwera uReport</label>
+            <label xml:lang="ru">URL uReport Сервера</label>
+            <label xml:lang="uk">Адреса сервера uReport</label>
+            <label xml:lang="zh_CN">uReport 服务器 URL</label>
+            <label xml:lang="zh_TW">uReport 伺服器 URL</label>
+            <allow-empty>no</allow-empty>
+            <description>Address of uReport webservice</description>
+            <description xml:lang="bg">Адрес на uReport уеб услуга</description>
+            <description xml:lang="bn_IN">uReport webservice-র ঠিকানা</description>
+            <description xml:lang="de">Adresse des uReport-Webdienstes</description>
+            <description xml:lang="es">Dirección del servicio web uReport</description>
+            <description xml:lang="hu">uReport webszolgáltatás címe </description>
+            <description xml:lang="ja">uReport ウェブサービスのアドレス</description>
+            <description xml:lang="nl">Adres van uReport web service</description>
+            <description xml:lang="or">uReport ୱେବ ସର୍ଭିସର ଠିକଣା</description>
+            <description xml:lang="pl">Adres usługi WWW uReport</description>
+            <description xml:lang="ru">Адрес web-сервиса uReport </description>
+            <description xml:lang="uk">Адреса вебслужби uReport</description>
+            <description xml:lang="zh_CN">uReport 网络服务器地址</description>
+            <description xml:lang="zh_TW">uReport 網路服務的位址</description>
+            <default-value>https://retrace.fedoraproject.org/faf</default-value>
+        </option>
+        <option type="bool" name="uReport_SSLVerify">
+            <label>Verify SSL</label>
+            <label xml:lang="as">SSL সতাসত্য নিৰূপণ কৰক</label>
+            <label xml:lang="bg">Провери SSL</label>
+            <label xml:lang="bn_IN">SSL যাচাই করুন</label>
+            <label xml:lang="ca">Verifica SSL</label>
+            <label xml:lang="cs">Kontrola SSl</label>
+            <label xml:lang="de">SSL überprüfen</label>
+            <label xml:lang="en_GB">Verify SSL</label>
+            <label xml:lang="es">Verificar SSL </label>
+            <label xml:lang="fi">Tarkista SSL</label>
+            <label xml:lang="fr">Vérifier SSL</label>
+            <label xml:lang="gu">SSL ને ચકાસો</label>
+            <label xml:lang="hi">SSL जाँचें</label>
+            <label xml:lang="hu">SSL ellenőrzése</label>
+            <label xml:lang="it">Verifica SSL</label>
+            <label xml:lang="ja">SSL を照合する</label>
+            <label xml:lang="kn">SSL ಅನ್ನು ಪರಿಶೀಲಿಸು</label>
+            <label xml:lang="ko">SSL 확인 </label>
+            <label xml:lang="ml">എസ്എസ്എല്‍ ഉറപ്പാക്കുക</label>
+            <label xml:lang="mr">SSL ची तापसणी करा</label>
+            <label xml:lang="nl">Verifieer SSL</label>
+            <label xml:lang="or">SSL କୁ ଯାଞ୍ଚ କରନ୍ତୁ</label>
+            <label xml:lang="pa">SSL ਦੀ ਜਾਂਚ ਕਰੋ</label>
+            <label xml:lang="pl">Sprawdzanie SSL</label>
+            <label xml:lang="pt">Verificar SSL</label>
+            <label xml:lang="pt_BR">Verificar o SSL</label>
+            <label xml:lang="ru">Проверить SSL</label>
+            <label xml:lang="sk">Overiť SSL</label>
+            <label xml:lang="sv">Verifiera SSL</label>
+            <label xml:lang="ta">SSL ஐ சரிபார்</label>
+            <label xml:lang="te">SSL నిర్థారించు</label>
+            <label xml:lang="tr">SSL'i doğrula</label>
+            <label xml:lang="uk">Перевірити SSL</label>
+            <label xml:lang="zh_CN">确认 SSL</label>
+            <label xml:lang="zh_TW">驗證 SSL</label>
+            <description>Check SSL key validity</description>
+            <description xml:lang="as">SSL কি বৈধতা নিৰীক্ষণ কৰক</description>
+            <description xml:lang="bg">Проверете валидността на SSL ключа</description>
+            <description xml:lang="bn_IN">SSL-কির বৈধতা যাচাই করা হবে</description>
+            <description xml:lang="ca">Reviseu la validesa de la clau SSL</description>
+            <description xml:lang="cs">Kontrola platnosti SSL klíče</description>
+            <description xml:lang="de">Gültigkeit des SSL-Schlüssels überprüfen</description>
+            <description xml:lang="en_GB">Check SSL key validity</description>
+            <description xml:lang="es">Revisar la validez de la llave SSL</description>
+            <description xml:lang="fi">Tarkista SSL-avaimen oikeellisuus</description>
+            <description xml:lang="fr">Vérifier la validité de la clé SSL</description>
+            <description xml:lang="gu">SSL કી યોગ્યતાને ચકાસો</description>
+            <description xml:lang="hi">SSL कुंजी वैधता जाँचें</description>
+            <description xml:lang="hu">Ellenőrizze a SSL kulcs érvényességét</description>
+            <description xml:lang="it">Controlla la validità della chiave SSL</description>
+            <description xml:lang="ja">SSL キーの妥当性をチェックする</description>
+            <description xml:lang="kn">SSL ಕೀಲಿಯ ಮಾನ್ಯತೆಯನ್ನು ಪರಿಶೀಲಿಸಿ</description>
+            <description xml:lang="ko">SSL 키 유효성 확인 </description>
+            <description xml:lang="ml">എസ്എസ്എല്‍ കീയുടെ സാധുത പരിശോധിയ്ക്കുക</description>
+            <description xml:lang="mr">SSL कि वैधता तपासा</description>
+            <description xml:lang="nl">Controleer geldigheid van SSL sleutel</description>
+            <description xml:lang="or">SSL କି ବୈଧତାକୁ ଯାଞ୍ଚ କରନ୍ତୁ</description>
+            <description xml:lang="pa">SSL ਕੁੰਜੀ ਯੋਗਤਾ ਚੈੱਕ ਕਰੋ</description>
+            <description xml:lang="pl">Sprawdzanie poprawności klucza SSL</description>
+            <description xml:lang="pt">Verificar validade da chave SSL</description>
+            <description xml:lang="pt_BR">Verifique a validade da chave SSL</description>
+            <description xml:lang="ru">Проверить ключ SSL</description>
+            <description xml:lang="sk">Kontrolovať validnosť SSL kľúča</description>
+            <description xml:lang="sv">Kontrollera SSL-nyckelns giltighet</description>
+            <description xml:lang="ta">SSL விசை சரிபார்த்தலுக்கு சரிபார்க்கிறது</description>
+            <description xml:lang="te">SSL కీ నిర్థారణ పరిశీలించు</description>
+            <description xml:lang="tr">SSL anahtarının geçerliliğini kontrol et</description>
+            <description xml:lang="uk">Перевірити чинність ключа SSL</description>
+            <description xml:lang="zh_CN">查看 SSL 密钥是否可用</description>
+            <description xml:lang="zh_TW">檢查 SSL 金鑰是否有效</description>
+            <default-value>yes</default-value>
+        </option>
+        <advanced-options>
+            <option type="text" name="http_proxy">
+                <label>HTTP Proxy</label>
+                <allow-empty>yes</allow-empty>
+                <note-html>Sets the proxy server to use for HTTP</note-html>
+            </option>
+            <option type="text" name="HTTPS_PROXY">
+                <label>HTTPS Proxy</label>
+                <allow-empty>yes</allow-empty>
+                <note-html>Sets the proxy server to use for HTTPS</note-html>
+            </option>
+        </advanced-options>
+    </options>
+</event>

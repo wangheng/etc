@@ -1,0 +1,297 @@
+<gconfschemafile>
+    <schemalist>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/KBType</key>
+            <applyto>/desktop/ibus/engine/Chewing/KBType</applyto>
+            <owner>ibus-chewing</owner>
+            <type>string</type>
+            <default>default</default>
+            <locale name="C">
+                <short>Keyboard Type</short>
+                <long>
+                    Select Zhuyin keyboard layout.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Keyboard Type</short>
+                <long>
+                    Select Zhuyin keyboard layout.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/selKeys</key>
+            <applyto>/desktop/ibus/engine/Chewing/selKeys</applyto>
+            <owner>ibus-chewing</owner>
+            <type>string</type>
+            <default>1234567890</default>
+            <locale name="C">
+                <short>Selection keys</short>
+                <long>
+                    Keys used to select candidate. For example "asdfghjkl;", press 'a' to select the 1st candidate, 's' for 2nd, and so on.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Selection keys</short>
+                <long>
+                    Keys used to select candidate. For example "asdfghjkl;", press 'a' to select the 1st candidate, 's' for 2nd, and so on.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/hsuSelKeyType</key>
+            <applyto>/desktop/ibus/engine/Chewing/hsuSelKeyType</applyto>
+            <owner>ibus-chewing</owner>
+            <type>int</type>
+            <default>1</default>
+            <locale name="C">
+                <short>Hsu's selection key</short>
+                <long>
+                    Hsu's keyboard selection keys, 1 for asdfjkl789, 2 for asdfzxcv89 .
+                </long>
+            </locale>
+            <locale name="">
+                <short>Hsu's selection key</short>
+                <long>
+                    Hsu's keyboard selection keys, 1 for asdfjkl789, 2 for asdfzxcv89 .
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/autoShiftCur</key>
+            <applyto>/desktop/ibus/engine/Chewing/autoShiftCur</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>1</default>
+            <locale name="C">
+                <short>Auto move cursor</short>
+                <long>
+                    Automatically move cursor to next character.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Auto move cursor</short>
+                <long>
+                    Automatically move cursor to next character.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/addPhraseDirection</key>
+            <applyto>/desktop/ibus/engine/Chewing/addPhraseDirection</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>1</default>
+            <locale name="C">
+                <short>Add phrases in front</short>
+                <long>
+                    Add phrases in the front.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Add phrases in front</short>
+                <long>
+                    Add phrases in the front.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/easySymbolInput</key>
+            <applyto>/desktop/ibus/engine/Chewing/easySymbolInput</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>1</default>
+            <locale name="C">
+                <short>Easy symbol input</short>
+                <long>
+                    Easy symbol input.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Easy symbol input</short>
+                <long>
+                    Easy symbol input.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/escCleanAllBuf</key>
+            <applyto>/desktop/ibus/engine/Chewing/escCleanAllBuf</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>0</default>
+            <locale name="C">
+                <short>Esc clean all buffer</short>
+                <long>
+                    Escape key cleans the text in pre-edit-buffer.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Esc clean all buffer</short>
+                <long>
+                    Escape key cleans the text in pre-edit-buffer.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/maxChiSymbolLen</key>
+            <applyto>/desktop/ibus/engine/Chewing/maxChiSymbolLen</applyto>
+            <owner>ibus-chewing</owner>
+            <type>int</type>
+            <default>20</default>
+            <locale name="C">
+                <short>Maximum Chinese characters</short>
+                <long>
+                    Maximum Chinese characters in pre-edit buffer, including inputing Zhuyin symbols
+                </long>
+            </locale>
+            <locale name="">
+                <short>Maximum Chinese characters</short>
+                <long>
+                    Maximum Chinese characters in pre-edit buffer, including inputing Zhuyin symbols
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/forceLowercaseEnglish</key>
+            <applyto>/desktop/ibus/engine/Chewing/forceLowercaseEnglish</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>0</default>
+            <locale name="C">
+                <short>Force lowercase in En mode</short>
+                <long>
+                    Ignore CapsLock status and input lowercase by default.
+                    It is handy if you wish to enter lowercase by default. Uppercase can still be inputted with Shift.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Force lowercase in En mode</short>
+                <long>
+                    Ignore CapsLock status and input lowercase by default.
+                    It is handy if you wish to enter lowercase by default. Uppercase can still be inputted with Shift.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/syncCapsLockLocal</key>
+            <applyto>/desktop/ibus/engine/Chewing/syncCapsLockLocal</applyto>
+            <owner>ibus-chewing</owner>
+            <type>string</type>
+            <default>keyboard</default>
+            <locale name="C">
+                <short>Sync between CapsLock and IM</short>
+                <long>
+                    Occasionally, the CapsLock status does not match the IM, this option determines how these status be synchronized. Valid values:
+                    "disable": Do nothing.
+                    "keyboard": IM status follows keyboard status.
+                    "IM": Keyboard status follows IM status.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Sync between CapsLock and IM</short>
+                <long>
+                    Occasionally, the CapsLock status does not match the IM, this option determines how these status be synchronized. Valid values:
+                    "disable": Do nothing.
+                    "keyboard": IM status follows keyboard status.
+                    "IM": Keyboard status follows IM status.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/numpadAlwaysNumber</key>
+            <applyto>/desktop/ibus/engine/Chewing/numpadAlwaysNumber</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>1</default>
+            <locale name="C">
+                <short>Number pad always input number</short>
+                <long>
+                    Always input numbers when number keys from key pad is inputted.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Number pad always input number</short>
+                <long>
+                    Always input numbers when number keys from key pad is inputted.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/plainZhuyin</key>
+            <applyto>/desktop/ibus/engine/Chewing/plainZhuyin</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>0</default>
+            <locale name="C">
+                <short>Plain Zhuyin mode</short>
+                <long>
+                    In plain Zhuyin mode, automatic candidate selection and related options are disabled or ignored.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Plain Zhuyin mode</short>
+                <long>
+                    In plain Zhuyin mode, automatic candidate selection and related options are disabled or ignored.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/candPerPage</key>
+            <applyto>/desktop/ibus/engine/Chewing/candPerPage</applyto>
+            <owner>ibus-chewing</owner>
+            <type>int</type>
+            <default>10</default>
+            <locale name="C">
+                <short>Candidate per page</short>
+                <long>
+                    Number of candidate per page.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Candidate per page</short>
+                <long>
+                    Number of candidate per page.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/phraseChoiceRearward</key>
+            <applyto>/desktop/ibus/engine/Chewing/phraseChoiceRearward</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>1</default>
+            <locale name="C">
+                <short>Choose phrases from backward</short>
+                <long>
+                    Choose phrases from the back, without moving cursor.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Choose phrases from backward</short>
+                <long>
+                    Choose phrases from the back, without moving cursor.
+                </long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/desktop/ibus/engine/Chewing/spaceAsSelection</key>
+            <applyto>/desktop/ibus/engine/Chewing/spaceAsSelection</applyto>
+            <owner>ibus-chewing</owner>
+            <type>bool</type>
+            <default>0</default>
+            <locale name="C">
+                <short>Space to select</short>
+                <long>
+                    Press Space to select the candidate.
+                </long>
+            </locale>
+            <locale name="">
+                <short>Space to select</short>
+                <long>
+                    Press Space to select the candidate.
+                </long>
+            </locale>
+        </schema>
+    </schemalist>
+</gconfschemafile>

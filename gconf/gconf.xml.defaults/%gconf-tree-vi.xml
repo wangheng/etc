@@ -1,0 +1,1227 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Nhóm làm việc SMB">
+						<longdesc>Nhóm làm việc chạy mạng Windows hay miền chứa người dùng này. Người dùng có lẽ cần phải đăng xuất rồi đăng nhập lại để dùng một nhóm làm việc mới.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Những miền thêm nơi cần tìm dịch vụ DNS-SD">
+						<longdesc>Danh sách các miền DNS-SD, định giới bằng dấu phẩy, nên được hiển thị trong địa điểm « network:// ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Cách hiển thị dịch vụ DNS-SD cục bộ">
+						<longdesc>Giá trị có thể là:
+ • merged — đã phối hợp.
+ • separate — riêng,
+ • disabled — đã tắt.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL cấu hình tự động ủy nhiệm">
+						<longdesc>URL cung cấp giá trị cấu hình ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Cổng ủy nhiệm SOCKS">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/proxy/socks_host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Tên máy ủy nhiệm SOCKS">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Cổng ủy nhiệm FTP">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/ftp_proxy/host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Tên máy ủy nhiệm FTP">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Cổng ủy nhiệm HTTP bảo mật">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/proxy/secure_host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Tên máy ủy nhiệm HTTP bảo mật">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm HTTP bảo mật.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Chế độ cấu hình ủy nhiệm">
+						<longdesc>Hãy chọn chế độ cấu hình ủy nhiệm. Giá trị được hỗ trợ là:
+ • none — không có,
+ • manual — tự làm,
+ • auto — tự động.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Máy khác ủy nhiệm">
+						<longdesc>Khóa này chứa danh sách các máy được kết nối trực tiếp, hơn là qua ủy nhiệm (nếu nó hoạt động). Giá trị có thể là tên máy, miền (dùng ký tự đại diện ban đầu như « *.phu.com »), địa chỉ IP của máy (cả IPv4 lẫn IPv6) và địa chỉ mạng có mặt nạ mạng (như « 192.168.0.0/24 »).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Mật khẩu ủy nhiệm HTTP">
+						<longdesc>Mật khẩu để gởi qua là xác thực khi dùng ủy nhiệm HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Tên người dùng ủy nhiệm HTTP">
+						<longdesc>Tên người dùng để gởi qua là xác thực khi dùng ủy nhiệm HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Xác thực sự kết nối đến máy phục vụ ủy nhiệm">
+						<longdesc>Nếu đúng, mọi sự kết nối đến máy phục vụ ủy nhiệm cần thiết xác thực. Tổ hợp tên người dùng và mật khẩu được định nghĩa bằng « /system/http_proxy/authentication_user » và « /system/http_proxy/authentication_password ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Cổng ủy nhiệm HTTP">
+						<longdesc>Cổng trên máy được định nghĩa bởi « /system/http_proxy/host » qua đó cần chạy ủy nhiệm.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Tên máy ủy nhiệm HTTP">
+						<longdesc>Tên của máy qua đó cần chạy ủy nhiệm HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Dùng ủy nhiệm HTTP">
+						<longdesc>Bật chạy thiết lập ủy nhiệm khi truy cập HTTP qua Mạng.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Có khoá bàn phím hay không.">
+							<longdesc>Có khoá bàn phím hay không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Cho phép hoãn thư giãn">
+							<longdesc>Có cho phép hoãn thư giãn nhập liệu hay không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Thời gian thư giãn">
+							<longdesc>Số phút thư giãn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Thời gian nhập liệu">
+							<longdesc>Số phút nhập liệu trước khi bắt đầu thư giãn.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Tắt mọi trình hiển ảnh thu nhỏ bên ngoài.">
+							<longdesc>Đặt Đúng (true) để vô hiệu hoá mọi trình hiển ảnh thu nhỏ bên ngoài, không cần biết chúng có bị vô hiệu hoá hay không.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Kích cỡ tối đa của bộ nhớ ảnh mẫu, theo mega-byte. Đặt thành -1 để tắt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Khoảng thời gian tối đa cần nhớ tạm ảnh mẫu, theo ngày. Đặt thành -1 để tắt.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Âm phản hồi đầu vào">
+							<longdesc>Có phát âm trên những sự kiện đầu vào không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Tên sắc thái âm">
+							<longdesc>Sắc thái âm XDG cần dùng cho các sự kiện âm thanh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Âm thanh của sự kiện">
+							<longdesc>Có phát âm trên những sự kiện của người dùng không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Bật ESD">
+							<longdesc>Bật trình phục vụ âm thanh lúc khởi động.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Các rãnh hoà tiếng mặc định">
+							<longdesc>Các rãnh hoà tiếng mặc định dùng bởi những tổ hợp phím nhạc/phim.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Thiết bị hoà tiếng mặc định">
+							<longdesc>Thiết bị hoà tiếng mặc định dùng bởi những tổ hợp phím nhạc/phim.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Cỡ con trỏ">
+								<longdesc>Kích cỡ của con trỏ mà « cursor_theme » (sắc thái con trỏ) có tham chiếu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Sắc thái con trỏ">
+								<longdesc>Tên sắc thái con trỏ. Chỉ dùng do trình phục vụ X có hỗ trợ Xcursor, như XFree86 phiên bản 4.3 và sau.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Phông chữ con trỏ">
+								<longdesc>Tên phông chữ của con trỏ. Nếu bỏ chọn, phông mặc định sẽ được dùng. Giá trị này chỉ tác động khi khởi chạy trình phục vụ X mỗi phiên làm việc, vì thế thay đổi giá trị này khi đang chạy sẽ không tác động gì cho đến khi bạn đăng nhập lại.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Định vị con trỏ">
+								<longdesc>Tô sáng vị trí hiện thời của con trỏ khi nhấn và nhả phím Control.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Khoảng thời gian nhấp đúp">
+								<longdesc>Độ dài nhấp đúp.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Ngưỡng kéo">
+								<longdesc>Khoảng cách trước khi bắt đầu kéo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Ngưỡng di chuyển">
+								<longdesc>Khoảng cách, tính theo điểm ảnh, mà con trỏ phải di chuyển trước khi kích hoạt chuyển động của con chuột. Giá trị (-1) là mặc định hệ thống.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Nhấp đơn">
+								<longdesc>Bộ nhân gia tốc cho chuyển động chuột. Giá trị (-1) là mặc định hệ thống.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Nhấp đơn">
+								<longdesc>Nhấp đơn để mở biểu tượng.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Hướng nút chuột">
+								<longdesc>Hoán đổi nút trái, phải của chuột cho người dùng thuận tay trái.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Nhớ tính trạng NumLock">
+								<longdesc>Khi đặt là « true » (đúng), Gnome sẽ nhớ tính trạng của LED NumLock (Khóa Số) giữa hai phiên chạy.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Tên tập tin chuông tự chọn của bàn phím">
+								<longdesc>Tên tập tin của tiếng bíp cần phát.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>giá trị hợp lệ là:
+ • on — bật,
+ • off — tắt,
+ • custom — tự chọn.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Tắt các bộ quản lý địa chỉ URL và dạng MIME">
+							<longdesc>Ngăn cản chạy bất cứ ứng dụng quản lý địa chỉ URL hay dạng MIME.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Tắt khả năng khoá màn hình">
+							<longdesc>Ngăn cản người dùng khoá màn hình.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Tắt khả năng chuyển đổi người dùng">
+							<longdesc>Ngăn cản người dùng chuyển đổi sang tài khoản khác trong khi phiên đang chạy.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Vô hiệu hoá thiết lập in.">
+							<longdesc>Ngăn cản người dùng hiệu chỉnh thiết lập máy in. Ví dụ, nó sẽ vô hiệu hoá truy cập hộp thoại « Thiết lập in » trong mọi ứng dụng.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Vô hiệu hoá in.">
+							<longdesc>Ngăn cản người dùng in. Ví dụ, nó sẽ vô hiệu hoá truy câp hộp thoại « In » trong mọi ứng dụng.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Vô hiệu hoá lưu lên đĩa.">
+							<longdesc>Ngăn cản người dùng lưu vào đĩa. Ví dụ, nó sẽ vô hiệu hoá hộp thoại « Lưu là » trong mọi ứng dụng.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Vô hiệu hoá dòng lệnh.">
+							<longdesc>Ngăn cản người dùng truy cập thiết bị cuối hoặc thực hiện lệnh bằng dòng lệnh. Ví dụ, nó sẽ vô hiệu hoá hộp thoại « Chạy ứng dụng » của bảng điều khiển.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Hiện trình đơn « Ký tự Điều khiển Unicode »">
+							<longdesc>Trình đơn ngữ cảnh của mục nhập và khung xem văn bản có nên đưa ra việc chèn ký tự điều khiển hay không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Hiện trình đơn « Cách nhập »">
+							<longdesc>Trình đơn ngữ cảnh của mục nhập và khung xem văn bản có nên đưa ra việc thay đổi cách nhập hay không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Phím tắt cho thanh trình đơn.">
+							<longdesc>Phím tắt mở thanh trình đơn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Mô-đun cho GtkFileChooser (chọn tập tin)">
+							<longdesc>Mô-đun cần dùng là mô hình hệ thống tập tin cho ô điều khiển của GtkFileChooser. Giá trị có thể là &quot;gio&quot;, &quot;gnome-vfs&quot; và &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Thanh trạng thái bên phải">
+							<longdesc>Có hiển thị đồng hồ thanh trạng thái bên phải không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Dùng phông chữ tự chọn">
+							<longdesc>Có dùng phông chữ tự chọn trong ứng dụng GTK+ không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Phông chữ cách đơn">
+							<longdesc>Tên phông chữ cách đơn (bề rộng cố định) cần dùng ở những nơi như thiết bị cuối.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Phông chữ tài liệu">
+							<longdesc>Tên phông chữ mặc định cần dùng để đọc tài liệu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Mô-đun Tin Nhắn GTK">
+							<longdesc>Tên của mô-đun nhập vào được GTK+ dùng.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Kiểu Trạng thái GTK IM">
+							<longdesc>Tên kiểu dáng trạng thái phương pháp gõ GTK+ dùng bởi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Kiểu hiệu chỉnh trước Gtk IM">
+							<longdesc>Tên phương pháp gõ hiệu chỉnh trước GTK được dùng bởi GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Phông chữ mặc định">
+							<longdesc>Tên phông chữ mặc định dùng bởi GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Sắc thái Gtk+">
+							<longdesc>Tên cơ sở của sắc thái mặc định được dùng bởi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Sắc thái Gtk+">
+							<longdesc>Tên cơ sở của sắc thái mặc định được dùng bởi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Sắc thái Biểu tượng">
+							<longdesc>Sắc thái Biểu tượng cần dùng cho Bảng điều khiển, Nautilus v.v....</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Thời gian chớp con trỏ">
+							<longdesc>Độ dài chu kỳ nháy con trỏ, theo mili giây.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Con trỏ chớp">
+							<longdesc>Con trỏ có nên chớp không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Cỡ biểu tượng thanh công cụ">
+							<longdesc>Kích cỡ của biểu tượng trên thanh công cụ, hoặc:
+ • small-toolbar	biểu tượng nhỏ cho thanh công cụ
+ • large-toolbar	biểu tượng lớn cho thanh công cụ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Có thể tháo thanh công cụ">
+							<longdesc>Người dùng có thể thao thanh công cụ và di chuyển đi chỗ khác không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Có thể tháo thanh trình đơn">
+							<longdesc>Người dùng có thể tháo thanh trình đơn và di chuyển đi chỗ khác không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Nút có Biểu tượng">
+							<longdesc>Cái nút nên hiển thị một biểu tượng thêm vào nhãn, hay không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Trình đơn có biểu tượng">
+							<longdesc>Trình đơn có thể hiển thị ảnh bên cạnh mục nhập trình đơn không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Kiểu dáng thanh công cụ">
+							<longdesc>Kiểu dáng thanh công cụ. Giá trị hợp lệ là:
+ • both — cả hai,
+ • both-horiz — cả hai ngang,
+ • icons — biểu tượng,
+ • text — chữ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Có thể đổi phím tắt">
+							<longdesc>Người dùng có thể gõ động phím tắt mới khi ở trên mục trình đơn hoạt động không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Trình đơn tách rời được">
+							<longdesc>Có nên tách rời trình đơn được không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Bật hoạt cảnh">
+							<longdesc>Có nên hiển thị hoạt cảnh hay không. Chú ý: đây là khóa toàn cục, nó tác động lên hành vi của bộ quản lý cửa sổ, bảng điều khiển v.v. ...</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Bật khả năng truy cập">
+							<longdesc>Ứng dụng có nên hỗ trợ khả năng truy cập không.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Sắc thái Biểu tượng Tập tin">
+							<longdesc>Sắc thái được dùng để hiển thị biểu tượng tập tin.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Kiểu bóng màu">
+							<longdesc>Bóng màu nền như thế nào. Giá trị hợp lệ là:
+ • horizontal-gradient — dốc ngang
+ • vertical-gradient — dốc dọc
+ • solid — đặc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Màu phụ">
+							<longdesc>Màu Phải hoặc Dưới khi vẽ dốc, không được dùng để vẽ màu đặc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Màu chính">
+							<longdesc>Màu Trái hoặc Trên khi vẽ dốc, hoặc màu đặc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Độ mờ đục ảnh">
+							<longdesc>Độ mờ đục để vẽ ảnh nền.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Tên tập tin ảnh">
+							<longdesc>Tập tin dùng làm ảnh nền.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Tùy chọn ảnh">
+							<longdesc>Xác định ảnh đặt bởi « wallpaper_filename » (tên tập tin ảnh nền) được vẽ như thế nào. Giá trị hợp lệ là:
+ • none — không có
+ • wallpaper — ảnh nền
+ • centered — đã canh giữa
+ • scaled — đã co giãn
+ • stretched — đã kéo giãn
+ • zoom — thu/phóng
+ • spanned — chiếm giữ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Vẽ nền mặt bàn">
+							<longdesc>Để GNOME vẽ ảnh nền.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Ứng dụng Công nghệ Trợ giúp lúc khởi động">
+								<longdesc>Danh sách các ứng dụng công nghệ trợ giúp cần khởi chạy khi đăng nhập vào môi trường GNOME.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Kêu bíp khi nhấn phím bổ trợ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Tắt nếu hai phím được nhấn cùng lúc.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Khoảng chờ tối thiểu (mili giây)">
+								<longdesc>Không chấp nhận phím được nhấn trừ khi nhấn trong vòng @delay mili giây.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Khoảng chờ khởi đầu (mili giây)">
+								<longdesc>Số mili-giây cần chờ trước khi phím di chuyển chuột bắt đầu hoạt động.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Bao lâu cần tăng tốc (mili-giây)">
+								<longdesc>Mất bao nhiêu mili giây để đi từ 0 đến tốc độ tối đa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Điểm ảnh mỗi giây">
+								<longdesc>Di chuyển bao nhiêu điểm ảnh mỗi giây ở tốc độ tối đa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="khoảng chờ tối thiểu (mili giây)">
+								<longdesc>Bỏ qua nhấn nhiều lần _cùng_ một phím trong vòng @delay mili giây.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Tên các vùng làm việc (bị phản đối).">
+								<longdesc>Danh sách kèm tên vùng làm việc của bộ quản lý cửa sổ đầu tiên. Khóa này đã bị phản đối kể từ Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Số các vùng làm việc (bị phản đối).">
+								<longdesc>Số vùng làm việc bộ quản lý cửa sổ nên dùng. Khóa này đã bị phản đối kể từ Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Bộ quản lý cửa sổ người dùng (bị phản đối)">
+								<longdesc>Bộ quản lý cửa sổ cần thử đầu tiên. Khóa này đã bị phản đối kể từ Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Bộ quản lý cửa sổ dự phòng (bị phản đối)">
+								<longdesc>Bộ quản lý cửa sổ dự phòng trong trường hợp không tìm thấy bộ quản lý cửa sổ của người dùng. Khóa này đã bị phản đối kể từ Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Tác vụ cần thiết bị cuối">
+								<longdesc>Ứng dụng tác vụ mặc định có cần thiết bị cuối để chạy không.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Tác vụ mặc định">
+								<longdesc>Ứng dụng tác vụ mặc định</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Lịch cần thiết bị cuối">
+								<longdesc>Ứng dụng lịch mặc định có cần thiết bị cuối để chạy không.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Lịch mặc định">
+								<longdesc>Ứng dụng lịch mặc định</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Trình duyệt điều khiển từ xa.">
+								<longdesc>Trình duyệt mặc định có hiểu netscape remote không.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Trình duyệt cần thiết bị cuối.">
+								<longdesc>Trình duyệt mặc định có cần thiết bị cuối để chạy không.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Trình duyệt mặc định">
+								<longdesc>Trình duyệt mặc định cho mọi URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Khởi chạy ứng dụng công nghệ trợ giúp khả năng nhìn ưa thích">
+									<longdesc>GNOME sẽ khởi chạy ứng dụng công nghệ trợ giúp khả năng nhìn ưa thích.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Ứng dụng công nghệ trợ giúp khả năng nhìn ưa thích">
+									<longdesc>Ứng dụng công nghệ trợ giúp khả năng nhìn ưa thích cần dùng để đăng nhập, cho trình đơn hay dòng lệnh.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Khởi chạy ứng dụng công nghệ trợ giúp khả năng di chuyển ưa thích">
+									<longdesc>GNOME sẽ khởi chạy ứng dụng công nghệ trợ giúp khả năng di chuyển trong khi đăng nhập.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Ứng dụng Công nghệ Trợ giúp khả năng di chuyển ưa thích">
+									<longdesc>Ứng dụng công nghệ trợ giúp khả năng di chuyển ưa thích cần dùng để đăng nhập, cho trình đơn hay dòng lệnh.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Ứng dụng xem thành phần mặc định">
+								<longdesc>Ứng dụng cần dùng để xem tập tin cần thiết thành phần để xem nó. Tham số %s sẽ được thay thế bằng các URI của tập tin đó, tham số %c sẽ được thay thế bằng IID của thành phần.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Đối số Exec">
+								<longdesc>Đối số được dùng để thực hiện chương trình trong thiết bị cuối được định nghĩa bởi khóa « exec » (thực hiện).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Ứng dụng thiết bị cuối">
+								<longdesc>Chương trình thiết bị cuối cần dùng để khởi chạy ứng dụng có yêu cầu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « h323 »">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « h323 », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « h323 » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « h323 ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « callto » (gợi đến)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « callto » (gọi đến), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « callto » (gợi đến) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « callto » (gợi đến).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « aim »">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « aim », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « aim » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « aim ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « mailto » (gởi thư cho)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « mailto » (gởi thư cho), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « mailto » (gởi thư cho) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « mailto » (gởi thư cho).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « https »">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « https », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « https » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « https ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « http »">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « http », nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « http » hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « http ».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « man » (trang hướng dẫn)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « man » (trang hướng dẫn), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « man » (trang hướng dẫn) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « man » (trang hướng dẫn).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « info » (thông tin)">
+								<longdesc>Lệnh được dùng để xử lý các địa chỉ Mạng kiểu « info » (thông tin), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « info » (thông tin) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « info » (thông tin).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « ghelp » (trợ giúp g)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « ghelp » (trợ giúp g), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « ghelp » (trợ giúp g) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « ghelp » (trợ giúp g).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Chạy lệnh trong thiết bị cuối">
+								<longdesc>Đúng nếu lệnh được dùng để xử lý URL kiểu này nên được dùng trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Bộ xử lý cho URL « trash » (rác)">
+								<longdesc>Lệnh được dùng để xử lý các URL kiểu « trash » (rác), nếu bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Lệnh được xác định có nên xử lý URL « trash » (rác) hay không">
+								<longdesc>Đúng nếu lệnh được xác định trong khóa « lệnh » nên xử lý các URL « trash » (rác).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Phím tắt Dùng phông cỡ thường">
+							<longdesc>Phím tắt để dùng phông cỡ bình thường. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Phím tắt Dùng phông nhỏ hơn">
+							<longdesc>Phím tắt để dùng phông nhỏ hơn. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (bị tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Phím tắt Dùng phông to hơn">
+							<longdesc>Phím tắt để dùng phông lớn hơn. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (bị tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Phím tắt Hiện trợ giúp">
+							<longdesc>Phím tắt để hiện trợ giúp. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 12">
+							<longdesc>Phím tắt để chuyển sang thanh 12. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 11">
+							<longdesc>Phím tắt để chuyển sang thanh 11. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 10">
+							<longdesc>Phím tắt để chuyển sang thanh 10. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 9">
+							<longdesc>Phím tắt để chuyển sang thanh 9. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 8">
+							<longdesc>Phím tắt để chuyển sang thanh 8. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 7">
+							<longdesc>Phím tắt để chuyển sang thanh 7. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 6">
+							<longdesc>Phím tắt để chuyển sang thanh 6. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 5">
+							<longdesc>Phím tắt để chuyển sang thanh 5. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 4">
+							<longdesc>Phím tắt để chuyển sang thanh 4. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 3">
+							<longdesc>Phím tắt để chuyển sang thanh 3. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 2">
+							<longdesc>Phím tắt để chuyển sang thanh 2. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Phím tắt để chuyển sang thanh 1">
+							<longdesc>Phím tắt để chuyển sang thanh 1. Đại diện là một chuỗi có cùng một định dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (đã tắt) thì không có phím tắt cho hành vi này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Phím tắt để gỡ ra thanh hiện có.">
+							<longdesc>Phím tắt để gỡ ra thanh hiện có. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tổ hợp cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Phím tắt có chuyển thanh hiện thời sang bên phải.">
+							<longdesc>Phím tắt để chuyển thanh hiện thời sang phải. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (bị tắt), nghĩa là không có phím tổ hợp cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Phím tắt có chuyển thanh hiện thời sang bên trái.">
+							<longdesc>Phím tắt để chuyển thanh hiện thời sang bên trái. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi đặc biệt « disabled » (bị tắt), nghĩa là không có phím tổ hợp cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Phím tắt Chuyển sang thanh kế">
+							<longdesc>Phím tắt để chuyển sang thanh kế tiếp. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Phím tắt Chuyển sang thanh trước">
+							<longdesc>Phím tắt để chuyển sang thanh trước đó. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Phím tắt Đặt lại và xoá thiết bị cuối">
+							<longdesc>Phím tắt để đặt lại và xóa thiết bị cuối. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Phím tắt Đặt lại thiết bị cuối">
+							<longdesc>Phím tắt để đặt lại thiết bị cuối. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (bị tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Phím tắt Đặt tiêu đề thiết bị cuối">
+							<longdesc>Phím tắt để đặt tựa đề thiết bị cuối. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (bị tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Phím tắt Bật tắt hiển thị thanh trình đơn">
+							<longdesc>Phím tắt để bật tắt hiển thị thanh trình đơn. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Phím tắt Bật tắt Toàn màn hình">
+							<longdesc>Phím tắt để bật tắt chế độ toàn màn hình. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Phím tắt Dán văn bản">
+							<longdesc>Phím tắt để dán văn bản được chọn từ khay. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Phím tắt Chép văn bản">
+							<longdesc>Phím tắt để sao chép đoạn văn bản được chọn vào khay. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Phím tắt Đóng cửa sổ">
+							<longdesc>Phím tắt để đóng cửa sổ. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Phím tắt Đóng thanh">
+							<longdesc>Phím tắt để đóng tab. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Phím tắt để lưu nội dung thẻ hiện tại thành tập tin">
+							<longdesc>Phím tắt để cất nội dung thẻ hiện tại thành tệp. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi &quot;disabled&quot; (bị tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Phím tắt Tạo hồ sơ mới">
+							<longdesc>Phím tắt để hiện hộp thoại tạo hồ sơ. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (bị tắt), nghĩa là sẽ không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Phím tắt Mở cửa sổ mới">
+							<longdesc>Phím tắt để mở cửa sổ mới. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Phím tắt Mở thanh mới">
+							<longdesc>Phím tắt để mở tab mới. Dùng dạng chuỗi có cùng một khuôn dạng với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi « disabled » (đã tắt), nghĩa là không có phím tắt cho hành động này.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Có nên dùng phông chữ hệ thống hay không.">
+								<longdesc>Nếu đúng, thiết bị cuối sẽ dùng phông chữ chuẩn của toàn màn hình nền nếu nó là phông chữ cách đơn (và phông chữ giống nhất nó có thể tìm được trong trường hợp ngược lại).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Có nên dùng màu từ sắc thái của ô điều khiển thiết bị cuối hay không.">
+								<longdesc>Nếu đúng, lược đồ màu sắc thái được dùng cho ô nhập văn bản sẽ được dùng cho thiết bị cuối, thay vì màu của người dùng.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Tác động của phím Delete">
+								<longdesc>Đặt mã mà phím delete sẽ phát sinh. Giá trị có thể là « ascii-del » cho mã ký tự ASCII DEL, « control-h » cho Control-H (cũng là ký tự ASCII BS), « escape-sequence » cho _dây thoát_ thường gắn với backspace hoặc delete. « escape-sequence » thường được xem là thiết lập đúng cho phím Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Tác động của phím Backspace">
+								<longdesc>Đặt mã mà phím backspace sẽ phát sinh. Giá trị có thể là « ascii-del » cho mã ký tự ASCII DEL, « control-h » cho Control-H (cũng là ký tự ASCII BS), « escape-sequence » cho _dây thoát_ thường gắn với backspace hoặc delete. « ascii-del » thường được xem là thiết lập đúng cho phím Backspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Ảnh nền tối cỡ nào">
+								<longdesc>Giá trị nằm giữa 0.0 và 1.0 chỉ thị độ tối của ảnh nền. 0.0 nghĩa là hoàn toàn không tối. 1.0 nghĩa là tối thui. Trong bản cài đặt này, chỉ có hai cấp đó có thể được dùng, vì thế thiết lập này giống như là boolean (đúng hay sai), 0.0 là tắt hiệu ứng tối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Có nên cuộn ảnh nền hay không.">
+								<longdesc>Nếu đúng, sẽ cuộn ảnh nền với văn bản. Nếu sai, giữ nguyên vị trí ảnh nền khi cuộn văn bản ở trên nó.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Ảnh nền">
+								<longdesc>Tên tập tin ảnh nền.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Kiểu nền">
+								<longdesc>Loại nền thiết bị cuối. Giá trị có thể:
+ • solid		hiển thị một màu đặc
+ • image		hth một ảnh
+ • transparent	hoặc trong suốt thật nếu chạy một trình quản lý cửa sổ có khả năng ghép lại, không thì trong suốt giả.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Phông chữ">
+								<longdesc>Tên phông chữ Pango. Ví dụ « Sans 12 » (phông chữ không chân có cỡ 12 điểm) hoặc « Monospace Bold 14 » (phông chữ đơn cách in đậm có cỡ 14 điểm).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Bảng chọn cho ứng dụng thiết bị cuối">
+								<longdesc>Thiết bị cuối có bảng chọn có 16 màu mà ứng dụng bên trong thiết bị cuối có thể dùng. Đây là bảng chọn đó, theo mẫu phân cách danh sách các màu bằng dấu hai chấm. Tên màu nên dùng dạng thức hệ thập lục phân, v.d. « #FF00FF ».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Biểu tượng cho cửa sổ thiết bị cuối">
+								<longdesc>Biểu tượng dùng cho thanh/cửa sổ chứa hồ sơ này.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Chạy lệnh tự chọn để dùng thay vì hệ vo">
+								<longdesc>Chạy lệnh này thay vì trình bao, nếu « use_custom_command » (dùng lệnh tự chọn) đúng.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Hình thức con trỏ">
+								<longdesc>Giá trị có thể:
+ • block		dùng một con trỏ hình khối
+ • ibeam		dùng một con trỏ hình đường đứng
+ • underline	dùng một con trỏ hình gạch dưới.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Có nên nháy con trỏ hay không.">
+								<longdesc>Các giá trị có thể:
+ • system		để sử dụng thiết lập nháy con trỏ của hệ thống
+ • on		bật chế độ một cách dứt khoát
+ • off		tắt chế độ một cách dứt khoát.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Co nên chạy lệnh tự chọn thay vì trình bao hay không.">
+								<longdesc>Nếu đúng, giá trị của thiết lập « custom_command » (lệnh tự chọn) sẽ được dùng thay vì chạy trình bao.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Có nên cập nhật mục ghi đăng nhập khi chạy lệnh thiết bị cuối hay không.">
+								<longdesc>Nếu đúng, mục ghi đăng nhập hệ thống « utmp/wtmp » sẽ được cập nhật mỗi khi thực hiện lệnh trong thiết bị cuối.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Có nên thực hiện lệnh trong thiết bị cuối như là trình bao đăng nhập hay không.">
+								<longdesc>Nếu đúng, lệnh trong thiết bị cuối sẽ được thực hiện như trình bao đăng nhập. « argv[0] » sẽ chứa dấu trừ ở đằng trước.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Làm gì với thiết bị cuối khi lệnh con kết thúc.">
+								<longdesc>Giá trị có thể là « close » để _đóng_ thiết bị cuối, và « restart » để _khởi chạy lại_ lệnh.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Có nên cuộn đến đáy khi có kết quả mới hay không.">
+								<longdesc>Nếu đúng, bất cứ khi nào có dữ liệu mới xuất ra thiết bị cuối, nó sẽ được cuộn xuống đáy.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Có nên cuộn đến đáy khi được nhấn phím hay không.">
+								<longdesc>Nếu đúng, thiết bị cuối sẽ cuộn đến đáy nhấn phím.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Có hạn chế số dòng lưu trong thanh cuộn không">
+								<longdesc>Nếu đúng, đuờng cuộn sẽ luôn hiển thị. Lịch sử đường cuộn được lưu trong ổ cứng tạm nên hệ thống có thể làm đầy đĩa cứng nếu hiển thị quá nhiều.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Số dòng cuộn ngược">
+								<longdesc>Số dòng cuộn ngược có thể truy cập. Bạn có thể cuộn ngược trong thiết bị cuối một số dòng này. những dòng nằm ngoài sẽ bị hủy. Cẩn thận với thiết lập này; nó là hệ số chính xác định lượng bộ nhớ thiết bị cuối dùng.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Vị trí thanh cuộn">
+								<longdesc>Đặt thanh cuộn thiết bị cuối ở đâu. Giá trị có thể là &quot;left&quot; (trái), &quot;right&quot; (phải) và &quot;hidden&quot; (ẩn).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Số dòng mặc định">
+								<longdesc>Số các dòng trong cửa sổ đầu cuối mới. Không hữu hiệu nếu use_custom_default_size bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Số cột mặc định">
+								<longdesc>Số cột trong cửa sổ đầu cuối mới. Không hữu hiệu nếu use_custom_default_size được bật.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Có hạn chế cỡ của thiết bị đầu cuối trong cửa sổ mới hay không">
+								<longdesc>Nếu đúng, cửa sổ đầu cuối mới sẽ có cỡ bằng default_size_columns và default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Ký tự được coi như là « phần của một từ »">
+								<longdesc>Khi chọn văn bản theo từ, chuỗi các ký tự sau được coi là từ đơn. Có thể đặt một phạm vi các ký từ như kiểu « A-Z ». Dấu trừ (không dùng để chỉ thị một phạm vi) nên đặt ở vị trí đầu tiên.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Co nên cấm chuông thiết bị cuối hay không.">
+								<longdesc>Nếu đúng, đừng làm ồn khi ứng dụng gửi chuỗi thoát để thiết bị cuối rung chuông.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Có nên cho phép chữ đậm hay không.">
+								<longdesc>Nếu đúng, cho phép ứng dụng trong thiết bị cuối tạo chữ đậm.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Tựa đề thiết bị cuối">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Làm gì với tựa đề động">
+								<longdesc>Nếu ứng dụng trong thiết bị cuối đặt tựa đề (hầu hết người dùng thiết lập hệ vỏ của họ để làm như thế), tựa đề đã đặt động đó có thể xóa bỏ tựa đề được cấu hình, đặt trước tựa đề cấu hình, đặt sau, hoặc thay thế tựa đề cấu hình. Giá trị có thể là  « replace » (thay thế), « before » (trước), « after » (sau), và « ignore » (bỏ qua).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Có dùng màu chữ đậm giống màu chữ thường không">
+								<longdesc>Nếu đúng, màu của chữ đậm sẽ giống như chữ thường.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Màu chữ đậm mặc định trong thiết bị cuối">
+								<longdesc>Màu mặc định cho chữ đậm trong thiết bị cuối, có thể là dạng hệ thập lục phân của HTML, hoặc tên màu như &quot;red&quot; (đỏ).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Màu màu nền thiết bị cuối mặc định">
+								<longdesc>Màu nền mặc định của thiết bị cuối, có thể là dạng hệ thập lục phân của HTML, hoặc tên màu như « red » (đỏ).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Màu chữ mặc định trong thiết bị cuối">
+								<longdesc>Màu mặc định cho văn bản trong thiết bị cuối, có thể là dạng hệ thập lục phân của HTML, hoặc tên màu như «red» (đỏ).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Có nên hiển thị thanh trình đơn trong cửa sổ/thanh mới hay không.">
+								<longdesc>Đúng nếu thanh trình đơn nên hiển thị trong cửa sổ mới, với cửa sổ/thanh dùng hồ sơ này.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Tên hồ sơ mà người co đọc được.">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Có nên hỏi xác định khi đóng cửa sổ thiết bị cuối hay không.">
+							<longdesc>Có nên hỏi xác định khi đóng cửa sổ thiết bị cuối có nhiều thanh mở hay không.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Danh sách các bộ ký tự hiện có">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Có bật truy cập thanh trình đơn dựa trên phím tắt chuẩn GTK không.">
+							<longdesc>Bình thường bạn có thể truy cập thanh trình đơn bằng bấm phím chức năng F10. Điều này có thể được điều chỉnh trong « gtkrc » (gtk-menu-bar-accel = « cái gì đó »). Tùy chọn này cho phép tắt phím tắt chuẩn để kích hoạt thanh trình đơn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Thanh trình đơn có phím truy cập không.">
+							<longdesc>Có nên đặt phím tắt Alt-&lt;Ký tự&gt; cho thanh trình đơn hay không. Việc này có thể gây trở ngạy cho vài ứng dụng chạy trong thiết bị cuối, vì thế có lẽ nên tắt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Hồ sơ được dùng với thiết bị cuối mới">
+							<longdesc>Hồ sơ được dùng khi mở cửa sổ/thanh mới. Phải nằm trong « profile_list » (danh sách hồ sơ).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Danh sách các hồ sơ">
+							<longdesc>Danh sách hồ sơ trong gnome-terminal. Danh sách chứa chuỗi tên thư mục con tương đối so với « /apps/gnome-terminal/profiles ».</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

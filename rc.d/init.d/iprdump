@@ -1,0 +1,117 @@
+#!/bin/sh
+# Copyright (C) 2004 International Business Machines Corporation and others.
+# All Rights Reserved. This program and the accompanying
+# materials are made available under the terms of the
+# Common Public License v1.0 which accompanies this distribution.
+#
+# Author: Brian King <brking@us.ibm.com>
+#
+# iprdump
+#
+# System startup script for the ipr dump facility
+#
+### BEGIN INIT INFO
+# Provides: iprdump
+# Required-Start:    $local_fs iprinit
+# Should-Start:      $remote_fs $syslog
+# Required-Stop:     $local_fs $syslog iprinit
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start the ipr dump daemon
+# Description:       Start the ipr dump daemon
+### END INIT INFO
+#
+# chkconfig: 2345 20 80
+# description: Runs the IBM Power RAID adapter dump daemon
+# processname: iprdump
+# pidfile: /var/run/iprdump.pid
+#
+
+# Source function library
+. /etc/init.d/functions
+
+RETVAL=0
+
+prog=iprdump
+exec=/sbin/iprdump
+lockfile=/var/lock/subsys/iprdump
+pidfile=/var/run/iprdump.pid
+
+
+start() {
+    [ -x $exec ] || exit 5
+    echo -n "Starting $prog: "
+    if [ ! -d /sys/class/scsi_generic ] ; then
+        modprobe sg
+    fi
+    
+    daemon $exec --daemon
+    RETVAL=$?
+    echo
+    [ $RETVAL = 0 ] && touch $lockfile && /sbin/pidof $exec > $pidfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n "Stopping $prog: "
+    killproc $exec -TERM
+    RETVAL=$?
+    echo
+    [ $RETVAL = 0 ] && rm -f $lockfile $pidfile
+    return $RETVAL
+}
+
+restart() {
+    stop
+    start
+}
+
+reload() {
+    restart
+}
+
+force_reload() {
+    restart
+}
+
+rh_status() {
+    # run checks to determine if the service is running or use generic status
+    status $prog
+}
+
+rh_status_q() {
+    rh_status >/dev/null 2>&1
+}
+
+case "$1" in
+    start)
+        rh_status_q && exit 0
+        $1
+        ;;
+    stop)
+        rh_status_q || exit 0
+        $1
+        ;;
+    restart)
+        $1
+        ;;
+    reload)
+        rh_status_q || exit 7
+        $1
+        ;;
+    force-reload)
+        force_reload
+        ;;
+    status)
+        rh_status
+        ;;
+    condrestart|try-restart)
+        rh_status_q || exit 0
+        restart
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop|status|restart|condrestart|try-restart|reload|force-reload}"
+        exit 2
+esac
+exit $?
+

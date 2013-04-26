@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="sound">
+					<entry name="enable_esd">
+						<local_schema short_desc="Gweredekaat ESD">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="use_custom_font">
+						<local_schema short_desc="Arverañ un nodrezh personalaet">
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tres Gtk+">
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tres Gtk+">
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tres Arlun">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="applications">
+					<dir name="terminal">
+						<entry name="exec">
+							<local_schema short_desc="Arload termenell">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="help">
+						<local_schema short_desc="Berradenn klavier evit gwelout skoazell">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 12">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 11">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 10">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 9">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 8">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 7">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 6">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 5">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 4">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 3">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 2">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 1">
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell war lerc&apos;h">
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell a-raok">
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Berradenn klavier evit pegañ testenn">
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Berradenn klavier evit kopiañ testenn">
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Berradenn klavier evit serriñ ur prenestr">
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Berradenn klavier evit serriñ un ivinell">
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Berradenn klavier evit krouiñ un aelad nevez">
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Berradenn klavier evit digeriñ ur prenestr nevez">
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Berradenn klavier evit digeriñ un ivinell nevez">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="delete_binding">
+							<local_schema short_desc="Efed ar stokell Dilemel">
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efed ar stokell Kilesaouiñ (Backspace)">
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema>
+								<longdesc>Termeniñ a ra an talvoud etre 0.0 ha 1.0 an teñvalaat eus ar skeudenn drekleur. 0.0 a dalvez n&apos;eus ket ket teñvalaat, 1.0 a dalvez teñvalaat penn da benn. En emplementadur a-vremañ, n&apos;eus nemet daou live teñval posubl, neuze e labour an arventennoù gant un doare binarel, e-lec&apos;h 0.0 a glota gant teñval ebet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Skeudenn an drekleur">
+								<longdesc>Anv restr skeudenn drekleur.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Seurt an drekleur">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Nodrezh">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Arlun evit ar prenestr termenell">
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Neuz ar reti">
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Titl evit termenell">
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Liv dre ziouer drekleur termenell">
+								<longdesc>Liv dre ziouer drekleur termenell, e-giz spizadur liv (a c&apos;hall bezañ HTML-furmad c&apos;hwec&apos;hdegel niverel, pe an anv al liv da skouer &quot;red&quot; (ruz)).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Liv an testenn e-barzh an termenell dre ziouer">
+								<longdesc>Liv dre ziouer testenn termenell, e-giz spizadur liv (a c&apos;hall bezañ HTML-furmad c&apos;hwec&apos;hdegel niverel, pe an anv al liv da skouer &quot;red&quot; (ruz)).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="active_encodings">
+						<local_schema short_desc="Roll ar vonegadurioù hegerz">
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Aelad da arverañ evit an termenelloù nevez">
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Roll an aeladoù">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

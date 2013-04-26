@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Skarot, kab viarnuć zvyčajny pamier šryftu">
+							<longdesc>Klaviša skarotu, kab viarnuć zvyčajny pamier šryftu. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Skarot, kab pamienšyć šryft">
+							<longdesc>Klaviša skarotu, kab pamienšyć šryft. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Skarot, kab pavialičyć šryft">
+							<longdesc>Klaviša skarotu, kab pavialičyć šryft. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Skarot, kab pakazać dapamožnik">
+							<longdesc>Klaviša skarotu, kab pakazać dapamožnik. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Skarot, kab pierajści na 12uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 12j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Skarot, kab pierajści na 11uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 11j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Skarot, kab pierajści na 10uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 10j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Skarot, kab pierajści na 9uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 9j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Skarot, kab pierajści na 8uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 8j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Skarot, kab pierajści na 7uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 7j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Skarot, kab pierajści na 6uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 6j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Skarot, kab pierajści na 5uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 5j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Skarot, kab pierajści na 4uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 4j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Skarot, kab pierajści na 3uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 3j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Skarot, kab pierajści na 2uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 2j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Skarot, kab pierajści na 1uju kartku">
+							<longdesc>Klaviša skarotu, kab pierajści da 1j kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Skarot, kab adłučyć dziejnuju kartku.">
+							<longdesc>Klaviša akseleracyi dla adłučeńnia dziejnaj kartki. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Skarot, kab pierasunuć dziejnuju kartku ŭprava.">
+							<longdesc>Klaviša akseleracyi dla pierasoŭvańnia dziejnaj kartki ŭprava. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Skarot, kab pierasunuć dziejnuju kartku ŭleva.">
+							<longdesc>Klaviša akseleracyi dla pierasoŭvańnia dziejnaj kartki ŭleva. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Skarot, kab pierajści na nastupnuju kartku">
+							<longdesc>Klaviša skarotu, kab pieraklučycca na nastupnuju kartku. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Skarot, kab pierajści na papiaredniuju kartku">
+							<longdesc>Klaviša skarotu, kab pieraklučycca na papiaredniuju kartku. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Skarot, kab skinuć i ačyścić terminał">
+							<longdesc>Klaviša skarotu, kab skinuć i ačyścić terminał. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Skarot, kab skinuć terminał">
+							<longdesc>Klaviša skarotu, kab skinuć terminał. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Skarot, kab vyznačyć zahałovak terminału">
+							<longdesc>Klaviša skarotu, kab vyznačyć zahałovak terminału. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Skarot, kab pakazać/schavać menu">
+							<longdesc>Klaviša skarotu, kab pakazać/schavać menu. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Skarot, kab pieraklučyć poŭnaekranny režym">
+							<longdesc>Klaviša skarotu, kab pieraklučyć poŭnaekranny režym. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Skarot, kab ukleić tekst">
+							<longdesc>Klaviša skarotu, kab ukleić źmieściva buferu abmienu ŭ terminał. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Skarot, kab skapijavać tekst">
+							<longdesc>Klaviša skarotu, kab skapijavać zaznačany tekst u bufer abmienu. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Skarot, kab začynić akno">
+							<longdesc>Klaviša skarotu, kab začynić akno. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Skarot, kab začynić kartku">
+							<longdesc>Klaviša skarotu, kab začynić kartku. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Skarot, kab stvaryć novy profil">
+							<longdesc>Klaviša skarotu, kab adčynić akno stvareńnia profila. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Skarot, kab adčynić novaje akno">
+							<longdesc>Klaviša skarotu, kab adčynić novaje akno. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Skarot, kab adčynić novuju kartku">
+							<longdesc>Klaviša skarotu, kab adčynić novuju kartku. Radok u farmacie, jaki vykarystoŭvajecca ŭ fajłach resursaŭ GTK+. Kali vystaviš vartaść opcyi ŭ &quot;disabled&quot;, tady dla hetaha dziejańnia nia budzie vyznačana skarotu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Akreślivaje, ci ŭžyvać systemny šryft">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, terminał vykarystaje ahulna-systemny standartny šryft, kali jon niaźmiennaj šyryni (albo najbolš prydatny z padobnych da jaho).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Akreślivaje, ci ŭžyvać kolery matyvu dla widgetu terminału">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, zamiest koleraŭ, vyznačanych karystalnikam, budzie ŭžyta schiema koleraŭ dla paloŭ uvodu tekstu ź dziejnaha matyvu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efekt klavišy Delete">
+								<longdesc>Vyznačaje, jaki kod hieneruje klaviša Delete. Mahčymyja vartaści: &quot;ascii-del&quot; dla znaka DEL z ASCII, &quot;control-h&quot; dla Control-H (taksama zvany jak znak BS z ASCII), &quot;escape-sequence&quot; dla kiroŭnaj paśladoŭnaści, što zvyčajna vykarystoŭvajecca dla klavišaŭ Backspace ci Delete. Vartaść &quot;escape-sequence&quot; zvyčajna źjaŭlajecca pravilnaj dla klavišy Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efekt klavišy Backspace">
+								<longdesc>Vyznačaje, jaki kod hieneruje klaviša Backspace. Mahčymyja vartaści: &quot;ascii-del&quot; dla znaka DEL z ASCII, &quot;control-h&quot; dla Control-H (taksama zvany jak znak BS z ASCII), &quot;escape-sequence&quot; dla kiroŭnaj paśladoŭnaści, što zvyčajna vykarystoŭvajecca dla klavišaŭ Backspace ci Delete. Vartaść &quot;ascii-del&quot; zvyčajna źjaŭlajecca pravilnaj dla klavišy Backspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Stupień zacienienaści fonavaj vyjavy">
+								<longdesc>Vartaść pamiž 0.0 i 1.0, jakaja vyznačaje stupień zacienienaści fonavaj vyjavy. 0.0 značyć niezacienienaść, 1.0 značyć poŭnuju zacienienaść. U dziejnaj implementacyi padtrymvajucca tolki dva ŭzroŭni ciomnaści, tamu nałada pracuje jak lahičnaja, dzie vartaść 0.0 adklučaje efekt ciomnaści.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Akreślivaje, ci prakručvać fonavuju vyjavu">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, prakručvaj fonavuju vyjavu razam z tekstam; kali opcyja maje vartaść &quot;Niapraŭda&quot;, prakručvaj tekst pierad zafiksavanaj vyjavaj.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Fonavaja vyjava">
+								<longdesc>Nazva fajłu z fonavaj vyjavaj.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Typ fonu">
+								<longdesc>Typ fonu terminału. Moža być &quot;solid&quot; dla adnastajnaha koleru, &quot;image&quot; dla vyjavy albo &quot;transparent&quot; dla sapraŭdnaj prazrystaści pry ŭklučanym kampazytnym kiraŭniku akon albo dla pseŭda-prazrystaści.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Šryft">
+								<longdesc>Nazva šryftu Pango. Prykładam, &quot;Sans 12&quot; albo &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palitra dla terminalnych aplikacyj">
+								<longdesc>Terminały majuć palitru z 16 koleraŭ, jakija terminalnyja aplikacyi mohuć vykarystoŭvać. Heta takaja palitra, u formie śpisu nazvaŭ koleraŭ, padzielenych dvukropjami. Nazvy koleraŭ musiać być u šasnaccatkovym farmacie, naprykład &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ikona dla akna terminału">
+								<longdesc>Ikona dla kartak/voknaŭ, jakija źmiaščajuć hety profil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Admysłovy zahad, jaki treba ŭžyć zamiest abałonki">
+								<longdesc>Vykanaj hety zahad zamiest abałonki, kali opcyja &quot;use_custom_command&quot; maje vartaść &quot;Praŭda&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Vyhlad kursora">
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Akreślivaje, ci treba mirhać kursoram">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Akreślivaje, ci vykonvać admysłovy zahad zamiest abałonki">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, to vartaść opcyi &quot;custom_command&quot; budzie skarystana jak abałonka.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Akreślivaje, ci aktualizavać zapisy ŭvachodu pry vykanańni zahadu ŭ terminale">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, systemnyja zapisy ŭvachodu &quot;utmp&quot; i &quot;wtmp&quot; buduć aktualizavanyja pry vykanańni zahadu ŭ terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Akreślivaje, ci vykonvać zahad u terminale jak abałonku ŭvachodu">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, zahad u terminale budzie vykanany jak abałonka ŭvachodu (argv[0] budzie mieć złučok na pačatku).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Što rabić z terminałam, kali zahad-naščadak zakančvaje vykanańnie">
+								<longdesc>Mahčymyja vartaści: &quot;close&quot;, kab začynić terminał, i &quot;restart&quot;, kab vykanać zahad nanoŭ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Akreślivaje, ci prakručvać terminał dołu pry novym vyjści">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, tekst terminału budzie prakručvacca dołu pry novym vyjści.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Akreślivaje, ci prakručvać terminał dołu pry nacisku klavišy">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, nacisk klavišy viartaje pałasu prakrutki dołu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Kolkaść radkoŭ, jakija treba zachoŭvać dla abratnaj prakrutki">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Pałažeńnie pałasy prakrutki">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Znaki, jakija źjaŭlajucca &quot;častkaj słova&quot;">
+								<longdesc>Pry zaznačeńni tekstu pa słovach paśladoŭnaść hetych znakaŭ budzie zrazumieta jak adzinaje słova. Dyjapazony možna vyznačyć jak &quot;A-Z&quot;. Znak złučka (jaki nie aznačaje dyjapazonu) musić być na pačatku śpisu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Akreślivaje, ci ścišyć zvanok terminału">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, zachoŭvaj cišyniu, kali aplikacyi dasyłajuć kiroŭnyja paśladoŭnaści dla terminalnaha zvanka.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Akreślivaje, ci dazvoleny tłusty tekst">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, dazvol aplikacyjam u terminale užyć tłusty vyhlad tekstu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Zahałovak dla terminału">
+								<longdesc>Zahałovak, jaki treba pakazvać dla terminalnaha akna ci kartki. Hety zahałovak moža być zamienieny albo spałučany z zahałoŭkam, jaki vyznačaje terminalnaja aplikacyja, u zaležnaści ad nałady &quot;title_mode&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Što rabić z dynamičnym zahałoŭkam">
+								<longdesc>Kali aplikacyja ŭ terminale vyznačaje zahałovak (čaściej za ŭsio heta robić abałonka), dynamična ŭstalavany zahałovak moža albo nadpisać skanfihuravany zahałovak, albo źmiaścicca pierad im, albo paśla, albo zamianić jaho. Mahčymyja vartaści: &quot;replace&quot; (zamiani), &quot;before&quot; (pierad), &quot;after&quot; (paśla) i &quot;ignore&quot; (ihnaruj).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Zmoŭčany fonavy koler dla terminału">
+								<longdesc>Zmoŭčany fonavy koler dla terminału, jak specyfikacyja koleru (moža być naboram  šasnaccatkovych ličbaŭ u styli HTML albo nazvaj koleru, jak &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Zmoŭčany koler tekstu ŭ terminale">
+								<longdesc>Zmoŭčany koler tekstu ŭ terminale, jak specyfikacyja koleru (moža być naboram  šasnaccatkovych ličbaŭ u styli HTML albo nazvaj koleru, jak &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Akreślivaje, ci pakazvać menu ŭ novych voknach/kartkach">
+								<longdesc>Kali opcyja maje vartaść &quot;Praŭda&quot;, menu musić pakazvacca ŭ novych voknach/kartkach hetaha profila.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Čytelnaja nazva profila">
+								<longdesc>Čytelnaja nazva profila.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Akreślivaje, ci treba pytacca paćvierdžańnia pry začynieńni terminalnych voknaŭ">
+							<longdesc>Akreślivaje, ci treba pytacca paćvierdžańnia pry začynieńni terminalnaha akna, u jakim adčyniena bolš za adnu kartku.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Śpis dastupnych kadavańniaŭ">
+							<longdesc>Padmnostva mahčymych kadavańniaŭ pakazvajecca ŭ padmenu &quot;Kadavańniaŭ&quot;. Heta śpis pakazanych kadavańniaŭ. Admysłovaja nazva kadavańnia &quot;current&quot; značyć, što treba pakazvać kadavańnie dziejnaj lakalnaści.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Akreślivaje, ci ŭklučany standartny skarot dostupu da menu GTK">
+							<longdesc>Zvyčajna ty možaš dastupicca da menu klavišaj F10. Heta možna taksama źmianić praz gtkrc (gtk-menu-bar-accel = &quot;štości&quot;). Hetaja opcyja dazvalaje adklučyć standartny skarot dla menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Akreślivaje, ci maje menu klavišy dostupu">
+							<longdesc>Akreślivaje, ci mieć klavišy dostupu da menu typu Alt+znak. Takija skaroty mohuć kanfliktavać ź niekatorymi terminalnymi aplikacyjami, dla hetaha zroblena mahčymaść ich adklučeńnia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profil, jaki budzie ŭžyty dla novych terminałaŭ">
+							<longdesc>Profil, jaki budzie ŭžyty pry adčynieńni novaha akna albo kartki. Musić być u &quot;profile_list&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Śpis profilaŭ">
+							<longdesc>Śpis profilaŭ, viadomych dla gnome-terminal. Śpis źmiaščaje radki z nazvami padkatalohaŭ kataloha /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ci pakazvać menu dla „Midnight Commander”">
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ci terminał dla Stała adčyniajecca ŭ chatnim katalohu">
+						<longdesc>Kali ŭklučana, tady terminał dla Stała budzie adčyniacca ŭ chatnim katalohu. Inakš jon budzie adčyniacca ŭ katalohu Stała. Zaŭvaž, što hety kluč ničoha nia robić, kali kataloh Stała źjaŭlajecca chatnim.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

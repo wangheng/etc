@@ -1,0 +1,1183 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grea de trabayu SMB">
+						<longdesc>La grea/grupu de trabayu de rede de Windows o el dominiu del que l&apos;usuariu ye parte. Pa que un grupu nuevu tenga efeutu, l&apos;usuariu pue necesitar zarrar la sesión y entrar de nuevu.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Dominios adicionales nos que buscar servicios DNS-SD">
+						<longdesc>Llista separtada por comes de dominios DNS-SD que tendríen de ser adicables nel llugar «network:///».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Cómo amosar el serviciu DNS-SD llocal">
+						<longdesc>Los valores dables son «merged», «separate» y «disabled».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL de configuración automática del proxy">
+						<longdesc>URL que proporciona valores de configuración de proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Puertu del proxy SOCKS">
+						<longdesc>El puertu de la máquina definía por &quot;/system/proxy/socks_host&quot; que fai de proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nome del host del proxy SOCKS">
+						<longdesc>El nome de la máquina pela que se fai proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Puertu del proxy FTP">
+						<longdesc>El puertu de la máquina definía por &quot;/system/proxy/ftp_host&quot; que fai de proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nome del host del proxy FTP">
+						<longdesc>El nome de la máquina pola que se fai proxy FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Puertu del proxy HTTP seguru">
+						<longdesc>El puertu de la máquina definía por &quot;/system/proxy/secure_host&quot; que fai de proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nome del host del proxy HTTP seguru">
+						<longdesc>El nome de la máquina pola que se fai proxy HTTP seguru.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mou de configuración del proxy">
+						<longdesc>Seleicione el mou de configuración del proxy.  Los valores sofitaos son &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Hosts ensin proxy">
+						<longdesc>Esta clave contién una llista de hosts colos que ta coneutado direutamente, n&apos;arróu de per aciu del proxy (si ta activu). Los valores puen ser nomes de anfitrión, dominios (usando un comodín auxiliar como *.foo.com), direiciones IP de hosts (tantu IPv4 como IPv6) y direiciones de rede con una máscara (daqué como 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Contraseña del proxy HTTP">
+						<longdesc>Contraseña pa usar como autenticación al coneutar col proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Usuariu del proxy HTTP">
+						<longdesc>Nome d&apos;usuariu pa pasar como autenticación al facer proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autenticar conexones col servidor proxy">
+						<longdesc>Si ye «true» (braero), les conexones al servidor proxy requieren d&apos;autenticación. La combinación usuariu/contraseña defínses en &quot;/system/http_proxy/authentication_user&quot; y &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Puertu del proxy HTTP">
+						<longdesc>El puertu de la máquina definía por &quot;/system/HTTP_proxy/host&quot; que fai de proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nome del host del proxy HTTP">
+						<longdesc>El nome de la máquina pola que se fai proxy HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Usar proxy HTTP">
+						<longdesc>Activa los axustes del proxy al acceder per HTTP a Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Indica si ta activáu el bloquéu del tecláu">
+							<longdesc>Indica si ta activáu el bloquéu del tecláu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Permitir allanciar los descansos">
+							<longdesc>Indica si la pantalla de descansu de tecliar puede allanciase o non.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Tiempu de descansu">
+							<longdesc>Númberu de minutos que tien que durar el descansu de tecliar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Tiempu de tecléu">
+							<longdesc>Númberu de minutos de tiempu pa tecliar enantes de qu&apos;entame&apos;l mou de descansu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Desactivar tolos miniaturizadores esternos">
+							<longdesc>Conseña &quot;true&quot; pa desactivar tolos programes miniaturizadores esternos, independientemente de si tan activaos o desactivaos pel so lláu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Tamañu máximu de la caché de miniatures, en megabytes. Ponlu a -1 pa desactivar la llimpieza.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Antigüedá máxima pa les miniatures de la caché, en díes. Ponlu a -1 pa desactivar la llimpieza.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Soníos de retornu d&apos;entrada">
+							<longdesc>Si se reproducen soníos nos eventos d&apos;entrada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Nome del tema de soníos">
+							<longdesc>Tema de soníu XDG a usar pa eventos de soníu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Soníos pa los eventos">
+							<longdesc>Si se reproducen soníos nos eventos d&apos;usuariu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Activar l&apos;ESD">
+							<longdesc>Activar l&apos;entamu del sirvidor de soníu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Pistes predetermináes del mecedor">
+							<longdesc>Les pistes predetermináes del mecedor usáes poles tecles multimedia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Preséu mecedor predetermináu">
+							<longdesc>El preséu mecedor predetermináu usáu poles tecles multimedia.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Tamañu del cursor">
+								<longdesc>Tamañu del cursor indicáu por cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema del cursor">
+								<longdesc>Nome del tema del cursor. Usáu namái polos servidores X que soporten Xcursor, como XFree86 4.3 y posteriores.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Fonte del cursor">
+								<longdesc>Nome de la fonte del cursor. Si nun ta afitada usase la fonte predeterminada. El valor propágase al sirvidor X sólo al entamu de cada sesión poro, cambealu nel mediu d&apos;una sesión nun tendrá efeutu hasta la siguiente vez que coneutes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Llocalizar el punteru">
+								<longdesc>Rescampla la posición actual del punteru al calcar y soltar la tecla Control.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Tiempu de doble clic">
+								<longdesc>Duración d&apos;un doble clic.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Umbral d&apos;arrastre">
+								<longdesc>Distancia enantes d&apos;entamar un arrastre.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Umbral de movimientu">
+								<longdesc>Distancia en pixels que tien que movese&apos;l punteru enantes d&apos;activar l&apos;aceleración del mur. El valor -1 ye&apos;l predetermináu del sistema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Clic simple">
+								<longdesc>Multiplicador d&apos;aceleración pal movimientu del mur. El valor -1 ye&apos;l predetermináu del sistema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Clic simple">
+								<longdesc>Clic simple p&apos;abrir iconos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Orientación de los botones del ratón">
+								<longdesc>Camuda los botones esquierdu y drechu del mur pa mures zurdos.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Recordar l&apos;estáu de BloqNum">
+								<longdesc>Si se conseña braero, GNOME recordará l&apos;estáu del LED de bloquéu numbéricu ente sesiones.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Nome del ficheru personalizáu pa la campana del tecláu">
+								<longdesc>Nome del ficheru de soníu de campana a reproducir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>los valores posibles con &quot;on&quot;, &quot;off&quot; y &quot;custom&quot;</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Desactivar remanadores d&apos;URL y tipu MIME">
+							<longdesc>Torgar la execución de cualquier aplicación que remane URL o tipu MIME.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Desactivar el candáu de pantalla">
+							<longdesc>Torgar al usuariu bloquiar la pantalla.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Desactivar el trueque d&apos;usuariu">
+							<longdesc>Torga que l&apos;usuariu cambée a otra cuenta mientres so sesión siga activa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Desactivar la configuración de la imprentadora">
+							<longdesc>Torga que l&apos;usuariu modifique los axustes d&apos;impresión. Por exemplu, esto desactivaría l&apos;accesu a los diálogos «Configurar impresión» de toles aplicaciones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Desactivar imprentación">
+							<longdesc>Torga que&apos;l usuariu imprente. Por exemplu, esto desactivaría l&apos;accesu a los diálogos «Imprentar» de toles aplicaciones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Desactivar el guardáu de ficheros nel discu">
+							<longdesc>Torga que&apos;l usuariu atroxe ficheros nel discu. Por exemplu, esto desactivaría l&apos;accesu a los diálogos «Guardar como» de toles aplicaciones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Desactivar llinia de comandos">
+							<longdesc>Torga l&apos;accesu al terminal del usuariu o que conseñe una llinia d&apos;ordes pa executase. Por exemplu, esto desactivaría l&apos;accesu al diálogu del panel &quot;Executar programa...&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Amosar el menú &apos;Caráuter de control Unicode&apos;">
+							<longdesc>Si los menús de contestu de les entráes y les vistes de testu han d&apos;ufrir inxertar carauteres de control.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Amosar el menú &apos;Métodos d&apos;entrada&apos;">
+							<longdesc>Si los menús de contestu de les entráes y les vistes de testu han d&apos;ufrir camudar el métodu d&apos;entrada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Acelerador de barra de menú">
+							<longdesc>Atayu de tecláu p&apos;abrir les barres de menú.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Módulu pa GTKFileChooser">
+							<longdesc>Módulu pa usar como modelu de sistema de ficheros pal widget GtkFileChooser. Los valores posibles son &quot;gio&quot;, &quot;gnome-vfs&quot; y &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Barra d&apos;estáu a mandrecha">
+							<longdesc>Si s&apos;amuesa un mididor a mandrecha na barra d&apos;estáu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Usar fonte personalizada">
+							<longdesc>Si va usase una fonte personalizada nes aplicaciones gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Triba de lletra monoespaciada">
+							<longdesc>Nome d&apos;una triba de lletra monoespaciada (anchor fixu) pa usar en llugares como los terminales.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Fonte del documentu">
+							<longdesc>Nome de la triba de lletra por defeutu usada pa lleer documentos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Módulu GTK IM">
+							<longdesc>Nome del módulu de métodu d&apos;entrada usau por GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Estilu del estáu de GTK IM">
+							<longdesc>Nome del métodu d&apos;entrada de GTK+ Status Style usáu por gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Estilu preedit de GTK IM">
+							<longdesc>Nome del métodu d&apos;entrada de GTK+ Preedit Style usáu por gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Fonte por defeutu">
+							<longdesc>Nome de la triba de lletra por defeutu usada por gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nome base del tema predetermináu usao per gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nome base del tema predetermináu usao per gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema d&apos;iconos">
+							<longdesc>Tema d&apos;iconos que se van usar pal panel, nautilus, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Tiempu de parpaguéu del cursor">
+							<longdesc>Llonxitú del ciclu de parpaguéu del cursor, en milisegundos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Parpaguéu del cursor">
+							<longdesc>Si el cursor tien que parpaguiar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Tamañu de los iconos de la barra de ferramientes">
+							<longdesc>Tamañu de los iconos nes barres de ferramientes, pue ser &quot;small-toolbar&quot; o &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Barra de ferramientes separtable">
+							<longdesc>Si l&apos;usuariu puede soltar barres de ferramientes y moveles perende.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Barra de menú separtable">
+							<longdesc>Si l&apos;usuariu puede soltar les barres de menú y moveles per ende.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Los botones tienen iconos">
+							<longdesc>Si los botones pueden amosar un iconu amás del testu del botón.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Los menús tienen iconos">
+							<longdesc>Si los menús pueden amosar un iconu xunto a la entrada de menú.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Estilu de la barra de ferramientes">
+							<longdesc>Estilu de la barra de ferramientes. Los valores válidos son &quot;both&quot;, &quot;both-horiz&quot;, &quot;icons&quot; y &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Pueden camudase los aceleradores">
+							<longdesc>Si l&apos;usuariu puede tecliar dinámicamente un acelerador nuevu tando enriba d&apos;un elementu de menú activu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Los menús tienen un tirador">
+							<longdesc>Si los menús tendrán un tirador.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Activar animaciones">
+							<longdesc>Si hai qu&apos;amosar les animaciones. Nota: Esta ye una clave global, camuda el comportamientu del xestor de ventanos, del panel, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Activar accesibilidá">
+							<longdesc>Si les aplicaciones han tener sofitu pa accesibilidá.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema d&apos;iconos de ficheros">
+							<longdesc>Tema usáu p&apos;amosar los iconos de ficheros.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Tipu de solombráu de colores">
+							<longdesc>Como solombrar la color de fondu. Los valores posibles son &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, y &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Color secundariu">
+							<longdesc>Color derecha o fondera al dibuxar los dilíos, nun se usa pa color sólida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Color primariu">
+							<longdesc>Color cimera o esquierda al dibuxar los dilíos, o la color sólida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Opacidá de la imaxe">
+							<longdesc>Opacidá pa dibuxar la imaxe del fondu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Nome del ficheru d&apos;imaxe">
+							<longdesc>Ficheru que se va usar pa la imaxe de fondu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Opciones d&apos;imaxe">
+							<longdesc>Determina cómo renderizar la imaxe conseñada por wallpaper_filename. Los valores posibles son &quot;none&quot;, &quot;wallpaper&quot;, &quot;centered&quot;, &quot;scaled&quot;, &quot;stretched&quot; y &quot;zoom&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Dibuxar fondu d&apos;escritoriu">
+							<longdesc>Facer que GNOME dibuxe&apos;l fondu l&apos;escritoriu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Aplicaciones de teunoloxía d&apos;asistencia nel aniciu">
+								<longdesc>Llista d&apos;aplicaciones de teunoloxía d&apos;asistencia qu&apos;entamar al entrar nel escritoriu GNOME.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Pitar al calcar una tecla de modificador.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Desactivar si se calquen dos tecles al empar.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Intervalu mínimu en milisegundos">
+								<longdesc>Nun aceutar una tecla como calcada a nun ser que se caltenga más de @delay milisegundos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Allancia anicial en milisegundos">
+								<longdesc>Cuántos milisegundo esperar enantes de que les tecles de movimientu del ratón entamen a furrular.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Cuánto acelerar en milisegundos">
+								<longdesc>Cuántos milisegundos lleva dir dende 0 hasta la velocidá máxima.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Píxeles per segundu">
+								<longdesc>Cuántos píxeles per segundu se mueven a velocidá máxima.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="intervalu mínimu en milisegundos">
+								<longdesc>Inorar calcaos múltiples de la _mesma_ tecla durante @delay milisegundos.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Nomes de los espacios de trabayu (obsoletu)">
+								<longdesc>Una llista con nomes de los primeros espacios de trabayu del xestor de ventanes. Esta clave ta obsoleta dende GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="El númberu d&apos;espacios de trabayu (obsoletu)">
+								<longdesc>El númberu d&apos;espacios de trabayu que&apos;l xesto de ventanes habría usar. Esta clave ta obsoleta dende GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Xestor de ventanes del usuariu (obsoletu)">
+								<longdesc>Remanador de ventanes que va probase primero. Esta clave ta arrumbada dende GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Remanador de ventanes de respaldu (arrumbao)">
+								<longdesc>Remanador de ventanes de respaldu si el remanador de l&apos;usuariu nun puede alcontrase. Esta clave ta arrumbada dende GNOME 2.12</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Les xeres necesiten un terminal">
+								<longdesc>Si l&apos;aplicación predeterminada pa les xeres necesita un terminal pa executase.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Xeres por defeutu">
+								<longdesc>Aplicación de xeres por defeutu</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="El repertoriu necesita un terminal">
+								<longdesc>Si l&apos;aplicación predeterminada de calendariu necesita un terminal pa executase.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Repertoriu predetermináu">
+								<longdesc>Aplicación de repertoriu predeterminada</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="El ñavegador entiende la opción remota">
+								<longdesc>Si el restolador predetermináu atalanta netscape remote.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="El navegador necesita un terminal">
+								<longdesc>Si el restolador predetermináu necesita un terminal pa executase.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Navegador predetermináu">
+								<longdesc>Navegador predetermináu pa toles URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Entamar l&apos;aplicación preferida de teunoloxía d&apos;asistencia visual">
+									<longdesc>GNOME va arrancar l&apos;aplicación preferida de teunoloxía d&apos;asistencia visual durante l&apos;entamu.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicación preferida de teunoloxía d&apos;asistencia visual">
+									<longdesc>Aplicación preferida de teunoloxía d&apos;asistencia visual a usar nel entamu, menú o llinia d&apos;ordes.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Arrancar l&apos;aplicación preferida de teunoloxía d&apos;asistencia a la movilidá">
+									<longdesc>GNOME va arrancar l&apos;aplicación preferida de teunoloxía d&apos;asistencia a la movilidá durante l&apos;aniciu.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicación preferida de teunoloxía d&apos;asistencia a la movilidá">
+									<longdesc>Aplicación preferida de teunoloxía d&apos;asistencia a la movilidá a usar nel entamu, menú o llinia d&apos;ordes.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplicación visualizadora del componente">
+								<longdesc>L&apos;aplicación que s&apos;usará p&apos;adicar ficheros que requieren un componente pa velos. El parámetru %s podrá ser reemplazáu polos URIs del ficheru, el parámetru %c sedrá reemplazáu pol IID del componente.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumentos d&apos;execución">
+								<longdesc>Argumentu usáu pa executar programes nel terminal definíu pola clave «exec».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicación de terminal">
+								<longdesc>Programa de terminal a usar al aniciar aplicaciones que necesiten ún.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «h323»">
+								<longdesc>El comandu usáu pa remanar les URLs «h323», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «h323»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «h323».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «callto»">
+								<longdesc>El comandu usáu pa remanar les URLs «callto», si ta habilitáu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «callto»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «callto».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «mailto»">
+								<longdesc>El comandu usáu pa remanar les URLs «mailto», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «mailto»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «mailto».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «https»">
+								<longdesc>El comandu usáu pa remanar les URLs «https», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «https»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «https».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «http»">
+								<longdesc>El comandu usáu pa remanar les URLs «http», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «http»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «http».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «man»">
+								<longdesc>El comandu usáu pa remanar les URLs «man», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «man»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «man».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «info»">
+								<longdesc>El comandu usáu pa remanar les URLs «info», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «info»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «info».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «ghelp»">
+								<longdesc>El comandu usáu pa remanar los URLs «ghelp», si tan activaos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «ghelp»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «ghelp».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar el comandu nún terminal">
+								<longdesc>Afitar a «true» si&apos;l programa que remana esta URL tien d&apos;executase nún terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="El remanador pa les URLs «trash»">
+								<longdesc>El comandu usáu pa remanar les URLs «trash», si tan activaes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Conseña si&apos;l comandu especificáu tien de remanar les URLs «trash»">
+								<longdesc>Afitar a «true» si&apos;l programa especificáu na clave «comandu» tendría de remanar les URLs «trash».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Combinación de tecles p&apos;afitar la tipografía al so tamañu normal">
+							<longdesc>Combinación de tecles pa dexar en tamañu normal la tipografía. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Combinación de tecles p&apos;amenorgar la fonte">
+							<longdesc>Combinación de tecles p&apos;amenorgar la tipografía. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Combinación de tecles p&apos;agrandar la fonte">
+							<longdesc>Combinación de tecles p&apos;agrandar la tipografía. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Combinación de tecles pa llanzar l&apos;ayuda">
+							<longdesc>Combinación de tecles pa llanzar l&apos;ayuda. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 12">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 12. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 11">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 11. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 10">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 10. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 9">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 9. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 8">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 8. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 7">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 7. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 6">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 6. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 5">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 5. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 4">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 4. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 3">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 3. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 2">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 2. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta 1">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta 1. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Acelerador pa desacoplar la llingüeta actual.">
+							<longdesc>Tecla aceleradora pa desacoplar la llingüeta actual. Espresada como una cadena nel mesmu formatu qu&apos;usen los ficheros de recursos de GTK+. Si defines la opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Acelerador pa mover la llingüeta actual a la drecha.">
+							<longdesc>Tecla aceleradora pa mover la llingüeta actual a mandrecha. Espresada como una cadena nel mesmu formatu qu&apos;usen los ficheros de recursos de GTK+. Si defines la opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Acelerador pa mover la llingüeta actual a la esquierda.">
+							<longdesc>Tecla aceleradora pa mover la llingüeta actual a la esquierda. Espresada como una cadena nel mesmu formatu qu&apos;usen los ficheros de recursos de GTK+. Si defines la opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta viniente">
+							<longdesc>Combinación de tecles pa camudar a la siguiente llingüeta. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Combinación de tecles pa camudar a la llingüeta anterior">
+							<longdesc>Combinación de tecles pa camudar a la llingüeta anterior. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Combinación de tecles pa reaniciar y llimpiar la terminal">
+							<longdesc>Combinación de tecles pa reaniciar y llimpiar la terminal. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Combinación de tecles pa reaniciar la terminal">
+							<longdesc>Combinación de tecles pa reaniciar la terminal. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Combinación de tecles p&apos;afitar el títulu de la terminal">
+							<longdesc>Combinación de tecles pa definir el títulu de la terminal. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Combinación de tecles pa camudar la visibilidá de la barra de menús">
+							<longdesc>Combinación de tecles pa camudar la visibilidá de la barra de menús. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Combinación de tecles pa camudar al mou pantalla completa">
+							<longdesc>Combinación de tecles pa camudar al mou pantalla completa. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Combinación de tecles p&apos;apegar testu">
+							<longdesc>Combinación de tecles pa pegar el conteníu del cartafueyos na terminal. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Combinación de tecles pa copiar testu">
+							<longdesc>Combinación de tecles pa copiar el testu seleicionáu nel cartafueyos. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Combinación de tecles pa zarrar una ventana">
+							<longdesc>Combinación de tecles pa zarrar una ventana. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Combinación de tecles pa zarrar una llingüeta">
+							<longdesc>Combinación de tecles pa zarrar una llingüeta. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Combinación de tecles pa guardar el conteníu de la llingüeta actual a un ficheru">
+							<longdesc>Combinación de tecles p&apos;atroxar el conteníu de la llingüeta actual a un ficheru. Espresada como una cadena col mesmu formatu usáu nos ficheros de recursos GTK+. Si afites la opción a la cadena especial «disabled», nun habrá combinación de tecles asociada a esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Combinación de tecles pa crear un perfil nuevu">
+							<longdesc>Combinación de tecles p&apos;amosar el diálogu pa la criación de perfiles. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Combinación de tecles p&apos;abrir una ventana nueva">
+							<longdesc>Combinación de tecles p&apos;abrir una ventana nueva. Espresáu como una cadena nel mesmu formatu usáu polos archivos de recursos de GTK+. Si define esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Combinación de tecles p&apos;abrir una llingüeta nueva">
+							<longdesc>Combinación de tecles p&apos;abrir una llingüeta nueva. Espresáu como una cadena nel mesmu formatu usáu polos ficheros de recursos de GTK+. Si defines esta opción cola cadena especial «disabled», entós nun habrá una combinación pa esta aición.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Conseña si tien d&apos;usase la tipografía del sistema.">
+								<longdesc>Si ye «true» (braero) la terminal usará la tipografía global del escritoriu si ésta ye d&apos;anchu fixu (d&apos;otra miente sedrá la tipografía más asemeyada dable a ésta).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Conseña si hai d&apos;usar los colores del tema pa los controles de la terminal">
+								<longdesc>Si ye «true» (braero), l&apos;esquema de color del tema usáu pa les caxes d&apos;entrada de testu usarase pa la terminal, n&apos;arróu de los colores conseñaos pol usuariu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efeutu de la tecla Esaniciar (Delete)">
+								<longdesc>Determina qué códigu xenera la tecla Esaniciar (Delete). Los valores dables son «ascii-del» pal caráuter ASCII de DEL, «control-h» pa Control-H (tamién conocíu como&apos;l caráuter ASCII BS), «escape-sequence» pa la secuencia d&apos;escape que típicamente ta asociada con retrocesu (backspace) o desaniciar (delete). «escape-sequence» considérase davezu como la configuración correuta pa la tecla Esaniciar (Delete).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efeutu de la tecla Retrocesu (Backspace)">
+								<longdesc>Determina qué códigu xenera la tecla Retrocesu (Backspace). Los valores dables son «ascii-del» pal caráuter ASCII de DEL, «control-h» pa Control-H (tamién conocíu como&apos;l caráuter ASCII BS), «escape-sequence» pa la secuencia d&apos;escape que típicamente ta asociada con retrocesu (backspace) o desaniciar (delete). «ascii-del» considérase davezu como la configuración correuta pa la tecla Retrocesu (Backspace).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Cuánto escurecer la imaxe de fondu">
+								<longdesc>Un valor ente 0.0 y 1.0 conseña cuánto escurecer la imaxe de fondu. 0.0 significa ensin escuridá, 1.0 significa escuridá ensembre. Na implementación actual namái esisten dos niveles d&apos;escuridá dables, darréu d&apos;esto esta configuración compórtase como un valor booleanu, au 0.0 desactiva l&apos;efeutu d&apos;escuridá.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Conseña si tien de desplazase la imaxe de fondu">
+								<longdesc>Si ye «true» (braero), desplázase la imaxe de fondu xunto col testu del frente, si ye «false» (falsu) caltiénse la imaxe nuna posición fixa y desplázase&apos;l testu per enriba d&apos;ésta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Imaxe de Fondu">
+								<longdesc>Nome de ficheru d&apos;una imaxe de fondu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Tipu de fondu">
+								<longdesc>El tipu de fondu del terminal. Pue ser «solid» pa un color sólidu, «image» pa una imaxe o «transparent» pa una tresparencia real o, si se ta executando un xestor de ventanes de composición, una pseudo-tresparencia.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Fonte">
+								<longdesc>Un nome de fonte de Pangu. Dalgunos exemplos son «Sans 12» o «Monospace Bold 14».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Paleta pa les aplicaciones de la terminal">
+								<longdesc>Les terminales tienen una paleta de 16 colores que les aplicaciones de terminal puen usar. Ésta ye esa paleta na forma de una llista de nomes de colores separtada por comes. Los colores tienen de tar en formatu hexadecimal, por exemplu: «#FF00FF»</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Iconu de la ventana de la terminal">
+								<longdesc>Iconu qu&apos;usar pa les llingüetes/ventanes que contienen esti perfil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Comandu personalizáu a usar n&apos;arróu del intérprete">
+								<longdesc>Executa esti comandu n&apos;arróu del intérprete si «use_custom_command» ye «true» (braero).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="L&apos;aspeutu del cursor">
+								<longdesc>Los valores dables son «bloque» pa usar un cursor de bloque, «doble T» pa usar una llinia de cursor vertical o «sorrayar» pa usar un cursor de sorrayáu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Conseña si&apos;l cursor tien de parpaguiar">
+								<longdesc>Los valores dables son &quot;system&quot; pa usar los axustes de parpaguéu globales, u &quot;on&quot; u &quot;off&quot; p&apos;afitar el mou explícitu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Define si hai d&apos;executar un comandu personalizáu n&apos;arróu del intérprete">
+								<longdesc>Si ye «true» (braero), el valor de la configuración de «custom_command» usarase n&apos;arróu d&apos;executar un intérprete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Conseña si tienen d&apos;anovase los rexistros d&apos;entamu de sesión al llanzar el comandu de terminal">
+								<longdesc>Si ye «true» (braero), los rexistros d&apos;entrada del sistema utmp y wtmp actualizaránse cuando se llance&apos;l comandu de dientro del terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Define si hai d&apos;executar el comandu en terminal como un intérprete d&apos;accesu (login shell)">
+								<longdesc>Si ye «true» (braero) el comandu del interior de la terminal executarase como un intérprete d&apos;accesu (login) (argv[0] tendrá un guión delantre d&apos;élli)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Qué facer cola terminal cuando&apos;l comandu fíu fina.">
+								<longdesc>Los valores dables son «close» pa zarrar la terminal y «restart» pa reaniciar el comandu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Conseña si tien de desplazase hasta&apos;l final cuando hai una salida nueva">
+								<longdesc>Si ye «true» (braero), define si una nueva salida na terminal fadrá un desplazamientu fasta&apos;l final.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Conseña si tien de desplazase hasta&apos;l final cuando se calca una tecla">
+								<longdesc>Si ye «true» (braero), calcar una tecla fai saltar la barra de desplazamientu fasta&apos;l final.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Indica si hai de caltener un númberu illimitáu de llinies nel desplazamientu.">
+								<longdesc>Si ye braero, les llinies de desplazamientu nun van descartase enxamás. L&apos;hestóricu de desplazamientu atróxase temporalmente nel discu, de tal mou que puede facer que&apos;l discu quede ensin espaciu si esiste muncha salida nel terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Cantidá de llinies a caltener nel desplazamientu">
+								<longdesc>Númberu de llinies de desplazamientu qu&apos;atroxar aproximadamente. Puede desplazase haza atrás na terminal esta cantidá de llinies; les llinies que nun entren nel desplazamientu descártense. Inórase esti valor si scrollback_unlimited ye braero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posición de la barra de desplazamientu">
+								<longdesc>Indica au allugar la barra de desplazamientu de la terminal. Les posibilidaes son «left» (esquierda), «right» (drecha), y «hidden» (anubrida).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Númberu predetermináu de fileres">
+								<longdesc>Númberu de fileres nes nueves ventanes creaes de la terminal. Nun tien efeutu si use_custom_default_size nun ta activáu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Númberu predetermináu de columnes">
+								<longdesc>Númberu de columnes nes nueves ventanes creaes de la terminal. Nun tien efeutu si use_custom_default_size nun ta activáu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Indica si hai d&apos;usar un tamañu personalizáu de terminal pa les ventanes nueves">
+								<longdesc>Si ye braero les ventanes nueves creaes de la terminal tendrán un tamañu personalizáu especificáu por default_size_columns y default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Caráuteres que son consideraos «partes d&apos;una pallabra»">
+								<longdesc>Al seleicionar testu por pallabres, les secuencies d&apos;estos carauteres sedrán consideraes palabres simples. Los rangos puen definise como «A-Z». Un guión lliteral (ensin espresar un rangu) tendría de ser el primer caráuter proporcionáu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Conseña si tien de desactivase la campana de la terminal.">
+								<longdesc>Si ye «true» (braero) nun se fai un soníu cuando les aplicaciones unvien la secuencia d&apos;escape pa la campana de la terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Define si se permite l&apos;usu de testu resaltáu">
+								<longdesc>Si ye «true» (braero) permitese-yos a les aplicaciones na terminal resaltar el testu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Títulu de la terminal">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Qué facer col títulu dinámicu">
+								<longdesc>Si l&apos;aplicación na configuración del terminal define&apos;l títulu (la mayoría de la xente dexa que&apos;l so intérprete faiga esto), el títulu definíu dinámicamente pue esaniciar el títulu configuráu, pue dir enantes d&apos;ésti, dempués d&apos;ésti, o reemplazalu. Los valores dables son «replace» (reemplazar), «before» (enantes), «after» (dempués) e «ignore» (inorar).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Indica si&apos;l testu en negrina tien d&apos;usar el mesmu color que&apos;l testu normal">
+								<longdesc>Si ye braero, el testu en negrina renderizaráse usando&apos;l mesmu color que&apos;l testu normal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Color predetermináu del testu en negrina na terminal">
+								<longdesc>Color predetermináu del testu en negrina na terminal como una especificación de color (puede ser n&apos;estilu hexadecimal de HTML o&apos;l nome d&apos;un color n&apos;inglés como «red»). Inórase si bold_color_same_as_fg ye braero.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Color predetermináu del fondu de la terminal">
+								<longdesc>Color predetermináu del fondu de la terminal, como una especificación de color (pue ser n&apos;estilu hexadecimal de HTML o el nome d&apos;un color n&apos;inglés como «red»).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Color predetermináu del testu na terminal">
+								<longdesc>Color predetermináu del testu na terminal, como una especificación de color (pue ser n&apos;estilu hexadecimal de HTML o el nome d&apos;un color n&apos;inglés como «red»).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Conseña si tien d&apos;amosase la barra de menús nes llingüetes/solapes">
+								<longdesc>Braero (True) si la barra de menús tien d&apos;amosase nes ventanes nueves, pa les ventanes/llingüetes con esti perfil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Nome del perfil llexible por persones">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Conseña si hai de pidir confirmación al zarrar les ventanes de terminal">
+							<longdesc>Conseña si hai de pidir confirmación al zarrar una ventana de terminal que tenga más d&apos;una llingüeta abierta.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Llista de les codificaciones disponibles">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Define si les combinaciones de tecles estándar de GTK d&apos;accesu a les barres de menús tán habilitaes">
+							<longdesc>Normalmente pues acceder a la barra de menús calcando F10. Esto pue personalizase per aciu de gtkrc (gtk-menu-bar-accel = &quot;lo que quieras&quot;). Esta opción permite deshabilitar la combinación de tecles estándar d&apos;accesu a la barra de menús.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Define si la barra de menús tien tecles d&apos;accesu">
+							<longdesc>Define si hai de tener combinaciones de tecles de Alt+lletra pa la barra de menús. Éstes podríen interferir con dalgunes aplicaciones executaes dientro del terminal asina que ye dable desactivales.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Perfil a usar pa les terminales nueves">
+							<longdesc>Perfil a usar cuando s&apos;abra una ventana o una llingüeta nueva. Tien de figurar en «profile_list».</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Llista de perfiles">
+							<longdesc>Llista de perfiles conocíos pola terminal de GNOME. La llista contién les cadenes de los nomes de los subdireutorios rellatives a /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Disabled by default on Fedora since this is run as daemon
+# using the mcelog.service systemd configuration entries.
+#/usr/sbin/mcelog --ignorenodev --filter >> /var/log/mcelog

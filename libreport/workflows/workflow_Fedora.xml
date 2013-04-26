@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+    <name>Report to Fedora</name>
+    <name xml:lang="ja">Fedora に報告</name>
+    <name xml:lang="zh_CN">汇报至 Fedora</name>
+    <description>Process the report using the Fedora infrastructure</description>
+    <description xml:lang="ja">Fedora インフラストレクチャーを使用して報告を処理する</description>
+    <description xml:lang="zh_CN">使用 Fedora 基础架构处理报告</description>
+
+    <events>
+        <event>report_uReport</event>
+        <event>collect_*</event>
+        <event>analyze_CCpp</event>
+        <event>report_Bugzilla</event>
+        <event>post_report</event>
+    </events>
+</workflow>

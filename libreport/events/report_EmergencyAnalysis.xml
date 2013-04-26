@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+    <name>Emergency analysis</name>
+    <description>Upload the problem data for further analysis</description>
+
+    <requires-items/>
+    <exclude-items-by-default/>
+    <exclude-items-always/>
+    <exclude-binary-items/>
+    <include-items-by-default/>
+    <minimal-rating>0</minimal-rating>
+    <gui-review-elements>no</gui-review-elements>
+
+    <options>
+        <option type="text" name="Upload_URL">
+            <label>URL</label>
+            <label xml:lang="ar">عنوان</label>
+            <label xml:lang="as">URL</label>
+            <label xml:lang="bg">URL</label>
+            <label xml:lang="bn_IN">URL</label>
+            <label xml:lang="ca">URL</label>
+            <label xml:lang="cs">URL</label>
+            <label xml:lang="de">URL</label>
+            <label xml:lang="en_GB">URL</label>
+            <label xml:lang="es">URL </label>
+            <label xml:lang="eu">URLa</label>
+            <label xml:lang="fi">URL</label>
+            <label xml:lang="fr">URL</label>
+            <label xml:lang="gu">URL</label>
+            <label xml:lang="hi">URL</label>
+            <label xml:lang="hu">URL</label>
+            <label xml:lang="it">URL</label>
+            <label xml:lang="ja">URL</label>
+            <label xml:lang="kn">URL</label>
+            <label xml:lang="ko">URL </label>
+            <label xml:lang="ml">യുആര്‍എല്‍</label>
+            <label xml:lang="mr">URL</label>
+            <label xml:lang="nb">URL</label>
+            <label xml:lang="nl">URL</label>
+            <label xml:lang="or">URL</label>
+            <label xml:lang="pa">URL</label>
+            <label xml:lang="pl">Adres URL</label>
+            <label xml:lang="pt">URL</label>
+            <label xml:lang="pt_BR">URL</label>
+            <label xml:lang="ru">URL</label>
+            <label xml:lang="sk">URL</label>
+            <label xml:lang="sv">URL</label>
+            <label xml:lang="ta">URL</label>
+            <label xml:lang="te">URL</label>
+            <label xml:lang="tr">URL</label>
+            <label xml:lang="uk">Адреса</label>
+            <label xml:lang="zh_CN">URL</label>
+            <label xml:lang="zh_TW">URL</label>
+            <allow-empty>no</allow-empty>
+            <default-value>https://retrace.fedoraproject.org/faf/dumpdirs/new/</default-value>
+        </option>
+        <advanced-options>
+            <option type="text" name="http_proxy">
+                <label>HTTP Proxy</label>
+                <allow-empty>yes</allow-empty>
+                <note-html>Sets the proxy server to use for HTTP</note-html>
+            </option>
+            <option type="text" name="HTTPS_PROXY">
+                <label>HTTPS Proxy</label>
+                <allow-empty>yes</allow-empty>
+                <note-html>Sets the proxy server to use for HTTPS</note-html>
+            </option>
+            <option type="text" name="FTP_PROXY">
+                <label>FTP Proxy</label>
+                <allow-empty>yes</allow-empty>
+                <note-html>Sets the proxy server to use for FTP</note-html>
+            </option>
+        </advanced-options>
+    </options>
+</event>

@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Mostre il menu &quot;Caratàrs di control Unicode&quot;&quot;">
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Mostre il menu &quot;Metodos di input&quot;&quot;">
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Aceleradôr da bare dai menu">
+							<longdesc>Scurtadorie di tastiere par vierzi lis baris dai menu</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Modul par GtkFileChooser">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Bare di stât a gjestre">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Dopre caràtar personalizât">
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Carâtar Monospace">
+							<longdesc>Il nom di un carâtar monospace (largjece fisse) di doprâ in posizions come i terminâi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Tipo di carâtar par i documents">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema>
+							<longdesc>Nom dal metodo di input des GTK+ Status Style doprât.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema>
+							<longdesc>Nom dal metodo di input des GTK+ Status Style doprât.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema>
+							<longdesc>Nom dal metodo di input des GTK+ Preedit Style doprât.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Tipo di caràtar predefinît">
+							<longdesc>Nom dal tipo di caràtar doprât in mût predefinit des GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Teme GTK+">
+							<longdesc>Nom di base dal teme predefinît doprât das GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Teme GTK+">
+							<longdesc>Nom di base dal teme predefinît doprât das GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Teme des iconis">
+							<longdesc>Teme des iconis doprât par il panel, nautilus, ecc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Interval di lampament dal cursôr">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Cursôr ch&apos;al lampe">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Dimension des iconis ta bare dai imprescj">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Bare dai imprescj stacabil">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Bare dai menu stacabil">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menu cun iconis">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Stîl da bare dai imprescj">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Lasse gambiâ i aceleradôrs">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="menu cun stacadôr">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Abilite animazions">
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Abilite acessibilitât">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Teme icone dai files">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Tipo sfumadure colôr">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Colôr secondari">
+							<longdesc>Colôr a gjestre o in bas cuant ch&apos;a si dopre un gradient, opûr il colôr pa tinte unide.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Colôr primari">
+							<longdesc>Colôr in alt o a bande çampe cuant ch&apos;a si dopre un gradient, opûr il colôr pa tinte unide.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Opacitât da l&apos;imagjine">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Nom dal file di imagjine">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Opzions da l&apos;imagjine">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Disegne fondâl dal desktop">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Inviament aplicazions di tecnologjie assistive">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Disabilite se doi botons a son fracâts insiemit.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Interval minimo in milliseconds">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Ritart iniziâl in milliseconds">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Trop ch&apos;a dure l&apos;acelerazion in milliseconds">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixel al second">
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="Interval minimo in milliseconds">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Noms dai spazis di lavôr (deprecât)">
+								<longdesc>Une liste cui noms dai spazis di lavôr dal window manager primari. Cheste clâf je stade deprecade a partì di Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Il numar dai spazis di lavôr (deprecât)">
+								<longdesc>Il numar dai spazis di lavôr che il window manager al vares di doprâ. Cheste clâf je stade deprecade a partì di Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Window manager da l&apos;utent (deprecât)">
+								<longdesc>Window manager di doprâ par prin. Cheste clâf je stade deprecade a partì di Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Window manager di ripiego (deprecât)">
+								<longdesc>Window manager di doprâ come ripiego se chel sielt da l&apos;utent nol ven cjatât. Cheste clâf je stade deprecade a partì di Gnome 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="needs_term">
+							<local_schema short_desc="Al browser al covente il terminâl">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Browser predefinît">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Inviament aplicazion di tecnologjie assistive par video-disabî preferide">
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicazion di tecnologjie assistive par video-disabî predefinide">
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Inviament aplicazions di tecnologjies assistives par moto-disabî preferidis">
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicazions di tecnologjie assistive par moto-disabî">
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argoments Exec">
+								<longdesc>Argoment doprât par inviâ programs tal terminâl definît da clâf &apos;exec&apos;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicazion di terminâl">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Scurtadorie di tastiere par imposta il caràtar a la dimension normâl">
+							<longdesc>Scurtadorie di tastiere par impostâ il caràtar a la dimension normâl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Scurtadorie di tastiere par fâ plui piçul il caràtar">
+							<longdesc>Scurtadorie di tastiere par fâ plui piçul il caràtar, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Scurtadorie di tastiere par fâ plui grant il caràtar">
+							<longdesc>Scurtadorie di tastiere par fâ plui grant il caràtar, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Scurtadorie di tastiere par vierzi la guide">
+							<longdesc>Scurtadorie di tastiere par domandâ jutori, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 12">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 12, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 11">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 11, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 10">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 10, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 9">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 9, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 8">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 8, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 7">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 7, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 6">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 6, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 5">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 5, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 4">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 4, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 3">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 3, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 2">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 2, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede 1">
+							<longdesc>Scurtadorie di tastiere par passâ a la schede 1, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Aceleradôr par stacâ la schede curint.">
+							<longdesc>Scurtadorie di sisteme par stacâ la schede curint, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Aceleradôr par spostâ la schede curint a gjestre.">
+							<longdesc>Scurtadorie di sisteme par spostâ la schede curint bande gjestre dal terminâl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Aceleradôr par spostâ la schede curint a çampe.">
+							<longdesc>Scurtadorie di sisteme par spostâ la schede curint bande çampe dal terminâl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede sucesive">
+							<longdesc>Scurtadorie di tastiere par passa a la schede sucesive, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a la schede di prime">
+							<longdesc>Scurtadorie di tastiere par passa a la schede di prime, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Scurtadorie di tastiere par ripristinâ e netâ il terminâl">
+							<longdesc>Scurtadorie di tastiere par ripristinâ e netâ il terminâl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Scurtadorie di tastiere par ripristinâ il terminâl">
+							<longdesc>Scurtadorie di tastiere par ripristinâ il terminâl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Scurtadorie di tastiere par impostâ il titul dal terminâl">
+							<longdesc>Scurtadorie di tastiere par impostâ il titul dal terminâl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Scurtadorie di tastiere par abilitâ la visualizazion da bare dai menu">
+							<longdesc>Scurtadorie di tastiere par impostâ la visibilitât da bare dai menu, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Scurtadorie di tastiere par passâ a dut schermo">
+							<longdesc>Scurtadorie di tastiere par abilitâ la modalitât a dut schermo, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Scurtadorie di tastiere par taca il test">
+							<longdesc>Scurtadorie di tastiere par tacâ il contignût tai aponts, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Scurtadorie di tastiere par cupiâ il test">
+							<longdesc>Scurtadorie di tastiere par cupiâ il test selezionât tai aponts, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Scurtadorie di tastiere par sierâ un barcon">
+							<longdesc>Scurtadorie di tastiere par sierâ un barcon, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Scurtadorie di tastiere par sierâ une schede">
+							<longdesc>Scurtadorie di tastiere par sierâ une schede, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Scurtadorie di tastiere par creâ un gnûf profîl">
+							<longdesc>Scurtadorie di tastiere par vierzi il barcon di dialogo pa creazion dal profîl, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Scurtadorie di tastiere par vierzi un gnûf barcon">
+							<longdesc>Scurtadorie di tastiere par vierzi un gnûf barcon, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Scurtadorie di tastiere par vierzi une gnove schede">
+							<longdesc>Scurtadorie di tastiere par vierzi une gnove schede, mostrade tal stes formât doprât dal file di risorses par GTK+. Se l&apos;opzion a je impostade a la stringhe speciâl &quot;disabled&quot;, nol esist nissun colegament cun botons par cheste azion.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema>
+								<longdesc>Se TRUE, il terminâl al doprarâ il caràtar predefinît se al è a spaziadure fisse (altrimentri il caràtar ch&apos;al vâ plui dongje ch&apos;a si rive a cjatâ).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema>
+								<longdesc>Se TRUE, il schema dai colôrs dal teme al vegnarâ doprât par il test dal terminâl, invezit dai colôrs furnîts da l&apos;utent.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efiet dal boton CANC">
+								<longdesc>Imposte il codic gjenerât dal boton CANC. Valôrs pussibî a son &quot;ascii-del&quot; par il caràtar DEL ASCII, &quot;control-h&quot; par Control-H (ven a stai il caràtar BS ASCII), &quot;escape-sequence&quot; par la secuence di escape gjeneralmentri leade al boton BACKSPACE o CANC. &quot;ascii-del&quot; al è gjeneralmentri considerât il valôr coret par il boton CANC.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efiet dal boton BACKSPACE">
+								<longdesc>Imposte il codic gjenerât dal boton BACKSPACE. Valôrs pussibî a son &quot;ascii-del&quot; par il caràtar DEL ASCII, &quot;control-h&quot; par Control-H (ven a stai il caràtar BS ASCII), &quot;escape-sequence&quot; par la secuence di escape gjeneralmentri leade al boton BACKSPACE o CANC. &quot;ascii-del&quot; al è gjeneralmentri considerât il valôr coret par il boton BACKSPACE.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Di trop scurî l&apos;imagjine di fondâl">
+								<longdesc>Un valôr framieç 0.0 e 1.0 al segne di trop scurî l&apos;imagjine di fondâl. 0.0 al segne nissun scuriment, 1.0 al segne scûr patoc. Ta l&apos;implementazion curint, a son doi livei di scuriment pussibî, par chest chist parametro al funzione dome come boolean, indulà che 0.0 al disabilite l&apos;efiet di scuriment.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="A mostre se fâ scori l&apos;imagjine di fondâl">
+								<longdesc>Se TRUE, l&apos;imagjine a scrô cul test; se FALSE, l&apos;imagjine a reste fisse intant ch&apos;al scôr il test parsore.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Imagjine di fondâl">
+								<longdesc>Nom dal file da imagjine di fondâl.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Tipo di fondâl">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Tipo di caràtar">
+								<longdesc>Un nom di tipo di caràtar di Pango. Esemplis a son &quot;Sans 12&quot; o &quot;Monospace Bold 14&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Taule di colôrs pes aplicazions dal terminâl">
+								<longdesc>I terminai an taulis di 16 colôrs che lis aplicazions inviadis dentri il terminâl a puedin doprâ. Cheste je chê taule di colôrs separâts cui doi ponts (:). I noms dai colôrs an di jessi in formât esadecimâl, par esempli &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Icone pal barcon dal terminâl">
+								<longdesc>Icone di doprâ ta lis schedis o tai barcons ch&apos;an dentri chest profîl.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Comant personalizât di doprâ invezir da shell">
+								<longdesc>Eseguis chest comant al puest da shell se use_custom_command al è TRUE.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="A mostre se il cursôr al à di lampâ">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="A mostre se eseguî un comant personalizât invezit da shell">
+								<longdesc>Se TRUE, al vegnarâ doprât il valôr da impostazion custom_command invezit di inviâ une shell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema>
+								<longdesc>Se TRUE, i records di sisteme utmp e wtmp a vegnaran agjornats cuant che il comant dentri il terminâl al vegnara inviât.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="A mostre se inviâ il comant tal terminâl come shell di login">
+								<longdesc>Se TRUE, il comant tal terminâl al vegnarâ inviât al puest da shell di login. (argv[0] al varâ un piçul trat denant).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Ce fâ cul terminâl cuant che il proces fî al finis">
+								<longdesc>Valôrs pussibî a son &quot;close&quot; par sierâ il terminâl, e &quot;restart&quot; par tornâ a inviâ il comant.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema>
+								<longdesc>Se TRUE, cuant ch&apos;al saltarâ fûr un gnûf output il terminâl al scorarâ viers il bas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema>
+								<longdesc>Se TRUE, môf la bare di scoriment viers la fin podopo vê fracât un boton.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Numar di ries di mantignî par scori denant-daûr">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posizion da bare di scoriment">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Caràtars ch&apos;a son considerâts &quot;par di une peraule&quot;">
+								<longdesc>Selezionant il test par peraule, la sequence di caràtars a son viodûts come peraule singule. A puedin jessi doprâts ancje intervai come &quot;A-Z&quot;. Il caràtar tratut (-) se nol segne un interval, al scugne jessi il prin caràtar.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema>
+								<longdesc>Se TRUE, nol mande sûns cuant che i programes a mandin la secuence di escape par il bip dal terminâl.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="A mostre se consentî il test in grasut">
+								<longdesc>Se TRUE, permet ai programes tal tarminâl di mostrâ il test in grassut.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Titul dal terminâl">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Ce fâ cuntun titul dinamic">
+								<longdesc>Se l&apos;aplicazion tal terminâl à imposte il titul (gjeneralmentri lis personis an scripts ch&apos;a fasin chest), il titul impostât dinamicamentri al pos elimina chel configurât, lâ prime, dopo opûr rimplaçalu. I pussibî valôrs a son &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, and &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Colôr predefinît dal fondâl dal terminâl">
+								<longdesc>Colôr predefinît dal fondâl dal terminâl, come specifiche di colôr (al pos jessi un numar esadecimâl in stîl HTML opûr il nom di un colôr come &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Colôr predefinît dal test tal terminâl">
+								<longdesc>Colôr predefinît dal test tal terminâl, come specifiche di colôr (al pos jessi un numar esadecimâl in stîl HTML opûr il nom di un colôr come &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema>
+								<longdesc>Vêr se la bare di menu a pues jessi visualizade tai gnûfs barcons, par barcon/schede cun chest profîl.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Nom mnemonic pal profîl">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="A mostre se domandâ conferme cuan ch&apos;a vegnin sierâts i barcons dal terminâl">
+							<longdesc>A mostre se domandâ conferme cuant che il barcon dal terminâl che al à plui di une schede vierte a ven sierade.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Liste des codifichis pussibilis">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="A mostre se la scurtadorie predefinide di GTK par acedi a la bare di menu a je abilitade">
+							<longdesc>Normalmentri al è pussibil acedi a la bare di menu cun F10. Chest al pues jessi personalizât cun gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;). Cun cheste opzion si pues disabilitâ l&apos;aceleradôr predefinît par la bare di menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="A mostre se ta bare di menu a son aceleradôrs">
+							<longdesc>A mostre se a son scurtadoriis Alt+letare pa bare di menu. Chest al podares interferì cun ciertis aplicazions ch&apos;a son stadis inviadis dentri il terminâl, cussì si pues disabilitâ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profîl di doprâ par un gnûf terminâl">
+							<longdesc>Profîl di doprâ intant ch&apos;a si vierç un gnûf barcon o une gnove schede. Al scugne jessi ta liste dai profî.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Liste dai profî">
+							<longdesc>Liste dai profî cognossûts di gnome-terminal. La liste a jà dentri i noms des sottodirectory relatives a /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

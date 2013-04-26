@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="background_image">
+							<local_schema short_desc="Նախադիր պատկեր">
+								<longdesc>Նախադիր պատկերի ֆայլը</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Տառատեսակ">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Տերմինալի պատկերակը">
+								<longdesc>Այս պրոֆիլի պատկերակը</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Տերմինալի վերնագիրը">
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

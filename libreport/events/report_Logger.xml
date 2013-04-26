@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+    <name>Logger</name>
+    <name xml:lang="as">লগাৰ</name>
+    <name xml:lang="bg">Logger</name>
+    <name xml:lang="bn_IN">লগ ব্যবস্থা</name>
+    <name xml:lang="cs">Logger</name>
+    <name xml:lang="de">Logger</name>
+    <name xml:lang="en_GB">Logger</name>
+    <name xml:lang="es">Gestor de registro</name>
+    <name xml:lang="fi">Lokin kirjoittaja</name>
+    <name xml:lang="fr">Enregistreur</name>
+    <name xml:lang="gu">લૉગર</name>
+    <name xml:lang="hi">लॉगर</name>
+    <name xml:lang="hu">Logger</name>
+    <name xml:lang="it">Logger</name>
+    <name xml:lang="ja">ロガー</name>
+    <name xml:lang="kn">ಲಾಗರ್</name>
+    <name xml:lang="ko">로거 </name>
+    <name xml:lang="ml">ലോഗ്ഗര്‍</name>
+    <name xml:lang="mr">लॉगर</name>
+    <name xml:lang="nl">Logger</name>
+    <name xml:lang="or">ଲଗର</name>
+    <name xml:lang="pa">ਲਾਗਰ</name>
+    <name xml:lang="pl">Dziennik</name>
+    <name xml:lang="pt">Registos</name>
+    <name xml:lang="pt_BR">Logger</name>
+    <name xml:lang="ru">Журнал</name>
+    <name xml:lang="sk">Logger</name>
+    <name xml:lang="sv">Loggare</name>
+    <name xml:lang="ta">பதிவாளர்</name>
+    <name xml:lang="te">లాగర్</name>
+    <name xml:lang="tr">Günlük tutucu</name>
+    <name xml:lang="uk">Ведення журналу</name>
+    <name xml:lang="zh_CN">日志程序</name>
+    <name xml:lang="zh_TW">紀錄器</name>
+    <description>Save as text file</description>
+    <description xml:lang="ar">احفظ كملف نصي</description>
+    <description xml:lang="as">লিখনী নথিপত্ৰ হিচাপে সংৰক্ষণ কৰক</description>
+    <description xml:lang="bg">Запис като текстов файл</description>
+    <description xml:lang="bn_IN">টেক্সট ফাইল রূপে সংরক্ষণ করা হবে</description>
+    <description xml:lang="cs">Uložit, jako textový soubor</description>
+    <description xml:lang="de">Als Textdatei speichern</description>
+    <description xml:lang="es">Guárdelo como archivo de texto</description>
+    <description xml:lang="eu">Gorde testu-fitxategi bezala</description>
+    <description xml:lang="fi">Tallenna tekstitiedostona</description>
+    <description xml:lang="fr">Enregistrer en tant que fichier texte</description>
+    <description xml:lang="gu">લખાણ ફાઇલ તરીકે સંગ્રહો</description>
+    <description xml:lang="hi">पाठ फ़ाइल के रूप में सहेजें</description>
+    <description xml:lang="hu">Mentés szöveges fájlként</description>
+    <description xml:lang="it">Salva come file di testo</description>
+    <description xml:lang="ja">テキストファイルで保存</description>
+    <description xml:lang="kn">ಪಠ್ಯ ಕಡತವಾಗಿ ಉಳಿಸು</description>
+    <description xml:lang="ko">텍스트 파일로 저장 </description>
+    <description xml:lang="lv">Saglabāt kā teksta datni</description>
+    <description xml:lang="ml">ടെക്സ്റ്റ് ഫയലായി സൂക്ഷിയ്ക്കുക</description>
+    <description xml:lang="mr">मजकूर फाइल म्हणून साठवा</description>
+    <description xml:lang="nl">Opslaan als tekstbestand</description>
+    <description xml:lang="or">ପାଠ୍ୟ ଫାଇଲ ଭାବରେ ସଂରକ୍ଷଣ କରନ୍ତୁ</description>
+    <description xml:lang="pa">ਟੈਕਸਟ ਫਾਇਲ ਵਾਂਗ ਸੰਭਾਲੋ</description>
+    <description xml:lang="pl">Zapisz jako plik tekstowy</description>
+    <description xml:lang="pt">Gravar como ficheiro de texto</description>
+    <description xml:lang="pt_BR">Salvar como arquivo de texto</description>
+    <description xml:lang="ru">Сохранить в текстовый файл</description>
+    <description xml:lang="sk">Uložiť ako textový súbor</description>
+    <description xml:lang="ta">உரை கோப்பாக சேமிக்கவும்</description>
+    <description xml:lang="te">పాఠ ఫైలువలె దాయండి</description>
+    <description xml:lang="uk">Зберегти як текстовий файл</description>
+    <description xml:lang="zh_CN">保存为文本文件</description>
+    <description xml:lang="zh_TW">儲存成文字檔</description>
+
+    <requires-items/>
+    <exclude-items-by-default>count,event_log,reported_to</exclude-items-by-default>
+    <exclude-items-always>coredump,vmcore</exclude-items-always>
+    <exclude-binary-items>yes</exclude-binary-items>
+    <include-items-by-default/>
+    <minimal-rating>0</minimal-rating>
+    <gui-review-elements>yes</gui-review-elements>
+
+    <options>
+        <option type="text" name="Logger_Log_File">
+            <label>Log File</label>
+            <label xml:lang="ar">ملف سجلّ</label>
+            <label xml:lang="as">লগ নথিপত্ৰ</label>
+            <label xml:lang="bg">Журнален файл</label>
+            <label xml:lang="bn_IN">লগ ফাইল</label>
+            <label xml:lang="ca">Fitxer de registre</label>
+            <label xml:lang="cs">Protokolovací soubor</label>
+            <label xml:lang="de">Protokolldatei</label>
+            <label xml:lang="en_GB">Log File</label>
+            <label xml:lang="es">Archivo de registro</label>
+            <label xml:lang="fi">Lokitiedosto</label>
+            <label xml:lang="fr">Journaliser le fichier</label>
+            <label xml:lang="gu">લૉગ ફાઇલ</label>
+            <label xml:lang="hi">लॉग फ़ाइल</label>
+            <label xml:lang="hu">Logfájl</label>
+            <label xml:lang="it">File di log</label>
+            <label xml:lang="ja">ログファイル</label>
+            <label xml:lang="kn">ದಾಖಲೆ ಕಡತ </label>
+            <label xml:lang="ko">로그 파일 </label>
+            <label xml:lang="ml">ലോഗ് ഫയല്‍</label>
+            <label xml:lang="mr">लॉग फाइल</label>
+            <label xml:lang="nb">Loggfil</label>
+            <label xml:lang="nl">Logbestand</label>
+            <label xml:lang="or">ଲଗ ଫାଇଲ</label>
+            <label xml:lang="pa">ਲਾਗ ਫਾਇਲ</label>
+            <label xml:lang="pl">Plik dziennika</label>
+            <label xml:lang="pt">Ficheiro de Registo</label>
+            <label xml:lang="pt_BR">Arquivo de log</label>
+            <label xml:lang="ru">Журнал</label>
+            <label xml:lang="sk">Log Súbor</label>
+            <label xml:lang="sv">Logg_fil</label>
+            <label xml:lang="ta">பதிவுக் கோப்பு</label>
+            <label xml:lang="te">లాగ్ ఫైల్</label>
+            <label xml:lang="tr">Günlük dosyası</label>
+            <label xml:lang="uk">Файл журналу</label>
+            <label xml:lang="zh_CN">日志文件</label>
+            <label xml:lang="zh_TW">記錄檔</label>
+            <allow-empty>no</allow-empty>
+            <description>Name of the logfile</description>
+            <description xml:lang="as">লগনথিপত্ৰৰ নাম</description>
+            <description xml:lang="bg">Име на журналния файл</description>
+            <description xml:lang="bn_IN">logfile-র নাম</description>
+            <description xml:lang="ca">Nom del fitxer de registre</description>
+            <description xml:lang="cs">Jméno protokolovacího souboru</description>
+            <description xml:lang="de">Name der Protokolldatei</description>
+            <description xml:lang="en_GB">Name of the logfile</description>
+            <description xml:lang="es">Nombre del archivo de registro </description>
+            <description xml:lang="fi">Lokitiedoston nimi</description>
+            <description xml:lang="fr">Nom du fichier de journalisation</description>
+            <description xml:lang="gu">લૉગફાઇલનું નામ</description>
+            <description xml:lang="hi">लॉगफ़ाइल का नाम</description>
+            <description xml:lang="hu">Logfájl neve</description>
+            <description xml:lang="it">Nome del file di log</description>
+            <description xml:lang="ja">logfile の名前</description>
+            <description xml:lang="kn">ದಾಖಲೆ ಕಡತದ ಹೆಸರು</description>
+            <description xml:lang="ko">로그 파일 이름 </description>
+            <description xml:lang="ml">logfile-ന്റെ പേരു്</description>
+            <description xml:lang="mr">लॉगफाइलचे नाव</description>
+            <description xml:lang="nb">Navn på loggfil</description>
+            <description xml:lang="nl">Naam van het logbestand</description>
+            <description xml:lang="or">ଲଗ ଫାଇଲର ନାମ</description>
+            <description xml:lang="pa">ਲਾਗਫਾਇਲ ਦਾ ਨਾਂ</description>
+            <description xml:lang="pl">Nazwa pliku dziennika</description>
+            <description xml:lang="pt">Nome do ficheiro de registo</description>
+            <description xml:lang="pt_BR">Nome do arquivo de log</description>
+            <description xml:lang="ru">Имя файла журнала</description>
+            <description xml:lang="sk">Názov log súboru</description>
+            <description xml:lang="sv">Namn på loggfilen</description>
+            <description xml:lang="ta">பதிவுக்கோப்பின் பெயர்</description>
+            <description xml:lang="te">లాగ్‌ఫైల్ పేరు</description>
+            <description xml:lang="tr">Günlük dosyasının adı</description>
+            <description xml:lang="uk">Назва файла журналу</description>
+            <description xml:lang="zh_CN">日志文件名称</description>
+            <description xml:lang="zh_TW">記錄檔的名稱</description>
+        </option>
+        <option type="bool" name="Logger_Append">
+            <label>Append</label>
+            <label xml:lang="ar">الحق</label>
+            <label xml:lang="as">সংযোজন কৰক</label>
+            <label xml:lang="bg">Добави</label>
+            <label xml:lang="bn_IN">সংযোজন করা হবে</label>
+            <label xml:lang="ca">Afegeix</label>
+            <label xml:lang="cs">Připojit</label>
+            <label xml:lang="de">Anhängen</label>
+            <label xml:lang="en_GB">Append</label>
+            <label xml:lang="es">Anexe</label>
+            <label xml:lang="eu">Gehitu</label>
+            <label xml:lang="fi">Lisää</label>
+            <label xml:lang="fr">Ajouter</label>
+            <label xml:lang="gu">ઉમેરો</label>
+            <label xml:lang="hi">संलग्न करें</label>
+            <label xml:lang="hu">Melléklet</label>
+            <label xml:lang="it">Aggiungi</label>
+            <label xml:lang="ja">追加</label>
+            <label xml:lang="kn">ಸೇರಿಸಿ</label>
+            <label xml:lang="ko">추가 </label>
+            <label xml:lang="ml">കൂട്ടിച്ചേര്‍ക്കുക</label>
+            <label xml:lang="mr">समाविष्ट करा</label>
+            <label xml:lang="nb">Legg til</label>
+            <label xml:lang="nl">Toevoegen</label>
+            <label xml:lang="or">ଯୋଡ଼ନ୍ତୁ</label>
+            <label xml:lang="pa">ਸ਼ਾਮਿਲ ਕਰੋ</label>
+            <label xml:lang="pl">Dołącz</label>
+            <label xml:lang="pt">Adicionar</label>
+            <label xml:lang="pt_BR">Anexar</label>
+            <label xml:lang="ru">Добавить</label>
+            <label xml:lang="sk">Pridať</label>
+            <label xml:lang="sv">Lägg till</label>
+            <label xml:lang="ta">சேர்த்தல்</label>
+            <label xml:lang="te">చేర్చు</label>
+            <label xml:lang="tr">Ekle</label>
+            <label xml:lang="uk">Дописати</label>
+            <label xml:lang="zh_CN">附加</label>
+            <label xml:lang="zh_TW">附加</label>
+            <description>Append new reports or overwrite the old one.</description>
+            <description xml:lang="as">নতুন সংবাদসমূহ সংযোজন কৰে অথবা পুৰনিটো অভাৰৰাইট কৰে।</description>
+            <description xml:lang="bg">Добавяне на нови доклади или заместване на стар доклад.</description>
+            <description xml:lang="bn_IN">নতুন রিপোর্ট সংযোজন করুন অথবা পুরোনো রিপোর্ট মুছে লেখা হবে।</description>
+            <description xml:lang="ca">Afegeix nous informes o sobreescriu l'antic.</description>
+            <description xml:lang="cs">Připojit nové hlášení nebo přepsat stará.</description>
+            <description xml:lang="de">Neue Berichte anhängen oder alten Bericht überschreiben</description>
+            <description xml:lang="en_GB">Append new reports or overwrite the old one.</description>
+            <description xml:lang="es">Anexe los nuevos informes o sobrescriba los anteriores</description>
+            <description xml:lang="fi">Lisää uudet raportit vanhaan tai kirjoita vanhan yli.</description>
+            <description xml:lang="fr">Ajouter de nouveaux rapports ou substituer les anciens.</description>
+            <description xml:lang="gu">નવાં અહેવાલોને ઉમેરો અથવા જૂનાં એક ઉપર લખો.</description>
+            <description xml:lang="hi">पुराने को अधिलिखित करने के लिए नये रिपोर्ट जोड़ें</description>
+            <description xml:lang="hu">Készítsen új jelentéseket vagy írja felül a régieket.</description>
+            <description xml:lang="it">Aggiungi nuovi riporti o sovrascrivi quello vecchio</description>
+            <description xml:lang="ja">新しい報告を追加する、 または古い報告を上書きします。</description>
+            <description xml:lang="kn">ಹೊಸ ವರದಿಗಳನ್ನು ಸೇರಿಸು ಅಥವ ಹಳೆಯದನ್ನು ತಿದ್ದಿಬರೆ.</description>
+            <description xml:lang="ko">새 보고서를 추가하거나 기존 보고서를 덮어쓰기합니다 </description>
+            <description xml:lang="ml">പുതിയ റിപ്പോര്‍ട്ടുകള്‍ കൂട്ടിച്ചേര്‍ക്കുക അല്ലെങ്കില്‍ പഴയതു് തിരുത്തി എഴുതുക.</description>
+            <description xml:lang="mr">नवीन रिपोर्टस् समाविष्ट करा किंवा जुणे खोडून पुन्हा लिहा.</description>
+            <description xml:lang="nl">Voeg nieuw rapport toe of overschrijf de vorige.</description>
+            <description xml:lang="or">ନୂତନ ବିବରଣୀ ଯୋଡ଼ନ୍ତୁ ଅଥବା ପୁରୁଣାରେ ନବଲିଖନ କରନ୍ତୁ</description>
+            <description xml:lang="pa">ਨਵੀਂ ਰਿਪੋਰਟ ਸ਼ਾਮਿਲ ਕਰੋ ਜਾਂ ਪੁਰਾਣੀ ਮੁੜ ਤੋਂ ਲਿਖੋ।</description>
+            <description xml:lang="pl">Dołącza nowe zgłoszenia lub zastępuje poprzednie.</description>
+            <description xml:lang="pt">Adicionar novos relatórios ou substituir o velho.</description>
+            <description xml:lang="pt_BR">Anexar novos relatórios ou sobrescrever o antigo.</description>
+            <description xml:lang="ru">Добавить новый отчёт или перезаписать старый.</description>
+            <description xml:lang="sk">Pridať nový report alebo prepísať starší</description>
+            <description xml:lang="sv">Lägg till nya rapporter eller skriv över den gamla.</description>
+            <description xml:lang="ta">புதிய அறிக்கைகளை சேர்த்து அல்லது பழைய ஒன்றை மேலெழுதவும்.</description>
+            <description xml:lang="te">కొత్త నివేదికలను చేర్చు లేదా పాతవాటిని పునఃస్థాపించు</description>
+            <description xml:lang="tr">Yeni raporları ekle yada eskisinin üzerine yaz.</description>
+            <description xml:lang="uk">Дописати нові звіти або перезаписати старий звіт.</description>
+            <description xml:lang="zh_CN">附加新报告或者覆盖旧报告。</description>
+            <description xml:lang="zh_TW">附加新報告或覆寫舊的報告。</description>
+            <default-value>yes</default-value>
+        </option>
+    </options>
+</event>

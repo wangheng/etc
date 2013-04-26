@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Delovna skupina SMB">
+						<longdesc>Delovna skupina ali domena omrežja Windows, katere del je uporabnik. Za uveljavitev nastavitev nove delovne skupine, se bo morda treba ponovno prijaviti.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Dodatne domene za iskanje storitev DNS-SD">
+						<longdesc>Z vejico ločen seznam domen DNS-SD, ki naj bodo vidne na mestu &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kako naj se prikaže krajevna storitev DNS-SD">
+						<longdesc>Mogoče vrednosti so &quot;združeno&quot;, &quot;ločeno&quot; in &quot;onemogočeno&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Naslov URL za samodejno nastavitev posredovalnega strežnika">
+						<longdesc>Naslov URL z vrednostmi nastavitev posredovalnega strežnika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Vrata posredovalnega strežnika SOCKS">
+						<longdesc>Vrata računalnika, ki jih določa nastavitev &quot;/system/proxy/socks_host&quot; posredovalnega strežnika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Ime gostitelja posredovalnega strežnika SOCKS">
+						<longdesc>Ime računalnika posredovalnega strežnika SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Vrata FTP posredovalnega strežnika">
+						<longdesc>Vrata računalnika, ki jih določa nastavitev&quot;/system/proxy/ftp_host&quot; posredovalnega strežnika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Ime gostitelja FTP posredovalnega strežnika">
+						<longdesc>Ime računalnika FTP posredovalnega strežnika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Vrata varnega posredovalnega strežnika HTTP">
+						<longdesc>Vrata računalnika, ki jih določa nastavitev &quot;/system/proxy/secure_host&quot; posredovalnega strežnika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Ime gostitelja varnega posredovalnega strežnika HTTP">
+						<longdesc>Ime računalnika varnega posredovalnega strežnika HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Način nastavitev posredovalnega strežnika">
+						<longdesc>Izberite način nastavitev posredovalnega strežnika. Podprte vrednosti so &quot;brez&quot;, &quot;ročno&quot;, &quot;samodejno&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Gostitelji brez posredniškega strežnika">
+						<longdesc>Ključ vsebuje seznam gostiteljev, s katerimi se vzpostavi neposredna povezava in preko posredovalnega strežnika (če je ta dejaven). Vrednosti so lahko imena gostiteljev, domene (z nadomestnimi znaki kot je *.foo.com), naslovi IP gostitelja (tako IPv4 kot tudi IPv6) in omrežni naslovi z omrežno masko (npr. 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Geslo posredniškega strežnika HTTP">
+						<longdesc>Geslo za overitev posredovalnega strežnika HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Uporabniško ime HTTP posredniškega strežnika">
+						<longdesc>Uporabniško ime za overitev na HTTP posredovalnem strežniku.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Overi povezave posredovalnega strežnika">
+						<longdesc>Možnost določa zahtevo za overitev povezave na posredovalni strežnik. Spustno polje za uporabniško ime in geslo določata &quot;/system/http_proxy/authentication_user&quot; in &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Vrata posredovalnega strežnika HTTP">
+						<longdesc>Vrata računalnika, ki jih določa nastavitev &quot;/system/http_proxy/host&quot; posredovalnega strežnika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Ime gostitelja posredovalnega strežnika HTTP">
+						<longdesc>Ime računalnika posredovalnega strežnika HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Uporabi HTTP posredovalni strežnik">
+						<longdesc>Omogoči nastavitve posredovalnega strežnika za dostop do HTTP preko spleta.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Ali naj bo omogočeno zaklepanje tipkovnice">
+							<longdesc>Ali naj bo omogočeno zaklepanje tipkovnice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Dovoli odlašanje premorov">
+							<longdesc>Ali je lahko zaslon za premor tipkanja preložen</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Čas preloma">
+							<longdesc>Število minut kolikor naj traja premor</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Čas tipkanja">
+							<longdesc>Čas tipkanja v minutah, preden se začne premor</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Onemogoči vse zunanje izdelovalce pomanjšanih sličic">
+							<longdesc>Izbrana možnost omogoča izklop vseh zunanjih izdelovalcev pomanjšanih sličic, neodvisno od tega ali so omogočeni ali ne.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Največja velikost predpomnilnika sličic v megabajtih. Vrednost -1 onemogoči čiščenje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Največja starost sličic v predpomnilniku v dnevih. Vrednost -1 onemogoči čiščenje.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Uporabi obvestilne zvoke">
+							<longdesc>Ali naj se ob uporabniških dogodkih predvajajo zvoki.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Ime zvočne teme">
+							<longdesc>Zvočna tema XDG za zvoke dogodkov.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Zvoki za dogodke">
+							<longdesc>Ali naj se ob uporabniških dogodkih predvajajo zvoki.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Omogoči ESD">
+							<longdesc>Omogoči zagon strežnika za zvok.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Privzete mešalne sledi">
+							<longdesc>Privzete mešalne sledi za multimedijske tipkovne povezave.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Privzeta mešalna naprava">
+							<longdesc>Privzete mešalne naprave za multimedijske tipkovne povezave.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Velikost kazalca">
+								<longdesc>Velikost kazalca, ki jo določa tema_kazalca.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema kazalca">
+								<longdesc>Ime teme kazalca. Uporabno le s strežniki X, ki podpirajo Xcursor, npr. XFree86 4.3 in novejši.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Pisava kazalca">
+								<longdesc>Ime pisave kazalca. Če ni nastavljeno je uporabljena privzeta pisava. Ta vrednost se posreduje strežniku X le ob zagonu vsake seje, zato njeno spreminjanje med sejo ne bo imelo vpliva dokler se ne prijavite znova.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Poišči kazalnik">
+								<longdesc>Poudari trenutno mesto kazalca, kadar je pritisnjena in spuščena tipka Control.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Čas dvojnega klika">
+								<longdesc>Dolžina dvojnega klika.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Prag vlečenja">
+								<longdesc>Razdalja preden se začne poteg miške.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Prag premikanja">
+								<longdesc>Razdalja v točkah, kolikor se mora premakniti kazalec, preden se vključi premikanje miške. Privzeta vrednost je -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Enojni klik">
+								<longdesc>Pospeševalnik za premikanje miške. Privzeta vrednost je -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Enojni klik">
+								<longdesc>Enojni klik za odpiranje ikon.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Usmerjenost gumbov miške">
+								<longdesc>Zamenjaj levi in desni gumb miške za levičarsko miško.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Zapomni si stanje NumLock">
+								<longdesc>Izbrana možnost omogoča, da si bo GNOME zapomni stanje NumLock med sejami.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Ime datoteke prikrojenega zvonca tipkovnice">
+								<longdesc>Ime datoteke zvonca za predvajanje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>mogoče vrednosti so &quot;on&quot;, &quot;off&quot; in &quot;custom&quot;</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Onemogoči upravljavce URL in vrst MIME.">
+							<longdesc>Prepreči zagona kateregakoli programa, ki upravlja naslove URL ali vrste MIME.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Onemogoči zaklepanje zaslona">
+							<longdesc>Prepreči uporabniku zaklepanje zaslona.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Onemogoči zamenjave uporabnikov">
+							<longdesc>Prepreči uporabniku preklop na drug račun, ko je seja še dejavna.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Onemogoči nastavitev tiskanja">
+							<longdesc>Uporabniku prepreči spreminjanje nastavitev tiskanja. Tako mu bo na primer onemogočen dostop do pogovornega okna &quot;Nastavitve tiskanja&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Onemogoči tiskanje">
+							<longdesc>Uporabniku prepreči tiskanje. Tako mu bo na primer onemogočen dostop do pogovornega okna &quot;Natisni&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Onemogoči shranjevanje na disk">
+							<longdesc>Uporabniku prepreči shranjevanje datotek na disk. Tako mu bo na primer onemogočen dostop do pogovornega okna &quot;Shrani kot&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Onemogoči ukazno vrstico">
+							<longdesc>Uporabniku prepreči dostop do terminala ali izvajanje določenih ukazov. Tako mu bo na primer onemogočen dostop do pogovornega okna &quot;Zaženi program&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Pokaži meni &apos;Nadzorni znak Unicode&apos;">
+							<longdesc>Ali naj vsebinski meni vnosov in besedila omogoči vstavljanje nadzornih znakov.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Pokaži meni &apos;Vhodni načini&apos;">
+							<longdesc>Ali naj vsebinski meni vnosov in pogledi besedila omogočajo možnost spreminjanja vnosne metode.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Pospeševalnik menijske vrstice">
+							<longdesc>Bližnjica tipk za odpiranje menijske vrstice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Modul za GtkFileChooser">
+							<longdesc>Modul kot model datotečnega sistema za gradnik GtkFileChooser. Mogoče vrednosti so &quot;gio&quot;, &quot;gnome-vfs&quot; in &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Vrstica stanja na desni">
+							<longdesc>Ali naj se prikaže kazalnik vrstice stanja na desni.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Uporabi pisavo po meri">
+							<longdesc>Ali naj se uporabi prikrojena pisava v programih gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Monospace pisava">
+							<longdesc>Ime monospace pisave (stalne širine) za uporabo v terminalu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Pisava dokumenta">
+							<longdesc>Ime privzete pisave za branje dokumentov.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Enota GTK IM">
+							<longdesc>Ime vhodne metode, ki jo uporablja GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Slog stanja GTK IM">
+							<longdesc>Ime vhodne metode GTK+ sloga stanja, uporabljeno s strani gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Predvnosni slog GTK IM">
+							<longdesc>Ime vhodne metode GTK+ predvpisnega sloga, uporabljeno s strani gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Privzeta pisava">
+							<longdesc>Ime privzete pisave, uporabljeno s strani gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Ime privzete teme uporabljene s strani gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Ime privzete teme uporabljene s strani gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Ikonska tema">
+							<longdesc>Tema ikon, ki naj se uporabi za pult, nautilusa, itd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Čas utripanja kazalca">
+							<longdesc>Dolžina ponavljanja utripanja kazalca, v milisekundah.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Utripanje kazalca">
+							<longdesc>Ali naj kazalec utripa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Velikost ikon orodne vrstice">
+							<longdesc>Velikost ikon v orodni vrstici, vrednosti &quot;majhne&quot; ali &quot;velike&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Odstranljive orodne vrstice">
+							<longdesc>Ali lahko uporabnik odpne orodne vrstice in jih premika okoli.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Menijsko vrstico je mogoče odstraniti">
+							<longdesc>Ali lahko uporabnik odpne menijske vrstice in jih premika okoli.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Gumbi imajo ikone">
+							<longdesc>Ali naj bo na gumbu ob besedilu gumba še ikona.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Meniji imajo ikone">
+							<longdesc>Ali naj meniji kažejo ikono ob predmetu menija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Slog orodne vrstice">
+							<longdesc>Slog orodne vrstice. Mogoče vrednosti so &quot;both&quot;, &quot;both_horiz&quot;, &quot;icons&quot; in &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Lahko spremeni pospeševalnike">
+							<longdesc>Ali lahko uporabnik dejavno vpiše nov pospeševalnik, ko se nahaja nad dejavnim predmetom menija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Meniji imajo vrstico za odcep">
+							<longdesc>Ali naj imajo meniji gumb za odpenjanje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Omogoči animacije">
+							<longdesc>Ali naj bodo prikazane animacije. Opomba: to je splošni ključ, saj spremeni vedenje upravljalnika oken, pulta, itd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Omogoči dostopnost">
+							<longdesc>Ali naj imajo programi podporo za dostopnost.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema ikon datotek">
+							<longdesc>Tema za prikaz ikon datotek.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Vrsta senčenja barv">
+							<longdesc>Kako naj se senči barva ozadja. Mogoče vrednosti so &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, in &quot;solid&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Drugotna barva">
+							<longdesc>Desna ali spodnja barva za risanje prelivov, ni uporabljena pri barvi polnjenja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Prvotna barva">
+							<longdesc>Leva ali zgornja barva ob risanju prelivov, ali barva polnjenja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Prosojnost slike">
+							<longdesc>Prosojnost s katero naj se nariše slika ozadja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Ime slike">
+							<longdesc>Datoteka, ki naj se uporabi za ozadje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Možnosti slike">
+							<longdesc>Določa kako naj se slika nastavljena kot slika ozadja izriše. Mogoče vrednosti so &quot;none&quot; (brez), &quot;wallpaper&quot; (tapeta), &quot;centered&quot; (sredinjeno), &quot;scaled&quot; (umerjeno), &quot;stretched&quot; (raztegnjeno), &quot;zoom&quot; (približano) in &quot;spanned&quot; (povezano).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Izriši ozadje namizja">
+							<longdesc>Naj Gnome izriše ozadje namizja.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Zagon Programov pomožnih tehnologij">
+								<longdesc>Seznam programov pomožnih tehnologij, ki naj se zaženejo ob prijavi v namizje GNOME.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Zapiskaj, ko je pritisnjen spremenilnik.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Onemogoči, če sta dve tipki pritisnjeni hkrati.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="najmanjši razmik (v milisekundah)">
+								<longdesc>Ne sprejmi tipke kot pritisnjene, dokler ni pritisnjena @delay milisekund.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="začetni zamik (v milisekundah)">
+								<longdesc>Koliko milisekund naj se počaka preden začnejo delovati tipke premikanja miške.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="kako dolgo je pospeševanje (v milisekundah)">
+								<longdesc>Koliko milisekund naj vzame za prehod iz 0 na najvišjo hitrost.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="točk na sekundo">
+								<longdesc>Koliko točk na sekundo se premika pri najvišji hitrosti.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="najmanjši razmik (v milisekundah)">
+								<longdesc>Prezri večkratne pritiske iste tipke znotraj @delay milisekund.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Imena delovnih površin (opuščeno)">
+								<longdesc>Seznam imen delovnih površin prvega upravljalnika oken. Ta ključ je opuščen od različice GNOME 2.12 naprej.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Število delovnih površin (opuščeno)">
+								<longdesc>Število delovnih površin, ki naj jih uporabi upravljalnik oken. Ta ključ je opuščen od GNOME 2.12 naprej.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Uporabnikov upravljalnik oken (opuščeno)">
+								<longdesc>Upravljalnik oken najprej za preizkus. Ta ključ je opuščen od GNOME 2.12 naprej.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Povratni upravljalnik oken (opuščeno)">
+								<longdesc>Povratni upravljalnik oken, če uporabnikovega upravljalnika ni mogoče najti. Ta ključ je opuščen od GNOME 2.12 naprej.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Naloge zahtevajo terminal">
+								<longdesc>Ali privzet program za naloge za zagon potrebuje terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Privzete naloge">
+								<longdesc>Privzeti program nalog</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Koledar potrebuje terminal">
+								<longdesc>Ali privzet koledarski program za zagon potrebuje terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Privzeti koledar">
+								<longdesc>Privzet koledarski program</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Brskalnik razume oddaljeno">
+								<longdesc>Ali privzet brskalnik razume netscape oddaljeno upravljanje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Brskalnik potrebuje terminal">
+								<longdesc>Ali privzet brskalnik za zagon potrebuje terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Privzet brskalnik">
+								<longdesc>Privzet brskalnik za vse URL naslove.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Zagon prednostnih programov pomožnih tehnologij">
+									<longdesc>Zagon GNOME pomožne tehnologije predočenja med prijavo.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Prednostni program pomožnih tehnologij predočenja">
+									<longdesc>Prednostni program pomožnih tehnologij predočenja za prijavo, meni in ukazno vrstico.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Zagon želenih Mobility programov pomožnih tehnologij">
+									<longdesc>Zagon GNOME Mobility pomožne tehnologije med prijavo.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Zagon Mobility programov pomožnih tehnologij">
+									<longdesc>Prednostni program pomožnih Mobility tehnologij za prijavo, meni ali ukazno vrstico.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Privzet pregledovalnik komponent">
+								<longdesc>Program za pregledovanje datotek, ki za ogled zahtevajo poseben programnik. Parameter %s bo zamenjan z naslovom URI datoteke, parameter %c pa z IID programnika.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumenti za exec">
+								<longdesc>Argument, ki naj se uporabi za izvedbo programov v terminalu, določen kot ključ &apos;exec&apos;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Program terminala">
+								<longdesc>Terminalski program, ki naj se zažene, kadar ga drugi programi zahtevajo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;h323&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;h323&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;h323&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;callto&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;callto&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;callto&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;aim&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;aim&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;aim&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;mailto&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;mailto&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;mailto&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;https&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;https&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;https&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;http&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;http&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;http&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;man&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;man&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;man&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;info&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;info&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;info&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;ghelp&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;ghelp&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;ghelp&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Zaženi ukaz v terminalu">
+								<longdesc>Ali naj se ukaz za upravljanje z naslovi URL te vrste zažene v terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ročnik naslovov URL &quot;trash&quot;">
+								<longdesc>Ukaz za upravljanje z naslovi &quot;trash&quot;, ko je možnost omogočena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ali naj naveden ukaz upravlja z naslovi URL &quot;trash&quot;">
+								<longdesc>Ali naj ukaz naveden v ključu &quot;command&quot; upravlja z naslovi URL &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Bližnjica za nastavitev običajne velikosti pisave">
+							<longdesc>Bližnjica za nastavitev običajne velikosti pisave, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+.V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Bližnjica za zmanjšanje pisave">
+							<longdesc>Bližnjica za zmanjševanje pisave, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Bližnjica za povečanje pisave">
+							<longdesc>Bližnjica za povečevanje pisave, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Bližnjica za zagon pomoči">
+							<longdesc>Bližnjica za zagon pomoči, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+.V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 12">
+							<longdesc>Bližnjica za preklop na zavihek 12, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 11">
+							<longdesc>Bližnjica za preklop na zavihek 11, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 10">
+							<longdesc>Bližnjica za preklop na zavihek 10, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 9">
+							<longdesc>Bližnjica za preklop na zavihek 9, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 8">
+							<longdesc>Bližnjica za preklop na zavihek 8, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 7">
+							<longdesc>Bližnjica za preklop na zavihek 7, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 6">
+							<longdesc>Bližnjica za preklop na zavihek 6, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 5">
+							<longdesc>Bližnjica za preklop na zavihek 5, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 4">
+							<longdesc>Bližnjica za preklop na zavihek 4, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 3">
+							<longdesc>Bližnjica za preklop na zavihek 3, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 2">
+							<longdesc>Bližnjica za preklop na zavihek 2, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Bližnjica za preklop na zavihek 1">
+							<longdesc>Bližnjica za preklop na zavihek 1, določena v obliki kot je zapisano v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Bližnjica za odcepitev trenutnega zavihka.">
+							<longdesc>Bližnjica za odcepitev trenutnega zavihka, določena kot niz v obliki, kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Bližnjica za premik trenutnega zavihka desno.">
+							<longdesc>Bližnjica za premik trenutnega zavihka v desno, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Bližnjica za premik trenutnega zavihka levo.">
+							<longdesc>Bližnjica za premik trenutnega zavihka v levo, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Bližnjica za preklop na naslednji zavihek">
+							<longdesc>Bližnjica za preklop na naslednji zavihek, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Bližnjica za preklop na predhodni zavihek">
+							<longdesc>Bližnjica za preklop na predhodni zavihek, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Bližnjica za ponastavitev in počiščenje terminala">
+							<longdesc>Bližnjica za preklop na ponovno nastavitev in očiščenje terminala, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Bližnjica za ponastavitev terminala">
+							<longdesc>Bližnjica za ponovno nastavitev terminala, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Bližnjica za nastavitev naslova terminala">
+							<longdesc>Bližnjica za nastavitev naslova terminala, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Bližnjica za preklop vidnosti menijske vrstice">
+							<longdesc>Bližnjica za preklop vidnosti menijske vrstice, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Bližnjica za preklop na celozaslonski način">
+							<longdesc>Bližnjica za preklop na celozaslonski način, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Bližnjica za prilepljenje besedila">
+							<longdesc>Bližnjica za prilepljenje vsebine odložišča v terminal, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+.V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Bližnjica za kopiranje besedila">
+							<longdesc>Bližnjica za kopiranje izbranega besedila na odložišče, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Bližnjica za zapiranja okna">
+							<longdesc>Bližnjica za zapiranje okna, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+.V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Bližnjica za zapiranja zavihka">
+							<longdesc>Bližnjica za zapiranje zavihka, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Bližnjica za shranjevanje vsebine zavihka v datoteko">
+							<longdesc>Bližnjica za shranjevanje vsebine zavihka v datoteko, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Bližnjica za ustvarjanje novega profila">
+							<longdesc>Bližnjica za prikaz pogovornega okna za ustvarjanje profilov, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+. V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Bližnjica za odpiranje novega okna">
+							<longdesc>Bližnjica za odpiranje novega okna, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+.V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Bližnjica za odpiranje novega zavihka">
+							<longdesc>Bližnjica za odpiranje novega zavihka, določena kot niz v enaki obliki kot je uporabljen v datotekah virov GTK+.V kolikor je določena vrednost &quot;onemogočeno&quot;, za to dejanje ne bo razpoložljive tipkovne bližnjice.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Privzet kodni nabor">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Ali naj se uporabi sistemska pisava">
+								<longdesc>Izbrana možnost omogoča, da bo terminal uporabil običajno pisavo namizja, če je ta eno-presledna (sicer bo uporabljena najbolj podobna najdena pisava).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Ali naj se za gradnik terminala uporabijo barve sistemske teme">
+								<longdesc>Izbrana možnost omogoča, da bo za vpisovanje besedila uporabljena barvna shema teme sistema, namesto tistih barv, ki jih je določil uporabnik.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Delovanje tipke izbriši.">
+								<longdesc>Ukaz, ki naj ga ustvari tipka izbriši. Mogoče vrednosti so &quot;ascii-del&quot; za znak ASCII DEL, &quot;control-h&quot; za Control-H (oziroma znak ASCII BS), &quot;escape-sequence&quot; za ubežnico, ki običajno pomeni skok en znak nazaj ali izbris. Običajno je ustrezna izbira &quot;escape-sequence&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Delovanje tipke vračalke.">
+								<longdesc>Ukaz, ki naj ga ustvari tipka vračalka. Mogoče vrednosti so &quot;ascii-del&quot; za znak ASCII DEL, &quot;control-h&quot; za Control-H (oziroma znak ASCII BS), &quot;escape-sequence&quot; za ubežno zaporedje, ki običajno pomeni skok en znak nazaj ali izbris. Običajno je ustrezna izbira &quot;ascii-del&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Kako močno naj se zatemni barva ozadja?">
+								<longdesc>Vrednost med 0.0 in 1.0 določa zatemnitev slike ozadja. Število 0.0 pomeni brez, 1.0 pa popolno zatemnitev. V trenutni izvedbi je mogoče uporabiti le dve ravni zatemnitve, zato se nastavitev obnaša kot logična vrednost, kjer 0.0 pomeni brez zatemnitve.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Ali naj slika v ozadju drsi">
+								<longdesc>Izbrana možnost omogoča, da slika v ozadju drsi skupaj z besedilom; neizbrana možnost pa, da je slika negibna in besedilo drsi nad njo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Slika ozadja">
+								<longdesc>Ime datoteke slike v ozadju.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Vrsta ozadja">
+								<longdesc>Vrsta ozadja terminala. Lahko je &quot;polno&quot; za polno barvo, &quot;slika&quot; za sliko ali &quot;prosojno&quot; za pravo ali delno prosojnost.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Pisava">
+								<longdesc>Ime pisave Pango. Primera sta &quot;Sans 12&quot; ali &quot;Monospace Bold 14&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Paleta za programe terminala">
+								<longdesc>Terminal podpira paleto 16 barv, ki jo lahko uporabijo programi znotraj terminala. To je paleta v obliki seznama imen barv, ločenega s podpičji. Imena barv morajo biti v šestnajstiški obliki, na primer: &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ikona terminalnega okna">
+								<longdesc>Ikona zavihkov in oken s tem profilom.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Uporabljen ukaz po meri namesto lupine">
+								<longdesc>Zaženi ta ukaz namesto lupine, kadar je izbrana možnost uporabe ukaza po meri.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Videz kazalke">
+								<longdesc>Ustrezne vrednosti so &quot;pravokotnik&quot; za prikaz kazalke v obliki pravokotnika, &quot;navpičnica&quot; za kazalko v obliki navpične črte, ali pa &quot;podčrtaj&quot; za kazalko v obliki podčrtaja.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Ali naj kazalka utripa">
+								<longdesc>Mogoče vrednosti so &quot;sistem&quot; za uporabo splošnih nastavitev utripanja kazalke, ali pa &quot;vključeno&quot; oziroma &quot;izključeno&quot; za posebej določen način.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Ali naj se zažene ukaz po meri namesto običajne lupine">
+								<longdesc>Izbrana možnost omogoča, da bo uporabljena nastavitev custom_command namesto zaganjanja lupine.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Ali naj se ob zaganjanju ukaza terminala posodobijo zapisi prijave">
+								<longdesc>Izbrana možnost omogoča, da bosta prijavna zapisa utmp in wtmp posodobljena, ko se bo zagnal ukaz znotraj terminala.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Ali naj se v terminalu zažene ukaz kot prijavna lupina">
+								<longdesc>Izbrana možnost omogoča, da se bo ukaz znotraj terminala pognal kot prijavna lupina.(argv[0] bo imel pred sabo črtico.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Kaj narediti, ko ukaz podrejenega predmeta terminala konča z delom">
+								<longdesc>Mogoče vrednosti so &quot;close&quot; (zapri) za zapiranje terminala in &quot;restart&quot; (ponovni zagon) za vnovičen zagon ukaza.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Ali naj se ob novem izpisu v terminalu drsnik premakne na dno">
+								<longdesc>Izbrana možnost omogoča, da bo terminal ob vsakem novem izpisu zdrsel na dno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Ali naj se ob pritisku katerekoli tipke drsnik premakne na dno">
+								<longdesc>Izbrana možnost omogoča, da pritisk tipke povzroči prehod drsnika na dno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Ali naj se ohrani neomejeno število vrstic za prikaz z drsnikom">
+								<longdesc>Izbrana možnost določi, da se število vrstic terminala nikoli ne počisti. Zgodovina izpisa se shranjuje začasno, dokler je okno odprto, zato je mogoče, da sistemu zmanjka prostora.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Število vrstic, ki naj se ohranijo v zgodovini drsnika">
+								<longdesc>Število vrstic, ki se ohranijo za prikaz z drsnikom. V terminalu si lahko z drsnikom ogledate že izpisane vrstice; vrstice, ki so v zgodovini preveč nazaj pa se izgubijo. V kolikor je izbrana možnost, da je število vrstic drsnika neomejeno, je ta nastavitev prezrta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Položaj drsnika">
+								<longdesc>Kam postaviti drsnik terminala. Možnosti so &quot;left&quot; (levo), &quot;right&quot; (desno) in &quot;hidden&quot; (skrito).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Privzeto število vrstic">
+								<longdesc>Število vrstic v novo ustvarjenem oknu terminala. Možnosti ni mogoče uporabiti, če je uporabljena možnost privzete velikosti po meri.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Privzeto število stolpcev">
+								<longdesc>Število stolpcev v novo ustvarjenem oknu terminala. Možnosti ni mogoče uporabiti, če je uporabljena možnost privzete velikosti po meri.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Ali naj se za nova okna uporabi privzeta velikost terminalnega okna">
+								<longdesc>Izbrana možnost omogoča, da bo pri novo ustvarjenem terminalu privzeto uporabljena velikost po meri s podatki privzete velikosti stolpcev in vrstic.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Znaki, ki pripadajo besedam">
+								<longdesc>Kadar se izbira besedilo po besedi, se nize teh znakov obravnava kot dele besede. Lahko so podani intervali v obliki &quot;A-Z&quot;. Pomišljaj, ki ne predstavlja intervala, mora biti prvi podani znak.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Ali naj se utiša zvonec terminala">
+								<longdesc>Izbrana možnost omogoča, da ni piska, kadar programi pošljejo ubežno zaporedje zvoncu terminala.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Ali naj se dovoli krepko besedilo">
+								<longdesc>Izbrana možnost omogoča, da programi izpišejo krepko oblikovano besedilo</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Naziv terminala">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Kaj narediti z dinamičnim nazivom">
+								<longdesc>V primeru, da program nastavi naziv terminala (to je običajna nastavitev) lahko dinamično izbran naziv izbriše prej določeno nastavitev naziva, je postavljen pred njim, za njim, ali pa ga zamenja. Možne vrednosti so &quot;replace&quot; (zamenjaj), &quot;before&quot; (pred), &quot;after&quot; (za) in &quot;ignore&quot; (prezri).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Ali naj bo barva krepkega besedila enaka običajnemu besedilu">
+								<longdesc>Izbrana možnost omogoča, da bo krepko besedilo enake barve kot običajno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Privzeta barva krepkega besedila v terminalu">
+								<longdesc>Privzeta barva krepkega besedila terminala. Določena je lahko kot HTML, šestnajstiško ali pa z imenom (&quot;red&quot; za rdečo). Možnost je prezrta kadar barva krepkega besedila enaka običajnemu besedilu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Privzeta barva ozadja terminala">
+								<longdesc>Privzeta barva ozadja terminala. Določena je lahko kot HTML, šestnajstiško ali pa z imenom (&quot;red&quot; za rdečo).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Privzeta barva besedila v terminalu">
+								<longdesc>Privzeta barva pisave. Določena je lahko kot HTML, šestnajstiško ali pa z imenom (&quot;red&quot; za rdečo).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Ali naj bo v novih okni/zavihkih vidna menijska vrstica">
+								<longdesc>Izbrana možnost določa, da bo za okna in zavihke v tem profilu prikazana menijska vrstica.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Ime profila po meri">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Ali naj se ob zapiranju oken terminala zahteva potrditev">
+							<longdesc>Ali želite vprašanje za potrditev pri zapiranju okna terminala, ki ima odprt več kot en zavihek.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Seznam razpoložljivih znakovnih naborov">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Ali je običajna tipka za dostop do menijske vrstice omogočena">
+							<longdesc>Običajno je mogoče menijsko vrstico priklicati s tipko F10. Možnost je mogoče prilagoditi preko nastavitve gtkrc (gtk-menu-bar-accel = &quot;karkoli&quot;). S tem je običajna bližnjica menija onemogočena.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Ali ima menijska vrstica bližnjice tipk">
+							<longdesc>Ali naj bo menijska vrstica dosegljiva preko bližnjic tipk Alt+črka. To lahko povzroči nezdružljivost s programi, ki so zagnani znotraj terminala, zato lahko te bližnjice izklopite.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profil, ki naj bo uporabljen za nove terminale:">
+							<longdesc>Profil, ki naj bo uporabljen med odpiranjem novega okna ali zavihka. Profil mora biti naveden v seznamu profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Seznam profilov">
+							<longdesc>Seznam profilov poznanih gnome-terminalu. Seznam vsebuje nize za poimenovanje podrejenih map v mapi /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ali naj se pokaže povezava do programa Midnight Commander med predmeti menija">
+						<longdesc>Izbrana možnost omogoča, da se nameščeni program &quot;Midnight Commander&quot; pojavi v vsebinskem meniju kot &quot;Odpri s programom Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ali odpiranje terminala na namizju, odpre terminal v domači mapi uporabnika.">
+						<longdesc>Izbrana možnost omogoča, da se pri odpiranju terminala na namizju, ta odpre v domači mapi uporabnika. Druga možnost je, da se terminal odpre v mapi namizja. Nastavitev je mogoče izpustiti, kadar je mapa namizja enaka domači mapi.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

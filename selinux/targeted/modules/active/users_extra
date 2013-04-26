@@ -1,0 +1,4 @@
+user user_u prefix user;
+user staff_u prefix user;
+user sysadm_u prefix user;
+user root prefix user;

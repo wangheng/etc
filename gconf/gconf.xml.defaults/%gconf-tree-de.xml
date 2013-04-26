@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-Arbeitsgruppe">
+						<longdesc>Die Windows-Netzwerkarbeitsgruppe oder -domäne zu der der Benutzer gehört. Damit eine neue Arbeitsgruppe vollständig übernommen werden kann, muss sich der Benutzer ab- und wieder anmelden.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Zusätzlich nach DNS-SD-Diensten zu durchsuchende Domänen">
+						<longdesc>Durch Kommata unterteilte Liste der DNS-SD-Domänen, die am Netzwerk-Speicherort »network:///« angezeigt werden sollen.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Legt fest, wie der lokale DNS-SD-Dienst angezeigt werden soll">
+						<longdesc>Zulässige Werte: »merged«, »separate« sowie »disabled«.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL zur automatischen Proxy-Konfiguration">
+						<longdesc>URL, die Proxy-Konfigurationswerte liefert.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port am SOCKS-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/socks_host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Rechnername des Socks-Proxys">
+						<longdesc>Der Rechnername des Socks-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port am FTP-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/ftp_host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Rechnername des FTP-Proxys">
+						<longdesc>Der Rechnername des FTP-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port am sicheren HTTP-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/secure_host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Rechnername des sicheren HTTP-Proxys">
+						<longdesc>Der Rechnername des sicheren HTTP-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxy-Konfigurationsmodus">
+						<longdesc>Legt den Proxy-Konfigurationsmodus fest. Zulässige Werte: »none« (keiner), »manual« (manuell) sowie »auto« (automatisch).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Nicht-Proxy-Rechner">
+						<longdesc>Dieser Schlüssel enthält eine Liste der Rechner, mit denen eine Direktverbindung aufgebaut werden soll, also nicht via Proxy (falls aktiv). Als Werte sind Rechnernamen, Domänen (per Wildcard, z.B. *.foo.de), IP-Rechneradresse (sowohl IPv4 als auch IPv6) und Netzwerkadressen mit einer Netzmaske (der Form 192.168.0.0/24) zulässig.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Passwort am HTTP-Proxy">
+						<longdesc>Zur HTTP-Proxy-Legitimation zu übergebendes Passwort</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Benutzername am HTTP-Proxy">
+						<longdesc>Zur HTTP-Proxy-Legitimation zu übergebender Benutzername.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Verbindungen mit dem Proxy-Server legitimieren">
+						<longdesc>Legt fest, ob Verbindungen mit dem Proxy-Server legitimiert werden müssen. Hierbei werden die Werte von »/system/http_proxy/authentication_user« und »/system/http_proxy/authentication_password« als Benutzername bzw. Passwort verwendet.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port am HTTP-Proxy">
+						<longdesc>Der Proxy-Port am von »/system/http_proxy/host« festgelegten Rechner.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Rechnername des HTTP-Proxys">
+						<longdesc>Der Rechnername des HTTP-Proxys.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP-Proxy verwenden">
+						<longdesc>Sollen die Proxy-Einstellungen zum HTTP-Zugriff per Internet verwendet werden?</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Soll die Tastatur gesperrt werden?">
+							<longdesc>Soll die Tastatur gesperrt werden?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Verschieben von Pausen zulassen">
+							<longdesc>Soll der Benutzer die Eingabepause verschieben können?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Pausenzeit">
+							<longdesc>Die Anzahl der Minuten, die die Eingabepause dauern soll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Tippdauer">
+							<longdesc>Die Anzahl der Eingabeminuten bevor der Pausenmodus beginnt.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Alle externen Miniatur-Vorschaubilderzeuger deaktivieren">
+							<longdesc>Sollen alle externen Programme zum Erzeugen von Miniatur-Vorschaubildern deaktiviert werden, unabhängig davon, ob sie anderweitig aktiviert wurden?</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Maximale Größer des Zwischenspeichers für die Miniatur-Vorschaubilder. Der Wert -1 deaktiviert das Löschen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Maximales Alter der Miniatur-Vorschaubilder im Zwischenspeicher, in Tagen. Der Wert -1 deaktiviert das Löschen.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Klänge bei Eingaben">
+							<longdesc>Sollen bei Eingabe-Ereignissen Klänge abgespielt werden?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Name des Audio-Themas">
+							<longdesc>Für Ereignis-Klänge zu verwendenes Audio-Thema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Klänge bei Ereignissen">
+							<longdesc>Sollen bei Benutzer-Ereignissen Klänge abgespielt werden?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD aktivieren">
+							<longdesc>Soll der Sound-Server beim Start von GNOME gestartet werden?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Voreingestellte Mixer-Kanäle">
+							<longdesc>Die voreingestellten Mixer-Kanäle die beim Verwenden der Multimedia-Tasten benutzt wird.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Voreingestelltes Mixer-Gerät">
+							<longdesc>Das voreingestellte Mixer-Gerät das beim Verwenden der Multimedia-Tasten benutzt wird.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Zeigergröße">
+								<longdesc>Größe des Mauszeigers bezogen auf »cursor_theme«.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Zeiger-Thema">
+								<longdesc>Name des Mauszeiger-Themas. Wird nur von X-Servern benutzt, die Xcursor unterstützen, wie z.B. XFree86 4.3 und neuer.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Zeigerschrift">
+								<longdesc>Schriftname des Zeigers. Falls dieser Schlüssel nicht gesetzt wurde, wird die Vorgabeschrift verwendet. Dieser Wert wird dem X-Server lediglich am Anfang jeder Sitzung mitgeteilt, daher werden Änderungen an diesem Schlüssel erst ausgewertet, wenn Sie sich das nächste Mal anmelden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Mauszeiger finden">
+								<longdesc>Hebt die aktuelle Position des Mauszeigers hervor, wenn die Strg-Taste gedrückt und wieder losgelassen wird.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Doppelklick-Verzögerung">
+								<longdesc>Länge eines Doppelklicks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Ziehen Schwellwert">
+								<longdesc>Distanz bevor das Ziehen einsetzt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Bewegungsschwellwert">
+								<longdesc>Die Distanz in Pixel, die der Mauszeiger bewegt werden muss, bevor eine beschleunigte Mausbewegung aktiviert wird. Der Wert -1 ist die Systemvorgabe.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Einfacher Klick">
+								<longdesc>Beschleunigungsmultiplikator für Mausbewegungen. Der Wert »-1« ist die Systemvorgabe.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Einfacher Klick">
+								<longdesc>Einfacher Klick zum Öffnen von Symbolen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Ausrichtung der Mausknöpfe">
+								<longdesc>Vertauscht den rechten und den linken Mausknopf, so dass Linkshänder die Maus verwenden können.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Status von NumLock speichern">
+								<longdesc>Falls auf TRUE (wahr) gesetzt, speichert GNOME den Status der NumLock-LED zwischen zwei Sitzungen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Benutzerdefinierter Dateiname für Tastaturglocke">
+								<longdesc>Dateiname des wiederzugebenden Glockenklangs.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>Zulässige Werte: »on« (aktivieren), »off« (deaktivieren) sowie »custom« (benutzerdefiniert).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Verarbeitung von URL- und MIME-Typen verhinden">
+							<longdesc>Verhindert, dass Anwendungen zum Verarbeiten von URL- oder MIME-Typen gestartet werden.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="»Bildschirm sperren« deaktivieren">
+							<longdesc>Den Benutzer am Sperren seines Bildschirms hindern.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Benutzerwechsel deaktivieren">
+							<longdesc>Den Benutzer am Wechsel in andere Benutzerkonten hindern, solange seine Sitzung aktiv ist.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Druckeinstellungen deaktivieren">
+							<longdesc>Den Benutzer daran hindern, die Druckeinstellungen zu verändern. Dies verhindert beispielsweise den Zugriff auf den Druckeinstellungsdialog aller Anwendungen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Drucken deaktivieren">
+							<longdesc>Den Benutzer am Drucken hindern. Dies verhindert beispielsweise den Zugriff auf den Druckdialog aller Anwendungen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Speichern von Dateien auf Platte deaktivieren">
+							<longdesc>Den Benutzer am Speichern von Dateien auf Platte hindern. Dies verhindert beispielsweise den Zugriff auf den »Speichern unter«-Dialog aller Anwendungen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Befehlszeile deaktivieren">
+							<longdesc>Den Benutzer daran hindern, auf das Terminal zuzugreifen oder eine auszuführende Befehlszeile anzugeben. Dies verhindert beispielsweise den Zugriff auf den Panel-Dialog »Anwendung ausführen«.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Das Menü »Unicode-Steuerzeichen einfügen« anzeigen">
+							<longdesc>Legt fest, ob die Kontextmenüs der Eingabefelder und Textbereiche die Möglichkeit bieten sollen, Steuerzeichen einzugeben.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Das Menü »Eingabemethoden« anzeigen">
+							<longdesc>Legt fest, ob die Kontextmenüs der Eingabefelder und Textbereiche die Möglichkeit bieten sollen, die Eingabemethode zu ändern.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Menüleistetastenkürzel">
+							<longdesc>Tastenkürzel um Menüleisten zu öffnen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Modul für GtkFileChooser">
+							<longdesc>Als Dateisystemmodell für das GtkFileChooser-Widget zu verwendendes Modul. Zulässige Werte: »gio«, »gnome-vfs« sowie »gtk+«.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Statusleiste rechts">
+							<longdesc>Legt fest, ob Status-Anzeigen auf der rechten Seite angezeigt werden.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Benutzerdefinierte Schrift verwenden">
+							<longdesc>Soll eine benutzerdefinierte Schrift in GTK+-Anwendungen verwendet werden?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Dicktengleiche Schrift">
+							<longdesc>Name einer dicktengleichen Schrift, die z.B. im Terminal verwendet werden soll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Dokumentenschrift">
+							<longdesc>Name der Vorgabeschrift zum Anzeigen von Dokumenten.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK-Eingabemethoden-Modul">
+							<longdesc>Name des von GTK+ genutzten Eingabemethoden-Moduls.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Statusstil der GTK-Eingabemethoden">
+							<longdesc>Name des von GTK+ verwendeten Statusstils der Eingabemethode.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Stil der Vorbearbeitung der GTK-Eingabemethoden">
+							<longdesc>Name des von GTK+ verwendeten Preedit-Stils der Eingabemethode.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Vorgabeschrift">
+							<longdesc>Name der von GTK+ verwendeten Vorgabeschrift.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="GTK+-Thema">
+							<longdesc>Basisname des von GTK+ verwendeten Vorgabethemas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="GTK+-Thema">
+							<longdesc>Basisname des von GTK+ verwendeten Vorgabethemas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Symbol-Thema">
+							<longdesc>Für das Panel, Nautilus, usw. zu verwendendes Symbol-Thema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Cursor-Blinkfrequenz">
+							<longdesc>Die Cursor-Blinkfrequenz in Millisekunden.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Cursor-Blinken">
+							<longdesc>Legt fest, ob der Cursor blinken soll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Symbolgröße in Werkzeugleisten">
+							<longdesc>Symbolgröße in Werkzeugleisten, entweder »small-toolbar« (klein) oder »large-toolbar« (groß).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Werkzeugleisten abtrennbar">
+							<longdesc>Legt fest, ob der Benutzer Werkzeugleisten abnehmen und verschieben kann.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Menüleiste ist abnehmbar">
+							<longdesc>Legt fest, ob der Benutzer Menüleisten abnehmen und verschieben kann.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Knöpfe haben Symbole">
+							<longdesc>Legt fest, ob Knöpfe ein Symbol neben dem Text anzeigen dürfen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menüs haben Symbole">
+							<longdesc>Legt fest, ob Menüs ein Symbol neben den Menüeinträgen anzeigen dürfen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Werkzeugleisten-Stil">
+							<longdesc>Der Stil der Werkzeugleiste. Zulässige Werte: »both« (Symbol und Text darunter), »both_horiz« (Symbol und Text daneben), »icon« (nur Symbol) sowie »text« (nur Text).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Veränderliche Tastenkombinationen">
+							<longdesc>Legt fest, ob der Benutzer dynamisch eine Tastenkombination für Menüeinträge festlegen kann, wenn diese durch Maus oder Tastatur hervorgehoben werden.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menüs haben Abreißer">
+							<longdesc>Legt fest, ob in Menüs ein Abreißer angezeigt werden soll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animationen aktivieren">
+							<longdesc>Sollen Animationen angezeigt werden? Hinweis: Dies ist ein globaler Schlüssel. Er ändert das Verhalten des Fenstermanagers, des Panels usw.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Barrierefreiheit aktivieren">
+							<longdesc>Legt fest, ob Anwendungen barrierefreien Zugriff ermöglichen sollen.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Dateisymbol-Thema">
+							<longdesc>Zum Anzeigen von Dateisymbole verwendetes Thema.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Typ der Farbschattierung">
+							<longdesc>Legt fest, wie die Hintergrundfarbe schattiert werden soll. Zulässige Werte: »horizontal-gradient« (Horizontaler Verlauf), »vertical-gradient« (Vertikaler Verlauf) sowie »solid« (Einfarbig).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Zweite Farbe">
+							<longdesc>Rechte bzw. untere Farbe beim Zeichnen eines Farbverlaufs. Bei einem einfarbigen Hintergrund wir diese Farbe nicht verwendet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Erste Farbe">
+							<longdesc>Linke bzw. obere Farbe beim Zeichnen eines Farbverlaufs, oder die bei einem einfarbigen Hintergrund verwendete Farbe.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Deckkraft des Bildes">
+							<longdesc>Deckkraft, mit der das Hintergrundbild gezeichnet wird.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Dateiname des Bildes">
+							<longdesc>Als Hintergrundbild zu verwendende Datei.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Bildoptionen">
+							<longdesc>Legt fest, wie das von »wallpaper_filename« festgelegte Bild dargestellt werden soll. Zulässige Werte: »none« (Keins), »wallpaper« (Tapete), »centered« (zentriert), »scaled« (skaliert), »stretched« (gestreckt), »zoom« (Zoom) sowie »spanned« (gespannt).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Desktop-Hintergrund zeichnen">
+							<longdesc>Legt fest, ob GNOME den Desktop-Hintergrund zeichnet.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Beim Anmelden zu startende Anwendungen, die Hilfstechnologie bereitstellen">
+								<longdesc>Liste der beim Anmelden am GNOME-Desktop zu startende Anwendungen, die Hilfstechnologie bereitstellen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Signalton erzeugen, wenn ein Modifikator gedrückt wird</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Deaktivieren, wenn zwei Tasten gleichzeitig gedrückt werden</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Minimales Intervall in Millisekunden">
+								<longdesc>Eine Taste nicht als gedrückt werten, wenn sie nicht @delay Millisekunden heruntergedrückt wurde.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Verzögerung in Millisekunden zu Beginn">
+								<longdesc>Die Anzahl der Millisekunden, die abgewartet wird, bevor Maus-Bewegungstasten zu funktionieren beginnen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Wie lang die Beschleunigung in Millisekunden dauern soll">
+								<longdesc>Die Anzahl der Millisekunden von 0 bis zur maximalen Beschleunigung.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixel pro Sekunde">
+								<longdesc>Die Anzahl der Pixel pro Sekunde, mit denen die Mausbewegung bei maximaler Geschwindigkeit erfolgt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="Minimales Intervall in Millisekunden">
+								<longdesc>Mehrmaliges Drücken _derselben_ Taste innerhalb von @delay Millisekunden ignorieren.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Namen der Arbeitsflächen (veraltet)">
+								<longdesc>Eine Liste mit den Namen der ersten, vom Fenster-Manager verwendeten Arbeitsflächen. Dieser Schlüssel ist seit GNOME 2.12 veraltet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Die Anzahl der Arbeitsflächen (veraltet)">
+								<longdesc>Die Anzahl der Arbeitsflächen, die der Fenster-Manager verwenden soll. Dieser Schlüssel ist seit GNOME 2.12 veraltet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Bevorzugter Fenster-Manager (veraltet)">
+								<longdesc>Der Fenster-Manager der als erster versucht werden soll. Dieser Schlüssel ist seit GNOME 2.12 veraltet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Fenster-Manager im Problemfall (veraltet)">
+								<longdesc>Fenster-Manager, der verwendet werden soll, wenn der bevorzugte Fenster-Manager nicht gefunden werden konnte. Dieser Schlüssel ist seit GNOME 2.12 veraltet.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Aufgaben-Anwendung benötigt Terminal">
+								<longdesc>Legt fest, ob die voreingestellte Aufgaben-Anwendung ein Terminal benötigt, um ausgeführt zu werden</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Voreingestellte Aufgaben">
+								<longdesc>Voreingestellte Aufgaben-Anwendung</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalender benötigt Terminal">
+								<longdesc>Legt fest, ob die voreingestellte Kalender-Anwendung ein Terminal benötigt, um ausgeführt zu werden</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Voreingestellter Kalender">
+								<longdesc>Voreingestellte Kalender-Anwendung</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Kann der Browser fernbedient werden?">
+								<longdesc>Legt fest, ob sich der Vorgabe-Browser mittels »netscape remote« fernbedienen lässt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Browser benötigt Terminal">
+								<longdesc>Legt fest, ob der Vorgabe-Browser ein Terminal benötigt, um ausgeführt zu werden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Vorgabe-Browser">
+								<longdesc>Für alle URLs voreingestellter Browser.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Bevorzugte Anwendung für visuelle Hilfstechnologie starten">
+									<longdesc>Bevorzugte Anwendung für visuelle Hilfstechnologie beim Anmelden starten.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Bevorzugte Anwendung für visuelle Hilfstechnologie">
+									<longdesc>Die bevorzugte Anwendung für visuelle Hilfstechnologie, die beim Anmelden, in Menüs oder der Kommandozeile verwendet wird.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Bevorzugte Anwendung für mobile Hilfstechnologie starten">
+									<longdesc>Bevorzugte Anwendung für mobile Hilfstechnologie beim Anmelden starten.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Bevorzugte Anwendung für mobile Hilfstechnologie">
+									<longdesc>Die bevorzugte Anwendung für mobile Hilfstechnologie, die beim Anmelden, in Menüs oder der Kommandozeile verwendet wird.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Vorgabeanwendung für Ansichtskomponenten">
+								<longdesc>Die zum Anzeigen von Dateien, die eine Ansichtskomponente erforderlich machen, verwendete Anwendung. Der Parameter %s wird durch die Dateiadresse, der Parameter %d durch die Komponenten-IID ersetzt.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Ausführungsargumente">
+								<longdesc>Das zum Ausführen von Programmen im Terminal verwendete, vom Schlüssel »exec« festgelegte Argument.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminal-Anwendung">
+								<longdesc>Zu verwendende Terminal-Anwendung beim Starten von Anwendungen, die ein Terminal benötigen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »h323«-URLs">
+								<longdesc>Der zum Handhaben von »h323«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »h323«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »h323«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »callto«-URLs">
+								<longdesc>Der zum Handhaben von »callto«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »callto«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »callto«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »aim«-URLs">
+								<longdesc>Der zum Handhaben von »aim«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »aim«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »aim«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »mailto«-URLs">
+								<longdesc>Der zum Handhaben von »mailto«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »mailto«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »mailto«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »https«-URLs">
+								<longdesc>Der zum Handhaben von »https«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »https«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »https«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »http«-URLs">
+								<longdesc>Der zum Handhaben von »http«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »http«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »http«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »man«-URLs">
+								<longdesc>Der zum Handhaben von »man«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »man«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »man«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »info«-URLs">
+								<longdesc>Der zum Handhaben von »info«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »info«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »info«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »ghelp«-URLs">
+								<longdesc>Der zum Handhaben von »ghelp«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »ghelp«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »ghelp«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Den Befehl in einem Terminal ausführen">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Programm, dass diesen URL-Typ handhaben soll, in einem Terminal ausgeführt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Der Handler für »trash«-URLs">
+								<longdesc>Der zum Handhaben von »trash«-URLs verwendete Befehl, falls aktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Soll der angegebene Befehl »trash«-URLs handhaben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, handhabt das in »command« angegebene Programm »trash«-URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Tastenkombination, um die Schrift auf normale Größe zu bringen">
+							<longdesc>Die Tastenkombination, um die Schrift auf Normalgröße zu bringen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Tastenkombination zum Verkleinern der Schrift">
+							<longdesc>Die Tastenkombination, um die Schrift zu verkleinern. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Tastenkombination zum Vergrößern der Schrift">
+							<longdesc>Die Tastenkombination, um die Schrift zu vergrößern. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Tastenkombination zum Ausführen der Hilfe">
+							<longdesc>Die Tastenkombination, um die Hilfe auszuführen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Tastenkombination, um zum 12. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 12. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Tastenkombination, um zum 11. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 11. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Tastenkombination, um zum 10. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 10. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Tastenkombination, um zum 9. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 9. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Tastenkombination, um zum 8. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 8. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Tastenkombination, um zum 7. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 7. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Tastenkombination, um zum 6. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 6. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Tastenkombination, um zum 5. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 5. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Tastenkombination, um zum 4. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 4. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Tastenkombination, um zum 3. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 3. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Tastenkombination, um zum 2. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 2. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Tastenkombination, um zum 1. Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum 1. Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Tastenkombination um den aktuellen Reiter abzutrennen.">
+							<longdesc>Die Tastenkombination, um den aktuellen Reiter abzutrennen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Tastenkombination um den aktuellen Reiter nach rechts zu verschieben.">
+							<longdesc>Die Tastenkombination, um den aktuellen Reiter nach rechts zu verschieben. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Tastenkombination um den aktuellen Reiter nach links zu verschieben.">
+							<longdesc>Die Tastenkombination, um den aktuellen Reiter nach links zu verschieben. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Tastenkombination, um zum nächsten Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum nächsten Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Tastenkombination, um zum vorherigen Reiter zu wechseln">
+							<longdesc>Die Tastenkombination, um zum vorherigen Reiter zu wechseln. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Tastenkombination, um das Terminal zurückzusetzen und zu leeren">
+							<longdesc>Die Tastenkombination, um das Terminal zurückzusetzen und zu leeren. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Tastenkombination, um das Terminal zurückzusetzen">
+							<longdesc>Die Tastenkombination, um das Terminal zurückzusetzen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Tastenkombination zum Festlegen des Terminal-Titels">
+							<longdesc>Die Tastenkombination, um den Terminal-Titel festzulegen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Tastenkombination zum Anzeigen/Verbergen der Menüleiste">
+							<longdesc>Die Tastenkombination, um die Menüleiste anzuzeigen bzw. zu verbergen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Tastenkombination, um in den Vollbildmodus zu wechseln bzw. ihn zu verlassen">
+							<longdesc>Die Tastenkombination, um in den Vollbildmodus zu wechseln bzw. ihn zu verlassen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Tastenkombination zum Einfügen von Text">
+							<longdesc>Die Tastenkombination, um den Inhalt der Zwischenablage im Terminal einzufügen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Tastenkombination zum Kopieren von Text">
+							<longdesc>Die Tastenkombination, um den markierten Text in die Zwischenablage zu kopieren. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Tastenkombination zum Schließen eines Fensters">
+							<longdesc>Die Tastenkombination, um ein Fenster zu schließen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Tastenkombination zum Schließen eines Reiters">
+							<longdesc>Die Tastenkombination, um einen Reiter zu schließen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Tastenkombination zum Speichern des Inhalts des aktuellen Reiters in einer Datei">
+							<longdesc>Die Tastenkombination, um den Inhalt des aktuellen Reiters in einer Datei zu speichern. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Tastenkombination zum Anlegen eines neuen Profils">
+							<longdesc>Die Tastenkombination, um den Dialog für das Anlegen von Profilen nach vorne zu holen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Tastenkombination zum Öffnen eines neuen Fensters">
+							<longdesc>Die Tastenkombination, um ein Fenster zu öffnen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Tastenkombination zum Öffnen eines neuen Reiters">
+							<longdesc>Die Tastenkombination, um einen Reiter zu öffnen. Als Zeichenkette anzugeben, und zwar im selben Format wie das in GTK+-Ressourcendateien verwendete. Falls Sie diesen Schlüssel auf den Wert »disabled« setzen, wird dieser Aktion keine Tastenkombination zugewiesen.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Standardzeichenkodierung">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Systemschrift verwenden?">
+								<longdesc>Falls dieser Schlüssel wahr ist, verwendet das Terminal die Desktop-weite Standardschrift, falls diese dicktengleich ist (ersatzweise die ähnlichste Schrift).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Themenfarben fürs Terminal-Widget verwenden?">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das für Text-Eingabefelder verwendete Themen-Farbschema anstatt der vom Benutzer festgelegten Farben auf das Terminal angewandt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Funktion der Entf-Taste">
+								<longdesc>Legt fest, welchen Code die Entf-Taste ausgibt. Zulässige Werte: »ascii-del« (ASCII-DEL-Zeichen), »control-h« (Strg-H bzw. ASCII-BS-Zeichen) sowie »escape-sequence« (im Normalfall der Rück- oder Löschtaste zugewiesene Terminiersequenz). Empfohlener Schlüsselwert: »escape-sequence«.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Funktion der Rücktaste">
+								<longdesc>Legt fest, welchen Code die Rücktaste ausgibt. Zulässige Werte: »ascii-del« (ASCII-DEL-Zeichen), »control-h« (Strg-H bzw. ASCII-BS-Zeichen) sowie »escape-sequence« (im Normalfall der Rück- oder Löschtaste zugewiesene Terminiersequenz). Empfohlener Schlüsselwert: »ascii-del«.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="In welchem Maße das Hintergrundbild abgedunkelt werden soll">
+								<longdesc>Ein Wert zwischen 0.0 und 1.0, der festlegt, in welchem Maße das Hintergrundbild abgedunkelt werden soll. Momentan sind lediglich zwei Werte zulässig, also verhält sich der Schlüssel wie ein boolescher Wert, wobei 0.0 den Abdunkelungseffekt deaktiviert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Hintergrundbild rollen?">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird das Hintergrundbild zusammen mit dem Text gerollt. Andernfalls wird das Bild fixiert und der Text darüber hinweggerollt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Hintergrundbild">
+								<longdesc>Dateiname des Hintergrundbildes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Hintergrundtyp">
+								<longdesc>Der Typ des Terminal-Hintergrunds. Zulässige Werte sind »solid« für einen einfarbigen, »image« für ein Bild oder »transparent« entweder für eine echte Transparenz bei Einsatz eines Compositing-Fensterverwalters oder sonst Pseudo-Transparenz.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Schrift">
+								<longdesc>Ein Pango-Schriftname, wie z.B.: »Sans 12« oder »Monospace Bold 14«.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palette für Terminal-Anwendungen">
+								<longdesc>Terminals haben eine 16-farbige Palette, auf die Terminal-Anwendungen zugreifen können. Dies ist jene Liste in Form einer kommaunterteilten Liste von Farbnamen. Diese sollten im Hex-Format angegeben werden, also z.B. »#FF00FF«.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Symbol des Terminal-Fensters">
+								<longdesc>Für Reiter/Fenster, die dieses Profil enthalten zu verwendendes Symbol</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Statt der Befehlszeile zu startender, benutzerdefinierter Befehl">
+								<longdesc>Dieser Befehl wird anstatt der Befehlszeile ausgeführt, falls der Schlüssel »use_custom_command« wahr ist.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Erscheinungsbild der Eingabemarke">
+								<longdesc>Mögliche Werte sind »block« für einen blockförmige Marke, »ibeam« für einen senkrechten dünnen Balken oder »underline« für einen Unterstrich als Marke.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Blinkenden Cursor erlauben?">
+								<longdesc>Mögliche Einstellungen sind »system«, um die globalen Cursoreinstellungen zu übernehmen und »on« bzw. »off«, um den Modus explizit festzulegen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Benutzerdefinierten Befehl statt Befehlszeile ausführen?">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird der Wert des Schlüssels »custom_command« verwendet, anstatt eine Befehlszeile auszuführen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Anmeldeprotokolle beim Starten eines Terminal-Befehls aktualisieren?">
+								<longdesc>Falls dieser Schlüssel wahr ist, werden die Anmeldeprotokolle utmp/wtmp beim Starten des Befehls im Terminal aktualisiert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Befehl im Terminal als Login-Shell ausführen?">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird der Befehl im Terminal als Login-Shell ausgeführt (vor arg[0] wird ein Bindestrich eingefügt).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Wie soll mit dem Terminal verfahren werden, wenn der Kindbefehl beendet wird?">
+								<longdesc>Zulässige Werte: »close« (das Terminal schließen) sowie »restart« (den Befehl neustarten).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Bei neuer Ausgabe ans Ende rollen?">
+								<longdesc>Falls dieser Schlüssel wahr ist, springt die Rollleiste nach unten, sobald neuer Text ausgegeben wird.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Bei Tastendruck ans Ende rollen?">
+								<longdesc>Falls dieser Schlüssel wahr ist, springt die Rollleiste nach unten, sobald eine Taste gedrückt wird.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Setzt die Anzahl der im Puffer vorzuhaltenden Zeilen auf unbegrenzt">
+								<longdesc>Falls auf »wahr« gesetzt, wird der Inhalt des Puffers niemals geleert. Der Pufferinhalt wird temporär auf dem Datenträger gespeichert. Wenn die Ausgaben des Terminals sehr umfangreich sind, kann der Speicherplatz des Systems unter Umständen nicht ausreichen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Anzahl der im Puffer vorzuhaltenden Zeilen">
+								<longdesc>Die Anzahl der vorzuhaltenden Pufferzeilen. Sie können im Terminal diese Anzahl von Zeilen zurückrollen; überzählige Zeilen werden verworfen. Falls scrollback_unlimited auf »wahr« gesetzt ist, wird dieser Wert ignoriert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Position der Rollleiste">
+								<longdesc>Gibt an, wo die Terminal-Rollleiste angezeigt werden soll. Zulässige Werte: »left« (links), »right« (rechts) sowie »hidden« (verborgen).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Vorgegebene Anzahl der Zeilen">
+								<longdesc>Anzahl der Zeilen in neu erstellten Terminalfenstern. Hat keine Auswirkung, wenn use_custom_default_size aktiviert ist.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Vorgegebene Anzahl der Spalten">
+								<longdesc>Anzahl der Spalten in neu erstellten Terminalfenstern. Hat keine Auswirkung, wenn use_custom_default_size aktiviert ist.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Für neue Fenster benutzerdefinierte Größe verwenden">
+								<longdesc>Falls auf »wahr« gesetzt, wird die Größe neu erzeugter Terminalfenster durch default_size_columns und default_size_rows bestimmt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Zeichen, die als »Teil eines Wortes« angesehen werden.">
+								<longdesc>Bei der wortweisen Auswahl werden Abfolgen dieser Zeichen wie einzelne Wörter behandelt. Bereiche können in der Form »A-Z« angegeben werden. Der Bindestrich (der keinen Bereich ausdrückt) sollte als erstes Zeichen angegeben werden.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Terminalglocke stummschalten?">
+								<longdesc>Falls dieser Schlüssel wahr ist, wird kein akustisches Signal ausgegeben, wenn Anwendungen die Terminiersequenz für die Terminalglocke ausgeben.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Fetten Text erlauben?">
+								<longdesc>Falls dieser Schlüssel wahr ist, ist es Anwendungen erlaubt, in diesem Terminal fett formatierten Text auszugeben.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Terminal-Titel">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Wie soll mit dem dynamischen Titel verfahren werden?">
+								<longdesc>Falls eine Terminal-Anwendung den Titel festlegt (im Normalfall geht dies von der Befehlszeile aus), so kann der dynamisch festgelegte auf verschiedene Weisen mit dem Vorgabetitel verfahren. Zulässige Werte: »replace« (Vorgabetitel ersetzen), »before« (vor Titel einfügen), »after« (nach Titel einfügen« sowie »ignore« (Titel belassen).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Legt fest, ob fetter Text die gleiche Farbe haben soll wie normaler Text.">
+								<longdesc>Falls auf »wahr« gesetzt, wird fetter Text in der gleichen Farbe dargestellt wie normaler Text.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Vorgabefarbe für fetten Text im Terminal">
+								<longdesc>Die voreingestellte Farbe für fetten Text im Terminals als Farbangabe (kann als HTML-artige Hex-Zahl oder als Schriftfarbe wie »red« angegeben werden). Dies wird ignoriert, falls bold_color_same_as_fg auf »wahr« gesetzt ist.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Voreingestellte Terminal-Hintergrundfarbe">
+								<longdesc>Die voreingestellte Hintergrundfarbe des Terminals als Farbangabe (kann als HTML-artige Hex-Zahl oder als Schriftfarbe wie »red« angegeben werden).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Voreingestellte Terminal-Textfarbe">
+								<longdesc>Die voreingestellte Textfarbe des Terminals als Farbangabe (kann als HTML-artige Hex-Zahl oder als Schriftfarbe wie »red« angegeben werden).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="In Fenstern/Reitern per Vorgabe Menüleiste anzeigen?">
+								<longdesc>Soll in Fenstern/Reitern mit diesem Profil per Vorgabe die Menüleiste angezeigt werden?</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Menschenlesbarer Profilname">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Beim Schließen von Terminal-Fenstern auf Bestätigung warten?">
+							<longdesc>Beim Schließen von Terminal-Fenstern mit mehr als einem Reiter auf Bestätigung warten?</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Liste verfügbarer Zeichenkodierungen">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Standard-GTK+-Tastenkombination zum Zugriff auf Menüleiste aktivieren?">
+							<longdesc>Im Normalfall können Sie per F10 auf die Menüleiste zugreifen. Dies kann auch mit Hilfe der gtkrc angepasst werden (gtk-menu-bar-accel = »wasauchimmer«). Mit Hilfe dieses Schlüssels können Sie die Tastenkombination zum Zugriff auf die Menüleiste deaktivieren.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Zugriffstasten in Menüleiste anzeigen?">
+							<longdesc>Sollen Alt+Buchstabe-Tastenkombinationen für die Menüleiste verwendet werden? Möglicherweise geraten sie mit im Terminal laufenden Anwendungen in Konflikt, daher ist es möglich, sie zu deaktivieren.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Für neue Terminals zu verwendendes Profil">
+							<longdesc>Beim Öffnen eines Fensters oder Reiters zu verwendendes Profil. Dies muss im Schlüssel »profile_list« vorkommen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Profilliste">
+							<longdesc>Die Liste der dem Terminal bekannten Profile. Sie enthält Zeichenketten, die Unterordner relativ zu »/apps/gnome-terminal/profiles« benennen.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Legt fest, 0b ein Midnight Commander-Menüeintrag angezeigt werden soll">
+						<longdesc>Falls dieser Schlüssel wahr ist, und falls der Terminal-Dateimanager »Midnight Commander« installiert ist, wird ein »Im Midnight Commander öffnen«-Menüeintrag im Kontextmenü angezeigt.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Legt fest, ob das Öffnen eines Terminals auf der Arbeitsfläche ein Terminal im persönlichen Ordner öffnet">
+						<longdesc>Falls dieser Schlüssel wahr ist, führt das Öffnen eines Terminals auf der Arbeitsfläche dazu, dass ein Terminal im persönlichen Ordner geöffnet wird. Andernfalls wird es im Arbeitsflächen-Ordner öffnet. Hinweis: Dieser Schlüssel wird ignoriert, falls der Arbeitsflächenordner mit dem persönlichen Ordner übereinstimmt.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

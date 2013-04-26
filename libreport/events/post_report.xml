@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+    <name>Post report</name>
+    <name xml:lang="as">পস্ট সংবাদ</name>
+    <name xml:lang="bn_IN">রিপোর্ট দায়ের করুন</name>
+    <name xml:lang="de">Bericht senden</name>
+    <name xml:lang="es">Informe posterior</name>
+    <name xml:lang="et">Saada teavitus</name>
+    <name xml:lang="fr">Écrire le rapport</name>
+    <name xml:lang="gu">અહેવાલ અદા કરો</name>
+    <name xml:lang="hi">रिपोर्ट भेजें</name>
+    <name xml:lang="hu">Jelentés beküldése</name>
+    <name xml:lang="it">Invia report</name>
+    <name xml:lang="ja">報告の投稿</name>
+    <name xml:lang="kn">ವರದಿಯನ್ನು ಪೋಸ್ಟ್ ಮಾಡು</name>
+    <name xml:lang="ko">사후 보고 </name>
+    <name xml:lang="lt">Siųsti pranešimą</name>
+    <name xml:lang="lv">Publicēt ziņojumu</name>
+    <name xml:lang="ml">റിപോര്‍ട്ട് ചെയ്തതിനു് ശേഷം</name>
+    <name xml:lang="mr">रिपोर्ट सादर करा</name>
+    <name xml:lang="nl">Verstuur rapport</name>
+    <name xml:lang="or">ବିବରଣୀ ଦାଖଲ କରନ୍ତୁ</name>
+    <name xml:lang="pa">ਰਿਪੋਰਟ ਭੇਜੋ</name>
+    <name xml:lang="pl">Wyślij zgłoszenie</name>
+    <name xml:lang="pt_BR">Pós reportagem</name>
+    <name xml:lang="ru">Отправить отчет</name>
+    <name xml:lang="ta">புகாரை இடுகையிடு</name>
+    <name xml:lang="te">ఫిర్యాదు తరువాత</name>
+    <name xml:lang="uk">Надіслати звіт</name>
+    <name xml:lang="zh_CN">提交报告</name>
+    <name xml:lang="zh_TW">張貼回報</name>
+    <description>Executed after the reporting is finished</description>
+    <description xml:lang="as">সংবাদন সম্পূৰ্ণ কৰাৰ পিছত এক্সিকিউট কৰা হয়</description>
+    <description xml:lang="bn_IN">রিপোর্টের কাজে সমাপ্তির পরে সঞ্চালিত হবে</description>
+    <description xml:lang="cs">Vykonáno po dokončení reportu</description>
+    <description xml:lang="de">Nach dem Senden des Berichtes ausgeführt</description>
+    <description xml:lang="es">Ejecutado después de que el reporte ha finalizado</description>
+    <description xml:lang="fr">Exécuté une fois le rapport terminé</description>
+    <description xml:lang="gu">અહેવાલીકરણ સમાપ્ત થયુ પછી ચલાવાયું</description>
+    <description xml:lang="hi">रिपोर्टिंग संपन्न होने के बाद निष्पादित</description>
+    <description xml:lang="hu">Végrehajtásra kerül miután a jelentés elkészült</description>
+    <description xml:lang="it">Eseguito dopo che il report è completato</description>
+    <description xml:lang="ja">報告が完了した後に実行されました</description>
+    <description xml:lang="kn">ಪೂರ್ಣಗೊಂಡಿದೆ ಎಂದು ವರದಿ ಮಾಡಿದ ನಂತರ ಕಾರ್ಯಗತಗೊಳಿಸಲಾಗಿದೆ</description>
+    <description xml:lang="ko">보고 완료 후 실행됨 </description>
+    <description xml:lang="lt">Išmestas pasibagus pranešimui</description>
+    <description xml:lang="ml">രേഖപ്പെടുത്തിയ ശേഷം പ്രവര്‍ത്തിപ്പിയ്ക്കുന്നു</description>
+    <description xml:lang="mr">रिपोर्टिंग पूर्ण झाल्यानंतर सुरू केले जाते</description>
+    <description xml:lang="nl">Uitgevoerd nadat het rapporteren is beëindigd</description>
+    <description xml:lang="or">ଖବର କରିସାରିବା ପରେ ନିଷ୍ପାଦିତ ହୋଇଥାଏ</description>
+    <description xml:lang="pa">ਰਿਪੋਰਟਿੰਗ ਤੋਂ ਬਾਅਦ ਚਲਾਇਆ ਗਿਆ</description>
+    <description xml:lang="pl">Wykonywane po ukończeniu zgłaszania</description>
+    <description xml:lang="pt_BR">Executado após a reportagem terminar</description>
+    <description xml:lang="ru">Вызов выполнен после окончания создания отчета</description>
+    <description xml:lang="ta">புகாரளித்தல் முடிந்ததும் செயல்படுத்தப்படும்</description>
+    <description xml:lang="te">ఫిర్యాదు చేయుట పూర్తైన తరువాత నిర్వర్తించెను</description>
+    <description xml:lang="uk">Виконується після того, як звітування завершується</description>
+    <description xml:lang="zh_CN">完成报告后执行</description>
+    <description xml:lang="zh_TW">在回報完成後執行</description>
+    <long-description>Used for updating of the databases</long-description>
+    <long-description xml:lang="as">ডাটাবেইচসমূহ আপডেইট কৰাৰ বাবে ব্যৱহাৰ কৰা হয়</long-description>
+    <long-description xml:lang="bn_IN">ডাটাবেস আপডেট করার জন্য ব্যবহৃত</long-description>
+    <long-description xml:lang="cs">Použito k aktualizaci databází</long-description>
+    <long-description xml:lang="de">Für die Aktualisierung der Datenbanken verwendet</long-description>
+    <long-description xml:lang="es">Usado para la actualización de bases de datos</long-description>
+    <long-description xml:lang="et">Kasutatakse andmebaasi uuendamiseks</long-description>
+    <long-description xml:lang="fr">Utilisé pour la mise à jour des bases de données</long-description>
+    <long-description xml:lang="gu">ડેટાબેઝને વાપરવા માટે વાપરેલ છે</long-description>
+    <long-description xml:lang="hi">डाटाबेस के अद्यतन के लिए प्रयुक्त</long-description>
+    <long-description xml:lang="hu">Az adatbázis frissítésekor kerül felhasználásra</long-description>
+    <long-description xml:lang="it">Utilizzato per aggiornare i database</long-description>
+    <long-description xml:lang="ja">データベースの更新に使用されました</long-description>
+    <long-description xml:lang="kn">ದತ್ತಸಂಚಯಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಬಳಸಲಾಗಿದೆ</long-description>
+    <long-description xml:lang="ko">데이터베이스 업데이트 용으로 사용 </long-description>
+    <long-description xml:lang="lt">Naudotas duomenų bazių atnaujinimui</long-description>
+    <long-description xml:lang="lv">Izmanto datubāžu atjaunināšnā</long-description>
+    <long-description xml:lang="ml">ഡേറ്റാബെയിസുകള്‍ പരിഷ്കരിയ്ക്കുന്നതിനു് ഉപയോഗിയ്ക്കുന്നു</long-description>
+    <long-description xml:lang="mr">डाटाबेस सुधारित करण्यासाठी वापरले जाते</long-description>
+    <long-description xml:lang="nl">Gebruikt voor het vernieuwen van de databases</long-description>
+    <long-description xml:lang="or">ତଥ୍ୟାଧାର ଅଦ୍ୟତନ ପାଇଁ ବ୍ୟବହୃତ ହୋଇଥାଏ</long-description>
+    <long-description xml:lang="pa">ਡਾਟਾਬੇਸ ਅੱਪਡੇਟ ਲਈ ਵਰਤਿਆ</long-description>
+    <long-description xml:lang="pl">Używane do aktualizowania baz danych</long-description>
+    <long-description xml:lang="pt_BR">Usado para atualizar banco de dados</long-description>
+    <long-description xml:lang="ru">Используется для обновления баз данных</long-description>
+    <long-description xml:lang="ta">தரவுத்தளங்களின் புதுப்பித்தலுக்குப் பயன்படுகிறது</long-description>
+    <long-description xml:lang="te">డాటాబేసెస్ నవీకరణకు వుపయోగించబడెను</long-description>
+    <long-description xml:lang="uk">Використовується для оновлення баз даних</long-description>
+    <long-description xml:lang="zh_CN">用于数据库更新</long-description>
+    <long-description xml:lang="zh_TW">用於資料庫的更新</long-description>
+    <requires-items>reported_to</requires-items>
+    <gui-review-elements>no</gui-review-elements>
+</event>

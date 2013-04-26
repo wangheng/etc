@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Kelompok kerja (workgroup) SMB">
+						<longdesc>Kelompok jaringan atau domain Windows di mana pengguna menjadi bagian di dalamnya. Untuk menjamin kelompok kerja yang baru dapat dioperasikan dengan benar, pengguna mungkin harus log keluar dan masuk kembali.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domain ekstra untuk mencari layanan DNS-SD">
+						<longdesc>Daftar domain DNS-SD (dipisahkan koma) yang akan ditampilkan pada lokasi &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Cara menampilkan layanan DNS-SD lokal">
+						<longdesc>Nilai yang mungkin adalah &quot;merged&quot;, &quot;separated&quot;, dan &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URl konfigurasi otomatis proksi">
+						<longdesc>URL yang menyediakan nilai konfigurasi proksi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port proksi SOCKS">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/proxy/socks_host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nama host proksi SOCKS">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port proksi FTP">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/proxy/ftp_host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nama host proksi FTP">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port proksi HTTP teracak">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/proxy/secure_host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nama host proksi HTTP teracak">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap HTTP teracak.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Mode konfigurasi proksi">
+						<longdesc>Memilih mode konfigurasi proksi. Nilai yang didukung antaranya &quot;none&quot;, &quot;manual&quot;, dan &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Host nonproksi">
+						<longdesc>Kunci ini mengandung daftar host yang terhubung secara langsung, ketimbang melalui proksi (jika aktif). Nilainya bisa nama host, domain (memakai wilkar seperti *.foo.com), alamat IP host (baik IPv4 maupun IPv6), serta alamat jaringan dengan netmask (seperti 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Sandi proksi HTTP">
+						<longdesc>Sandi untuk menerapkan proksi terhadap HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Nama pengguna proksi HTTP">
+						<longdesc>Nama pengguna untuk menerapkan proksi terhadap HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Otentikasi koneksi server proksi">
+						<longdesc>Jika bernilai benar (true), maka hubungan menuju server proksi harus diotentikasi. Pasangan nama pengguna/sandi ditentukan oleh &quot;/system/http_proxy/authentication_user&quot; dan &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port proksi HTTP">
+						<longdesc>Port pada mesin yang ditentukan oleh &quot;/system/http_proxy/host&quot; yang Anda proksikan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nama host proksi HTTP">
+						<longdesc>Nama mesin untuk melakukan proksi terhadap HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Menggunakan proksi HTTP">
+						<longdesc>Mengaktifkan pengaturan proksi saat mengakses HTTP melalui Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Apakah penguncian keyboard dilakukan">
+							<longdesc>Apakah penguncian keyboard dilakukan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Boleh menunda jeda">
+							<longdesc>Apakah jeda pengetikan dapat ditunda.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Waktu jeda">
+							<longdesc>Lama waktu (dalam menit) jeda pengetikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Waktu pengetikan">
+							<longdesc>Lama waktu mengetik (dalam menit) sebelum mode jeda dimulai.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Matikan semua pembuat gambar kecil eksternal">
+							<longdesc>Nyalakan untuk menonaktifkan semua program pembuat gambar kecil, terserah nantinya mau dinonaktifkan/dinyalakan per program atau tidak.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Ukuran maksimum singgahan thumbnail, dalam megabyte. Tata ke -1 untuk menonaktifkan pembersihan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Usia maksimum thumbnail di dalam singgahan, dalam hari. Tata ke -1 untuk menonaktifkan pembersihan.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Suara umpan balik masukan">
+							<longdesc>Apakah memainkan suara saat ada kejadian masukan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Nama tema suara">
+							<longdesc>Tema suara XDG yang digunakan untuk suara peristiwa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Suara untuk peristiwa">
+							<longdesc>Apakah memainkan suara saat ada kejadian pengguna.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Gunakan ESD">
+							<longdesc>Gunakan server suara saat start.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Trek pencampur bawaan">
+							<longdesc>Trek pencampur bawaan yang dipakai oleh binding tombol multimedia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Perangkat pencampur bawaan">
+							<longdesc>Perangkat pencampur bawaan yang dipakai oleh binding tombol multimedia.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Ukuran kursor">
+								<longdesc>Ukuran kursor sesuai dengan kursor tema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema kursor">
+								<longdesc>Nama tema kursor. Hanya dipergunakan oleh Xservers yang mendukung Xcursor, seperti XFree86 4.3 ke atas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Fonta kursor">
+								<longdesc>Nama fonta untuk kursor. Bila tidak diset, fonta bawaan akan digunakan. Nilai ini hanya diteruskan ke server X di awal tiap sesi, jadi bila menggantinya sekarang, maka akan baru berpengaruh nanti saat log masuk di kali lain.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Pencari Pointer">
+								<longdesc>Sorot lokasi pointer mouse yang aktif saat tombol Control ditekan dan dilepas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Waktu Klik Ganda">
+								<longdesc>Lamanya klik ganda.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Ambang Drag">
+								<longdesc>Jarak sebelum drag dimulai.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Ambang Gerakan">
+								<longdesc>Jarak dalam satuan piksel yang digunakan pointer untuk bergerak, sebelum faktor pengali kecepatan mouse diaktifkan. Nilai -1 adalah nilai awal sistem.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Klik tunggal">
+								<longdesc>Faktor pengali kecepatan gerakan mouse. Nilai -1 adalah nilai awal sistem.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Klik tunggal">
+								<longdesc>Klik tunggal untuk membuka ikon.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="arah tombol mouse">
+								<longdesc>Tukar tombol mouse kanan dan kiri untuk pemakan mouse kidal.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Ingat keadaan NumLock">
+								<longdesc>Ketika ditetapkan sebagai benar, GNOME akan mengingat keadaan LED NumLock diantara setiap sesi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Nama Berkas Gubahan Bel Papan Tik">
+								<longdesc>Nama berkas yang digunakan untuk suara bel.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>pilihannya adalah: &quot;on&quot;, &quot;off&quot;, dan &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Matikan penangan URL dan tipe MIME">
+							<longdesc>Mencegah berjalannya aplikasi penangan sebarang URL atau tipe MIME.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Matikan penguncian layar">
+							<longdesc>Mencegah pemakai mengunci layarnya.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Matikan perpindahan pengguna">
+							<longdesc>Mencegah pemakai untuk berpindah ke akun lain ketika sesinya sedang aktif.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Matikan penyiapan pencetakan">
+							<longdesc>Mencegah pemakai untuk mengganti konfigurasi cetakan. Hal ini akan mematikan akses ke semua dialog &quot;Atur Cetakan&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Matikan pencetakan">
+							<longdesc>Mencegah pemakai untuk mencetak. Ini akan mematikan semua akses ke dialog &quot;Cetak&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Matikan penyimpanan berkas ke disk">
+							<longdesc>Mencegah pemakai untuk menyimpan berkas ke disk. Ini juga akan mematikan akses ke dialog aplikasi &quot;Simpan sebagai&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Matikan baris perintah">
+							<longdesc>Mencegah pemakai untuk mengakses terminal atau menjalankan program. Ini juga akan mematikan fasilitas &quot;Jalankan Aplikasi&quot; pada panel.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Tampilkan menu &apos;Kendali Karakter Unicode&apos;">
+							<longdesc>Apakah menu konteks dari entri dan tampilan teks harus menawarkan untuk menyisipkan karakter kendali. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Tampilkan menu &apos;Metode Masukan&apos;">
+							<longdesc>Apakah menu konteks dari entri dan tilikan teks harus menawarkan perubahan terhadap metode masukan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Akselerator kotak menu">
+							<longdesc>Tombol pintas untuk membuka kotak menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Modul untuk GtkFileChooser">
+							<longdesc>Modul yang digunakan sebagai model sistem file untuk widget GtkFileChooser. Bisa diset dengan &quot;gio&quot;, &quot;gnome-vfs&quot; dan &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Bilah Status di Kanan">
+							<longdesc>Apakah meter bilah status ditampilkan di sebelah kanan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Gunakan Fonta Gubahan">
+							<longdesc>Apakah boleh menggunakan fonta pilihan sendiri pada aplikasi gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Fonta monospace">
+							<longdesc>Nama huruf monospace (dengan lebar tetap) yang akan digunakan oleh program-program semacam terminal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Fonta dokumen">
+							<longdesc>Nama fonta bawaan yang digunakan untuk membuka dokumen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Modul IM GTK">
+							<longdesc>Nama modul metode masukan yang digunakan oleh GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Gaya status metode input GTK">
+							<longdesc>Nama gaya status metode input GTK+ yang digunakan oleh gtk+</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Gaya preedit metode input GTK">
+							<longdesc>Nama gaya preedit metode input GTK+ yang digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Fonta bawaan">
+							<longdesc>Nama font standar yang digunakan gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nama dasar tema bawaan yang digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nama dasar tema bawaan yang digunakan oleh gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema Ikon">
+							<longdesc>Tematik ikon yang digunakan pada panel, nautilus, dsb.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Waktu Berkedip Kursor">
+							<longdesc>Panjang periode kedipan kursor, dalam satuan milidetik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Kursor Berkedip">
+							<longdesc>Apakah kursor berkedip.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Ukuran Ikon Bilah Alat">
+							<longdesc>Ukuran ikon di bilah alat, boleh &quot;small-toolbar&quot; atau &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Bilah Alat Bisa Dilepas">
+							<longdesc>Apakah pengguna dapat melepas bilah alat dan memindahkannya.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Bilah Menu Bisa Dilepas">
+							<longdesc>Apakah pengguna dapat melepas bilah menu dan memindahkannya.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Tombol Punya Ikon">
+							<longdesc>Apakah tombol dapat menampilkan ikon selain teks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Manu Memiliki Ikon">
+							<longdesc>Apakah menu dapat menampilkan ikon di samping entri menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Gaya Bilah Alat">
+							<longdesc>Gaya Bilah Alat. Gaya yang diterima adalah &quot;both&quot;, &quot;both_horiz&quot;, &quot;icon&quot;, dan &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Dapat Mengganti Akselerator">
+							<longdesc>Apakah pengguna dapat mengganti kombinasi tombol yang telah ditentukan saat menu dimunculkan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menu bisa dilepas">
+							<longdesc>Apakah menu dapat dilepas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Aktifkan Animasi">
+							<longdesc>Apakah animasi mesti ditampilkan. Perhatian: ini adalah kunci global, yang mengubah perilaku manajer jendela, panel, dsb.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Aktifkan Aksesibilitas">
+							<longdesc>Apakah Aplikasi mesti punya dukungan aksesibilitas.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema Ikon Berkas">
+							<longdesc>Tema yang digunakan untuk menampilkan ikon-ikon berkas.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Tipe Color Shading">
+							<longdesc>Menentukan bagaimana cara menggambar warna latar belakang. Cara yang digunakan yaitu &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, dan &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Warna sekunder">
+							<longdesc>Warna sebelah kanan atau sebelah bawah saat menggambar gradien, warna ini tidak digunakan saat menggambar warna padat</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Warna utama">
+							<longdesc>Warna sebelah kiri atau sebelah atas saat menggambar gradien, atau warna padat.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Tingkat transparansi gambar">
+							<longdesc>Derajat transparansi saat menggambar latar belakang.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Nama file Gambar">
+							<longdesc>Berkas yang digunakan untuk gambar latar belakang.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Pilihan gambar">
+							<longdesc>Menentukan bagaimana gambar yang ditata oleh wallpaper_filename dirender. Nilai yang mungkin adalah &quot;none&quot;, &quot;wallpaper&quot;, &quot;centered&quot;, &quot;scaled&quot;, &quot;stretched&quot;, &quot;zoom&quot;, &quot;spanned&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Gambar Latar Belakang Desktop">
+							<longdesc>Gunakan GNOME untuk menggambar latar belakang.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Aplikasi Teknologi Bantu Saat Awal">
+								<longdesc>Daftar aplikasi teknologi bantu yang dijalankan saat mulai log masuk ke desktop GNOME.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Bunyi beep saat modifier ditekan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Nonaktifkan bila ada dua tombol ditekan pada saat yang sama.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Interval terkecil dalam milidetik">
+								<longdesc>Jangan anggap tombol ditekan kecuali bila ditahan selama @delay milidetik.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Jeda awal dalam milidetik">
+								<longdesc>Berapa milidetik yang ditunggu sebelum tombol pergerakan mouse beroperasi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Berapa lama mempercepat dalam milidetik">
+								<longdesc>Berapa milidetik lamanya dari 0 hingga kecepatan tertinggi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Piksel per detik">
+								<longdesc>Berapa piksel per detik untuk digerakkan pada kecepatan tertinggi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="periode terkecil dalam satuan milidetik">
+								<longdesc>Abaikan tombol yang sama ditekan berulang selama @delay milidetik.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Nama-nama area kerja (tak dipakai lagi)">
+								<longdesc>Daftar nama area kerja pada pengatur jendela pertama.. Kunci ini tidak digunakan lagi sejak GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Cacah area kerja (tak dipakai lagi)">
+								<longdesc>Jumlah area kerja yang harus digunakan pengatur jendela.. Kunci ini tidak digunakan lagi sejak GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Manajer jendela pengguna (tak dipakai lagi)">
+								<longdesc>Pengatur jendela yang dijalankan pertama kali. Kunci ini tidak digunakan lagi sejak GNOME 2.12</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Manajer jendela fallback (tak dipakai lagi)">
+								<longdesc>Pengatur jendela asal bila pengatur jendela yang ditentukan tidak ditemukan. Kunci ini tidak digunakan lagi sejak GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Tugas yang memerlukan terminal">
+								<longdesc>Apakah aplikasi tugas bawaan perlu terminal untuk berjalan</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Tugas bawaan">
+								<longdesc>Aplikasi tugas bawaan</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalender perlu terminal">
+								<longdesc>Apakah aplikasi kalender bawaan perlu terminal untuk berjalan</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Kalender bawaan">
+								<longdesc>Aplikasi kalender bawaan</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Peramban mengerti remote">
+								<longdesc>Apakah peramban bawaan mengerti netscape remote.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Peramban perlu terminal">
+								<longdesc>Apakah peramban bawaan perlu terminal untuk berjalan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Peramban bawaan">
+								<longdesc>Peramban bawaan untuk semua URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Memulai aplikasi teknologi bantu Visual yang disukai">
+									<longdesc>GNOME akan memulai aplikasi teknologi bantu Visual yang disukai selama log masuk.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplikasi teknologi bantu Visual yang disukai">
+									<longdesc>Aplikasi teknologi bantu Visual yang dipakai untuk log masuk, menu, atau baris perintah.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Memulai aplikasi teknologi bantu Mobility yang disukai">
+									<longdesc>GNOME akan memulai aplikasi teknologi bantu Mobility selama log masuk.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplikasi teknologi bantu Mobility yang disukai">
+									<longdesc>Aplikasi teknologi bantu Mobility yang dipakai untuk log masuk, menu, atau baris perintah.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplikasi utama untuk menampilkan komponen">
+								<longdesc>Aplikasi untuk menampilkan berkas yang memerlukan komponen untuk melihatnya. Parameter %s akan diganti oleh URI berkas, parameter %c diganti oleh IID komponen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumen Exec">
+								<longdesc>Argumen yang digunakan untuk menjalankan program dalam terminal yang didefinisikan oleh kunci &apos;exec&apos;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplikasi terminal">
+								<longdesc>Program terminal yang digunakan ketika aplikasi yang dimulai memerlukannya.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;h323&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;h323&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;h323&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;callto&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;callto&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;callto&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;aim&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;aim&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;aim&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;mailto&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;mailto&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;mailto&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;https&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;https&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;https&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;http&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;http&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;http&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;man&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;main&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;man&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;info&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;info&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;info&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;ghelp&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;ghelp&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;ghelp&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Menjalankan perintah pada terminal">
+								<longdesc>Isikan nilai benar (true) apabila perintah untuk menangani jenis URL ini harus dijalankan dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Penangan untuk URL &quot;trash&quot;">
+								<longdesc>Perintah untuk menangani URL &quot;trash&quot;, jika diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Apakah perintah yang diberikan dipakai untuk menangani URL &quot;trash&quot;">
+								<longdesc>Isikan nilai benar (true) apabila perintah pada kunci &quot;command&quot; dipakai untuk menangani URL &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Tombol singkat untuk merubah ukuran huruf menjadi ukuran biasa">
+							<longdesc>Tombol singkat untuk mengembalikan ukuran huruf menjadi ukuran semula. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Tombol singkat untuk membuat fonta berukuran lebih kecil">
+							<longdesc>Tombol singkat untuk mengecilkan huruf. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Tombol singkat untuk membuat huruf menjadi lebih besar">
+							<longdesc>Tombol singkat untuk memperbesar huruf. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Tombol singkat untuk meluncurkan bantuan">
+							<longdesc>Tombol singkat untuk menampilkan layar bantuan. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 12">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 12. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 11">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 11. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 10">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 10. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 9">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 9.  Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 8">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 8. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 7">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 7. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 6">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 6. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 5">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 5. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 4">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 4.  Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 3">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 3. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 2">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 2. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab 1">
+							<longdesc>Tombol singkat untuk mengaktifkan tab no 1. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Akselerator untuk menambah jalan pintas.">
+							<longdesc>Tombol singkat untuk mengaktifkan tab saat ini. Ini ditulis dalam bentuk string dengan bentuk yang sama dengan berkas sumber GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Akselerator untuk pindahkan tab sekarang ke kanan.">
+							<longdesc>Tombol singkat untuk mengaktifkan tab saat ini ke Kanan. Ini ditulis dalam bentuk string dengan bentuk yang sama dengan berkas sumber GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Akselerator untuk pindahkan tab sekarang ke kiri.">
+							<longdesc>Tombol singkat untuk mengaktifkan tab saat ini ke Kiri. Ini ditulis dalam bentuk string dengan bentuk yang sama dengan berkas sumber GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab berikutnya">
+							<longdesc>Tombol singkat untuk mengaktifkan tab berikutnya. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Tombol singkat untuk berpindah ke tab sebelumnya">
+							<longdesc>Tombol singkat untuk mengaktifkan tab sebelumnya. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Tombol singkat untuk menata ulang dan membersihkan layar terminal">
+							<longdesc>Tombol singkat untuk menata ulang dan membersihkan layar terminal. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Tombol singkat untuk menata ulang terminal">
+							<longdesc>Tombol singkat untuk menata ulang terminal. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Tombol singkat untuk menentukan judul terminal">
+							<longdesc>Tombol singkat untuk mengaktifkan judul terminal. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Tombol singkat untuk menyalakan/mematikan penampakan batang menu">
+							<longdesc>Tombol singkat untuk mengaktifkan/mematikan penampakan batang menu. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Tombol singkat untuk merubah kondisi layar menjadi layar penuh dan sebaliknya">
+							<longdesc>Tombol singkat untuk mengaktifkan moda layar penuh. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Tombol singkat untuk untuk menempelkan teks">
+							<longdesc>Tombol singkat untuk menempelkan isi klipbord ke dalam terminal. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Tombol singkat untuk menyalin teks">
+							<longdesc>Tombol singkat untuk menyalin teks yang dipilih ke dalam klipbord. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Tombol singkat untuk menutup jendela">
+							<longdesc>Tombol singkat untuk menutup jendela. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Tombol singkat untuk menutup tab">
+							<longdesc>Tombol singkat untuk menutup tab. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Tombol singkat untuk menyimpan isi tab kini ke berkas">
+							<longdesc>Tombol singkat untuk menyimpan isi tab kini ke suatu berkas. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Tombol singkat untuk membuat profil baru">
+							<longdesc>Tombol singkat untuk membuka dialog pembuat profil. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Tombol singkat untuk membkua jendela baru">
+							<longdesc>Tombol singkat untuk membuka jendela baru. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Tombol singkat untuk membuka tab baru">
+							<longdesc>Tombol singkat untuk membuka tab baru. Ini ditulis dalam bentuk string dengan format yang sama dengan berkas resource GTK+, jika Anda isi dengan &quot;disabled&quot; maka tombol singkat akan dimatikan.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Enkode baku">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Penggunaan fonta sistem">
+								<longdesc>Bila true, terminal akan gunakan uruf standar desktop global apabila diset monospace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Penggunaan warna dari tema sistem untuk widget terminal">
+								<longdesc>Jika true, terminal akan menggunakan skema warna tema untuk kotak isian teks alih-alih warna yang ditentukan oleh pemakai.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efek penekanan tombol Delete">
+								<longdesc>Tentukan kode apa yang dibangkitkan oleh tombol Delete. Anda dapat memilih &quot;ascii-del&quot; untuk karakter ASCII DEL, &quot;control-h&quot; untuk Control-H (alias karakter ASCII-BS), &quot;escape-sequence&quot; untuk urutan escae yang biasanya dipasangkan pada tombol Backspace atau Delete. Biasanya orang menggunakan isian &quot;escape-sequence&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efek penekanan tombol Backspace">
+								<longdesc>Tentukan kode apa yang dibangkitkan oleh tombol Backspace. Anda dapat memilih &quot;ascii-del&quot; untuk karakter ASCII DEL, &quot;control-h&quot; untuk Control-H (alias karakter ASCII-BS), &quot;escape-sequence&quot; untuk urutan escae yang biasanya dipasangkan pada tombol Backspace atau Delete. Biasanya orang menggunakan isian &quot;ascii-del&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Derajat gelap terang gambar latar">
+								<longdesc>Nilai antara 0.0 dan 1.0 yang mengindikasikan seberapa gelap gambar latar. 0.0 berarti tidak ada gelap, 1.0 berarti gelap penuh. Dalam implementasi sekarang, hanya ada dua tingkatan kegelapan yang dapat disikan, jadi konfigurasinya mirip boolean, di mana 0.0 berarti mematikan efek gelap.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Apakah citra latar belakang digulung">
+								<longdesc>Bila ture, gulung gambar latar dengan teks di depannya, bila false, biarkan gambar tetap dalam posisinya dan gulung teks di atasnya.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Gambar latar belakang">
+								<longdesc>Nama berkas gambar latar belakang.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Jenis latar belakang">
+								<longdesc>Jenis latar terminal. Anda dapat mengisi &quot;solid&quot; untuk warna rata, &quot;image&quot; untuk gambar, atau &quot;transparent&quot; baik untuk transparan nyata bila manajer jendela dengan fitur komposit, atau transparansi semu bila tidak.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Fonta">
+								<longdesc>Nama huruf Pango. Contohnya &quot;Sans 12&quot; atau &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palet untuk aplikasi terminal">
+								<longdesc>Terminal memiliki palet 16-warna yang dapat digunakan oleh aplikasi yang jalan dalam terminal. Palet ini ditulis dalam bentuk daftar warna yang dibatasi dengan karakter titik dua. Nama warna harus dalam bentuk heksa, misalnya &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ikon untuk jendela terminal">
+								<longdesc>Ikon untuk tab/jendela berisi profil ini.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Jalankan perintah tertentu dan bukan shell">
+								<longdesc>Jalankan perintah ini tanpa shell apabila use_custom_command bernilai true.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Penampilan kursor">
+								<longdesc>Nilai yang mungkin adalah &quot;block&quot; untuk memakai kursor kotak, &quot;ibeam&quot; untuk memakai kursor garis tegak, atau &quot;underline&quot; untuk kursor garis bawah.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Menentukan apakah kursor harus berkedip">
+								<longdesc>Nilai yang mungkin adalah &quot;system&quot; untuk memakai pengaturan kedipan kursor global, atau &quot;on&quot; atau &quot;off&quot; untuk menata mode secara eksplisit.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Peluncuran perintah tertentu dan bukan shell">
+								<longdesc>Bila true, nilai konfigurasi custom_command akan digunakan pada shell yang dijalankan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Menentukan apakah catatan login diperbarui saat menjalankan perintah terminal">
+								<longdesc>Bila true, login sistem akan mencatat utmp dan wtp yang akan diperbarui saat perintah dijalankan dari dalam terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Menentukan apakah perintah yang dijalankan dalam terminal dijalankan melalui shell login">
+								<longdesc>Bila true, perintah dalam terminal akan dijalankan sebagai shell login. (argv[0] akan memiliki tanda minus di depannya)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Apa yang dilakukan terminal saat perintah yang dikerjakan sudah selesai">
+								<longdesc>Anda dapat mengisi &quot;close&quot; untuk menutup terminal atau &quot;restart&quot; untuk mengulangi perintah.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Menggulung layar ke bawah saat ada output baru">
+								<longdesc>Bila true, semua tampilan keluaran dari terminal akan digulung ke bawah.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Menggulung layar hingga ke bawah saat tombol ditekan">
+								<longdesc>Bila true, scrollbar akan dikembalikan ke bawah bila ada tombol ditekan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Apakah sejumlah tak terbatas baris gulung mundur mesti dipertahankan">
+								<longdesc>Bila benar, baris gulung mundur tidak akan pernah dibuang. Riwayat gulung mundur disimpan sementara di cakram, sehingga ini bisa menyebabkan sistem kehabisan ruang cakram bila ada banyak keluaran ke terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Cacah baris yang disisakan pada saat menggulung layar ke belakang">
+								<longdesc>Cacah baris yang disisakan pada saat menggulung layar ke belakang. Anda dapat menggulung layar ke belakang sebanyak cacah baris ini; baris yang tidak cukup akan dibuang. Bila scrollback_unlimited benar, nilai ini diabaikan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posisi scrollbar">
+								<longdesc>Letak scrollbar pada terminal. Anda dapat memilih &quot;left&quot; (kiri), &quot;right&quot; (kanan) atau &quot;hidden&quot; (tersembunyi).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Cacah baris bawaan">
+								<longdesc>Cacah baris pada jendela terminal yang baru dibuat. Tidak berpengaruh bilah use_custom_default_size tidak diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Cacah kolom bawaan">
+								<longdesc>Cacah kolom pada jendela terminal yang baru dibuat. Tidak berpengaruh bila use_custom_default_size tidak diaktifkan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Apakah memakai ukuran terminal gubahan bagi jendela baru">
+								<longdesc>Bila benar, jendela terminal yang baru dibuat akan memiliki ukuran gubahan sebagaimana dinyatakan oleh default_size_columns dan default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Karakter yang dianggap sebagai &quot;bagian dari kata&quot;">
+								<longdesc>Saat memilih teks berdasarkan kata, urutan karakter-karakter ini akan dianggap sebagai satu kesatuan pada kata. Jangkauan karakter dapat ditulis dalam bentuk &quot;A-Z&quot;. Tanda minus (yang bukan melambangkan jangkauan) bila ingin dipakai maka harus ditulis pertama kali.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Penggunaan bel terminal">
+								<longdesc>Bila true, jangan bunyikan suara saat aplikasi mengirim karakter escape untuk bell terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Apakah memperbolehkan teks tebal">
+								<longdesc>Bila true, aplikasi dalam terminal diperbolehkan mencetak huruf tebal dalam teksnya.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Judul untuk terminal">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Pengaturan judul dinamis">
+								<longdesc>Bila aplikasi yang jalan dalam terminal memasang judul, maka judul tersebut dapat menghapus judul yang telah ditetapkan, atau ditambahkan sebelumnya, atau ditambahkan setelahnya, atau menggantinya. Anda bisa mengaturnya dengan mengisi &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, dan &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Apakah teks tebal mesti memakai warna yang sama dengan teks normal">
+								<longdesc>Bila benar, teks tebal akan digambarkan dengan warna sama dengan teks normal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Warna teks tebal bawaan dalam terminal">
+								<longdesc>Warna teks tebal bawaan terminal, yang ditulis dalam bentuk spesifikasi warna (boleh berupa kode heksa HTML, atau nama warna misalnya &quot;red&quot;). Ini diabaikan bila bold_color_same_as_fg benar.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Warna utama latar terminal">
+								<longdesc>Warna latar bawaan terminal, yang ditulis dalam bentuk spesifikasi warna (boleh berupa kode heksa HTML, atau nama warna misalnya &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Warna teks bawaan dalam terminal">
+								<longdesc>Warna teks bawaan terminal, yang ditulis dalam bentuk spesifikasi warna (boleh berupa kode heksa HTML, atau nama warna misalnya &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Penampilan daftar menu pada jendela/tab baru">
+								<longdesc>True apabila batang menu ditampilkan pada jendela baru untuk jendela/tab pada profil ini.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Nama profil yang mudah dibaca">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Menentukan apakah menanyakan konfirmasi saat menutup jendela terminal">
+							<longdesc>Menentukan apakah harus menanyakan konfirmasi saat menutup jendela terminal yang memiliki lebih dari satu buah tab yang terbuka.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Daftar enkode yang tersedia">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Menentukan apakah tombol singkat GTK standar untuk akses batang menu diaktifkan">
+							<longdesc>Batang menu biasanya dapat diakses dengan tombol F10. Tombol ini dapat diatur pula lewat berkas gtkrc (di bagian gtk-menu-bar-accel). Pilihan ini dapat digunakan untuk mematikan fungsi akselerator batang menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Menentukan apakah batang menu memiliki tombol akses">
+							<longdesc>Menentukan apakah tombol akses ke batang menu dapat menggunakan kombinasi Alt+huruf. Ini mungkin dapat bentrok dengan aplikasi yang jalan dalam terminal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profile yang dipakai untuk terminal baru">
+							<longdesc>Profil yang digunakan saat membuka jendela atau tab baru. Profil ini harus ada dalam profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Daftar profil">
+							<longdesc>Daftar profil pada gnome-terminal. Daftar ini berisi kalimat penamaan subdirektori yang relatif terhadap /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Apakah item menu Midnight Commander harus ditampilkan">
+						<longdesc>Jika disetel ke benar, dan jika manajer file terminal &quot;Midnight Commander&quot; telah diinstal, maka item menu &quot;Buka di Midnight Commander&quot; akan ditampilkan dalam menu konteks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Apakah membuka terminal pada desktop berarti akan membuka terminal dalam direktori asal">
+						<longdesc>Jika disetel ke benar, maka membuka terminal pada desktop berarti akan membuka terminal dalam direktori asal. Jika tidak, maka terminal akan dibuka dalam direktori desktop. Perhatikan bahwa kunci ini tidak relevan jika direktori desktop sama dengan direktori asal.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

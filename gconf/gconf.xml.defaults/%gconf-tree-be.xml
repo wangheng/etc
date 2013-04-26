@@ -1,0 +1,1044 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Працоўная група SMB">
+						<longdesc>Працоўная група сетак Windows ці маёнтак да якіх належыць карыстальнік. Будзе мець эфэкт у выпадку новай працоўнай групы калі карыстальнік пакіне й вернецца назад.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Дадатковыя маёнткі для пошуку паслуг DNS-SD">
+						<longdesc>Падзелены коскамі сьпіс маёнткаў dns-sd, якія мусяць быць бачны ў сеткавым асяродзьдзі.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Як адлюстроўваць мясцовую паслугу DNS-SD">
+						<longdesc>Магчымыя значэньні &quot;merged&quot;, &quot;separate&quot; і &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL для аўтаматычнае наладкі паўнамоцнага (proxy) паслужніку">
+						<longdesc>URL, які пастаўляе значэньні наладкі паўнамоцнага (proxy) паслужніку.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Порт паўнамоцнага па Socks">
+						<longdesc>Порт на машыне, якая вызначана ў /system/proxy/socks_host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Назва вузлу, паўнамоцнага па Socks">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай (proxy) па SOCKS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Порт паўнамоцнага па FTP">
+						<longdesc>Порт на машыне, якая вызначана ў /system/proxy/ftp_host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Назва вузла, паўнамоцнага па FTP">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай (proxy) па FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Порт паўнамоцнага па бясьпечнаму HTTP">
+						<longdesc>Порт на машыне, якая вызначана ў /system/proxy/secure_host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Назва вузла, паўнамоцнага па бясьпечнаму HTTP">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай (proxy) па HTTPS.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Рэжым наладкі паўнамоцнага паслужніку">
+						<longdesc>Вылучыце рэжым наладкі паўнамоцнага паслужніку. Дапушчальнымі значэньнямі зьяўляюцца:  &quot;none&quot; (няма), &quot;manual&quot; (адмысловы), &quot;auto&quot; (аўтаматычны)</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Вузлы якім не патрэбны proxy паслужнік">
+						<longdesc>Гэты ключ зьмяшчае сьпіс вузлоў, якія далучаны наўпрост, а не праз паўнамоцны паслужнік (калі ён задзейнічаны). Гэтыя значэньні могуць быць назвамі вузлоў, маёнткаў (з выкарыстаньнем узораў; напрыклад, *.foo.com), IP адрасоў (вэрсыі 4 і 6) і сеткавых адрасоў з маскай сеткі (напрыклад, 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Пароль для паўнамоцнага па HTTP">
+						<longdesc>Пароль для ідэнтыфікацыі ў часе перадачы паўнамоцтваў на HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Уліковы запіс для ідэнтыфікацыі на HTTP proxy">
+						<longdesc>Уліковае імя, каб прайсьці ідэнтыфікацыю на паўнамоцным (proxy) паслужніку па http.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Ідэнтыфікаваць далучэньні да паўнамоцнага (proxy) паслужніку">
+						<longdesc>Калі ісьціна, тады далучэньні да паўнамоцнага (proxy) паслужніку будуць патрабаваць ідэнтыфікацыі. Зьвяз уліковы_запіс/пароль вызначаецца ключамі /system/http_proxy/authentication_user і /system/http_proxy/authentication_password.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Порт паўнамоцнага па HTTP">
+						<longdesc>Порт на машыне, якая вызначана ў /system/http_proxy/host, якой належаць паўнамоцтвы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Назва вузла, паўнамоцнага па HTTP">
+						<longdesc>Назва машыны, якая зьяўляецца паўнамоцнай па HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Выкарыстоўваць паўнамоцны (proxy) паслужнік HTTP">
+						<longdesc>Уключае ўсталёўкі паўнамоцнага (proxy) паслужніку, калі ідзе доступ да http праз інтэрнэт.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Ці ўключана магчымасьць блякаваньня клявіятуры">
+							<longdesc>Ці ўключана магчымасьць блякаваньня клявіятуры.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Дазволіць адтэрміноўку перапынкаў">
+							<longdesc>Ці можа перапынак у наборы тэксту быць адтэрмінаваны.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Час перапынку">
+							<longdesc>Працягласьць перапынку пры наборы тэксту (вымяраецца ў хвілінах).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Час набору">
+							<longdesc>Колькасьць хвілін набору тэксту, перад пачаткам перапынку.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Выключыць усе вонкавыя стваральнікі мініятураў">
+							<longdesc>Усталюйце ў &quot;Ісьціна&quot;, каб выключыць усе вонкавыя праграмы для стварэньня мініяцюраў; гэта не залежыць ад таго, ці ўключаны/выключаны яна паасобку.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Гукі для падзеяў">
+							<longdesc>Ці граюць гукі па падзеях.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Уключыць ESD">
+							<longdesc>Уключыць выкарыстаньне гукавога паслужніку.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Памер курсору">
+								<longdesc>Памер курсору рэкамэндаваны cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Тэма курсору">
+								<longdesc>Назва тэмы курсораў. Выкарыстоўваецца толькі Х-паслужнікамі, здольнымі падтрымліваць пашырэньне Xcursor, як XFree86 4.3 і больш новыя.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Шрыфт курсору">
+								<longdesc>Назва шрыфту курсора. Калі ня ўсталяваная, будзе выкарыстоўвацца прадвызначаная. Значэньне перадаецца толькі на пачатку сэанса, таму зьмена ў часе бягучага сэансу не будзе мець вынікаў да наступнага ўваходу.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Адшукаць указальнік">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Час падвойнага шчаўчку">
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Парог захопу">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Парог руху">
+								<longdesc>Адлегласьць у піксэлях якую мусіць мінуць указальнік да актывацыі паскарэньня мышы. Прадвызначанае сыстэмнае значэньне -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Самотны шчаўчок">
+								<longdesc>Множнік паскарэньня для руху мышы. Прадвызначанае сыстэмнае значэньне -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Самотны шчаўчок">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Арыентацыя кнопак мышы">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Помніць стан NumLock">
+								<longdesc>Калі &quot;ІСЬЦІНА&quot;, GNOME запамінае стан NumLock паміж сэансамі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Назва файлу сыгналу клявіятуры">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>магчымыя значэньні: &quot;on&quot;, &quot;off&quot; ці &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Выключыць наладкі друку">
+							<longdesc>Забараняе карыстальніку зьмяняць наладкі друку. Напрыклад, гэта забароніць доступ да дыялёга &quot;Наладкі друку&quot; усіх дастасаваньняў.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Выключыць друк">
+							<longdesc>Забараняе карыстальніку друкаваць. Напрыклад, гэта забароніць доступ да дыялёга &quot;Друк&quot; усіх дастасаваньняў.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Выключыць захаваньне файлаў на дыск">
+							<longdesc>Забараняе карыстальніку захоўваць файлы на дыск. Напрыклад, гэта забароніць доступ да дыялёга &quot;Захаваць як&quot; усіх дастасаваньняў.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Выключыць загадны радок">
+							<longdesc>Забараняе карыстальніку доступ да тэрмінала й загаднага радка. Напрыклад, гэта забароніць дыялёг панэлі &quot;Выканаць дастасаваньне&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Паказваць мэню  &quot;Кіруючы сымбаль Unicode&quot;">
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Паказваць мэню &quot;Мэтады ўводу&quot;">
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Паскаральнік панэлі мэню">
+							<longdesc>Клявіятурныя скарачэньні для адкрыцьця панэляў мэню.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Модуль для GtkFileChooser">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Панэль стану з правага боку">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Выкарыстоўваць свой шрыфт">
+							<longdesc>Ці мусіць выкарыстоўвацца ў gtk+ дастасаваньнях шрыфт вызначаны карыстальнікам.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Шрыфт фіксаванай шырыні">
+							<longdesc>Назва шрыфту фіксаванай шырыні для выкарыстаньня ў такіх месцах як тэрміналы.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Шрыфт дакумэнтаў">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM Status Style">
+							<longdesc>Назва мэтаду ўводу &quot;Status Style&quot; які выкарыстоўваецца gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM Preedit Style">
+							<longdesc>Назва мэтаду уводу GTK+ &quot;Preedit Style&quot; які выкарыстоўваецца gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Прадвызначаны шрыфт">
+							<longdesc>Назва прадвызначанага шрыфту які выкарыстоўваецца gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Тэма Gtk+">
+							<longdesc>Назва прадвызначанай тэмы для gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Тэма Gtk+">
+							<longdesc>Назва прадвызначанай тэмы для gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Тэма значак">
+							<longdesc>Тэма значак для выкарыстаньня ў панэлі, наўтылусе і г.д.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Час мільганьня курсору">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Мільганьне курсору">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Памер значак на панэлі інструмэнтаў">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Панэль інструмэнтаў можа быць адчэпленая">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Панэль мэню можа быць адчэпленая">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Мэню мае значкі">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Стыль панэлі інструмэнтаў">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Паскаральнікі могуць быць зьмененыя">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Мэню мае лініі адрыву">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Уключыць анімацыю">
+							<longdesc>Ці мусіць адлюстроўвацца анімацыя. Заўвага: гэта глябальны ключ, гэта зьмяняе паводзіны кіраўніка вокнаў, панэляў і г.д.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Уключыць тэхналёгію даступнасьці">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Файл тэмы значак">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Тып адценьня колеру">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Другасны колер">
+							<longdesc>Правы ці ніжні колер калі выводзіцца градыент, не выкарыстоўваецца для суцэльнага колеру.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Першасны колер">
+							<longdesc>Левы і верхні колер калі выводзіцца градыент, ці суцэльны колер.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Празрыстасьць карцінкі">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Назва файла карцінкі">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Можнасьці карцінкі">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Рысаваць тло стальца">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Запуск дастасаваньняў тэхналёгіі даступнасьці">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Выключаць, калі дзьве кнопкі былі націснутыя адначасова.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="найменшы прамежак у мілісэкундах">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Назвы працоўных прастораў (асуджанае)">
+								<longdesc>Сьпіс з назвамі працоўных прастораў першага кіраўніка вокнаў. Гэты ключ асуджаны пачынаючы з вэрсіі GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Колькасьць працоўных прастораў (асуджанае)">
+								<longdesc>Колькасьць працоўных прастораў якія будуць выкарыстоўвацца кіраўніком вокнаў. Гэты ключ асуджаны пачынаючы з вэрсіі GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Кіраўнік вокнаў абраны карыстальнікам (асуджанае)">
+								<longdesc>Кіраўнік вокнаў, які будзе паспрабаваны першым. Гэты ключ асуджаны пачынаючы з вэрсіі GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Аварыйны кіраўнік вокнаў (асуджанае)">
+								<longdesc>Аварыйны кіраўнік вокнаў, які будзе выкарыстоўвацца калі прадвызначаны адсутнічае. Гэты ключ асуджаны пачынаючы з вэрсіі GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Вандроўнік разумее адлеглае">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Вандроўніку патрэбны тэрмінал">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Прадвызначаны вандроўнік">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Прадвызначанае дастасаваньне прагляду кампанэнта">
+								<longdesc>Дастасаваньне для прагляду файлаў, якія патрабуюць кампанэнт, каб прагледзіць іх. Парамэтар %s будзе заменены на URI файлаў, парамэтар %c будзе заменены IID кампанэнту.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Аргумэнты пуску">
+								<longdesc>Аргумэнт, які выкарыстоўваецца ў часе загрузкі праграмаў у тэрмінале па ключу &quot;exec&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Дастасаваньне тэрміналу">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;h323&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;h323&quot; (відэаканфэрэнцыя), калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;h323&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;callto&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;callto&quot; (аддаленых выклікаў) , калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;callto&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;aim&quot; (хуткіх паведамленьняў)">
+								<longdesc>Загад для апрацоўкі URL &quot;aim&quot; (хуткіх паведамленьняў), калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;aim&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;aim&quot; (хуткіх паведамленьняў).</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;mailto&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;mailto&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;mailto&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;https&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;https&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;https&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;http&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;http&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;http&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;man&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;man&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;man&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;info&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;info&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;info&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;ghelp&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;ghelp&quot; (дапамога), калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL  &quot;ghelp&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Выканаць загад у тэрмінале">
+								<longdesc>Ісьціна калі загад для апрацоўкі гэтага тыпу URL мусіць выконвацца ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Апрацоўшчык URL &quot;trash&quot;">
+								<longdesc>Загад для апрацоўкі URL &quot;trash&quot;, калі уключанае.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ці пазначаны загад апрацоўвае URL &quot;trash&quot;">
+								<longdesc>Ісьціна калі загад пазначаны у ключы &quot;command&quot; мусіць апрацоўваць URL &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Скарот, каб вярнуць звычайны памер шрыфту">
+							<longdesc>Клавіятурны скарот, каб вярнуць звычайны памер шрыфту. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Скарот, каб паменшыць памер шрыфту">
+							<longdesc>Клавіятурны скарот, каб паменшыць памер шрыфту. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Скарот, каб павялічыць памер шрыфту">
+							<longdesc>Клавіятурны скарот, каб павялічыць памер шрыфту. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Скарот, каб адкрыць даведку">
+							<longdesc>Клавіятурны скарот, каб адкрыць даведку. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 12">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 12. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 11">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 11. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 10">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 10. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 9">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 9. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 8">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 8. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 7">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 7. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 6">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 6. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 5">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 5. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 4">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 4. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 3">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 3. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 2">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 2. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Скарот, каб перайсці да карткі 1">
+							<longdesc>Клавіятурны скарот, каб пераключыцца на картку 1. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Скарот, каб адчапіць адкрытую картку.">
+							<longdesc>Клавіятурны скарот, каб адчапіць адкрытую картку. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Скарот, каб пасунуць адкрытую картку ўправа.">
+							<longdesc>Клавіятурны скарот, каб пасунуць адкрытую картку ўправа. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Скарот, каб пасунуць адкрытую картку ўлева.">
+							<longdesc>Клавіятурны скарот, каб пасунуць адкрытую картку ўлева. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Скарот, каб перайсці да наступнай карткі">
+							<longdesc>Клавіятурны скарот, каб перайсці да наступнай карткі. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Скарот, каб перайсці да папярэдняй карткі">
+							<longdesc>Клавіятурны скарот, каб перайсці да папярэдняй карткі. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Скарот, каб ачысціць тэрмінал і скінуць яго настройкі">
+							<longdesc>Клавіятурны скарот, каб ачысціць тэрмінал і скінуць яго настройкі. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Скарот, каб скінуць настройкі тэрмінала">
+							<longdesc>Клавіятурны скарот, каб скінуць настройкі тэрмінала. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Скарот, каб прызначыць загаловак тэрмінала">
+							<longdesc>Клавіятурны скарот, каб прызначыць загаловак тэрмінала. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Скарот, каб пераключыць паказ стужкі меню">
+							<longdesc>Клавіятурны скарот, каб пераключыць паказ стужкі меню. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Скарот, каб пераключыць поўнаэкранны рэжым">
+							<longdesc>Клавіятурны скарот, каб пераключыць поўнаэкранны рэжым. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.будзе.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Скарот, каб уставіць тэкст">
+							<longdesc>Клавіятурны скарот, каб уставіць змесціва буфера абмену ў тэрмінал. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Скарот, каб скапіраваць тэкст">
+							<longdesc>Клавіятурны скарот, каб скапіраваць вылучаны тэкст у буфер абмену. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Скарот, каб закрыць акно">
+							<longdesc>Клавіятурны скарот, каб закрыць акно. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Скарот, каб закрыць картку">
+							<longdesc>Клавіятурны скарот, каб закрыць картку. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Скарот, каб захаваць змесціва карткі ў файле">
+							<longdesc>Клавіятурны скарот, каб захаваць змесціва карткі ў файле. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Скарот, каб стварыць новы профіль">
+							<longdesc>Клавіятурны скарот, каб адкрыць дыялогавае акенца стварэння профіля. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Скарот, каб адкрыць новае акно">
+							<longdesc>Клавіятурны скарот, каб адкрыць новае акно. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Скарот, каб адкрыць новую картку">
+							<longdesc>Клавіятурны скарот, каб адкрыць новую картку. Фармат значэння адпавядае фармату апісання скаротаў, прыдатнаму для рэсурсных файлаў GTK+. Адмысловае значэнне &quot;disabled&quot; азначае адсутнасць скароту для гэтага дзеяння.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Прадвызначанае кадаванне">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Ці трэба ўжыць сістэмны шрыфт">
+								<longdesc>Калі ўключана, для тэрмінала будзе выкарыстаны стандартны шрыфт, агульны для ўсяго стала, калі той з&apos;яўляецца роўнашырокім шрыфтом (ці іншы падобны да яго).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Ці трэба для тэрмінала ўжыць колеры актыўнага матыва аздаблення">
+								<longdesc>Калі ўключана, для рысавання тэкставых графаў будзе выкарыстана схема колераў актыўнага матыва, а не колеры, вызначаныя карыстальнікам.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Дзеянне клавішы Delete">
+								<longdesc>Вызначае код клавішы Delete. Магчымыя значэнні: &quot;ascii-del&quot; (ASCII DEL), &quot;control-h&quot; (Ctrl-H / ASCII BS), &quot;escape-sequence&quot; (спецыяльная паслядоўнасць, звычайна звязаная з клавішай Backspace ці Delete). Значэнне &quot;escape-sequence&quot; з&apos;яўляецца звычайным значэннем клавішы Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Дзеянне клавішы Backspace">
+								<longdesc>Вызначае код клавішы Backspace. Магчымыя значэнні: &quot;ascii-del&quot; (ASCII DEL), &quot;control-h&quot; (Ctrl-H / ASCII BS), &quot;escape-sequence&quot; (спецыяльная паслядоўнасць, звычайна звязаная з клавішай Backspace ці Delete). Значэнне &quot;ascii-del&quot; з&apos;яўляецца звычайным значэннем клавішы Backspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Ступень зацянення фонавай выявы">
+								<longdesc>Значэнне ад 0.0 да 1.0 азначае ступень зацямнення фонавай выявы. 0.0 азначае адсутнасць зацямнення, 1.0 азначае поўнае зацямненне. Гэта рэалізацыя алгарытму падтрымлівае толькі два значэнні, таму гэта настройка дзейнічае як булева зменная, для якой значэнне 0.0 азначае выключэнне эфекту зацямнення.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Ці трэба пракручваць фонавую выяву">
+								<longdesc>Калі ўключана, пракручваць фонавую выяву разам з тэкстам у тэрмінале. Калі не, выява мае замацаваную пазіцыю, а тэкст пракручваецца асобна ад яе.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Фонавая выява">
+								<longdesc>Назва файла фонавай выявы.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Тып фону">
+								<longdesc>Тып фону тэрмінала. Магчымыя значэнні: &quot;solid&quot; (суцэльны колер), &quot;image&quot; (выява) ці &quot;transparent&quot; (сапраўдная празрыстасць у выпадку наяўнасці кампазітнага кіраўніка вокнаў ці псеўдапразрыстасць у выпадку яго адсутнасці).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Шрыфт">
+								<longdesc>Назва шрыфту Pango. Прыклады: &quot;Sans 12&quot; ці &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Палітра праграм у тэрмінале">
+								<longdesc>Тэрміналы ўжываюць 16-колерную палітру, якой могуць карыстацца запушчаныя ў іх праграмы. Гэта значэнне прадстаўляе такую палітру, у фармаце спіс назваў колераў, падзеленых коскамі. Назвы колераў мусяць адпавядаць шаснаццатковаму фармату, напрыклад, &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Значок акна тэрмінала">
+								<longdesc>Значок для картак і вокнаў, якія выкарыстоўваюць гэты профіль.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Уласны загад для запуску загаднай абалонкі">
+								<longdesc>Калі ключ use_custom_command уключаны, вызначае загад для запуску замест загаднай абалонкі.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Від курсора">
+								<longdesc>Магчымыя значэнні: &quot;block&quot; (прамавугольнік), &quot;ibeam&quot; (вертыкальная рыска) ці &quot;underline&quot; (падкрэсліванне).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Ці мусіць курсор мільгаць">
+								<longdesc>Магчымыя значэнні: &quot;system&quot; (выкарыстаць агульныя настройкі мільгання курсора), &quot;on&quot; (уключыць) ці &quot;off&quot; (выключыць).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Ці трэба выконваць уласны загад замест загаднай абалонкі">
+								<longdesc>Калі ўключана, замест запуску загаднай абалонкі будзе ўжыта значэнне ключа custom_command.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Ці трэба абнаўляць запісы аб уваходзе пры запуску загаду ў тэрмінале">
+								<longdesc>Калі ўключана, запісы ўваходу ў сістэму utmp і wtmp будуць абноўленыя пры запуску загаду ў тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Ці трэба выконваць гэты загад у тэрмінале як загадную абалонку">
+								<longdesc>Калі ўключана, загад у тэрмінале будзе запушчаны як уваходная загадная абалонка. (argv[0] будзе мець знак злучка ў пачатку.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Што рабіць з тэрміналам, калі загад-нашчадак заканчвае працу">
+								<longdesc>Магчымыя значэнні: &quot;close&quot; (закрыць тэрмінал) і &quot;restart&quot; (перазапусціць загад).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Ці трэба пракручваць тэрмінал уніз пры з&apos;яўленні новага вываду">
+								<longdesc>Калі ўключана, пры з&apos;яўленні новага вываду ў тэрмінале паласа пракруткі будзе перасунута ў канец.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Ці трэба пракручваць тэрмінал уніз пры націску клавішы">
+								<longdesc>Калі ўключана, націск клавішы пераносіць паласу пракруткі ў канец.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Ці трэба захоўваць неабмежаваную колькасць радкоў для пракруткі">
+								<longdesc>Калі ўключана, радкі пракруткі ніколі не будуць забытыя. Гісторыя папярэдняга вываду часова захоўваецца на дыску, і таму шмат тэкставага вываду можа прывесці да заўчаснага заканчэння вольнай дыскавай прасторы.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Колькасць радкоў у памяці пракруткі">
+								<longdesc>Колькасць радкоў у памяці пракруткі. Пракрутка назад у тэрмінале магчымая толькі ў межах гэтых радкоў. Радкі, якія не змясціліся ў памяці, незваротна забываюцца. Калі ключ scrollback_unlimited уключаны, гэта значэнне ігнаруецца.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Месцапалажэнне паласы пракруткі">
+								<longdesc>Дзе змяшчаць паласу пракруткі тэрмінала. Магчымыя значэнні: &quot;left&quot; (злева), &quot;right&quot; (справа) ці &quot;hidden&quot; (не паказваць).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Прадвызначаная колькасць радкоў">
+								<longdesc>Колькасць радкоў у новых вокнах тэрмінала. Настройка не дзейнічае, калі ключ use_custom_default_size выключаны.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Прадвызначаная колькасць слупкоў">
+								<longdesc>Колькасць слупкоў у новых вокнах тэрмінала. Настройка не дзейнічае, калі ключ use_custom_default_size выключаны.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Ці трэба ўжыць для новых вокнаў уласны памер тэрмінала">
+								<longdesc>Калі ўключана, новыя вокны тэрмінала будуць мець памер, вызначаны значэннямі ключоў default_size_columns і default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Знакі, якія з&apos;яўляюцца складнікамі слоў">
+								<longdesc>Калі тэкст вылучаецца па словах, паслядоўнасці гэтых знакаў лічацца адным словам. Дыяпазоны знакаў маюць фармат &quot;A-Z&quot;. Знак злучка трэба падаць першым знакам.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Ці трэба абязгучыць сігнал тэрмінала">
+								<longdesc>Калі ўключана, не агучваць спецыяльныя паслядоўнасці для выкліку сігналу тэрмінала.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Ці трэба дазволіць тоўстыя літары тэксту">
+								<longdesc>Ці трэба дазваляць праграмам выкарыстоўваць тоўсты шрыфт у тэрмінале.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Загаловак тэрмінала">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Што рабіць з дынамічным загалоўкам">
+								<longdesc>Калі праграма ў тэрмінале прызначае новы загаловак (звычайна гэтак робіць загадная абалонка), яго тэкст можа замяніць наяўны або быць устаўленым перад ці пасля яго. Магчымыя значэнні: &quot;replace&quot; (замена), &quot;before&quot; (перад наяўным загалоўкам), &quot;after&quot; (пасля наяўнага загалоўка) і &quot;ignore&quot; (ігнараваць запыты змянення загалоўка).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Ці трэба паказваць тоўстыя літары адным колерам са звычайнымі">
+								<longdesc>Калі ўключана, тоўстыя літары будуць паказвацца ў колеры звычайнага тэксту.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Прадвызначаны колер тоўстых літар тэксту ў тэрмінале">
+								<longdesc>Спецыфікацыя прадвызначанага колеру тоўстых літар тэксту ў тэрмінале (у фармаце HTML або англійская назва колеру, як &quot;red&quot;). Гэта настройка не ўздзейнічае на праграму, калі ключ bold_color_same_as_fg уключаны.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Прадвызначаны колер фону тэрмінала">
+								<longdesc>Спецыфікацыя прадвызначанага колеру фону тэрмінала (у фармаце HTML або англійская назва колеру, як &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Прадвызначаны колер тэксту ў тэрмінале">
+								<longdesc>Спецыфікацыя прадвызначанага колеру тэксту ў тэрмінале (у фармаце HTML або англійская назва колеру, як &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Ці трэба паказваць стужку меню ў новых вокнах і картках">
+								<longdesc>Калі ўключана, для вокнаў і картак гэтага профіля трэба паказваць стужку меню.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Зручная для чалавека назва профіля">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Ці трэба пытацца пацвярджэння для закрыцця акна тэрмінала">
+							<longdesc>Ці трэба пытацца пацвярджэння для закрыцця акна тэрмінала з некалькімі карткамі.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Спіс магчымых кадаванняў">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Ці трэба ўключыць стандартны скарот GTK для доступу да стужкі меню">
+							<longdesc>Звычайна стужку меню можна актывізаваць з дапамогай клавішы F10. Гэтыя паводзіны таксама можна падстроіць з дапамогай gtkrc (gtk-menu-bar-accel = &quot;клавіша&quot;). Таксама гэта функцыя дазваляе выключыць клавіятурны скарот для стужкі меню.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Ці мае стужка меню клавішу хуткага доступу">
+							<longdesc>Ці патрэбныя клавішы хуткага доступу да стужкі меню тыпу &quot;Alt+літара&quot;. Яны могуць канфліктаваць з некаторымі праграмамі ў тэрмінале, таму мы даем магчымасць выключыць іх.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Профіль для новых тэрміналаў">
+							<longdesc>Профіль для новых вокнаў і картак. Мусіць быць пералічаны ў profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Спіс профіляў">
+							<longdesc>Спіс вядомых профіляў. Спіс змяшчае назвы падпапак адносна /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ці паказваць элемэнт мэню &quot;Midnight Commander&quot;">
+						<longdesc>Калі ўключана і калі ўсталяваны тэрмінальны кіраўнік файлаў &quot;Midnight Commander&quot;, тады ў кантэкстным мэню будзе элемэнт &quot;Адчыніць у Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ці трэба адчыняць у тэрінале, уключаным з працоўнага стала, хатнюю тэчку">
+						<longdesc>Калі ўключана, тады адчыненьне тэрміналу з працоўнага стала будзе зробленае ў хатняй тэчцы. Інакш, тэрмінал адчыніцца ў тэчцы працоўнага стала. Зважай, што гэты ключ ня мае сэнсу, калі тэчка працоўнага стала ёсьць хатняй тэчкаю.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

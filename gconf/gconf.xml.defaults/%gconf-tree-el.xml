@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Ομάδα εργασίας SMB">
+						<longdesc>Το Windows networking workgroup ή ο τομέας όπου ανήκει ο χρήστης. Για να πραγματοποιηθεί η δημιουργία ενός νέου workgroup ο χρήστης θα πρέπει να αποσυνδεθεί καινα επανασυνδεθεί.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Επιπρόσθετοι τομείς για αναζήτηση υπηρεσιών dns-sd">
+						<longdesc>Λίστα διαχωρισμένη με κόμμα από τομείς dns-sd που θα πρέπει να είναι ορατοί στην τοποθεσία &quot;network:///&quot; </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Πως να εμφανίζεται η τοπική υπηρεσία DNS-SD">
+						<longdesc>Πιθανές τιμές είναι &quot;merged&quot;, &quot;separate&quot; and &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Αυτόματη ρύθμιση URL ρύθμισης διαμεσολαβητή">
+						<longdesc>Το URL που παρέχει τιμές ρύθμισης διαμεσολαβητή.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Θύρα διαμεσολαβητή SOCKS">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το  &quot;/system/proxy/socks_host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Όνομα συστήματος διαμεσολαβητή SOCKS">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Θύρα διαμεσολαβητή FTP ">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το &quot;/system/proxy/ftp_host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Όνομα συστήματος διαμεσολαβητή FTP ">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Θύρα ασφαλούς διαμεσολαβητή HTTP">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το &quot;/system/proxy/secure_host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Όνομα συστήματος ασφαλούς διαμεσολαβητή HTTP">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση ασφαλούς HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Λειτουργία ρυθμίσεων διαμεσολαβητή">
+						<longdesc>Επιλογή λειτουργίας ρύθμισης διαμεσολαβητή. Υποστηριζόμενες τιμές είναι &quot;καμμία&quot;, &quot;χειροκίνητη&quot;, &quot;αυτόματη&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Συστήματα χωρίς διαμεσολαβητή">
+						<longdesc>Αυτό το κλειδί περιέχει μια λίστα από συστήματα στα οποία γίνεται απευθείας σύνδεση, παρά μέσω του διαμεσολαβητή (αν είναι ενεργός). Οι τιμές μπορεί να είναι ονόματα συστήματος, τομείς (με τη χρήση μιας αρχικής wildcard όπως *.foo.com), διευθύνσεις IP (και IPv4 και IPv6) και διευθύνσεις δικτύου με  netmask (κάτι σαν 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Κωδικός διαμεσολαβητή HTTP">
+						<longdesc>Κωδικός πρόσβασης για πιστοποίηση όταν γίνεται διαμεσολάβηση HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Όνομα χρήστη διαμεσολαβητή HTTP">
+						<longdesc>Όνομα χρήστη για να περάσει ως πιστοποίηση κατά τη διαμεσολάβηση http.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Πιστοποίηση συνδέσεων στον εξυπηρετητή διαμεσολάβησης">
+						<longdesc>Αν αληθές, τότε οι συνδέσεις στο διαμεσολαβητή απαιτούν πιστοποίηση. Τα όνομα χρήστη/κωδικός καθορίζονται από το &quot;/system/http_proxy/authentication_user&quot; και &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Θύρα διαμεσολαβητή HTTP">
+						<longdesc>Η θύρα στο σύστημα που καθορίζεται από το  &quot;/system/http_proxy/host&quot; μέσω του οποίου γίνεται διαμεσολάβηση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Όνομα συστήματος διαμεσολαβητή HTTP">
+						<longdesc>Το όνομα συστήματος μέσω του οποίου γίνεται διαμεσολάβηση HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Χρήση διαμεσολαβητή HTTP">
+						<longdesc>Ενεργοποιεί τις ρυθμίσεις διαμεσολαβητή κατά την πρόσβαση HTTP στο διαδίκτυο.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Αν το κλείδωμα πληκτρολογίου θα είναι ενεργοποιημένο ή όχι">
+							<longdesc>Αν το κλείδωμα πληκτρολογίου θα είναι ενεργοποιημένο ή όχι.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Να επιτρέπεται η αναβολή διαλειμμάτων">
+							<longdesc>Αν θα αναβάλλεται ή όχι η οθόνη διαλείμματος πληκτρολόγησης.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Ώρα διαλείμματος">
+							<longdesc>Αριθμός λεπτών που διαρκεί το διάλειμμα πληκτρολόγησης.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Χρόνος πληκτρολόγησης">
+							<longdesc>Αριθμός λεπτών πληκτρολόγησης πριν την έναρξη διαλείμματος.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Απενεργοποίηση όλων των εξωτερικών προγραμμάτων προεπισκόπησης">
+							<longdesc>Ορισμός σε true για την απενεργοποίηση όλων των εξωτερικών προγραμμάτων προεπισκόπησης ανεξάρτητα από το αν είναι απενεργοποιημένα ή ενεργοποιημένα.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Μέγιστο μέγεθος μικρογραφιών, σε megabyte.  Επιλέξτε -1 για να απενεργοποιήσετε την εκκαθάριση.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Μέγιστος χρόνος διατήρησης μικρογραφιών στη μνήμη, σε ημέρες. Επιλέξτε -1 για να απενεργοποιήσετε την εκκαθάριση.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Ήχοι ειδοποίησης εισόδου">
+							<longdesc>Αν θα αναπαράγονται ήχοι για συμβάντα εισόδου.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Όνομα θέματος ήχων">
+							<longdesc>Θέμα ήχων XDG για τους ήχους συμβάντων.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Ήχοι για συμβάντα">
+							<longdesc>Αν θα αναπαράγονται ήχοι στα γεγονότα χρήστη.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Ενεργοποίηση ESD">
+							<longdesc>Ενεργοποίηση εκκίνησης εξυπηρετητή ήχων.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Προεπιλεγμένα track μίξης">
+							<longdesc>Τα προεπιλεγμένα track μίξης για χρήση από τις συντομεύσεις πλήκτρων πολυμέσων.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Προεπιλεγμένη συσκευή μίξης ήχου">
+							<longdesc>Η προεπιλεγμένη συσκευή μίξης ήχου για χρήση από τις συντομεύσεις πλήκτρων πολυμέσων.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Μέγεθος δρομέα ">
+								<longdesc>Μέγεθος του δρομέα που αναφέρεται από το  cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Θέμα δρομέα">
+								<longdesc>Όνομα θέματος δρομέα. Χρησιμοποιείται μόνο από Xservers που υποστηρίζουν Xcursor, όπως το XFree86 4.3 και νεότερο.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Γραμματοσειρά δρομέα">
+								<longdesc>Όνομα γραμματοσειράς του δρομέα. Αν δεν ορισθεί χρησιμοποιείται η προεπιλεγμένη γραμματοσειρά. Αυτή η τιμή ενεργοποιείται κατά την εκκίνηση του εξυπηρετητή X, έτσι η αλλαγή της στη μέση της συνεδρίας δε θα έχει αποτέλεσμα μέχρι την επόμενη είσοδο σας .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Εντοπισμός δείκτη">
+								<longdesc>Επισημαίνει την τρέχουσα θέση του δρομέα όταν έχει πατηθεί και απελευθερωθεί το πλήκτρο Control.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Χρόνος διπλού κλικ">
+								<longdesc>Διάρκεια διπλού κλικ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Κατώφλι drag">
+								<longdesc>Απόσταση πριν από την έναρξη συρσίματος.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Κατώφλι κίνησης">
+								<longdesc>Απόσταση σε εικονοστοιχεία την οποία θα πρέπει να διανύσει ο δρομέας πριν να ενεργοποιηθεί η κίνηση συντόμευσης του ποντικιού. Η τιμή -1 είναι η προεπιλεγμένη από το σύστημα.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Μονό κλικ">
+								<longdesc>Πολλαπλασιαστής συντομεύσεως για τη κίνηση του ποντικιού. Η τιμή -1 είναι η προεπιλεγμένη από το σύστημα.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Μονό κλικ">
+								<longdesc>Μονό κλικ για το άνοιγμα εικονιδίων.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Προσανατολισμός πλήκτρου ποντικιού">
+								<longdesc>Εναλλαγή αριστερού και δεξιού κουμπιού σε ποντίκια για αριστερόχειρες.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Απομνημόνευση κατάστασης NumLock">
+								<longdesc>Αν ορισθεί σε true, το GNOME θα απομνημονεύει την κατάσταση του NumLock ανάμεσα σε συνεδρίες.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Όνομα αρχείου προσαρμοσμένου ήχου πληκτρολογίου">
+								<longdesc>Όνομα αρχείου του ήχου καμπάνας που θα αναπαράγεται.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>πιθανές τιμές είναι &quot;ενεργό&quot;, &quot;ανενεργό&quot; και &quot;προσαρμοσμένο&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Απενεργοποίηση των χειριστών URL και τύπων MIME">
+							<longdesc>Να εμποδίζεται οι εκτέλεση εφαρμογών χειριστών URL ή τύπων MIME</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Απενεργοποίηση κλειδώματος οθόνης">
+							<longdesc>Αποτροπή του χρήστη να κλειδώνει την οθόνη.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Απενεργοποίηση εναλλαγής χρήστη">
+							<longdesc>Αποτροπή του χρήστη να εναλλάσσει σε άλλο λογαριασμό όταν έχει ενεργή συνεδρία</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Απενεργοποίηση διαμόρφωσης εκτύπωσης">
+							<longdesc>Δεν επιτρέπει στο χρήστη να τροποποιήσει τις ρυθμίσεις εκτύπωσης. Για παράδειγμα αυτό θα αποτρέψει την πρόσβαση στους διαλόγους &quot;Διαμόρφωση εκτύπωσης&quot; σε όλες τις εφαρμογές.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Απενεργοποίηση εκτύπωσης">
+							<longdesc>Δεν επιτρέπει στο χρήστη να εκτυπώσει. Για παράδειγμα αυτό θα αποτρέψει την  πρόσβαση στους διαλόγους &quot;Εκτύπωση&quot; σε όλες τις εφαρμογές.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Απενεργοποίηση αποθήκευσης αρχείων στο δίσκο">
+							<longdesc>Δεν επιτρέπει στο χρήστη την αποθήκευση αρχείων στο δίσκο. Για παράδειγμα αυτό θα  αποτρέψει την  πρόσβαση στους διαλόγους &quot;Αποθήκευση ως&quot; σε όλες τις εφαρμογές.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Απενεργοποίηση γραμμής εντολών">
+							<longdesc>Αποτρέπει την πρόσβαση από το χρήστη στο τερματικό ή καθορίζει την εκτέλεση μιας συγκεκριμένης εντολής. Για παράδειγμα, αυτό δεν θα επιτρέπει την πρόσβαση στο διάλογο του πίνακα εφαρμογών &quot;Εκτέλεση εφαρμογής&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Προβολή του μενού &apos;Unicode Control Character&apos;">
+							<longdesc>Αν τα μενού περιεχομένων των προβολών καταχωρίσεων και κειμένου θα προσφέρουν τη δυνατότητα εισαγωγής control characters.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Προβολή του μενού μεθόδων εισαγωγής">
+							<longdesc>Αν τα μενού περιεχομένων των προβολών καταχωρίσεων και κειμένου θα προσφέρουν τη δυνατότητα αλλαγής της μεθόδου εισαγωγής.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Συντόμευση μενού">
+							<longdesc>Συντόμευση πληκτρολογίου για το άνοιγμα εργαλειοθηκών μενού.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Λειτουργικό στοιχείο για GtkFileChooser">
+							<longdesc>Λειτουργικό στοιχείο για χρήση ως μοντέλο αρχείου συστήματος για το γραφικό συστατικό GtkFileChooser . Οι πιθανές τιμές είναι &quot;gnome-vfs&quot; και &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Γραμμή κατάστασης στα δεξιά">
+							<longdesc>Αν θα εμφανίζεται στα δεξιά μετρητής γραμμής κατάστασης</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Χρήση προσαρμοσμένης γραμματοσειράς">
+							<longdesc>Αν θα χρησιμοποιείται προσαρμοσμένη γραμματοσειρά από τις εφαρμογές gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Γραμματοσειρά Monospace ">
+							<longdesc>Όνομα γραμματοσειράς Monospace (σταθερού-πλάτους) για χρήση σε τοποθεσίες όπως τερματικά.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Γραμματοσειρά εγγράφου">
+							<longdesc>Όνομα της προεπιλεγμένης γραμματοσειράς για χρήση στην ανάγνωση εγγράφων.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Λειτουργική μονάδα GTK IM ">
+							<longdesc>Όνομα της μεθόδου εισαγωγής που χρησιμοποιείται από το GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Στυλ κατάστασης GTK IM ">
+							<longdesc>Όνομα της μεθόδου εισαγωγής GTK+ Status Style που χρησιμοποείται από το gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Στυλ Preedit GTK IM ">
+							<longdesc>Όνομα της μεθόδου εισαγωγής GTK+ Preedit Style που χρησιμοποιείται από το gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Προεπιλεγμένη γραμματοσειρά">
+							<longdesc>Όνομα της προεπιλεγμένης γραμματοσειράς για χρήση από το gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Θέμα Gtk+">
+							<longdesc>Όνομα βάσης του εξ ορισμού θέματος που χρησιμοποιείται από το  gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Θέμα Gtk+">
+							<longdesc>Όνομα βάσης του εξ ορισμού θέματος που χρησιμοποιείται από το  gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Θέμα εικονιδίου">
+							<longdesc>Θέμα εικονιδίου που χρησιμοποιείται για το πίνακα εφαρμογών, το ναυτίλο κτλ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Χρόνος παλμών δρομέα">
+							<longdesc>Διάρκεια του κύκλου εναλλαγής παλμού δρομέα σε χιλιοστά δευτερολ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Παλλόμενος δρομέας">
+							<longdesc>Αν θα πάλλεται ο δρομέας.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Μέγεθος εικονιδίου εργαλειοθήκης">
+							<longdesc>Μέγεθος των εικονιδίων στις εργαλειοθήκες, είτε &quot;small-toolbar&quot; ή &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Αποσπώμενη εργαλειοθήκη">
+							<longdesc>Αν ο χρήστης θα  μπορεί να αποσπά τις εργαλειοθήκες και να τις μετακινεί τριγύρω.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Αποσπώμενη μπάρα μενού">
+							<longdesc>Αν ο χρήστης θα  μπορεί να αποσπά τα μενού και να τα μετακινεί τριγύρω.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Τα κουμπιά διαθέτουν εικονίδια">
+							<longdesc>Αν τα κουμπιά θα εμφανίζουν εικονίδιο δίπλα στο κείμενό τους.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Τα μενού έχουν εικονίδια">
+							<longdesc>Αν τα μενού θα εμφανίζουν ένα εικονίδιο δίπλα στην καταχώρηση μενού.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Στυλ εργαλειοθήκης">
+							<longdesc>Στυλ εργαλειοθήκης. Οι έγκυρες τιμές είναι &quot;both&quot;, &quot;both_horiz&quot;, &quot;icons&quot;, και &quot;text&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Δυνατότητα αλλαγής συντομεύσεων">
+							<longdesc>Αν ο χρήστης θα μπορεί να εισάγει δυναμικά μια νέα συντόμευση όταν το μενού αναδύεται.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Τα μενού είναι αποσπώμενα">
+							<longdesc>Αν τα μενού θα πρέπει να έχουν tearoff</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Ενεργοποίηση κινούμενων εικόνων">
+							<longdesc>Αν θα εμφανίζονται οι κινούμενες εικόνες. Σημείωση: Αυτό είναι ένα γενικό κλειδί, αλλάζει τη συμπεριφορά του διαχειριστή παραθύρων, του πίνακα εφαρμογών κτλ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Ενεργοποίηση Προσιτότητας ">
+							<longdesc>Αν οι εφαρμογές θα υποστηρίζουν προσιτότητα.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Θέμα εικονιδίου αρχείου">
+							<longdesc>Θέμα που χρησιμοποιείται για την προβολή εικονιδίων αρχείων.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Τύπος σκίασης χρώματος">
+							<longdesc>Πώς να σκιάζεται το χρώμα παρασκηνίου. Οι πιθανές τιμές είναι &quot;οριζόντια διαβάθμιση&quot;, &quot;κάθετη διαβάθμιση&quot;, και &quot;συμπαγές χρώμα&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Δευτερεύον χρώμα">
+							<longdesc>Δεξιό ή κάτω χρώμα κατά τη σχεδίαση διαβαθμίσεων, δε χρησιμοποιείται για συμπαγές χρώμα.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Κύριο χρώμα">
+							<longdesc>Αριστερό ή πάνω χρώμα κατά τη σχεδίαση διαβαθμίσεων, ή το συμπαγές χρώμα.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Αδιαφάνεια εικόνας">
+							<longdesc>Αδιαφάνεια με την οποία θα σχεδιάζεται η εικόνα παρασκηνίου.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Όνομα αρχείου εικόνας">
+							<longdesc>Αρχείο που θα χρησιμοποιείται για την εικόνα παρασκηνίου.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Επιλογές εικόνας">
+							<longdesc>Καθορίζει τον τρόπο με τον οποίο εμφανίζεται η εικόνα από το όνομα αρχείο της ταπετσαρίας. Οι πιθανές τιμές είναι  &quot;καμία&quot;, &quot;ταπετσαρία&quot;, &quot;κεντραρισμένη&quot;, &quot;σε κλίμακα&quot;, &quot;τεντωμένη&quot;, &quot;σε μεγέθυνση&quot;, &quot;εκτεταμένη&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Σχεδίαση παρασκηνίου επιφάνειας εργασίας">
+							<longdesc>Χρήση του GNOME για τη σχεδίαση του παρασκηνίου επιφάνειας εργασίας.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Εκκίνηση Εφαρμογών Βοηθητικής Τεχνολογίας">
+								<longdesc>Μια λίστα εφαρμογών βοηθητικής τεχνολογίας που θα εκκινούνται μαζί με την εκκίνηση της επιφάνειας εργασίας του GNOME </longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Ήχος μπιπ κατά το πάτημα modifier.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Απενεργοποίηση αν δύο πλήκτρα πατηθούν την ίδια στιγμή.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Ελάχιστο χρονικό μεσοδιάστημα σε χιλιοστά δευτερόλεπτου">
+								<longdesc>Να μη γίνεται αποδοχή ενός πλήκτρου αν δεν πατηθεί και κρατηθεί @delay milliseconds</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Αρχική καθυστέρηση σε χιλιοστά του δευτερολέπτου">
+								<longdesc>Χιλιοστά δευτερολέπτου αναμονής μέχρι την έναρξη της λειτουργίας των πλήκτρων κίνησης ποντικιού </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Διάρκεια συντόμευσης σε χιλιοστά δευτερολέπτου">
+								<longdesc>Χιλιοστά δευτερολέπτου που χρειάζονται για τη μετάβαση από το 0 στη μέγιστη ταχύτητα</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Εικονοστοιχεία ανά δευτερόλεπτο">
+								<longdesc>Αριθμός εικονοστοιχείων ανά δευτερόλεπτο που θα μετακινούνται στη μέγιστη ταχύτητα.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="ελάχιστο χρονικό μεσοδιάστημα σε χιλιοστά δευτερόλεπτου">
+								<longdesc>Αγνόηση πολλαπλών πατημάτων του _ίδιου_ πλήκτρου σε διάστημα χιλιοστών του δευτερολ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Ονόματα των χώρων εργασίας (ξεπερασμένο)">
+								<longdesc>Μια λίστα με ονόματα των χώρων εργασίας του πρώτου διαχειριστή παραθύρων. Αυτό το κλειδί είναι ξεπερασμένο στο GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Ο αριθμός των χώρων εργασίας (ξεπερασμένο)">
+								<longdesc>Ο αριθμός των χώρων εργασίας που θα χρησιμοποιεί ο διαχειριστής παραθύρων.Αυτό το κλειδί είναι ξεπερασμένο στο GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Διαχειριστής παραθύρων χρήστη (ξεπερασμένο)">
+								<longdesc>Διαχειριστής παραθύρων που θα δοκιμαστεί πρώτος. Αυτό το κλειδί είναι ξεπερασμένο στο GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Εφεδρικός διαχειριστής παραθύρων (ξεπερασμένο)">
+								<longdesc>Εφεδρικός διαχειριστής παραθύρων αν ο διαχειριστής παραθύρων του χρήστη δε μπορεί να βρεθεί, Αυτό το κλειδί είναι ξεπερασμένο στο GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Εργασίες που χρειάζονται τερματικό">
+								<longdesc>Αν η προεπιλεγμένη εφαρμογή εργασιών χρειάζεται τερματικό για να εκτελεσθεί</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Προεπιλεγμένες εργασίες">
+								<longdesc>Προεπιλεγμένη εφαρμογή εργασιών</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Το ημερολόγιο χρειάζεται τερματικό">
+								<longdesc>Αν η προεπιλεγμένη εφαρμογή ημερολογίου χρειάζεται τερματικό για να εκτελεσθεί</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Προεπιλεγμένο ημερολόγιο">
+								<longdesc>Προεπιλεγμένη εφαρμογή ημερολογίου</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Ο περιηγητής κατανοεί αποκακρυσμένο">
+								<longdesc>Αν ο προεπιλεγμένος περιηγητής κατανοεί το netscape remote.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Ο περιηγητής χρειάζεται τερματικό">
+								<longdesc>Αν ο προεπιλεγμένος περιηγητής χρειάζεται τερματικό για να εκτελεσθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Προεπιλεγμένος περιηγητής ">
+								<longdesc>Προεπιλεγμένος περιηγητής για όλα τα URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Εκκίνηση της προτεινόμενης εφαρμογής βοηθητικής τεχνολογίας όρασης">
+									<longdesc>Να εκκινήσει το GNOME την προτεινόμενη εφαρμογή βοηθητικής τεχνολογίας όρασης κατά τη σύνδεση στο σύστημα</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Προτεινόμενη εφαρμογή βοηθητικής τεχνολογίας όρασης">
+									<longdesc>Προτεινόμενη εφαρμογή βοηθητικής τεχνολογίας όρασης για χρήση στη σύνδεση στο σύστημα, σε μενού ή στη γραμμή εντολής</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Εκκίνηση της προτεινόμενης εφαρμογής βοηθητικής τεχνολογίας κινητικότητας">
+									<longdesc>Να εκκινήσει το GNOME την προτεινόμενη εφαρμογή βοηθητικής τεχνολογίας κινητικότητας κατά τη σύνδεση στο σύστημα.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Προτεινόμενη εφαρμογή βοηθητικής τεχνολογίας κινητικότητας">
+									<longdesc>Προτεινόμενη εφαρμογή βοηθητικής τεχνολογίας κινητικότητας για χρήση στη σύνδεση στο σύστημα, σε μενού ή στη γραμμή εντολής.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Προεπιλεγμένο συστατικό εφαρμογής προβολής">
+								<longdesc>Η εφαρμογή για την προβολή αρχείων που απαιτούν ένα συστατικό για την προβολή τους. Η παράμετρος %s θα αντικαταστηθεί από το  URIs αρχείου και η παράμετρος %c θα αντικατασταθεί από το IID συστατικού.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Ορίσματα εκτέλεσης">
+								<longdesc>Όρισμα που χρησιμοποιείται για την εκτέλεση προγραμμάτων σε τερματικό που καθορίζονται από το &apos;exec&apos; key.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Εφαρμογή τερματικού">
+								<longdesc>Πρόγραμμα τερματικού που χρησιμοποιείται κατά την εκκίνηση εφαρμογών που το απαιτούν.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;h323&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;h323&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;h323&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;h323&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;callto&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;callto&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;callto&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;callto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;aim&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;aim&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;aim&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται &quot;aim&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;mailto&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;mailto&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;mailto&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;mailto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;https&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;https&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;https&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;https&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;http&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;http&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;http&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;http&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;man&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό  &quot;man&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;man&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται   &quot;man&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;info&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;info&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;info&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;info&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;ghelp&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;ghelp&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;ghelp&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται &quot;ghelp&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Εκτέλεση της εντολής σε τερματικό">
+								<longdesc>True αν το πρόγραμμα για το χειρισμό του URL θα πρέπει να εκτελείται σε τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Το πρόγραμμα χειρισμού για &quot;trash&quot; URLs">
+								<longdesc>Η εντολή που χρησιμοποιείται για το χειρισμό &quot;trash&quot; URLs, αν ενεργοποιηθεί.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Αν η καθορισμένη εντολή θα χειρίζεται &quot;trash&quot; URLs">
+								<longdesc>Ορισμός σε true αν η εντολή που καθορίζεται στο &quot;command&quot; key θα πρέπει να χειρίζεται  &quot;trash&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Συντόμευση για την επαναφορά της γραμματοσειράς στο κανονικό μέγεθος">
+							<longdesc>Πλήκτρο συντόμευσης για την επαναφορά της γραμματοσειράς στο κανονικό μέγεθος. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Συντόμευση για τη σμίκρυνση της γραμματοσειράς">
+							<longdesc>Πλήκτρο συντόμευσης για τη σμίκρυνση της γραμματοσειράς. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Συντόμευση για τη μεγέθυνση της γραμματοσειράς">
+							<longdesc>Πλήκτρο συντόμευσης για τη μεγέθυνση της γραμματοσειράς. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Συντόμευση για την εκκίνηση της βοήθειας">
+							<longdesc>Πλήκτρο συντόμευσης για την εκκίνηση της βοήθειας. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 12">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 12. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 11">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 11. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 10">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 10. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 9">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 9. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 8">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 8. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 7">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 7. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 6">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 6. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 5">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 5. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 4">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 4. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 3">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 3. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 2">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 2. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην καρτέλα 1">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην καρτέλα 1. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Συντόμευση για απόσπαση της τρέχουσας καρτέλας.">
+							<longdesc>Πλήκτρο συντόμευσης για την απόσπαση της τρέχουσας καρτέλας. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Συντόμευση για μετακίνηση της τρέχουσας καρτέλας στα δεξιά.">
+							<longdesc>Πλήκτρο συντόμευσης για την μετακίνηση της τρέχουσας καρτέλας στα δεξιά. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Συντόμευση για μετακίνηση της τρέχουσας καρτέλας στα αριστερά.">
+							<longdesc>Πλήκτρο συντόμευσης για την μετακίνηση της τρέχουσας καρτέλας στα αριστερά. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην επόμενη καρτέλα">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην επόμενη καρτέλα. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Συντόμευση για μετάβαση στην προηγούμενη καρτέλα">
+							<longdesc>Πλήκτρο συντόμευσης για μετάβαση στην προηγούμενη καρτέλα. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Συντόμευση για την επαναφορά και τον καθαρισμό του τερματικού">
+							<longdesc>Πλήκτρο συντόμευσης για την επαναφορά και τον καθαρισμό του τερματικού. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Συντόμευση για την επαναφορά του τερματικού">
+							<longdesc>Πλήκτρο συντόμευσης για τον καθαρισμό του τερματικού. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Συντόμευση για τον ορισμό του τίτλου του τερματικού">
+							<longdesc>Πλήκτρο συντόμευσης για τον ορισμό του τίτλου του τερματικού. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Συντόμευση για εναλλαγή της προβολής της γραμμής μενού">
+							<longdesc>Πλήκτρο συντόμευσης για εναλλαγή της προβολής της γραμμής μενού. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Συντόμευση για εναλλαγή της λειτουργίας πλήρους οθόνης">
+							<longdesc>Πλήκτρο συντόμευσης για εναλλαγή της λειτουργίας πλήρους οθόνης. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Συντόμευση για την επικόλληση κειμένου">
+							<longdesc>Πλήκτρο συντόμευσης για την επικόλληση των περιεχομένων του προχείρου στο τερματικό. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Συντόμευση για την αντιγραφή κειμένου">
+							<longdesc>Πλήκτρο συντόμευσης για την αντιγραφή του επιλεγμένου κειμένου στο πρόχειρο. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Συντόμευση για το κλείσιμο παραθύρου">
+							<longdesc>Πλήκτρο συντόμευσης για το κλείσιμο παραθύρου. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Συντόμευση για το κλείσιμο καρτέλας">
+							<longdesc>Πλήκτρο συντόμευσης για το κλείσιμο καρτέλας. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Συντόμευση για την αποθήκευση του περιεχομένου της τρέχουσας καρτέλας σε αρχείο">
+							<longdesc>Πλήκτρο συντόμευσης για την αποθήκευση του περιεχομένου της τρέχουσας καρτέλας σε ένα αρχείο . Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Συντόμευση για τη δημιουργία νέου προφίλ">
+							<longdesc>Πλήκτρο συντόμευσης για την εμφάνιση του διαλόγου δημιουργίας προφίλ. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Συντόμευση για το άνοιγμα νέου παραθύρου">
+							<longdesc>Πλήκτρο συντόμευσης για το άνοιγμα νέου παραθύρου. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Συντόμευση για το άνοιγμα νέας καρτέλας">
+							<longdesc>Πλήκτρο συντόμευσης για το άνοιγμα νέας καρτέλας. Εκφράζεται ως αλφαριθμητικό της μορφής των αρχείων πηγής GTK+. Αν χρησιμοποιήσετε την τιμή &quot;disabled&quot;, τότε δεν θα υπάρχει συνδυασμός πλήκτρων για αυτή την ενέργεια.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Προεπιλεγμένη κωδικοποίηση">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Αν θα χρησιμοποιείται η γραμματοσειρά συστήματος">
+								<longdesc>Αν είναι αληθές, το τερματικό θα χρησιμοποιεί τη γραμματοσειρά της επιφάνειας εργασίας, εφόσον είναι monospace (διαφορετικά, την πιο κοντινή της).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Αν θα γίνεται χρήση των χρωμάτων του θέματος στο γραφικό συστατικό του τερματικού">
+								<longdesc>Αν είναι αληθές, αντί για τα χρώματα που έχει ορίσει ο χρήστης, θα χρησιμοποιούνται τα χρώματα του θέματος που χρησιμοποιούνται και για τα πεδία εισαγωγής κειμένου.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Ενέργεια του πλήκτρου Delete">
+								<longdesc>Καθορίζει τον κωδικό που στέλνεται από το πλήκτρο Delete. Οι δυνατές τιμές είναι: &quot;ascii-del&quot; για το χαρακτήρα ASCII DEL, &quot;control-h&quot; για Control-H (γνωστό και ως χαρακτήρα ASCII BS), &quot;ακολουθία διαφυγής&quot; για την ακολουθία εξόδου που συνήθως αντιστοιχεί στο backspace ή το delete. Συνήθως, η &quot;ακολουθία διαφυγής&quot; θεωρείται η σωστή ρύθμιση για το πλήκτρο Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Ενέργεια του πλήκτρου Backspace">
+								<longdesc>Καθορίζει τον κωδικό που στέλνεται από το πλήκτρο Backspace. Οι δυνατές τιμές είναι: &quot;ascii-del&quot; για το χαρακτήρα ASCII DEL, &quot;control-h&quot; για Control-H (γνωστό και ως χαρακτήρα ASCII BS), &quot;ακολουθία διαφυγής&quot; για την ακολουθία εξόδου που συνήθως αντιστοιχεί στο backspace ή το delete. Συνήθως, το &quot;ascii-del&quot; θεωρείται η σωστή ρύθμιση για το πλήκτρο Backspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Πόσο σκοτεινή θα είναι η εικόνα παρασκηνίου">
+								<longdesc>Μια τιμή μεταξύ 0.0 και 1.0, που καθορίζει τη σκοτεινότητα της εικόνας παρασκηνίου. 0.0 σημαίνει καθόλου σκοτεινή, 1.0 σημαίνει μαύρη. Αυτή τη στιγμή υποστηρίζονται μόνο δυο επίπεδα σκοτεινότητας, με αποτέλεσμα η ρύθμιση να είναι δυαδική και το 0.0 να απενεργοποιεί το εφέ της σκοτεινότητας.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Αν θα γίνεται κύλιση της εικόνας παρασκηνίου">
+								<longdesc>Αν είναι αληθές, θα γίνεται κύλιση της εικόνας παρασκηνίου μαζί με το κείμενο του προσκηνίου. Αν είναι ψευδές, η εικόνα θα διατηρείται σε μια σταθερή θέση και θα γίνεται κύλιση του κειμένου πάνω της.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Εικόνα παρασκηνίου">
+								<longdesc>Όνομα αρχείου της εικόνας παρασκηνίου.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Τύπος παρασκηνίου">
+								<longdesc>Ο τύπος παρασκηνίου του τερματικού. Μπορεί να είναι &quot;solid&quot; για συμπαγές χρώμα, &quot;image&quot; για εικόνα, ή &quot;transparent&quot; για ψευδοδιαφάνεια.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Γραμματοσειρά">
+								<longdesc>Ένα όνομα γραμματοσειράς Pango. Π.χ. &quot;Sans 12&quot; ή &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Παλέτα για τις εφαρμογές τερματικού">
+								<longdesc>Τα τερματικά διαθέτουν παλέτα 16 χρωμάτων, που μπορούν να χρησιμοποιούν οι εφαρμογές μέσα στο τερματικό. Ακολουθεί αυτή η παλέτα, με τη μορφή ονομάτων χρωμάτων χωρισμένων με ερωτηματικά (;). Τα ονόματα χρωμάτων θα πρέπει να είναι σε μορφή hex, π.χ. &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Εικονίδιο για το παράθυρο τερματικού">
+								<longdesc>Εικονίδιο για χρήση από καρτέλες/παράθυρα που χρησιμοποιούν αυτό το προφίλ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Η προσαρμοσμένη εντολή που χρησιμοποιείται αντί για το κέλυφος">
+								<longdesc>Εκτέλεση αυτής της εντολής αντί του κελύφους, αν είναι αληθές το use_custom_command.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Η εμφάνιση του δρομέα">
+								<longdesc>Οι πιθανές τιμές είναι &quot;block&quot; για δρομέα σε σχήμα κύβου, &quot;ibeam&quot; για κατακόρυφη γραμμή, ή &quot;underline&quot; για χρήση υπογράμμισης.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Αν θα αναβοσβήνει ο δρομέας">
+								<longdesc>Οι πιθανές τιμές είναι &quot;system&quot; για χρήση των καθολικών ρυθμίσεων για το αναβόσβησμα του δρομέα, ή &quot;on&quot; και &quot;off&quot; για ρητό καθορισμό της λειτουργίας.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Αν θα εκτελείται μια προσαρμοσμένη εντολή αντί για το κέλυφος">
+								<longdesc>Αν είναι αληθές, θα χρησιμοποιείται η τιμή του custom_command αντί να εκτελείται το κέλυφος.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Αν θα γίνεται ενημέρωση του ιστορικού εισόδων, όταν εκκινείται η εντολή τερματικού">
+								<longdesc>Αν είναι αληθές, θα ενημερώνονται τα ιστορικά utmp και wtmp των εισόδων στο σύστημα, όταν εκκινείται η εντολή στο τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Αν η εντολή στο τερματικό θα εκκινείται ως κέλυφος εισόδου">
+								<longdesc>Αν είναι αληθές, η εντολή στο τερματικό θα εκκινείται ως κέλυφος εισόδου. (το argv[0] θα έχει ένα ενωτικό (-) μπροστά του.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Τι κάνει το τερματικό όταν γίνεται έξοδος της θυγατρικής εντολής">
+								<longdesc>Οι πιθανές τιμές είναι &quot;close&quot; για κλείσιμο του τερματικού και &quot;restart&quot; για επανεκκίνηση της εντολής.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Αν θα γίνεται κύλιση μέχρι το τέλος όταν εμφανίζονται νέα αποτελέσματα">
+								<longdesc>Αν είναι αληθές, κάθε φορά που εμφανίζονται νέα αποτελέσματα στο τερματικό, θα γίνεται κύλιση στο τέλος του τερματικού.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Αν θα γίνεται κύλιση μέχρι το τέλος όταν πατιέται ένα οποιοδήποτε πλήκτρο">
+								<longdesc>Αν είναι αληθές, το πάτημα οποιουδήποτε πλήκτρου αναγκάζει τη γραμμή κύλισης να μεταβεί στο τέλος.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Αν θα διατηρείται απεριόριστος αριθμός γραμμών που εμφανίζονται κατά την κύλιση προς τα πάνω">
+								<longdesc>Αν είναι αληθές, οι γραμμές που εμφανίζονται κατά την κύλιση προς τα πάνω δεν θα απορρίπτονται ποτέ. Το ιστορικό της κύλισης προς τα πίσω θα αποθηκεύεται προσωρινά στον δίσκο. Αυτό ίσως να κάνει το σύστημα να ξεμείνει από ελεύθερο χώρο στο δίσκο, αν υπάρχουν πολλά αποτελέσματα στο τερματικό.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Αριθμός γραμμών που εμφανίζονται κατά την κύλιση προς τα πάνω">
+								<longdesc>Αριθμός γραμμών που διατηρούνται στη μνήμη. Μπορείτε να κυλίσετε προς τα πάνω το τερματικό για τον συγκεκριμένο αριθμό γραμμών. Τυχόν επιπλέον γραμμές απαλείφονται από τη μνήμη. Εάν το scrollback_unlimited είναι αληθές, αυτή η τιμή παραβλέπεται.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Θέση της γραμμής κύλισης">
+								<longdesc>Που θα βρίσκεται η γραμμή κύλισης του τερματικού. Οι δυνατότητες είναι &quot;left&quot;, &quot;right&quot; και &quot;hidden&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Προεπιλεγμένος αριθμός γραμμών">
+								<longdesc>Αριθμός γραμμών σε νέα παράθυρα τερματικού. Δεν έχει αποτέλεσμα αν δεν είναι ενεργοποιημένο το use_custom_default_size.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Προεπιλεγμένος αριθμός στηλών">
+								<longdesc>Αριθμός στηλών σε νέα παράθυρα τερματικού. Δεν έχει αποτέλεσμα αν δεν είναι ενεργοποιημένο το use_custom_default_size.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Αν θα χρησιμοποιείται προσαρμοσμένο μέγεθος τερματικού για τα νέα παράθυρα">
+								<longdesc>Αν είναι αληθές, τα καινούρια παράθυρα τερματικού θα έχουν προσαρμοσμένο μέγεθος που καθορίζεται από το default_size_columns και το default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Χαρακτήρες που θεωρούνται &quot;μέρος λέξης&quot;">
+								<longdesc>Όταν γίνεται επιλογή κειμένου ανά λέξη, οι ακολουθίες που περιέχουν αυτούς τους χαρακτήρες θεωρούνται ξεχωριστές λέξεις. Διατυπώσεις του τύπου &quot;A-Z&quot; υποδηλώνουν εύρος. Ο πρώτος χαρακτήρας που εισάγεται πρέπει να είναι το ενωτικό (-) (εδώ δεν εκφράζει εύρος).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Αν θα απενεργοποιείται το κουδούνι τερματικού">
+								<longdesc>Αν είναι αληθές, δεν θα αναπαράγεται ήχος όταν οι εφαρμογές στέλνουν την ακολουθία διαφυγής για το κουδούνι του τερματικού.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Αν θα επιτρέπεται έντονο κείμενο">
+								<longdesc>Αν είναι αληθές, θα επιτρέπεται στις εφαρμογές να χρησιμοποιούν έντονο κείμενο.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Τίτλος για το τερματικό">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Είδος ενέργειας όταν υπάρχει δυναμικός τίτλος">
+								<longdesc>Αν η εφαρμογή στο τερματικό ορίζει τον τίτλο του τερματικού (οι περισσότεροι χρήστες χρησιμοποιούν αυτή την επιλογή), ο δυναμικά ορισμένος τίτλος μπορεί να σβήσει τον αρχικό τίτλο, να εμφανιστεί πριν ή μετά από αυτόν, ή να τον αντικαταστήσει. Οι πιθανές τιμές είναι &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, και&quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Αν το έντονο κείμενο θα χρησιμοποιεί το ίδιο χρώμα με το κανονικό κείμενο">
+								<longdesc>Αν είναι αληθές, το έντονο κείμενο θα χρησιμοποιεί το ίδιο χρώμα με το κανονικό κείμενο.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Προεπιλεγμένο χρώμα έντονου κειμένου για το τερματικό">
+								<longdesc>Προεπιλεγμένο χρώμα έντονου κειμένου για το τερματικό (μπορεί να είναι δεκαεξαδικό αριθμητικό τύπου HTML ή όνομα χρώματος όπως &quot;red&quot;). Το χρώμα παραβλέπεται αν το bold_color_same_as_fg είναι ορισμένο ως αληθές.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Προεπιλεγμένο χρώμα παρασκηνίου τερματικού">
+								<longdesc>Προεπιλεγμένο χρώμα παρασκηνίου τερματικού (μπορεί να είναι δεκαεξαδικό αριθμητικό τύπου HTML ή όνομα χρώματος όπως &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Προεπιλεγμένο χρώμα κειμένου για το τερματικό">
+								<longdesc>Προεπιλεγμένο χρώμα κειμένου για το τερματικό (μπορεί να είναι δεκαεξαδικό αριθμητικό τύπου HTML ή όνομα χρώματος όπως &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Αν θα εμφανίζεται η γραμμή μενού στα νέα παράθυρα/καρτέλες">
+								<longdesc>Αληθές, αν επιθυμείτε η γραμμή μενού να εμφανίζεται στα νέα παράθυρα/καρτέλες αυτού του προφίλ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Όνομα προφίλ προοριζόμενο για ανάγνωση από ανθρώπους">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Αν θα γίνεται ερώτηση επιβεβαίωσης όταν κλείνουν παράθυρα τερματικού">
+							<longdesc>Αν θα γίνεται ερώτηση επιβεβαίωσης όταν κλείνει ένα παράθυρο τερματικού που έχει πάνω από μία καρτέλα ανοικτή.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Λίστα διαθέσιμων κωδικοποιήσεων">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Αν θα είναι ενεργοποιημένη η κανονική συντόμευση του GTK για πρόσβαση στη γραμμή μενού">
+							<longdesc>Κανονικά, μπορείτε να εμφανίζετε τη γραμμή μενού με το F10. Αυτό μπορεί να προσαρμοστεί και μέσω του gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;). Αυτή η επιλογή επιτρέπει την απενεργοποίηση της κανονικής συντόμευσης.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Αν η γραμμή μενού θα διαθέτει πλήκτρα πρόσβασης">
+							<longdesc>Αν θα ισχύουν τα πλήκτρα πρόσβασης Alt+γράμμα για τη γραμμή μενού. Η απενεργοποίησή τους επιτρέπεται, γιατί υπάρχει κίνδυνος συγκρούσεων με εφαρμογές που εκτελούνται μέσα στο τερματικό.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Προφίλ που χρησιμοποιείται για νέα τερματικά">
+							<longdesc>Προφίλ που χρησιμοποιείται όταν ανοίγει νέο παράθυρο ή καρτέλα. Πρέπει να περιλαμβάνεται στο profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Λίστα προφίλ">
+							<longdesc>Λίστα προφίλ γνωστών στο τερματικό του gnome. Η λίστα περιέχει αλφαριθμητικά που ονομάζουν υποκαταλόγους σε σχέση με το /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Αν θα εμφανίζεται επιλογή για το Midnight Commander στο μενού">
+						<longdesc>Αν είναι αληθές, και είναι εγκατεστημένος ο διαχειριστής αρχείων  &quot;Midnight Commander&quot;, θα εμφανίζεται στο μενού περιεχομένων η επιλογή &quot;Άνοιγμα στο Midnight Commander&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Αν θα ανοίγει τερματικό στον αρχικό κατάλογο όποτε ανοίγετε τερματικό στην επιφάνεια εργασίας">
+						<longdesc>Αν είναι αληθές, όποτε ανοίγετε τερματικό στην επιφάνεια εργασίας, θα ανοίγει τερματικό στον αρχικό κατάλογο. Διαφορετικά, το τερματικό θα ανοίγει στον κατάλογο της επιφάνειας εργασίας. Σημειώστε ότι αυτή η επιλογή έχει νόημα μόνο αν ο κατάλογος της επιφάνειας εργασίας δεν είναι ο αρχικός κατάλογος.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

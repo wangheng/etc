@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_theme_colors">
+							<local_schema short_desc="ថា​​តើ​ត្រូវ​ប្រើ​ពណ៌​ពី​រូបរាង​សម្រាប់​ធាតុ​ក្រាហ្វិក​ស្ថានីយ​ដែរ​ឬ​ទេ">
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="ក្ដារ​លាយ​ពណ៌​សម្រាប់​កម្មវិធីស្ថានីយ">
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="ពាក្យ​បញ្ជា​ផ្ទាល់ខ្លួន​ដែល​ត្រូវ​ប្រើ​ជំនួស​សែល">
+								<longdesc>ដំណើរការ​ពាក្យ​បញ្ជា​នេះ​ជំនួស​សែល ប្រសិនបើ use_custom_command ពិត ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="រូបរាង​ទស្សន៍ទ្រនិច">
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​ធ្វើឲ្យ​ទស្សន៍ទ្រនិច​លោត​ភ្លឹបភ្លែត​ដែរ​ឬ​ទេ">
+								<longdesc>តម្លៃ​ដែល​អាច​ប្រើ​បាន​គឺ &quot;ប្រព័ន្ធ&quot; សម្រាប់​ប្រើ​ក្នុង​ការ​កំណត់​ឲ្យ​ទស្សន៍ទ្រនិច​លោត​ភ្លឹបភ្លែត ឬ &quot;បើក&quot; និង &quot;បិទ&quot; សម្រាប់​កំណត់​របៀប​ជាក់លាក់ ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​ដំណើរការ​ពាក្យ​បញ្ជា​ផ្ទាល់ខ្លួន​ជំនួស​សែល​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត តម្លៃ​នៃ​ការ​កំណត់ custom_command នឹង​ត្រូវ​បាន​ប្រើ​ជំនួស​ការ​ដំណើរការ​សែល ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​ធ្វើ​បច្ចុប្បន្នភាព​កំណត់ត្រា​ចូល នៅ​ពេល​ដំណើរការ​ពាក្យ​បញ្ជា​ស្ថានីយ​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត utmp និង wtmp សម្រាប់​​កំណត់ត្រា​ចូល​ប្រព័ន្ធ​នឹង​ត្រូវ​បាន​ធ្វើ​បច្ចុប្បន្នភាព នៅ​ពេល​ពាក្យ​បញ្ជា​នៅ​ខាងក្នុង​ស្ថានីយ​ត្រូវ​បាន​ដំណើរការ ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​ដំណើរការ​​​ពាក្យ​បញ្ជា​នៅ​ក្នុង​ស្ថានីយ​ជា​សែល​ចូល​ដែរ​ឬទេ">
+								<longdesc>ប្រសិនបើ​ពិត ពាក្យ​បញ្ជា​នៅ​ខាង​ក្នុង​ស្ថានីយ​នឹង​ត្រូវ​បាន​ដំណើរការ​​​ជា​សែល​ចូល ។ (argv[0] នឹង​មាន​សហសញ្ញា​នៅ​ពីមុខ​វា ។)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="អ្វី​ដែល​ត្រូវ​ធ្វើ​ជាមួយ​ស្ថានីយ នៅ​ពេល​ពាក្យ​បញ្ជា​រង​ចាកចេញ">
+								<longdesc>តម្លៃ​ដែល​អាច​ប្រើ​បាន​គឺ &quot;បិទ&quot; សម្រាប់​បិទ​ស្ថានីយ និង &quot;ចាប់ផ្ដើម​ឡើងវិញ&quot; សម្រាប់​ចាប់ផ្ដើម​ពាក្យ​បញ្ជា​ឡើងវិញ ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​រមូរ​ទៅ​ខាងក្រោម នៅ​ពេល​មាន​លទ្ធផល​ថ្មី​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត នៅ​ពេល​ណា​ដែល​មាន​លទ្ធផល​ថ្មី ស្ថានីយ​នឹង​រមូរ​ទៅ​ក្រោម ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​រមូរ​ទៅ​ក្រោម នៅ​ពេល​គ្រាប់ចុច​ត្រូវ​បាន​ចុច​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត ការ​ចុច​គ្រាប់ចុច​នឹង​ធ្វើឲ្យ​របារ​មូរ​លោត​ទៅ​ខាងក្រោម ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​រក្សាទុក​ចំនួន​បន្ទាត់​​​ដែល​គ្មាន​កំណត់​នៅ​ក្នុង​រមូរ​ថយក្រោយ​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត បន្ទាត់​រមូរ​ថយក្រោយ​នឹង​មិន​ដែល​ត្រូវ​បាន​បោះបង់​ទេ ។ ប្រវត្តិ​រមូរ​ថយក្រោយ​នឹង​ត្រូវ​បាន​រក្សាទុក​នៅ​លើ​ថាស​បណ្ដោះ​អាសន្ន ដូច្នេះ​វា​អាច​នឹង​ធ្វើឲ្យ​ប្រព័ន្ធ​អស់​ទំហំ ប្រសិនបើ​មាន​លទ្ធផល​​ច្រើន​នៅ​ក្នុង​ស្ថានីយ ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="ចំនួន​បន្ទាត់​ដែល​​​ត្រូវ​រក្សាទុក​ក្នុង​រមូរ​ថយក្រោយ">
+								<longdesc>ចំនួន​បន្ទាត់​រមូរ​ថយក្រោយ​​ដែល​ត្រូវ​រក្សាទុក ។ អ្នក​អាច​រមូរ​ថយក្រោយ​នៅ​ក្នុង​ស្ថានីយ​តាម​ចំនួន​បន្ទាត់​​នេះ​បាន បន្ទាត់​​ដែល​មិន​សម​នៅ​ក្នុង​រមូរ​ថយក្រោយ​នឹង​ត្រូវ​បាន​បោះបង់ ។ ប្រសិនបើ scrollback_unlimited ពិត តម្លៃ​នេះ​នឹង​មិន​ត្រូវ​បាន​អើពើ ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="ចំនួន​ជួរដេក​លំនាំដើម">
+								<longdesc>ចំនួន​ជួរដេក​នៅ​ក្នុង​បង្អួច​ស្ថានីយ​ដែល​ទើបតែ​បាន​បង្កើត​​ថ្មី​ៗ ។ គ្មាន​បែបផែន ប្រសិនបើ use_custom_default_size មិន​ត្រូវ​បាន​បើក ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="ចំនួន​ជួរឈរ​លំនាំដើម">
+								<longdesc>ចំនួន​ជួរឈរ​នៅ​ក្នុង​បង្អួច​ស្ថានីយ​ដែល​​ទើប​តែ​បាន​បង្កើត​ថ្មី​ៗ ។ គ្មាន​បែបផែន ប្រសិនបើ use_custom_default_size មិន​ត្រូវ​បាន​បើក ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="ថា​​តើ​ត្រូវ​ប្រើ​ទំហំ​ស្ថានីយ​ផ្ទាល់ខ្លួន​សម្រាប់​បង្អួច​ថ្មី​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត បង្អួច​ស្ថានីយ​ដែល​បាន​បង្កើត​ថ្មីៗ​នឹង​មាន​ទំហំ​ផ្ទាល់ខ្លួន​ដែល​បញ្ជាក់​ដោយ default_size_columns និង default_size_rows ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="តួអក្សរ​ដែល​ត្រូវ​បាន​ចាត់​ទុក​ថា​ជា &quot;ផ្នែក​នៃ​ពាក្យ&quot;">
+								<longdesc>នៅ​ពេល​ជ្រើស​អត្ថបទ​​តាម​ពាក្យ លំដាប់​តួអក្សរ​ទាំងនេះ​នឹង​ត្រូវ​បាន​ចាត់​ទុក​ថា​ជា​ពាក្យ​តែមួយ ។ ជួរ​អាច​ត្រូវ​បាន​ផ្ដល់​ជា &quot;A-Z&quot; ។ សហសញ្ញា (មិន​បង្ហាញ​ជួរ) គួរតែ​ផ្ដល់​តួអក្សរ​ដំបូង​មុន ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​អនុញ្ញាត​ឲ្យ​មាន​អត្ថបទ​ដិត​ដែរ​ឬទេ">
+								<longdesc>ប្រសិនបើ​ពិត អនុញ្ញាត​ឲ្យ​កម្មវិធី​នៅ​ក្នុង​ស្ថានីយ​បង្កើត​អត្ថបទ​ដិត ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="ចំណងជើង​សម្រាប់​ស្ថានីយ">
+								<longdesc>ចំណងជើង​ត្រូវ​បង្ហាញ​សម្រាប់​បង្អួច ឬ​ផ្ទាំង​ស្ថានីយ ។ ចំណងជើង​នេះ​អាច​ត្រូវ​បាន​ជំនួស ឬ​បន្សំ​​ជាមួយ​ចំណង​ជើង​ដែល​​ត្រូវ​បាន​​ដោយ​​កម្មវិធី​នៅ​​ខាងក្នុង​ស្ថានីយ​អាស្រ័យ​លើ​ការ​កំណត់​ title_mode  ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="អ្វី​ដែល​ត្រូវ​ធ្វើ​ជាមួយ​ចំណងជើង">
+								<longdesc>ប្រសិនបើ​កម្មវិធី​នៅ​ក្នុង​ស្ថានីយ​កំណត់​ចំណងជើង (ភាគច្រើន អ្នកប្រើ​មាន​សែល​សម្រាប់​កំណត់​វា) ចំណងជើង​ដែល​បាន​កំណត់​តាម​ថាមវន្ត​អាច​លុប​ចំណងជើង​ដែល​បាន​កំណត់​រចនាសម្ព័ន្ធ​ នៅ​ខាងមុខ នៅ​ខាងក្រោយ ឬ​ជំនួស​ ។ តម្លៃ​ដែល​អាច​ប្រើ​បាន​គឺ &quot;ជំនួស&quot;  &quot;ខាងមុខ&quot;  &quot;ខាងក្រោយ&quot; និង &quot;មិន​អើពើ&quot; ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="ថា​តើ​អត្ថបទ​ដិត​គួរ​ប្រើ​ពណ៌​ដូចគ្នា​នឹង​អត្ថបទ​ធម្មតា​ដែរ​ឬ​ទេ">
+								<longdesc>ប្រសិនបើ​ពិត អត្ថបទ​ដិត​នឹង​ត្រូវ​បាន​បង្ហាញ​ដោយ​ប្រើ​ពណ៌​ដូច​គ្នា​នឹង​អត្ថបទ​ធម្មតា ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="ពណ៌​លំនាំដើម​នៃ​អត្ថបទ​ដិត​នៅ​ក្នុង​ស្ថានីយ">
+								<longdesc>ពណ៌​លំនាំដើម​នៃ​អត្ថបទ​ដិត​នៅ​ក្នុង​ស្ថានីយ ដូចជា​ការ​បញ្ជាក់​ពណ៌ (អាច​ជា​តួលេខ​គោល​ដប់​ប្រាំមួយ​របស់​រចនាប័ទ្ម HTML ឬ​ឈ្មោះ​ពណ៌ ដូចជា &quot;ក្រហម&quot;) ។ វា​នឹង​ត្រូវ​បាន​មិន​អើពើ ប្រសិនបើ bold_color_same_as_fg ពិត ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="ពណ៌​លំនាំដើម​នៃ​​ផ្ទៃខាងក្រោយ​ស្ថានីយ">
+								<longdesc>ពណ៌​លំនាំដើម​នៃ​ផ្ទៃខាងក្រោយ​ស្ថានីយ ដូចជា​ការ​បញ្ជាក់​ពណ៌ (អាច​ជា​តួលេខ​គោល​ដប់​ប្រាំមួយ​របស់​រចនាប័ទ្ម HTML ឬ​ឈ្មោះ​ពណ៌​ដូចជា &quot;ក្រហម&quot;) ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="ពណ៌​លំនាំដើម​របស់​អត្ថបទ​នៅ​ក្នុង​ស្ថានីយ">
+								<longdesc>ពណ៌​លំនាំដើម​របស់​អត្ថបទ​នៅ​ក្នុង​ស្ថានីយ ដូចជា​ការ​បញ្ជាក់​ពណ៌​ជាដើម (អាច​ជា​តួលេខ​គោល​ដប់​ប្រាំមួយ​របស់​រចនាប័ទ្ម HTML  ឬ​ឈ្មោះ​ពណ៌​ដូចជា &quot;ក្រហម&quot;) ។</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="ថា​តើ​ត្រូវ​បង្ហាញ​របារ​ម៉ឺនុយ​នៅ​ក្នុង​បង្អួច/ផ្ទាំង​ថ្មី​ដែរ​ឬ​ទេ">
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="ឈ្មោះ​ទម្រង់​ដែល​មនុស្ស​អាច​អាន​បាន">
+								<longdesc>ឈ្មោះ​ទម្រង់​ដែល​មនុស្ស​អាច​អាន​បាន ។</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="active_encodings">
+						<local_schema short_desc="បញ្ជី​នៃ​ការ​អ៊ិនកូដ​ដែល​អាច​ប្រើ​បាន">
+							<longdesc>សំណុំ​រង​នៃ​ការ​អ៊ិនកូដ​ដែល​អាច​ធ្វើ​បាន​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ម៉ឺនុយ​រង ការ​អ៊ិនកូដ​ ។ វា​ជា​បញ្ជី​នៃ​ការ​អ៊ិនកូដ​ដែល​ត្រូវ​លេច​ឡើង​នៅ​ទី​នោះ ។ ការ​អ៊ិនកូដ​ឈ្មោះ​ពិសេស &quot;បច្ចុប្បន្ន&quot; មានន័យ​ថា ត្រូវ​បង្ហាញ​ការ​អ៊ិនកូដ​​នៅ​​​ទីតាំង​​បច្ចុប្បន្ន ។</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="ថា​តើ​ត្រូវ​បើក​គ្រាប់ចុច​ផ្លូវកាត់ GTK ស្តង់ដារ​សម្រាប់​ការ​ចូល​ដំណើរការ​របារ​ម៉ឺនុយ​ដែរ​ឬ​ទេ">
+							<longdesc>តាម​ធម្មតា​ អ្នក​អាច​ចូល​ដំណើរការ​របារ​ម៉ឺនុយ​ដោយ​ប្រើ​គ្រាប់ចុច F10 ។ អ្នក​អាច​ប្ដូរ​វា​តាម​បំណង​បាន​ផង​ដែរ​តាម gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;) ។ ជម្រើស​នេះ​ធ្វើឲ្យ​គ្រាប់ចុច​ផ្លូវកាត់​របស់​របារ​ម៉ឺនុយ​ស្តង់ដារ​ត្រូវ​បាន​បិទ ។</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="ថា​តើ​របារ​ម៉ឺនុយ​មាន​គ្រាប់ចុច​​ចូល​ដំណើរការ​ដែរ​ឬ​ទេ">
+							<longdesc>ថា​តើ​ត្រូវ​មាន​គ្រាប់ចុច​ចូល​ដំណើរការ Alt+letter សម្រាប់​របារ​ម៉ឺនុយ​ដែរ​ឬ​ទេ ។ ពួកវា​អាច​បង្អាក់​​កម្មវិធី​មួយ​ចំនួន​ដែល​ដំណើរការ​នៅ​ក្នុង​ស្ថានីយ ដូច្នេះ​គួរតែ​បិទ​ពួកវា ។</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

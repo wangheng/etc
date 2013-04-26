@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ワークグループ">
+						<longdesc>ユーザが所属する Windows ネットワーク・グループまたはドメインです。新しいワークグループを認識するには、ユーザがそのグループにログインしてログアウトする必要があります。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD サービスで検索する追加ドメイン">
+						<longdesc>コンマ (,) で区切った DNS-SD のリストで、&quot;network:///&quot; の中に表示されます。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ローカルの DNS-SD サービスの表示方法">
+						<longdesc>設定可能な値: &quot;merged&quot;、&quot;separate&quot;、&quot;disabled&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="自動プロキシ設定の URL">
+						<longdesc>プロキシの設定値を提供する URL です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/proxy/socks_host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS プロキシのホスト名">
+						<longdesc>SOCKS プロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/proxy/ftp_host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP プロキシのホスト名">
+						<longdesc>FTP プロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="セキュア HTTP プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/proxy/secure_host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="セキュア HTTP プロキシのホスト名">
+						<longdesc>セキュア HTTP のプロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="プロキシ設定モード">
+						<longdesc>プロキシ設定モードを選択します (利用可能な値: &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;)。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="プロキシではないホスト名">
+						<longdesc>このキーには、(アクティブな場合は) プロキシ経由ではなく直接接続される多くのホストが含まれています。ホスト名、ドメイン (*.foo.com のように先頭にワイルド・カードが使われます)、IP ホスト・アドレス (IPv4 と IPv6 の両方)、ネット・マスクが併記されたネットワーク・アドレス (192.168.0.0/24のような値) といった値になります。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP プロキシのパスワード">
+						<longdesc>HTTP プロキシを利用するときに認証として引き渡すパスワードです。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP プロキシのユーザ名">
+						<longdesc>HTTP プロキシを利用するときに認証として引き渡すユーザ名です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="認証プロキシ・サーバへの接続">
+						<longdesc>TRUE の場合、プロキシ・サーバへの接続で認証が要求されます。ユーザ名/パスワードの組み合わせは &quot;/system/http_proxy/authentication_user&quot; と &quot;/system/http_proxy/authentication_password&quot; で定義されます。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP プロキシのポート番号">
+						<longdesc>プロキシとして利用する、&quot;/system/http_proxy/host&quot; で定義されたマシンのポート番号です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP プロキシのホスト名">
+						<longdesc>HTTP のプロキシとして利用するマシンの名前です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP プロキシの使用">
+						<longdesc>インターネットへ HTTP アクセスするときにプロキシの設定を有効にします。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="キーボードのロックを有効にする">
+							<longdesc>キーボードのロックを有効にするかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="一休みする時間を延長できるようにする">
+							<longdesc>一休みする時間を延長できるかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="一休みする時間">
+							<longdesc>一休みする時間 (分) を指定します。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="一休み前のキーボード入力時間">
+							<longdesc>一休みの警告を出すまでの時間 (分) を指定します。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="サムネイル表示する外部のプログラムをすべて無効にする">
+							<longdesc>TRUE にすると、サムネイル表示する外部プログラムを (外部プログラムの有効/無効に関わらず) すべて無効にします。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>キャッシュの中に格納しておくサムネイルの最大サイズ (Mバイト単位) で、キャッシュのクリアを無効にする場合は -1 を指定します。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>キャッシュの中に格納しておくサムネイルの最大寿命 (日単位) で、キャッシュのクリアを無効にする場合は -1 を指定します。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="入力フィードバックとしてのサウンド効果">
+							<longdesc>入力イベントでサウンドを演奏するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="サウンド・テーマの名前">
+							<longdesc>イベント毎に演奏する XDG のサウンド・テーマです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="イベント発生時にサウンドを鳴らす">
+							<longdesc>ユーザのイベントでサウンドを演奏するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD を有効にする">
+							<longdesc>サウンド・サーバを起動します。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="デフォルトのミキサ・トラック">
+							<longdesc>マルチメディア・キーの割り当てで使用するデフォルトのミキサ・トラックです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="デフォルトのミキサ用デバイス">
+							<longdesc>マルチメディア・キーの割り当てで使用するデフォルトのミキサ用デバイスです。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="カーソルのサイズ">
+								<longdesc>cursor_theme で参照するカーソルの大きさです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="カーソルのテーマ">
+								<longdesc>使用するカーソル・テーマの名前です。Xcursor をサポートしているXサーバ (例えば、XFree86 バージョン 4.3 以降) でのみ利用できます。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="カーソルのフォント">
+								<longdesc>カーソルのフォント名を設定します。ファイル名を指定していない場合はデフォルトのフォントを使用します。この値は各セッションの起動時にXサーバへ引き渡されるので、セッション中に値を変更しても次回ログインするまで何の効果もありません。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="ポインタの位置を表示する">
+								<longdesc>Ctrl キーを押下して離した時にポインタの現在位置を強調表示するかどうかです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="ダブル・クリックの間隔">
+								<longdesc>ダブル・クリックの長さです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="ドラッグのしきい値">
+								<longdesc>ドラッグが開始されるまでの距離です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="移動時のしきい値">
+								<longdesc>マウスの動きが加速されるまでのマウスポインタが動く距離を指定します。システムのデフォルト値は -1 です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="シングル・クリック">
+								<longdesc>マウスの動きを加速させる値を設定します。システムのデフォルト値は -1 です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="シングル・クリック">
+								<longdesc>シングル・クリックでアイコンを開くかどうかです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="マウス・ボタンの向き">
+								<longdesc>左利き用のマウスのためにマウスの左ボタンと右ボタンを入れ替えるかどうかです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="NumLock キーの状態を保存する">
+								<longdesc>TRUE にすると、GNOME ライブラリで NumLock キーの LED の状態をセッション毎に記憶します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="キーボード・ベルのファイル名">
+								<longdesc>キーボード・ベルの音として利用するファイル名です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>ベル音のモードです。設定可能な値: &quot;on&quot;、&quot;off&quot;、&quot;custom&quot;</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="URL と MIME 型のハンドラを無効にする">
+							<longdesc>URL または MIME 型に対応したハンドラのアプリケーションを起動しないようにします。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="画面のロックを利用不可にする">
+							<longdesc>画面をロックできないようにします。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="アカウントの切り換えを不可にする">
+							<longdesc>ユーザが使用しているセッションが有効な間は他のアカウントへ切り換えることができないようにします</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="印刷設定を利用不可にする">
+							<longdesc>ユーザによる印刷設定の変更を不可にします。たとえば、これはすべてのアプリケーションが提供する &quot;印刷設定&quot; ダイアログへのアクセスを利用できなくします。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="印刷機能を利用不可にする">
+							<longdesc>ユーザからの印刷実行を不可にします。たとえば、すべてのアプリケーションが提供する &quot;印刷&quot; ダイアログへのアクセスを利用できなくします。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="ファイル保存の機能を利用不可にする">
+							<longdesc>ユーザによるファイルの保存を不可にします。たとえば、すべてのアプリケーションが提供する &quot;別名で保存&quot; ダイアログへのアクセスを利用できなくします。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="コマンドラインを利用不可にする">
+							<longdesc>ユーザからの端末のアクセス、または実行コマンド・ラインの指定を利用不可にします。たとえば、これはパネルの &quot;アプリケーションの実行&quot; ダイアログへのアクセスを利用できなくします。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;Unicode 制御文字の挿入&apos; メニューを表示する">
+							<longdesc>入力エントリとテキスト・ビューのコンテキスト・メニューで制御文字を挿入するメニュー項目を提供するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;入力メソッド&apos; のメニューを表示する">
+							<longdesc>入力エントリとテキスト・ビューのコンテキスト・メニューで入力メソッドを切り替えるメニュー項目を提供するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="メニューバーのアクセラレータ">
+							<longdesc>メニューバーを開くキーボード・ショートカットです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser のモジュール">
+							<longdesc>GtkFileChooser ウィジェットのファイルシステム・モデルとして使用するモジュールです。設定可能な値: &quot;gio&quot;、&quot;gnome-vfs&quot;、&quot;gtk+&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="ステータス・バーを右側に表示する">
+							<longdesc>右側にステータス・バーのメータを表示するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="カスタム・フォントを使用する">
+							<longdesc>GTK+ アプリケーションでカスタム・フォントを使用するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="等幅フォント">
+							<longdesc>端末などで使用する等幅 (固定幅) フォントの名前です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="ドキュメントのフォント">
+							<longdesc>ドキュメントで使用するデフォルトのフォント名です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM のモジュール名">
+							<longdesc>GTK+ が使用する GTK+ 入力メソッドのモジュール名です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM ステータス形式">
+							<longdesc>GTK+ が使用する GTK+ IM ステータス形式の名前です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM プレエディット形式">
+							<longdesc>GTK+ が使用する GTK+ IM プレエディット形式の名前です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="デフォルトのフォント">
+							<longdesc>GTK+ が使用するデフォルトのフォント名です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="GTK+ テーマ">
+							<longdesc>GTK+ が使用するデフォルトのテーマの名前 (basename) です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="GTK+ テーマ">
+							<longdesc>GTK+ が使用するデフォルトのテーマの名前 (basename) です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="アイコンのテーマ">
+							<longdesc>パネルや Nautilus などで使用するアイコンのテーマです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="カーソルの点滅間隔">
+							<longdesc>カーソルが点滅する間隔です (ミリ秒単位)。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="カーソルを点滅するかどうか">
+							<longdesc>カーソルを点滅させるかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="ツールバーのアイコンのサイズ">
+							<longdesc>ツールバーに表示するアイコンの大きさです。設定可能な値: &quot;small-toolbar&quot; または &quot;large-toolbar&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="ツールバーを取り外せるようにする">
+							<longdesc>ツールバーを取り外して移動できるようにするかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="メニューバーを取り外せるようにする">
+							<longdesc>メニューバーを取り外して移動できるようにするかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="ボタンにアイコンを表示するかどうか">
+							<longdesc>ボタンにラベルとアイコンの両方を表示するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="メニューにアイコンを表示する">
+							<longdesc>メニュー項目の隣にアイコンを表示するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="ツールバーの形式">
+							<longdesc>ツールバーのスタイルです。設定可能な値: &quot;both&quot;、&quot;both-horiz&quot;、&quot;icons&quot;、&quot;text&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="アクセラレーション・キーを変更できるようにする">
+							<longdesc>メニューアイテムを利用可能な状態にして、新しいアクセラレータを直接入力し登録することができるかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="メニューに可動メニューを表示する">
+							<longdesc>メニューを切り離せるようにするかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="アニメーションを有効にする">
+							<longdesc>アニメーションを有効にするかどうかを設定します。[注意] これはグローバルな設定なので、ウィンドウ・マネージャやパネルなどの挙動に影響します。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="アクセシビリティを有効にする">
+							<longdesc>アプリケーションにアクセシビリティをサポートさせるかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="ファイル・アイコンのテーマ">
+							<longdesc>ファイルのアイコンに適用するテーマです。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="色調の変化">
+							<longdesc>背景の色調をどのように変化させるか設定します。設定可能な値: &quot;horizontal-gradient&quot;、&quot;vertical-gradient&quot;、&quot;solid&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="二番目の色">
+							<longdesc>グラデーション時の右側もしくは下側の色、あるいは単色時の色です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="一番目の色">
+							<longdesc>グラデーション時の左側もしくは上側の色、あるいは単色時の色です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="画像の透明度">
+							<longdesc>背景の画像に適用する透明度です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="画像のファイル名">
+							<longdesc>背景の画像に使用するファイルです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="画像のオプション">
+							<longdesc>wallpaper_filename で指定した画像をどのように描画するか設定します。設定可能な値: &quot;none&quot;、&quot;wallpaper&quot;、&quot;centered&quot;、&quot;scaled&quot;、&quot;stretched&quot;、&quot;zoom&quot;、&quot;spanned&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="デスクトップの背景を描画する">
+							<longdesc>GNOME にデスクトップの背景を描画させるかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="支援技術のアプリケーションを起動する">
+								<longdesc>GNOME デスクトップにログインした後に起動する支援技術 (Assistive Technology) アプリケーションの並びです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>修飾キーが押されたらビープ音を鳴らします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>同時に二つのキーを押下したら無効にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="最小の間隔 (ミリ秒単位)">
+								<longdesc>@deley ミリ秒間押下し続けていないキーを無視します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="初期の遅延 (ミリ秒単位)">
+								<longdesc>マウス・キーでマウスが移動するまでにどれくらい遅延するかです (ミリ秒単位)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="加速するまでにどれくらい遅延するかです (ミリ秒単位)。">
+								<longdesc>速さが0から最大値になるまでどれくらい遅延するかです (ミリ秒単位)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="単位秒あたりのピクセル数">
+								<longdesc>最高速度の時にどれくらい移動させるかです (ピクセル/秒)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="最小の間隔 (ミリ秒単位)">
+								<longdesc>@delay ミリ秒内に同じキーが複数回押されても無視します。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="ワークスペースの名前 (破棄の予定)">
+								<longdesc>ウィンドウマネージャの最初のワークスペースの名前のリストです (このキーは GNOME 2.12 から破棄される予定です)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="ワークスペースの数 (破棄の予定)">
+								<longdesc>ウィンドウ・マネージャが使用するワークスペースの数です (このキーは GNOME 2.12 から破棄される予定です)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="ユーザ指定のウィンドウ・マネージャ (破棄の予定)">
+								<longdesc>最初に起動してみるウィンドウ・マネージャです (このキーは GNOME 2.12 から破棄される予定です)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="代替のウィンドウ・マネージャ (破棄の予定)">
+								<longdesc>指定したウィンドウ・マネージャが見つからなかった場合の代替のウィンドウ・マネージャです (このキーは GNOME 2.12 から破棄される予定です)。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="タスクを端末から起動する">
+								<longdesc>デフォルトのタスク管理アプリケーションを実行するのに端末が必要かどうかです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="デフォルトのタスク">
+								<longdesc>デフォルトのタスク管理アプリケーションです</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="カレンダを端末から起動する">
+								<longdesc>デフォルトのカレンダ・アプリケーションを実行するのに端末が必要かどうかです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="デフォルトのカレンダ">
+								<longdesc>デフォルトのカレンダ・アプリケーションです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="ブラウザはリモートを理解する">
+								<longdesc>デフォルトのブラウザが Netscape リモートを理解するかどうかです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="ブラウザを端末から起動する">
+								<longdesc>デフォルトのブラウザを実行するのに端末が必要かどうかです。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="デフォルトのブラウザ">
+								<longdesc>すべての URL で利用するデフォルトのブラウザです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="視覚支援技術をサポートしたアプリケーションを起動する">
+									<longdesc>ログインしたら視覚支援技術 (Visual Assistive Technology) をサポートするアプリケーションを優先して起動するかどうかです。</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="起動する視覚支援技術のアプリケーション">
+									<longdesc>ログインやメニュー、あるいはコマンドラインで利用する視覚支援技術 (Visual Assistive Technology) をサポートしたアプリケーションです。</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="移動性支援技術をサポートしたアプリケーションを起動する">
+									<longdesc>ログインしたら移動性支援技術 (Mobility Assistive Technology) をサポートするアプリケーションを優先して起動するかどうかです。</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="起動する移動性支援技術のアプリケーション">
+									<longdesc>ログインやメニュー、あるいはコマンドラインで利用する移動性支援技術 (Mobility Assistive Technology) をサポートしたアプリケーションです。</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="デフォルトのコンポーネント・ビューア・アプリケーション">
+								<longdesc>コンポーネントが必要となるファイルを閲覧するためのアプリケーションです。%s はファイルの URI で、パラメータ %c はコポーネントの IID でそれぞれ置き換えられます。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="実行時の引数">
+								<longdesc>&apos;exec&apos; キーで定義された、端末でプログラムを実行するために利用する引数です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="端末アプリケーション">
+								<longdesc>端末から起動する必要のあるアプリケーションから利用される端末プログラムです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; の URL の処理">
+								<longdesc>&quot;h323&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで &quot;h323&quot; の URL を処理するかどうか">
+								<longdesc>&quot;h323&quot; の URL を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;callto&quot; の 処理">
+								<longdesc>&quot;callto&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;callto&quot; を処理するかどうか">
+								<longdesc>URL &quot;callto&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;aim&quot; の 処理">
+								<longdesc>&quot;aim&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;aim&quot; を処理するかどうか">
+								<longdesc>URL &quot;aim&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;mailto&quot; の 処理">
+								<longdesc>&quot;mailto&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;mailto&quot; を処理するかどうか">
+								<longdesc>URL &quot;mailto&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;https&quot; の 処理">
+								<longdesc>&quot;https&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;https&quot; を処理するかどうか">
+								<longdesc>URL &quot;https&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;http&quot; の 処理">
+								<longdesc>&quot;http&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;http&quot; を処理するかどうか">
+								<longdesc>URL &quot;http&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;man&quot; の 処理">
+								<longdesc>&quot;man&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;man&quot; を処理するかどうか">
+								<longdesc>URL &quot;man&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;info&quot; の 処理">
+								<longdesc>&quot;info&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;info&quot; を処理するかどうか">
+								<longdesc>URL &quot;info&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;ghelp&quot; の 処理">
+								<longdesc>&quot;ghelp&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;ghelp&quot; を処理するかどうか">
+								<longdesc>URL &quot;ghelp&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="端末でプログラムを実行するかどうか">
+								<longdesc>この種類の URL を処理するコマンドを端末内で実行する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="URL &quot;trash&quot; の 処理">
+								<longdesc>&quot;trash&quot; の URL を処理する際に使用するコマンドです (任意)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="指定したコマンドで URL &quot;trash&quot; を処理するかどうか">
+								<longdesc>URL &quot;trash&quot; を処理するキー &quot;command&quot; にコマンドを指定する場合は TRUE にします。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="フォントを標準サイズに戻すキーボードショートカット">
+							<longdesc>フォントを標準サイズに戻すためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="フォントを小さくするキーボードショートカット">
+							<longdesc>フォントを小さくするためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="フォントを大きくするキーボードショートカット">
+							<longdesc>フォントを大きくするためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ヘルプを起動するキーボードショートカット">
+							<longdesc>ヘルプを起動するためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="タブ 12 に切り替えるキーボードショートカット">
+							<longdesc>タブ 12 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="タブ 11 に切り替えるキーボードショートカット">
+							<longdesc>タブ 11 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="タブ 10 に切り替えるキーボードショートカット">
+							<longdesc>タブ 10 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="タブ 9 に切り替えるキーボードショートカット">
+							<longdesc>タブ 9 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="タブ 8 に切り替えるキーボードショートカット">
+							<longdesc>タブ 8 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="タブ 7 に切り替えるキーボードショートカット">
+							<longdesc>タブ 7 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="タブ 6 に切り替えるキーボードショートカット">
+							<longdesc>タブ 6 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="タブ 5 に切り替えるキーボードショートカット">
+							<longdesc>タブ 5 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="タブ 4 に切り替えるキーボードショートカット">
+							<longdesc>タブ 4 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="タブ 3 に切り替えるキーボードショートカット">
+							<longdesc>タブ 3 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="タブ 2 に切り替えるキーボードショートカット">
+							<longdesc>タブ 2 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="タブ 1 に切り替えるキーボードショートカット">
+							<longdesc>タブ 1 に切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="現在開いているタブを閉じるアクセラレータ">
+							<longdesc>現在開いているタブを閉じるためのショートカットキーを指定します。GTK+ のリソースファイルと同じ書式で文字列を一個指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="現在開いているタブを右へ移動するアクセラレータ">
+							<longdesc>現在開いているタブを右へ移動するためのショートカットキーを指定します。GTK+ のリソースファイルと同じ書式で文字列を一個指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="現在開いているタブを左へ移動するアクセラレータ">
+							<longdesc>現在開いているタブを左へ移動するためのショートカットキーを指定します。GTK+ のリソースファイルと同じ書式で文字列を一個指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="次のタブに切り替えるキーボードショートカット">
+							<longdesc>次のタブに切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="前のタブに切り替えるキーボードショートカット">
+							<longdesc>前のタブに切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="端末をリセットしクリアするキーボードショートカット">
+							<longdesc>端末をリセットしてクリアするためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="端末をリセットするキーボードショートカット">
+							<longdesc>端末をリセットするためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="端末のタイトルを設定するキーボードショートカット">
+							<longdesc>端末のタイトルを設定するためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="メニューバーの表示を切り替えるキーボードショートカット">
+							<longdesc>メニューバーの表示/非表示を切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="フルスクリーンモードに切り替えるキーボードショートカット">
+							<longdesc>フルスクリーンモードに切り替えるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="テキストを貼り付けるキーボードショートカット">
+							<longdesc>選択したテキストをクリップボードから貼り付けるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="テキストをコピーするキーボードショートカット">
+							<longdesc>選択したテキストをコピーするためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="ウィンドウを閉じるキーボードショートカット">
+							<longdesc>ウィンドウを閉じるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="タブを閉じるキーボードショートカット">
+							<longdesc>タブを閉じるためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="現在のタブの内容をファイルに保存するキーボードショートカット">
+							<longdesc>現在のタブの内容をファイルに保存するショートカットキーです。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="新しいプロファイルを生成するキーボードショートカット">
+							<longdesc>プロファイル生成ダイアログを表示するショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="新しいウィンドウを開くキーボードショートカット">
+							<longdesc>新しいウィンドウを開くためのショートカットキー指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="新しいタブを開くキーボードショートカット">
+							<longdesc>新しいタブを開くためのショートカットキーを指定します。GTK+ のリソースファイルと同じフォーマットの文字列を指定します。&quot;disabled&quot; という特殊な文字列をオプションに指定した場合は、この操作に対するキーバインドは無効になります。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="デフォルトエンコーディング">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="システムフォントを使用するかどうか">
+								<longdesc>TRUE にすると、デスクトップ全体で使用している標準フォントが等幅フォントなら、端末はそのフォントを使用します (そうでない場合は、最もよく似たフォントを使用します)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="端末ウィジェットに対してテーマ色を使用するかどうか">
+								<longdesc>TRUE にすると、ユーザーが指定した色の代わりに、テキスト入力ボックスに使われるテーマ色スキーマを使用します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Delete キーの効果">
+								<longdesc>[DEL] (Delete) キーが生成するコードを設定します。指定可能な値: &quot;ascii-del&quot; (ASCII DEL キャラクターを生成する)、&quot;control-h&quot; (ASCII BS キャラクターとして知られてる Control-H を生成する)、&quot;escape-sequence&quot; (backspace もしくは delete に典型的に割り付けられているエスケープシーケンスを生成する)。通常は &quot;escape-sequence&quot; を設定します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Backspace キーの効果">
+								<longdesc>[BS] (Backspace) キーが生成するコードを設定します。指定可能な値: &quot;ascii-del&quot; (ASCII DEL キャラクターを生成する)、&quot;control-h&quot; (ASCII BS キャラクターとして知られてる Control-H を生成する)、&quot;escape-sequence&quot; (backspace もしくは delete に典型的に割り付けられているエスケープシーケンスを生成する)。通常は &quot;ascii-dell&quot; を設定します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="背景の画像をどの程度暗くするか">
+								<longdesc>0.0 〜 1.0 の間の値で、背景画像をどの程度暗くするか設定します。0.0 はまったく暗くしない、1.0 は完全に暗くすることを意味します。このバージョンの実装では二つのレベルの暗さしか使用できないので、0.0 で暗くする効果を無効にするという真偽値として動作しています。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="背景の画像をスクロールさせるかどうか">
+								<longdesc>TRUE にすると、背景の画像が前景のテキストと一緒にスクロールします; それ以外の場合、画像はそのまま留まりテキストのみが上にスクロールします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="背景の画像">
+								<longdesc>背景の画像ファイル名を指定します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="背景の種類">
+								<longdesc>端末の背景の種類を設定します。指定可能な値: &quot;solid&quot; (単色)、&quot;image&quot; (画像)、&quot;transparent&quot; (合成機能を持ったウィンドウマネージャーを利用している場合は実際に透過させ、それ以外は擬似的に透過する)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="フォント">
+								<longdesc>Pango フォント名を指定します。例えば &quot;Sans 12&quot; や &quot;Monospace Bold 14&quot; です。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="端末で実行するアプリケーションのパレット">
+								<longdesc>端末で実行するアプリケーションで使用可能な 16 色のパレットを持っています。これは色の名前をコロンで区切った形式のパレットになっています。色の名前は &quot;#FF00FF&quot; のような 16 進フォーマットにしてください。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="端末ウィンドウのアイコン">
+								<longdesc>このプロファイルを適用するタブ/ウィンドウに使うアイコンを指定します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="シェルの代わりに使用するコマンド">
+								<longdesc>use_custom_command が TRUE の場合、SHELL の代わりにこのコマンドを実行します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="端末に表示するカーソルの形状">
+								<longdesc>指定可能な値: &quot;block&quot; (矩形)、&quot;ibeam&quot; (縦線)、&quot;underline&quot; (下線)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="カーソルを点滅させるかどうか">
+								<longdesc>指定可能な値: &quot;system&quot; (カーソルの点滅でシステム規模の設定を使う)、&quot;on&quot; (カーソルを点滅させる)、&quot;off&quot; (カーソルを点滅させない)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="SHELL の代わりに特定のコマンドを実行するかどうか">
+								<longdesc>TRUE にすると、custom_command に設定された値が実行中の SHELL の代わりに使用されます。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="端末内でコマンドを実行したときにログイン情報を更新するかどうか">
+								<longdesc>TRUE にすると、端末内でコマンドが実行された時に utmp と wtmp のシステムログイン情報を記録します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="端末で実行するコマンドをログインシェルとして実行するかどうか">
+								<longdesc>TRUE にすると、端末内のコマンドをログインシェルとして起動します (argv[0] はその前にハイフンを付けます)。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="子プロセスのコマンドが終了した後の対応">
+								<longdesc>指定可能な値: &quot;close&quot; (端末を閉じる)、&quot;restart&quot; (コマンドを再実行する)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="新しい出力があるたびに下までスクロールするかどうか">
+								<longdesc>TRUE にすると、新しい出力が表示されるたびに下までスクロールします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="キーが押されるたび下までスクロールするかどうか">
+								<longdesc>TRUE にすると、キー押下のたびにスクロールバーが下に移動します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="スクロール時に維持する行数を無制限にするかどうか">
+								<longdesc>有効にすると、スクロールバック行は破棄されなくなります。スクロールバックの履歴は一時的にディスクに保存されるので、端末に大量の出力があった場合にシステムのディスクが不足するかもしれません。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="スクロール時に維持する行数">
+								<longdesc>スクロール時に維持する行数を指定します。この行数だけ端末をスクロールして戻ることができます; この行数を越えた行は破棄されます。scrollback_unlimited が有効になっている場合、この値は無視されます。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="スクロールバーの位置">
+								<longdesc>端末のスクロールバーを配置する場所を設定します。指定可能な値:&quot;left&quot;、&quot;right&quot;、&quot;hidden&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="デフォルトの行数">
+								<longdesc>新しく作成されるウインドウの行の数。use_custom_default_size が有効でない場合は意味がありません。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="デフォルトの列数">
+								<longdesc>新しく作成されるウインドウの列の数。use_custom_default_size が有効でない場合は意味がありません。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="新しいウインドウに指定した大きさを使用するかどうか">
+								<longdesc>TRUE なら、新しく作成されたウインドウは default_size_columns と default_size_rows で指定されたサイズになります。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="&quot;単語の一部&quot; とみなす文字の指定">
+								<longdesc>単語単位でテキストを選択する際に、この文字の並びを一つの単語と見なします。範囲は &quot;A-Z&quot; で与えられます。リテラルのハイフン (範囲を示すハイフンではない) を指定する場合は先頭においてください。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="端末ベルを消すかどうか">
+								<longdesc>TRUE にすると、アプリケーションが端末ベルのエスケープシーケンスを送出しても音を出しません。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="太字のフォントを許可するかどうか">
+								<longdesc>TRUE にすると、端末で実行しているアプリケーションが太字のテキストを利用できるようにします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="端末のタイトル">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="動的なタイトルをどう扱うか">
+								<longdesc>端末で実行しているアプリケーションがタイトルをセットした場合 (SHELL で設定するのが典型的です)、動的に設定されたタイトルは既に設定されているタイトルを消したり、前に来たり、後に来たり、置き換えたりすることができます。指定可能な値: &quot;replace&quot;、&quot;before&quot;、&quot;after&quot;、&quot;ignore&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="太字テキストが通常のテキストと同じ文字色を使うかどうか">
+								<longdesc>有効にすると、太字のテキストは通常のテキストと同じ色で表示されます。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="端末の太字テキストのデフォルト色">
+								<longdesc>端末の太字テキストのデフォルト色を、色指定子 (HTML スタイルの 16 進数もしくは &quot;red&quot; のような色の名前) で設定します。これは bold_color_same_as_fg が有効になっている場合に無視されます。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="端末の背景のデフォルト色">
+								<longdesc>端末の背景のデフォルト色を、色指定子 (HTML スタイルの 16 進数もしくは &quot;red&quot; のような色の名前) で設定します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="端末のテキストのデフォルト色">
+								<longdesc>端末のテキストのデフォルト色を、色指定子 (HTML スタイルの 16 進数もしくは &quot;red&quot; のような色の名前) で設定します。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="新しいウィンドウ/タブにメニューバーを表示するかどうか">
+								<longdesc>TRUE にすると、このプロファイルを使用しているウィンドウやタブで、ウィンドウ内にメニューバーが表示されます。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="プロファイルの可読な名前">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="端末ウィンドウを閉じる際に確認するかどうか">
+							<longdesc>一つ以上のタブを開いている端末ウィンドウを閉じる際に確認ダイアログを表示するかどうかです。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="利用可能なエンコーディングのリスト">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="メニューバーにアクセスするための標準的なショートカットを有効にするかどうか">
+							<longdesc>通常は、[F10] キーでメニューバーにアクセスできます。この設定を gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;) 経由でカスタマイズすることも可能です。このオプションにより標準的なメニューバー・アクセラレータを無効にすることが可能です。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="メニューバーがアクセスキーを持つかどうか">
+							<longdesc>メニューバーにアクセスキー &quot;[ALT] + 文字&quot; を付与するかを設定します。これらは端末内で実行するアプリケーションに影響することがあるので、無効にすることができます。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="新しい端末に使用するプロファイル">
+							<longdesc>新しいウィンドウやタブを開くときに使うプロファイルを指定します。profile_list に表示されています。</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="プロファイルのリスト">
+							<longdesc>gnome-terminal が知っているプロファイルのリストです。このリストには /apps/gnome-terminal/profiles に対するサブディレクトリの名前が含まれています。</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Midnight Commander のメニュー項目を表示するかどうか">
+						<longdesc>TRUE にした場合、端末型ファイル・マネージャの &quot;Midnight Commander&quot; がシステムにインストールされているならば、&quot;Midnight Commander で開く&quot; というメニュー項目をコンテキスト・メニューに表示します</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="デスクトップではなくホーム・フォルダで端末を開くかどうか">
+						<longdesc>TRUE にした場合、たとえデスクトップ上で端末を開いても実際にはホーム・フォルダから端末を開きます。それ以外は、デスクトップのフォルダから開きます。デスクトップ・フォルダがホーム・フォルダの場合、このキーによる効果はありません。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

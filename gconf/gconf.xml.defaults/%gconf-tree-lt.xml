@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB darbo grupė">
+						<longdesc>Windows tinklų darbo grupė arba sritis, kuriai priklauso naudotojas. Tam, kad visiškai įsigaliotų atlikti pakeitimai, naudotojui gali reikti atsijungti ir prisijungti iš naujo.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Papildomos sritys, kuriose ieškoti DNS-SD paslaugų">
+						<longdesc>Kableliu atskirtų DNS-SD sričių, kurios turėtų būti matomos „network:///“ vietoje, sąrašas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kaip rodyti vietinę DNS-SD paslaugą">
+						<longdesc>Galimos reikšmės yra „merged“, „separate“ ir „disabled“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automatinių tarpinio serverio nustatymų adresas">
+						<longdesc>Adresas, kuriame saugomi tarpinio serverio nustatymai</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS tarpinio serverio prievadas">
+						<longdesc>Tarpinio socks serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio socks serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP tarpinio serverio prievadas">
+						<longdesc>Tarpinio ftp serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio FTP serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Saugaus HTTP tarpinio serverio prievadas">
+						<longdesc>Tarpinio saugaus http serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Saugaus HTTP tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio saugaus HTTP serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Tarpinio serverio nustatymų režimas">
+						<longdesc>Pasirinkite tarpinio serverio nustatymų režimą. Galimos reikšmės yra „none“, „manual“, „auto“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Adresai pasiekiami nenaudojant tarpinio serverio">
+						<longdesc>Šis raktas saugo adresus, prie kurių yra jungiamasi tiesiogiai, o ne per tarpinį serverį (jei toks naudojamas). Reikšmėse galima saugoti kompiuterių vardus, sritis (su priekyje esančių apibendrinančiu simboliu, pvz., kaip *.pavyzdys.lt), kompiuterių IP adresus (tiek IPv4, tiek IPv6) bei tinklų adresus su tinklo kaukėmis (kažkas panašaus į 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP tarpinio serverio slaptažodis">
+						<longdesc>Slaptažodis, naudojamas jungiantis per HTTP tarpinį serverį.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP tarpinio serverio naudotojas">
+						<longdesc>Naudotojo vardas naudojamas jungiantis per HTTP tarpinį serverį.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Tarpiniamer serveryje naudoti autorizavimą">
+						<longdesc>Jei teigiama, jungtims į tarpinę stotį yra būtina autorizacija. Naudotojo vardas ir slaptažodis yra saugomi „/system/http_proxy/authentication_user“ ir „/system/http_proxy/authentication_password“ raktuose.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP tarpinio serverio prievadas">
+						<longdesc>Tarpinio http serverio prievadas, saugomas „/system/http_proxy/host“ rakte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP tarpinio serverio vardas">
+						<longdesc>Kompiuteris, teikiantis tarpinio HTTP serverio paslaugas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Naudoti HTTP tarpinį serverį">
+						<longdesc>Įjungia tarpinio serverio naudojimą naršant Internete per HTTP.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Ar naudojamas klaviatūros blokavimas">
+							<longdesc>Ar naudojamas klaviatūros blokavimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Leisti atidėti pertraukėles">
+							<longdesc>Ar spausdinimo pertraukėlės ekranas gali būti atidėtas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Pertraukos laikas">
+							<longdesc>Spausdinimo pertraukėlės trukmė (minutėmis).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Spausdinimo laikas">
+							<longdesc>Po kiek minučių teksto vedimo turi prasidėti spausdinimo pertraukėlės.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Atjungti visus išorinius miniatiūrų generatorius">
+							<longdesc>Nustatykite teigiamai, jei norite blokuoti visas išorines miniatiūrų generavimo peržiūros programas, nepriklausomai nuo to, ar jos yra atskirai įjungtos/išjungtos.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Maksimalus miniatiūrų kaupo dydis (megabaitais).  Nustatykite -1, jei norite išjungti kaupo valymą.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Maksimalus miniatiūrų amžius kaupe (dienomis).  Nustatykite -1, jei norite išjungti kaupo valymą.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Įvedimo grįžtamojo ryšio garsai">
+							<longdesc>Ar leisti garsus, susietus su įvedimo įvykiais.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Garso temos pavadinimas">
+							<longdesc>XDG garsų tema įvykių garsams.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Įvykių garsai">
+							<longdesc>Ar leisti garsus, susietus su naudotojo atliekamais veiksmais</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Įjungti ESD">
+							<longdesc>Naudoti garsų serverį.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Numatytieji mikšerio takeliai">
+							<longdesc>Numatytieji mikšerio takeliai naudojami multimedijos klavišų susiejimų.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Numatytasis mikšerio įrenginys">
+							<longdesc>Numatytasis mikšerio įrenginys naudojamas multimedijos klavišų susiejimų.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Žymeklio dydis">
+								<longdesc>Žymeklio kursoriaus, nurodyto cursor_theme rakte, dydis.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Žymeklio tema">
+								<longdesc>Žymeklio temos pavadinimas. Naudojama tik tų Xserverių, kurie palaiko Xcursor; tai pvz., XFree86 4.3 ir naujesni.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Žymeklio šriftas">
+								<longdesc>Žymeklio šrifto pavadinimas. Nenustačius, naudojamas numatytasis šriftas. Reikšmė perduodama X serveriui sesijos pradžioje, jos pakeitimas įsigalios tik kitą kartą prisijungus.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Rasti žymeklį">
+								<longdesc>Parodo dabartinę žymeklio padėtį, jei paspaudžiamas ir atleidžiamas Control klavišas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Dvigubo spragtelėjimo laikas">
+								<longdesc>Dvigubo spragtelėjimo trukmė.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Tempimo slenkstis">
+								<longdesc>Atstumas, po kurio prasideda tempimas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Traukos riba">
+								<longdesc>Atstumas pikseliais, kurį turi įveikti pelės žymeklis, kad įsijungtų greito pelės judėjimo veiksena. Sistemos numatytoji reikšmė yra -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Viengubas spragtelėjimas">
+								<longdesc>Pelės greitėjimo koeficientas. Numatytoji sistemos reikšmė yra -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Viengubas spragtelėjimas">
+								<longdesc>Pakanka vieno spragtelėjimo atverti piktogramoms.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Pelės mygtukų padėtis">
+								<longdesc>Kairiarankiams skirtoje pelėje sukeisti kairį ir dešinį pelės klavišą vietomis.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Atsiminti NumLock būseną">
+								<longdesc>Kai reikšmė teigiama, GNOME atsimins tarp sesijų NumLock LED būseną.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Klaviatūros varpelio failas">
+								<longdesc>Skambučio garso signalo failo vardas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>galimos reikšmės yra „on“, „off“ ir „custom“.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Išjungti URL ir MIME tipo dorokles">
+							<longdesc>Neleisti vykdyti URL ar MIME tipų apdorojimo programų.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Atjungti ekrano užrakinimą">
+							<longdesc>Neleisti naudotojui užrakinti jo ekrano.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Atjungti naudotojų perjungimą">
+							<longdesc>Neleisti naudotojui persijungti prie kito abonento, kol jo sesija aktyvi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Atjungti spausdinimo nustaymus">
+							<longdesc>Užkirsti kelią naudotojui keisti spausdinimo nustatymus. Pvz., naudojant šį nustatymą visose programose dialogas „Spausdinimo nustatymai“ bus neprieinamas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Atjungti spausdinimą">
+							<longdesc>Užkirsti kelią naudotojui spausdinti. Pvz., naudojant šį nustatymą, visose programose dialogas „Spausdinti“ bus neprieinamas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Atjungti failų saugojimą į diską">
+							<longdesc>Užkirsti kelią naudotojui išsaugoti failus į diską. Pvz., naudojant šį nustatymą visose programose dialogas „Išsaugoti kaip“ bus neprieinamas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Atjungti komandinę eilutę">
+							<longdesc>Užkirsti kelią naudotojui pasiekti terminalą arba nurodyti vykdomą komandinę eilutę. Pvz., naudojant šį nustatymą priėjimas prie skydelio dialogo „Paleisti programą“ bus uždraustas.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Rodyti meniu „Unicode valdymo simboliai“">
+							<longdesc>Ar įrašų kontekstiniuose meniu ir teksto rodiniuose turėtų pasiūlyti įterpti valdymo simbolius.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Rodyti meniu „Įvesties metodai“">
+							<longdesc>Ar įrašų kontekstiniuose meniu ir teksto rodiniuose turėtų pasiūlyti pakeisti įvesties metodą.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Meniu juostos spartusis klavišas">
+							<longdesc>Klavišų susiejimas, atveriantis meniu juostas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser modulis">
+							<longdesc>Modulis naudojamas kaip failų sistemos modelis GtkFileChooser valdymo elementui. Galimos reikšmės yra „gio“, „gnome-vfs“ ir „gtk+“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Būklės juosta dešinėje">
+							<longdesc>Ar rodyti būsenos juostą dešinėje pusėje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Naudoti vartotojo parinktą šriftą">
+							<longdesc>Ar su gtk+ programomis naudoti vartotojo parinktą šriftą.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Lygiaplotis šriftas">
+							<longdesc>Lygiapločio (turinčio vienodą raidžių plotį) šrifto, naudojamo terminaluose bei kitose vietose, pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Dokumento šriftas">
+							<longdesc>Numatytojo dokumentų skaitymui naudojamo šrifto pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM modulis">
+							<longdesc>GTK+ įvedimo metodo modulio pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM būsenos stilius">
+							<longdesc>GTK+ įvedimo metodo, kurį naudos gtk+ su Būsenos Stiliumi, pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM Preedit stilius">
+							<longdesc>GTK+ įvedimo metodo, kurį naudos gtk+ su Preedit Stiliumi, pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Numatytasis šriftas">
+							<longdesc>Numatytojo gtk+ naudojamo šrifto pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ tema">
+							<longdesc>Gtk+ naudojamos numatytosios temos bazinis pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ tema">
+							<longdesc>Gtk+ naudojamos numatytosios temos bazinis pavadinimas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Piktogramų tema">
+							<longdesc>Piktogramų tema, naudotina skydeliui, failų naršyklei ir t.t.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Žymeklio mirgėjimo laikas">
+							<longdesc>Žymeklio mirksėjimo ciklo trukmė milisekundėmis.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Mirksintis žymeklis">
+							<longdesc>Ar žymeklis turi mirksėti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Įrankių juostos piktogramų dydis">
+							<longdesc>Piktogramų įrankių juostose dydis: arba „small-toolbar“, arba „large-toolbar“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Įrankių juosta atkabinama">
+							<longdesc>Ar naudotojas gali atkabinti įrankių juostas ir jas stumdyti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Meniu juosta atkabinama">
+							<longdesc>Ar naudotojas gali atkabinti meniu juostas ir jas stumdyti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Mygtukai turi piktogramas">
+							<longdesc>Ar mygtukuose rodyti piktogramas šalia mygtuko užrašo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Meniu turi piktogramas">
+							<longdesc>Ar meniu gali rodyti piktogramas šalia meniu įrašų.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Įrankių juostos stilius">
+							<longdesc>Įrankių juostos stilius. Galimos reikšmės yra „both“, „both_horiz“, „icons“ ir „text“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Gali keisti sparčiuosius klavišus">
+							<longdesc>Ar naudotojas gali dinamiškai įvesti naują trumpą klavišą, kai pažymėtas meniu punktas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Meniu atkabinami">
+							<longdesc>Ar meniu gali būti atkabinami.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Įjungti animaciją">
+							<longdesc>Ar animacijos turi būti rodomos? Pastaba: šis raktas galioja visiems, jis keičia langų tvarkyklės, skydelio ir kitų aplinkos elementų elgseną.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Įjungti prieinamumą">
+							<longdesc>Ar programos turėtų turėti prieinamumo įrankių palaikymą.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Failų piktogramų tema">
+							<longdesc>Tema naudojama rodyti failų piktogramas.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Spalvos šešėlių tipas">
+							<longdesc>Kaip keisti fono spalvos šešėlį. Galimos reikšmės yra &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot; ir &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Antrinė spalva">
+							<longdesc>Dešinė arba apatinė spalva kai naudojami persiliejimai; vientisai spalvai nenaudojama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Pradinė spalva">
+							<longdesc>Kairė arba viršutinė spalva (kai naudojami persiliejimai), arba vientisa spalva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Paveikslėlio neskaidrumas">
+							<longdesc>Foninio piešinio nepermatomumas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Paveikslėlio failo pavadinimas">
+							<longdesc>Failas, naudotinas fono paveikslėliui.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Paveikslėlio nustatymai">
+							<longdesc>Nustato, kaip turi būti apdorojamas fono paveikslėlis, nurodytas wallpaper_filename raktu. Galimos reikšmės: „none“, „wallpaper“, „centered“, „scaled“, „stretched“, „zoom“ ir „spanned“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Piešti darbalaukio foną">
+							<longdesc>Ar GNOME turi piešti darbalaukio foną.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Paleisti pagalbinių technologijų programas">
+								<longdesc>Pagalbinių technologijų programų, kurios yra paleidžiamos pradedant darbą GNOME aplinkoje, sąrašas.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Pyptelėti, kai paspaustas specialus klavišas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Atjungti, jei du klavišai paspaudžiami vienu metu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Mažiausias intervalas milisekundėmis">
+								<longdesc>Nereaguoti į klavišo paspaudimą, jei jis paspaustas trumpiau nei @delay milisekundžių.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Pradinė pauzė milisekundėmis">
+								<longdesc>Po kiek milisekundžių turi pradėti veikti pelės judėjimo klavišai.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Akseleracijos laikas milisekundėmis">
+								<longdesc>Per kiek milisekundžių pasiekiamas maksimalus žymeklio judėjimo greitis.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pikseliai per sekundę">
+								<longdesc>Kiek taškų per sekundę turi būti įveikiama maksimaliu judėjimo greičiu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="mažiausias intervalas milisekundėmis">
+								<longdesc>Ignoruoti pasikartojančius _to paties_ klavišo paspaudimus, įvykstančius @delay millisekundžių intervale.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Darbo laukų vardai (nebenaudojama)">
+								<longdesc>Sąrašas, kuris įvardina pirmosios langų tvarkyklės darbo laukus. Šis raktas nuo GNOME 2.12 nebenaudojamas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Darbo laukų kiekis (nebenaudojama)">
+								<longdesc>Darbo laukų skaičius, kuris turi būti sukurtas langų tvarkyklėje. Šis raktas nuo GNOME 2.12 nebenaudojamas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Vartotojo langų tvarkyklė (nebenaudojama)">
+								<longdesc>Pirmiausiai bandoma langų tvarkyklė. Šis raktas nuo GNOME 2.12 nebenaudojamas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Atsarginė langų tvarkyklė (nebenaudojama)">
+								<longdesc>Atsarginė langų tvarkyklė, kurią reiktų naudoti, jei vartotojo pasirinkta tvarkyklė nerandama. Šis raktas nuo GNOME 2.12 nebenaudojamas.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Užduotims reikia terminalo">
+								<longdesc>Ar numatytajai užduočių programai yra būtinas terminalas</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Numatytosios užduotys">
+								<longdesc>Numatytųjų užduočių programa</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalendoriui reikia terminalo">
+								<longdesc>Ar numatytajai kalendorių programai yra būtinas terminalas</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Numatytasis kalendorius">
+								<longdesc>Numatytoji kalendoriaus programa</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Naršyklė gali apdoroti nutolusius adresus">
+								<longdesc>Ar numatytoji naršyklė gali apdoroti netscape nutolusias komandas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Naršyklei reikia terminalo">
+								<longdesc>Ar numatytajai naršyklei yra būtinas terminalas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Numatytoji naršyklė">
+								<longdesc>Numatytoji naršyklė, apdorojanti visus adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Paleisti pageidaujamą Vizualinių pagalbinių technologijų programą">
+									<longdesc>GNOME paleidžia Vizualių pagalbinių technologijų programą prisijungimo metu.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Pageidaujama Vizualių pagalbinių technologijų programa">
+									<longdesc>Pageidaujama Vizualių pagalbinių technologijų programa naudotina prisijungimui, meniu ar komandų eilutei.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Paleisti pageidaujamą Mobility pagalbinių technologijų programą">
+									<longdesc>GNOME paleidžia Mobility pagalbinių technologijų programą prisijungimo metu.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Pageidaujama Mobility pagalbinių technologijų programa">
+									<longdesc>Pageidaujama Mobility pagalbinių technologijų programa naudotina prisijungimui, meniu arba komandų eilutei.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Numatytoji komponentų peržiūros programa">
+								<longdesc>Programa naudojama peržiūrėti failus, kurie reikalauja specialaus peržiūros komponento. Parametras %s bus pakeistas failo adresu, parametras %c bus pakeistas komponento IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Paleidimo parametrai">
+								<longdesc>Argumentas, naudojamas paleisti programas terminale, nurodytame „exec“ raktu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminalo programa">
+								<longdesc>Terminalo programa, naudojama paleidžiant terminalo reikalaujančias programas.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „h323“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „h323“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „h323“ adresus">
+								<longdesc>Nustatykite į teigiamą reikšmę jei norite, kad programa, nurodyta „command“ rakte, apdorotų „h323“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „callto“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „callto“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „callto“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „callto“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „aim“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „aim“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „aim“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „aim“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „mailto“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „mailto“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „mailto“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „mailto“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „https“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „https“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „https“ adresus">
+								<longdesc>Nustatykite į teigiamą reikšmę jei norite, kad programa, nurodyta „command“ rakte, apdorotų „https“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „http“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „http“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „http“ adresus">
+								<longdesc>Nustatykite į teigiamą reikšmę jei norite, kad programa, nurodyta „command“ rakte, apdorotų „http“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „man“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „man“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „man“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „man“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „info“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „info“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „info“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „info“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „ghelp“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „ghelp“ URL, jeigu įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „ghelp“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „ghelp“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Vykdyti komandą terminale">
+								<longdesc>Teigiama, jei komanda naudojama apdoroti šio tipo adresams turėtų būti paleidžiama terminale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Programa, kuriai perduoti „trash“ užklausas">
+								<longdesc>Komanda naudojama apdoroti „trash“ URL, jei įjungta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Ar nurodyta programa turėtų apdoroti „trash“ adresus">
+								<longdesc>Nustatykite teigiamai norėdami, kad programa, nurodyta „command“ rakte, apdorotų „trash“ adresus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Klavišų kombinacija normalaus šrifto dydžio nustatymui">
+							<longdesc>Klavišų kombinacija, atstatantis numatytajį šriftų dydį. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Klavišų kombinacija šrifto dydžio sumažinimui">
+							<longdesc>Klavišų kombinacija, sumažinantis šriftų dydį. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Klavišų kombinacija šrifto dydžiui padidinti">
+							<longdesc>Klavišų kombinacija, padidinantis šrifto dydį. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Klavišų kombinacija žinyno atvėrimui">
+							<longdesc>Klavišų kombinacija, paleidžiantis pagalbos sistemą. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 12-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 12-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 11-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 11-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 10-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 10-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 9-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 9-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 8-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 8-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 7-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 7-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 6-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 6-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 5-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 5-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 4-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 4-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 3-ią kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 3-ią kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 2-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 2-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į 1-ą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į 1-ą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failoe. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Spartusis klavišas atkabinti esamai kortelei.">
+							<longdesc>Spartusis klavišas, esamos kortelės atkabinimui. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Spartusis klavišas perkelti esamą kortelę dešinėn.">
+							<longdesc>Spartusis klavišas, kortelės perkėlimui dešinėn. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Spartusis klavišas perkelti esamą kortelę kairėn.">
+							<longdesc>Spartusis klavišas, kortelės perkėlimui kairėn. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į kitą kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į kitą kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į ankstesnę kortelę">
+							<longdesc>Klavišų kombinacija, perjungianti į ankstesnę kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Klavišų kombinacija terminalo atstatymui ir išvalymui">
+							<longdesc>Klavišų kombinacija, atstatanti ir išvalanti terminalą. Išreikšta kaip seka tuo pačiu pačiu formatu kaip ir GTK+ išteklių failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Klavišų kombinacija terminalo atstatymui">
+							<longdesc>Klavišų kombinacija, atstatanti terminalą. Nurodoma tuo pačiu formatu kaip ir GTK+ išteklių failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Klavišų kombinacija terminalo antraštei nustatyti">
+							<longdesc>Klavišų kombinacija, nustatantis terminalo antraštę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Klavišų kombinacija perjungianti meniu rodymą">
+							<longdesc>Klavišų kombinacija, valdantis meniu juostos rodymą. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Klavišų kombinacija persijungimui į viso ekrano veikseną">
+							<longdesc>Klavišų kombinacija, perjungianti viso ekrano veikseną. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Klavišų kombinacija teksto įdėjimui">
+							<longdesc>Klavišų kombinacija, įterpiantis tekstą iš atmintinės. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Klavišų kombinacija teksto kopijavimui">
+							<longdesc>Klavišų kombinacija, nukopijuojantis pažymėtą tekstą į atmintinę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Klavišų kombinacija lango užvėrimui">
+							<longdesc>Klavišų kombinacija, užverianti langą. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Klavišų kombinacija kortelės užvėrimui">
+							<longdesc>Klavišų kombinacija, užverianti kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Klavišų kombinacija kortelės turinio įrašymui į failą">
+							<longdesc>Klavišų kombinacija, įrašanti kortelės turinį į failą. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka &quot;disabled&quot;, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Klavišų kombinacija naujo profilio sukūrimui">
+							<longdesc>Klavišų kombinacija, iškviečianti profilio kūrimo langą. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Klavišų kombinacija naujo lango atvėrimui">
+							<longdesc>Klavišų kombinacija, atveriantis naują langą. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Klavišų kombinacija naujos kortelės atvėrimui">
+							<longdesc>Klavišų kombinacija, atveriantis naują kortelę. Nurodomas tuo pačiu formatu kaip GTK+ resursų failuose. Jei nustatoma speciali seka „disabled“, su veiksmu nebus susieta jokia klavišų kombinacija.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Numatytoji koduotė">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Ar naudoti sisteminį šriftą">
+								<longdesc>Jei teigiama, terminalas naudos aplinkos numatytąjį šriftą, jei jis yra lygiaplotis (arba bus parinktas kitas artimas jam šriftas).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Ar terminalas turi naudoti temos spalvas">
+								<longdesc>Jei teigiama, terminalo tekstiniai laukai naudos temos spalvų schemą vietoj vartotojo nurodytų spalvų.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Delete klavišo veiksmas">
+								<longdesc>Nustato kodą, kurį generuoja Delete klavišas. Galimos reikšmės yra „ascii-del“, nustatanti ASCII DEL simbolį, „control-h“, nustatanti Control-H (ASCII BS simbolį), „escape-sequence“, nustatantį escape seką, susietą su backspace arba delete. „escape-sequence“ yra standartinis Delete klavišo nustatymas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Backspace klavišo veiksmas">
+								<longdesc>Nustato kodą, kurį generuoja BackSpace klavišas. Galimos reikšmės yra „ascii-del“, nustatanti ASCII DEL simbolį, „control-h“, nustatanti Control-H (ASCII BS simbolį), „escape-sequence“, nustatantį escape seką, susietą su backspace arba delete. „ascii-del“ yra standartinis Backspace klavišo nustatymas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Kiek patamsinti foninį paveikslėlį">
+								<longdesc>Reikšmė tarp 0.0 ir 1.0 nurodo, kiek reikia patamsinti foninį paveikslėlį. 0.0 reiškia tamsinimo netaikymą, 1.0 - visišką užtamsinimą. Dabar turima programos specifikacija leidžia tik du galimus tamsinimo atvejus ir reikšmė veikia kaip loginis kintamasis, kuris atjungia (0.0) arba įjungia (1.0) tamsinimą.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Ar stumti foninį paveikslėlį">
+								<longdesc>Jei teigiama, foninis paveikslėlis judės kartu su terminalo tekstu. Neigiama reikšmė – paveikslėlis fiksuotas, terminale judės tik tekstas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Paveikslėlis fonui">
+								<longdesc>Fono paveikslėlio failas</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Fono tipas">
+								<longdesc>Terminalo fono tipas. „solid“ reiškia tolygią spalvą, „image“ – paveikslėlį, „transparent“ – pusiau skaidrų foną (tikro permatomumo, jei veikia komponuojanti langų valdyklė, pseudopermatomumo – jei ne).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Šriftas">
+								<longdesc>Pango šrifto pavadinimas. Pavyzdžiui „Sans 12“ arba „Monospace Bold 14“</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Terminalo programų paletė">
+								<longdesc>Terminalai turi 16-os spalvų paletę, kurią gali naudoti terminale esančios programos. Čia kabliataškiu atskirtų spalvų forma aprašoma ši paletė. Spalvų vardai turi būti šešioliktainiai, pvz., „#FF00FF“</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Terminalo lango ženklas">
+								<longdesc>Ženklas, naudojamas kortelėms/langams su šiuo profiliu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Komanda naudojama vietoj standartinės aplinkos">
+								<longdesc>Jei use_custom_command reikšmė yra teigiama, naudoti šią komandą vietoj įprastos aplinkos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Kursoriaus vaizdas">
+								<longdesc>Galimos vertės: „block“ – naudoti blokinį kursorių, „ibeam“ – naudoti vertikalios linijos kursorių arba „underline“ – naudoti pabraukimo kursorių.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Ar kursorius mirksi">
+								<longdesc>Galimos reikšmės: „system“ – naudoti globalius kursoriaus mirksėjimo nustatymus, „on“ / „off“ – išreikštinai nustatyti mirksėjimą.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Paleisti kitą komandą vietoj įprastos aplinkos">
+								<longdesc>Jei teigiama, custom_command nustatymo reikšmė bus panaudota vietoj darbinės aplinkos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Ar atnaujinti prisijungimo įrašus, paleidus komandą terminale">
+								<longdesc>Jei teigiama, sistemos prisijungimo įrašai utmp ir wtmp bus atnaujinti, kai terminale bus paleista komanda.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Ar paleisti programą terminale naudojant prisijungimo aplinkos parametrus">
+								<longdesc>Jei teigiama, terminale paleista komanda naudos prisijungimo aplinkos nustatymus (prieš argv[0] bus įrašytas minusas).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Ką daryti su terminalu, jei susijęs procesas baigia darbą">
+								<longdesc>Galimos reikšmės yra „close“ (užveria terminalą) ir „restart“ (pakartoja komandą).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Ar pereiti į terminalo apačią, jei ten išvedami nauji duomenys">
+								<longdesc>Jei teigiama, bet kokia nauja išvestis terminale nukels į terminalo apačią.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Ar pereiti į terminalo apačią, paspaudus klavišą">
+								<longdesc>Jei teigiama, paspaudus klavišą nuslenkama į terminalo apačią.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Ar saugoti neribotą eilučių skaičių">
+								<longdesc>Jei teigiama, retrospektyvos eilutės niekada nebus šalinamos. Retrospektyva saugoma laikinoje saugykloje diske, todėl jei į terminalą išvedama daug teksto, gali pasibaigti vieta diske.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Saugomų teksto eilučių kiekis">
+								<longdesc>Išsaugomų teksto eilučių kiekis. Galite grįžti terminale per pasirinktą eilučių skaičių; sistema nesaugos eilučių, kurios viršys nurodytą skaičių. Jei scrollback_unlimited pasirinktas, ši reikšmė ignoruojama.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Persukimo juostos padėtis">
+								<longdesc>Kur rodyti terminalo slinkties juostą. Galimos reikšmės „left“, „right“ ir „disabled“.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Numatytasis eilučių skaičius">
+								<longdesc>Eilučių skaičius naujai sukurtuose terminalo languose. Neturi poveikio, jei use_custom_default_size nenustatytas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Numatytasis stulpelių skaičius">
+								<longdesc>Stulpelių skaičius naujai sukurtuose terminalo languose. Neturi poveikio, jei use_custom_default_size nenustatytas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Ar naudoti pasirinktinį terminalo dydį naujiems langams">
+								<longdesc>Jei teigiama, naujai sukurti terminalo langai bus pasirinktinio dydžio, kurį nurodo default_size_columns ir default_size_rows raktai.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Simboliai, kurie yra laikomi „žodžio dalimi“">
+								<longdesc>Pažymint žodžius, šių simbolių sekos bus laikomos atskiru žodžiu. Diapazoną galima nurodyti kaip  &quot;A-Z&quot;. Minusas, kuris nenurodo diapazono, turi būti pirmas nurodytas simbolis.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Ar terminalo garsinis signalas turi būti atjungtas">
+								<longdesc>Jei teigiama, neskleisti garsų, kai programa bando pasinaudoti sistemine garso signalo seka.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Ar leisti pastorintą tekstą">
+								<longdesc>Jei teigiama, programos gali terminale išvedinėti pastorintą tekstą.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Terminalo antraštė">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Kaip elgtis su kintama antrašte">
+								<longdesc>Jei programa terminale nustato antraštę (paprastai tai apliekama aplinkos nustatymuose), kintama antraštė gali pašalinti nustatytą lango antraštę, būti įrašyta prieš ją, eiti po jos arba ją pakeisti. Galimos reikšmės yra &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, ir &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Ar paryškinto teksto spalva turėtų būti tokia pati kaip paprasto teksto">
+								<longdesc>Jei TRUE, paryškintas tekstas bus tokios pačios spalvos kaip ir paprastas tekstas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Numatytoji paryškinto teksto spalva">
+								<longdesc>Numatytoji paryškinto teksto spalva, nurodyta pagal spalvų specifikacijas (gali būti HTML stiliaus šešioliktainiai kodai arba spalvos vardas, pvz. „red“).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Numatytoji terminalo fono spalva">
+								<longdesc>Numatytoji terminalo fono spalva, nurodyta pagal spalvų specifikacijas (gali būti HTML stiliaus šešioliktainiai kodai arba spalvos vardas, pvz. „red“).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Numatytoji terminalo teksto spalva">
+								<longdesc>Numatytoji terminalo teksto spalva, nurodyta pagal spalvų specifikacijas (gali būti HTML stiliaus šešioliktainiai kodai arba spalvos vardas, pvz. „red“).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Ar rodyti meniu juostą naujuose languose/kortelėse">
+								<longdesc>Reikšmė teigiama, jei meniu turi būti rodomas naujuose languose bei kortelėse, naudojančiuose šį profilį.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Skaitomas profilio pavadinimas">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Ar klausti patvirtinimo prieš uždarant terminalo langus">
+							<longdesc>Ar klausti patvirtinimo, kai uždaromas terminalo langas, turintis daugiau negu vieną kortelę.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Galimų koduočių sąrašas">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Ar įjungtas standartinis GTK meniu prieigos klavišų susiejimas">
+							<longdesc>Paprastai Jūs galite pasiekti meniu juostą klavišu F10. Tai gali būti pakeista per gtkrc (gtk-menu-bar-accel = &quot;kažkas&quot;). Šis nustatymas leidžia atjungti įprastą meniu juostos susiejimo klavišą.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Ar meniu juosta palaiko sparčiuosius klavišus">
+							<longdesc>Ar naudoti Alt-raidė sparčiuosius klavišus tarp meniu. Šie spartieji klavišai gali sutrikdyti dalies programų, paleistų terminale darbą, todėl galima juos atjungti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profilis, naudojamas paleidžiant naują terminalą">
+							<longdesc>Profilis, naudojamas atveriant naują langą ar kortelę. Vardas turi būti iš profilių sąrašo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Profilių sąrašas">
+							<longdesc>Gnome-terminalui žinomų profilių sąrašas. Sąraše saugomos sekos, atitinkančios /apps/gnome-terminal/profiles žemesniuosius aplankus.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Ar Midnight Commander meniu punktas turėtų būti rodomas">
+						<longdesc>Jei pasirinkta ir terminalinė failų tvarkyklė &quot;Midnight Commander&quot; yra įdiegta, meniu punktas &quot;Atverti Midnight Commanderyje&quot; bus rodomas kontekstiniame meniu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Ar atveriant terminalą darbastalyje atverti terminalą namų aplanke">
+						<longdesc>Jei pasirinkta, terminalo atvėrimas darbastalyje atvers terminalą namų aplanke. Kitaip terminalas bus atvertas darbastalio aplanke. Šis raktas nereikšmingas, jei darbastalio aplankas identiškas namų aplankui.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

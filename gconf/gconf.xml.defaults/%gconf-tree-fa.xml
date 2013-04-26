@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="این که آیا قفل صفحه کلید به کار انداخته شود یا نه.">
+							<longdesc>این که آیا قفل صفحه کلید به کار انداخته شود یا نه.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="اجازه‌ی تعویق استراحت‌ها">
+							<longdesc>این که آیا بشود صفحه‌ی استراحت تایپ را به تعویق انداخت یا نه.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="زمان استراحت">
+							<longdesc>تعداد دقایقی که استراحت تایپ ادامه می‌یابد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="زمان تایپ">
+							<longdesc>تعداد دقایق زمان تایپ کردن قبل از شروع حالت استراحت.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="صدا برای رویدادها">
+							<longdesc>این که آیا برای رویدادهای کاربر صدا پخش بشود یا نه.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="به کار انداختن ESD">
+							<longdesc>به کار انداختن راه‌اندازی کارگزار صوت</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="اندازه‌ی مکان‌نما">
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="تم مکان‌نما">
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="قلم مکان‌نما">
+								<longdesc>نام قلم مکان‌نما. اگر تنظیم نشده باشد، قلم پیش‌فرض استفاده می‌شود. این مقدار فقط در شروع هر نشست به کارگزار X رد می‌شود، بنابراین، تغییر آن در میانه‌ی نشست تا زمان ورود بعدی شما به سیستم اثری ندارد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="تعیین مکان اشاره‌گر">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="زمان دوبار کلیک ">
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="آستانه‌ی کشیدن">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="آستانه‌ی حرکت">
+								<longdesc>فاصله‌ای (به نقطه) که اشاره‌گر باید حرکت کند تا آنکه حرکت شتابدار موشی فعال شود. مقدار پیش‌فرض سیستم ۱- است.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="تک کلیک">
+								<longdesc>ضرب‌کننده‌ی شتابدهنده برای حرکت موشی. پیش‌فرض سیستم ۱- است.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="تک کلیک">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="جهت دکمه‌ی موشی">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="bell_custom_file">
+							<local_schema short_desc="نام پرونده‌ی ‌زنگ سفارشی صفحه‌کلید">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>مقادیر ممکن عبارتند از «روشن»، «خاموش» و «سفارشی».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_print_setup">
+						<local_schema short_desc="از کار انداختن برپاسازی چاپ">
+							<longdesc>جلوگیری از تغییر تنظیمات چاپ توسط کاربر. برای مثال، ممکن است دسترسی به محاوره‌ی «برپاسازی چاپ» را در تمام برنامه‌ها از کار بیاندازد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="از کار انداختن چاپ">
+							<longdesc>جلوگیری از چاپ توسط کاربر. برای مثال، ممکن است دسترسی به محاوره‌ی «چاپ» را در تمام برنامه‌ها از کار بیاندازد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="از کار انداختن ذخیره‌ی پرونده‌ها در دیسک">
+							<longdesc>جلوگیری از ذخیره‌ی پرونده‌ها در دیسک توسط کاربر. برای مثال، ممکن است دسترسی به محاوره‌ی «ذخیره به نام» را در تمام برنامه‌ها از کار بیاندازد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="از کار انداختن خط فرمان">
+							<longdesc>جلوگیری از دسترسی کاربر به پایانه یا مشخص کردن خط فرمان برای اجرا. برای مثال، ممکن است دسترسی به محاوره‌ی «اجرای برنامه» در تابلو را از کار بیاندازد.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="پیمانه برای GtkFileChooser">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="نوار وضعیت در راست">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="استفاده از قلم سفارشی">
+							<longdesc>این که آیا در برنامه‌های gtk+ از قلم سفارشی استفاده بشود یا نه.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="قلم تک عرض">
+							<longdesc>نام قلم تک‌ عرض برای استفاده در مکان‌هایی مانند پایانه‌ها</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="سبک وضعیت GTK IM">
+							<longdesc>نام روش ورودی GTK+، سبک وضعیت که توسط gtk+ استفاده می‌شود.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="سبک GTK IM Preedit">
+							<longdesc>نام روش ورودی GTK+، سبک پیش‌ویرایش که توسط gtk+ استفاده می‌شود.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="قلم پیش‌فرض">
+							<longdesc>نام قلم پیش‌فرض که توسط gtk+ استفاده می‌شود.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="تم Gtk+">
+							<longdesc>اسم مبنا برای تم پیش‌فرضی که  gtk+ استفاده می‌کند.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="تم Gtk+">
+							<longdesc>اسم مبنا برای تم پیش‌فرضی که  gtk+ استفاده می‌کند.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="تم شمایل">
+							<longdesc>تم شمایل مورد استفاده‌ی تابلو، ناتیلوس و غیره.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="زمان چشمک زدن مکان‌نما">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="چشمک زدن مکان‌نما">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="اندازه‌ی شمایل نوار ابزار">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="نوار ابزار جداشدنی">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="نوار منوی جداشدنی">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="منوها شمایل دارند">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="سبک نوار ابزار">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="می‌تواند شتاب‌ده‌ها را عوض کند">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="منوها آژدار دارند">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="به کار انداختن پویانمایی‌ها">
+							<longdesc>این که آیا پویانمایی نمایش داده بشود یا نه. توجه: این یک کلید سراسری است، رفتار مدیر پنجره‌ها، تابلو و غیره را تغییر می‌دهد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="به کار انداختن دسترسی‌پذیری">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="تم شمایل پرونده">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="نوع پرده‌ی رنگ">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="رنگ‌ فرعی ">
+							<longdesc>رنگ راست یا پایین برای وقتی شیب‌ها رسم می‌شوند، برای رنگ یکدست استفاده نمی‌شود.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="رنگ اصلی">
+							<longdesc>رنگ چپ یا بالا وقتی با شیب‌ها کشیده می‌شود، یا رنگ یکدست.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="کدری عکس">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="نام پرونده‌ی عکس">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="گزینه‌های عکس">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="رسم پس‌زمینه‌ی رومیزی">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="برنامه‌های فن‌آوری کمکی راه‌اندازی">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>از کار افتادن اگر دو کلید همزمان فشار داده شود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="بازه‌ی حداقل به میلی‌ثانیه">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="مرورگر دوردست را می‌فهمد">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="مرورگر به پایانه نیاز دارد">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="مرورگر پیش‌فرض">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="آرگومان‌های Exec">
+								<longdesc>آرگومان استفاده شده برای اجرای برنامه‌ها در پایانه تعریف شده با کلید «exec».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="برنامه‌ی پایانه">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="میانبر صفحه‌کلید برای برگرداندن قلم به اندازه‌ی عادی">
+							<longdesc>میانبر صفحه‌کلید برای برگرداندن قلم به اندازه‌ی عادی. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="میانبر صفحه‌کلید برای کوچکتر کردن قلم">
+							<longdesc>میانبر صفحه‌کلید برای کوچکتر کردن قلم. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="میانبر صفحه‌کلید برای بزرگتر کردن قلم">
+							<longdesc>میانبر صفحه‌کلید برای بزرگتر کردن قلم. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="میانبر صفحه‌کلید برای راه‌اندازی راهنما">
+							<longdesc>میانبر صفحه‌کلید برای راه‌اندازی راهنما. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱۲">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱۲. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱۱">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱۱. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱۰">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱۰. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۹">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۹. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۸">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۸. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۷">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۷. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۶">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۶. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۵">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۵. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۴">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۴. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۳">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۳. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۲">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۲. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی ۱. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="کلید میانبر صفحه‌کلید برای جدا کردن زبانه‌ی جاری.">
+							<longdesc>کلید میانبر صفحه‌کلید برای جدا کردن زبانه‌ی جاری. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="شتاب‌ده برای جابه‌جایی زبانه‌ی جاری به راست">
+							<longdesc>کلید میانبر صفحه‌کلید برای جابه‌جایی زبانه‌ی جاری به راست. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="شتاب‌ده برای جابه‌جایی زبانه‌ی جاری به چپ">
+							<longdesc>کلید میانبر صفحه‌کلید برای جابه‌جایی زبانه‌ی جاری به چپ. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی بعدی">
+							<longdesc>کلید میانبر صفحه‌کلید برای تعویض به زبانه‌ی بعدی. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تعویض به زبانه‌ی قبلی">
+							<longdesc>میانبر صفحه‌کلید برای تعویض به زبانه‌ی قبلی. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="میانبر صفحه‌کلید برای برگرداندن  تنظیمات پایانه به حالت اولیه و پاک کردن آن">
+							<longdesc>میانبر صفحه‌کلید برای برگرداندن پایانه به شرایط اولیه و پاک کردن آن. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="میانبر صفحه‌کلید برای برگرداندن تنظیمات پایانه به حالت اولیه">
+							<longdesc>میانبر صفحه‌کلید برای برگرداندن پایانه به شرایط اولیه. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="میانبر صفحه‌کلید برای تنظیم عنوان پایانه">
+							<longdesc>کلید میانبر صفحه‌کلید برای تنظیم عنوان پایانه. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="میانبر صفحه‌کلید برای زدن ضامن مرئی بودن نوار منو ">
+							<longdesc>میانبر صفحه‌کلید برای زدن ضامن مرئی بودن نوار منو. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="میانبر صفحه‌کلید برای زدن ضامن حالت تمام‌صفحه">
+							<longdesc>میانبر صفحه‌کلید برای زدن ضامن حالت تمام‌صفحه. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="میانبر صفحه‌کلید برای چسباندن متن">
+							<longdesc>میانبر صفحه‌کلید برای چسباندن محتویات تخته‌گیره در پایانه. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="میانبر صفحه‌کلید برای نسخه‌برداری از متن">
+							<longdesc>میانبر صفحه‌کلید برای نسخه‌برداری از متن انتخاب‌شده در تخته‌گیره. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="میانبر صفحه‌کلید برای بستن پنجره">
+							<longdesc>میانبر صفحه‌کلید برای بستن پنجره. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="میانبر صفحه‌کلید برای بستن زبانه">
+							<longdesc>میانبر صفحه‌کلید برای بستن زبانه. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="کلید میانبر صفحه‌کلید برای ذخیره‌ی محتوای زبانه‌ی جاری در یک پرونده">
+							<longdesc>کلید میانبر صفحه‌کلید برای ذخیره‌ی محتوای زبانه‌ی جاری در یک پرونده. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="میانبر صفحه‌کلید برای ایجاد مجموعه تنظیمات جدید">
+							<longdesc>میانبر صفحه‌کلید برای بالا آوردن محاوره‌ی ایجاد مجموعه تنظیمات. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="میانبر صفحه‌کلید برای باز کردن یک پنجره‌ی جدید">
+							<longdesc>میانبر صفحه‌کلید برای باز کردن یک پنجره‌ی جدید. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="میانبر صفحه‌کلید برای باز کردن یک زبانه‌ی جدید">
+							<longdesc>میانبر صفحه‌کلید برای باز کردن یک زبانه‌ی جدید. به شکل یک رشته با قالبی مشابه پرونده‌های منبع GTK+‎ بیان می‌شود. اگر گزینه را روی رشته‌ی ویژه‌ی «disabled» تنظیم کنید، دیگر میانبر صفحه‌کلیدی برای این کنش وجود نخواهد داشت.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="کدگذاری پیش‌فرض:">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="این که از قلم سیستم استفاده شود یا نه">
+								<longdesc>اگر درست باشد، پایانه در صورت متساوی‌العرض بودن قلم استاندارد رومیزی/جهانی آن را به کار خواهد برد (و در غیر این صورت از نزدیک‌ترین قلم به آن که پیدا کند استفاده خواهد کرد).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="این که رنگ‌های تم برای ویجت پایانه استفاده شود یا نه">
+								<longdesc>اگر درست باشد، به جای رنگ‌های تعیین شده به دست کاربر، تم رنگ به کار رفته برای جعبه‌های ورود متن برای پایانه استفاده خواهد شد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="تأثیر کلید حذف">
+								<longdesc>کدی که کلید حذف تولید می‌کند را تنظیم می‌کند. مقادیر ممکن عبارتند از «ascii-del» برای نویسه‌ی ASCII DEL، «control-h» برای مهار+ا (به عنوان نویسه‌ی ASCII BS هم شناخته می‌شود)، «escape-sequence» برای دنباله‌ی گریزداری که معمولاً به پس‌بر یا حذف مقید است. در شرایط عادی «ascii-del» تنظیم درست کلید حذف به شمار می‌رود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="تأثیر کلید پس‌بر">
+								<longdesc>کدی که کلید پس‌بر تولید می‌کند را تنظیم می‌کند. مقادیر ممکن عبارتند از «ascii-del» برای نویسه‌ی ASCII DEL، «control-h» برای مهار+ا (به عنوان نویسه‌ی ASCII BS هم شناخته می‌شود)، «escape-sequence» برای دنباله‌ی گریزداری که معمولاً به پس‌بر یا حذف مقید است. در شرایط عادی «ascii-del» تنظیم درست کلید پس‌بر به شمار می‌رود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="مقدار تاریکی تصویر پس‌زمینه">
+								<longdesc>مقداری بین ۰٫۰ و ۱٫۰ که مقداری تیرگی تصویر پس‌زمینه را مشخص می‌کند. ۰٫۰ به معنی بدون تاریکی و ۱٫۰ به معنی تاریکی کامل است. در پیاده‌سازی فعلی، فقط دو سطح تاریکی وجود دارد، بنابراین تنظیمات به شکل بولی عمل می‌کنند، یعنی ۰٫۰ تأثیر تاریکی را از کار می‌اندازد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="این که تصویر پس‌زمینه بلغزد یا نه">
+								<longdesc>اگر درست باشد، تصویر پس‌زمینه همراه با متن پیش‌زمینه بلغزد؛ اگر نه، تصویر در یک موقعیت ثابت نگه داشته شود و متن روی آن بلغزد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="تصویر پس‌زمینه">
+								<longdesc>نام پرونده‌ی تصویر پس‌زمینه.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="نوع پس‌زمینه">
+								<longdesc>نوع پس‌زمینه‌ی پایانه. می‌تواند برای رنگ یکدست «solid»، برای تصویر «image» یا «transparent» باشد برای شبه شفافیت  یا اگر مدیر پنجره‌ی ترکیب کننده در حال اجرا باشد، برای شفافیت واقعی</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="قلم">
+								<longdesc>یک نام قلم پانگو. مثلاً «Sans 12» یا «Monospace Bold 14».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="تخته‌رنگ برنامه‌های پایانه">
+								<longdesc>پایانه‌ها یک تخته‌رنگ ۱۶ رنگی دارند که برنامه‌های داخل پایانه می‌توانند استفاده کنند. این همان تخته‌رنگ است که به شکلی فهرستی از نام رنگ‌ها که با نقطه‌ویرگول از هم جدا شده‌اند، آمده است. نام رنگ‌ها باید در قالب شانزده‌شانزدهی باشد مثل «FF00FF»</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="شمایل پنجره‌ی پایانه">
+								<longdesc>شمایلی که برای زبانه/پنجره‌های حاوی این مجموعه تنظیمات استفاده می‌شود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="فرمان سفارشی‌ای که به جای پوسته استفاده می‌شود">
+								<longdesc>اجرای این فرمان به جای پوسته، اگر use_custom_command درست باشد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="ظاهر مکان نما">
+								<longdesc>مقادیر ممکن عبارتند از «block» برای استفاده از مکان‌نمای بلوک،  «ibeam» برای استفاده از مکان نمایش خط عمودی، یا «underline» برای استفاده از مکان‌نمای زیرخط</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="این که مکان‌نما چشمک بزند یا نه">
+								<longdesc>مقادیر ممکن عبارتند از «system» برای استفاده از تنظیمات سراسری چشمک‌زدن مکان‌نما، یا «on» یا «off» برای تنظیم مستقیم حالت.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="این که به جای پوسته یک فرمان سفارشی اجرا شود یا نه">
+								<longdesc>اگر درست باشد، مقدار تنظیمات custom_command به جای اجرای پوسته استفاده خواهد شد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="این که سوابق ورود به سیستم موقع راه‌اندازی فرمان پایانه به‌هنگام شود یا نه">
+								<longdesc>اگر درست باشد، سوابق ورود به سیستم utmp و wtmp هنگام اجرای فرمان داخل پایانه به‌هنگام خواهند شد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="این که فرمان در پایانه مثل پوسته‌ی ورود به سیستم راه‌اندازی شوند یا نه">
+								<longdesc>اگر درست باشد، فرمان داخل پایانه مثل پوسته‌ی ورود به سیستم اجرا شود. (اول argv[0] یک تیره خواهد داشت.)‏</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="وقتی فرمان فرزند وجود دارد با پایانه چه‌کار باید کرد">
+								<longdesc>مقادیر ممکن عبارتند از «close» برای بستن پایانه، و «restart» برای آغاز مجدد فرمان.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="این که هنگام وجود خروجی جدید تا ته صفحه پایین بلغزد یا نه">
+								<longdesc>اگر درست باشد، با هر خروجی جدید پایانه به انتهای آن خواهد لغزید.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="این که هنگام فشرده شدن یک کلید تا ته صفحه پایین بلغزد یا نه">
+								<longdesc>اگر درست باشد، فشار دادن یک کلید نوار لغزش را به ته صفحه می‌برد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="این‌که تعداد سطرهایی که در حافظه‌ی لغزش نگهداری شود، بدون مرز باشد">
+								<longdesc>اگر درست باشد، خط‌های حافظه‌ی لغزش هیچ‌وقت دورانداخته نمی‌شوند. حافظه‌ی لغزش به طور موقت روی دیسک ذخیره می‌شود، بنابراین اگر خروجی زیادی در پایانه وجود داشته باشد، ممکن است فضای خالی دیسک سیستم تمام شود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="تعداد سطرهایی که در حافظه‌ی لغزش نگهداری شود">
+								<longdesc>تعداد سطرهای حافظه‌ی لغزش که نگه داشته می‌شوند. در پایانه می‌توان تا این تعداد سطر به عقب رفت: سطرهایی که در محدوده‌ی حافظه‌ی لغزش نیستند دور انداخته می‌شوند. اگر scrollback_unlimited درست باشد، این مقدار چشم‌پوشی می‌شود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="موقعیت نوار لغزش">
+								<longdesc>نوار لغزش پایانه کجا قرار داده شود. مقادیر ممکن عبارتند از «left»، «right» و «hidden».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="تعداد پیش‌فرض سطرها">
+								<longdesc>تعداد سطرها در پنجره‌های پایانه‌ی تازه ایجاد شده. اگر use_custom_default_size به کار نیافتاده باشد، تاثیری ندارد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="تعداد پیش‌فرض ستون‌ها">
+								<longdesc>تعداد ستون‌ها در پنجره‌های پایانه‌ی تازه ایجاد شده. اگر use_custom_default_size به کار نیافتاده باشد، تاثیری ندارد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="این که برای پنجره‌های جدید از اندازه‌ی پایانه‌ی سفارشی استفاده شود">
+								<longdesc>اگر درست باشد، پنجره‌های پایانه‌ی تازه ایجاد شده، اندازه‌ی سفارشی خواهند داشت که با default_size_columns و default_size_rows مشخص شده است.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="نویسه‌هایی که «جزئی از کلمه» قلمداد می‌شوند">
+								<longdesc>هنگام انتخاب متن بر اساس کلمه، دنباله‌هایی از این نویسه‌ها یک تک‌کلمه فرض می‌شوند. محدوده را می‌توان به صورت «ا-ی» وارد کرد. خط تیره (به جز در مشخص کردن محدوده) باید اولین نویسه‌ی داده شده باشد.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="این که زنگ پایانه ساکت شود یا نه">
+								<longdesc>اگر درست باشد، وقتی برنامه‌ها یک دنباله‌ی گریزدار برای زنگ پایانه می‌فرستند صدایی تولید نشود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="این که متن سیاه مجاز باشد یا نه">
+								<longdesc>اگر درست باشد، به برنامه‌های داخل پایانه اجازه داده شود که متن را سیاه کنند.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="عنوان پایانه">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="با عنوان پویا چه‌کار باید کرد">
+								<longdesc>اگر برنامه‌ی داخل پایانه عنوان را تنظیم کند (اکثر آدم‌ها پوسته‌شان را برای انجام این کار تنظیم می‌کنند)، عنوان پویا می‌تواند عنوان پیکربندی شده را پاک کند، قبل از آن بیاید، بعد از آن بیاید یا به جای آن بنشیند. مقادیر ممکن عبارتند از «replace»، «before»، «after» و «ignore».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="این‌که متن توپر باید از رنگ مشابه متن معمولی استفاده کند">
+								<longdesc>اگر درست باشد، متن توپر با رنگ مشابه متن معمولی رسم می‌شود</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="رنگ پیش‌فرض متن توپر در پایانه">
+								<longdesc>رنگ پیش‌فرض متن توپر در پایانه، به شکل مشخصات رنگی (می‌تواند ارقام شانزده‌شانزدهی به سبک HTML یا نام یک رنگ مثل «قرمز» باشد). در صورتی که bold_color_same_as_fg درست باشد، چشم‌پوشی می‌شود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="رنگ پیش‌فرض پس‌زمینه‌ی پایانه">
+								<longdesc>رنگ پیش‌فرض پس‌زمینه‌ی پایانه، به شکل مشخصات رنگی (می‌تواند ارقام شانزده‌شانزدهی به سبک HTML یا نام یک رنگ مثل «قرمز» باشد).‏</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="رنگ پیش‌فرض متن در پایانه">
+								<longdesc>رنگ پیش‌فرض متن در پایانه، به شکل مشخصات رنگی (می‌تواند ارقام شانزده‌شانزدهی به سبک HTML یا نام یک رنگ مثل «قرمز» باشد).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="این که نوار منو در پنجره/زبانه‌های جدید نشان داده بشوند یا نه">
+								<longdesc>درست اگر نوار منو باید در پنجره‌های جدید، برای پنجره/زبانه‌های با این مجموعه تنظیمات، نشان داده شود.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="نام انسانی مجموعه تنظیمات">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="این که موقع بستن پنجره‌های پایانه تصدیق گرفته شود یا نه">
+							<longdesc>این که موقع بستن پنجره‌ی پایانه‌ای که بیش از یک زبانه‌ی باز دارد تصدیق گرفته شود یا نه.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="فهرست کدگذاری‌های موجود">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="این که میانبر استاندارد GTK برای دسترسی به نوار منو فعال باشد یا نه">
+							<longdesc>به طور طبیعی می‌توان با کلید F10 به نوار منو دسترسی یافت. این کار را می‌توان با سفارشی کردن از طریق gtkrc (gtk-menu-bar-accel = «whatever»)‎ نیز انجام داد. این گزینه همچنین از کار انداختن شتاب‌ده استاندارد نوار منو را ممکن می‌سازد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="این که نوار منو کلید دسترسی داشته باشد یا نه">
+							<longdesc>این که کلید‌های دسترسی دگرساز+حرف برای نوار منو باشند یا نه. این کلیدها ممکن است با بعضی برنامه‌ها که داخل پایانهاجرا می‌شوند تداخل داشته باشند بنابراین می‌توان خاموششان کرد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="مجموعه‌ تنظیماتی که برای پایانه‌های جدید استفاده می‌شود">
+							<longdesc>مجموعه‌ تنظیماتی که هنگام باز کردن یک پنجره یا زبانه‌ی جدید استفاده می‌شود. باید در profile_list باشد.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="فهرست مجموعه‌های‌ تنظیمات">
+							<longdesc>فهرست مجموعه‌های‌ تنظیماتی شناخته شده برای پایانه‌ی گنوم. فهرست شامل رشته‌هایی است که زیرشاخه‌ها را به صورت نسبی از ‎/apps/gnome-terminal/profiles معرفی می‌کند.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

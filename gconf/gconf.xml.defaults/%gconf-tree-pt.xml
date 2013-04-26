@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grupo de trabalho SMB">
+						<longdesc>O grupo de trabalho de rede Windows ou o domínio a que o utilizador pertence. Para que um novo grupo de trabalho tenha efeito total o utilizador poderá ter de terminar a sessão e iniciá-la novamente.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domínios adicionais onde procurar serviços DNS-SD">
+						<longdesc>Lista separada por vírgulas de domínios DNS-SD que deverão ser visíveis na localização de rede &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Como apresentar o serviço DNS-SD local">
+						<longdesc>Valores possíveis são &quot;merged&quot;, &quot;separate&quot; e &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL de configuração automática de proxy">
+						<longdesc>URL que disponibiliza valores de configuração da proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Porto de proxy SOCKS">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/socks_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nome de máquina de proxy SOCKS">
+						<longdesc>O nome da máquina através da qual efectuar proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Porto do proxy FTP">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/ftp_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nome de máquina da proxy FTP">
+						<longdesc>O nome da máquina através da qual efectuar proxy de FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Porto de proxy de HTTP seguro">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/secure_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nome de máquina de proxy de HTTP seguro">
+						<longdesc>O nome da máquina através da qual efectuar proxy de HTTP seguro.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Modo de configuração proxy">
+						<longdesc>Seleccione o modo de configuração de proxy. Valores suportados são &quot;none&quot; (nenhum), &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Máquina não-proxy">
+						<longdesc>Esta chave contém uma lista de máquinas às quais a ligação deverá ser directa, e não através da proxy (caso esteja activa). Os valores podem ser nomes de máquinas, domínios (utilizando um caracter global tal como *.exemplo.pt), endereços IP (tanto IPv4 como IPv6) e endereços de rede com uma máscara de rede (algo como 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Senha da proxy HTTP">
+						<longdesc>Senha a indicar como autenticação ao efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Utilizador da proxy HTTP">
+						<longdesc>Utilizador a indicar como autenticação ao efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autenticar ligações ao servidor proxy">
+						<longdesc>Se verdadeiro, ligações ao servidor proxy requerem autenticação. O conjunto utilizador/senha é definido por &quot;/system/http_proxy/authentication_user&quot; e &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Porto do proxy HTTP">
+						<longdesc>O porto na máquina, definido por &quot;/system/http_proxy/host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nome de máquina da proxy HTTP">
+						<longdesc>O nome da máquina através da qual efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Utilizar proxy HTTP">
+						<longdesc>Activa as definições de proxy ao aceder por HTTP à Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Se está ou não activo o trancar do teclado">
+							<longdesc>Se está ou não activo o trancar do teclado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Permitir adiar intervalos">
+							<longdesc>Se o ecrã de intervalo pode ou não ser adiado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Intervalo">
+							<longdesc>Número de minutos que o intervalo deve durar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Tempo a digitar">
+							<longdesc>Número de minutos a digitar antes de iniciar modo de intervalo.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Desactivar todos os geradores de amostras externos">
+							<longdesc>Definir como verdadeiro para desactivar todas as aplicações externas de geração de amostras, independentemente de serem ou não activadas/desactivadas independentemente.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Tamanho máximo da cache de amostras, em megabytes. Definir como -1 para desactivar a limpeza.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Idade máxima para as amostras na cache, em dias. Definir como -1 para desactivar a limpeza.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Sons de resposta à introdução">
+							<longdesc>Se reproduzir ou não sons nos eventos de introdução.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Nome do tema de som">
+							<longdesc>O tema de sons XDG a utilizar para os sons de eventos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Sons para eventos">
+							<longdesc>Se reproduzir sons para eventos de utilizador.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Activar ESD">
+							<longdesc>Activar inicialização do servidor de som.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Canais de mistura por omissão">
+							<longdesc>Os canais de mistura utilizados por omissão pelas ligações de teclas multimédia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Dispositivo de mistura por omissão">
+							<longdesc>O dispositivo de mistura utilizado por omissão pelas ligações de teclas multimédia.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Tamanho do cursor">
+								<longdesc>Tamanho do cursor referenciado pelo cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema do cursor">
+								<longdesc>Nome do tema de cursos. Utilizado apenas por Xservers que suportem Xcursor, tais como o XFree86 4.3 e posteriores.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Fonte do cursor">
+								<longdesc>Nome da fonte do cursor. Se indefinido, é utilizada a fonte por omissão. Este valor apenas é propagado servidor X ao iniciar cada sessão, pelo que alterá-lo a meio de uma sessão não terá qualquer efeito até à próxima vez que iniciar uma sessão.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Localizar Ponteiro">
+								<longdesc>Realça a localização actual do ponteiro quando a tecla de Control é premida e largada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Tempo do Clique-Duplo">
+								<longdesc>Duração de um clique-duplo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Tolerância de Arrasto">
+								<longdesc>Distância a percorrer antes de iniciar um arrasto.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Tolerância de Movimento">
+								<longdesc>Distância em pixels que o ponteiro tem de se mover antes de ser iniciado o movimento acelerado do rato. Um valor de -1 representa o valor por omissão do sistema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Clique Único">
+								<longdesc>Multiplicador de aceleração para movimento do rato. Um valor de -1 significa valor por omissão do sistema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Clique Único">
+								<longdesc>Clique único para abrir ícones.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Orientação dos botões do rato">
+								<longdesc>Trocar botões esquerdo e direito do rato para ratos esquerdinos.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Recordar o estado d NumLock">
+								<longdesc>Quando definido como verdadeiro, o GNOME irá recordar o estado da luz de NumLock entre as sessões.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Nome de Ficheiro de Campainha de Teclado Personalizada">
+								<longdesc>Nome do ficheiro do som de campainha a ser reproduzido.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>valores possíveis são &quot;on&quot;, &quot;off&quot;, and &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Desactivar os manipuladores de URLs e tipos MIME">
+							<longdesc>Impedir a execução de quaisquer aplicações de manipulação de URLs ou tipos MIME.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Desactivar o trancar de ecrã">
+							<longdesc>Impedir o utilizador de trancar o seu ecrã.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Desactivar a alternância de utilizadores">
+							<longdesc>Impedir o utilizador de alternar para outra conta enquanto esta sessão estiver activa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Desactivar a configuração de impressora">
+							<longdesc>Impedir o utilizador de alterar as configurações da impressora. Por exemplo, desactivaria o acesso aos diálogos de &quot;Configuração de Impressão&quot; de todas as aplicações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Desactivar a impressão">
+							<longdesc>Impedir o utilizador de imprimir. Por exemplo, desactivaria o acesso ao diálogo &quot;Imprimir&quot; de todas as aplicações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Desactivar a gravação de ficheiros em disco">
+							<longdesc>Impedir o utilizador de gravar ficheiros em disco. Por exemplo, desactivaria o acesso aos diálogos &quot;Gravar como&quot; de todas as aplicações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Desactivar a linha de comando">
+							<longdesc>Impedir o utilizador de aceder à consola ou especificar uma linha de comando a ser executada. Por exemplo, isto irá desactivar o acesso ao diálogo de painel &quot;Executar Aplicação&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Apresentar o menu de &apos;Caracter de Controlo Unicode&apos;">
+							<longdesc>Se os menus de contexto das entradas e vistas de texto deverão ou não oferecer a inserção de caracteres de controlo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Apresentar o menu de &apos;Métodos de Introdução&apos;">
+							<longdesc>Se os menus de contexto das entradas e vistas de texto deverão ou não oferecer a alteração do método de introdução.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Tecla de atalho da barra de menu">
+							<longdesc>Atalho de teclado para abrir as barras de menus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Módulo para GtkFileChooser">
+							<longdesc>Módulo a utilizar como o modelo de sistema de ficheiros para o widget GtkFileChooser. Valores possíveis são &quot;gio&quot;, &quot;gnome-vfs&quot; e &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Barra de Estados à Direita">
+							<longdesc>Se apresentar ou não um medidor à direita na barra de estados.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Utilizar Fonte Personalizada">
+							<longdesc>Se utilizar ou não uma fonte personalizada nas aplicações gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Fonte mono-espaçada">
+							<longdesc>Nome de uma fonte mono-espaçada (largura fixa) a utilizar em locais tais como consolas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Fonte do documento">
+							<longdesc>Nome da fonte por omissão utilizada para ler documentos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Módulo de MI do GTK">
+							<longdesc>Nome do módulo de método de introdução utilizado pelo GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Estilo de Estado do MI do GTK">
+							<longdesc>Nome do Estilo de Estado do método de introdução GTK+ utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Estilo de Pré-edição do MI do GTK">
+							<longdesc>Nome do Estilo de Pré-edição do método de introdução GTK+ utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Fonte por omissão">
+							<longdesc>Nome da fonte por omissão utilizada pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nome base do tema por omissão utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nome base do tema por omissão utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema de Ícones">
+							<longdesc>Tema de ícones a utilizar para o painel, nautilus, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Intervalo de Piscar do Cursor">
+							<longdesc>Duração do ciclo de piscar do cursor, em milisegundos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Cursor Pisca">
+							<longdesc>Se o cursor deverá ou não piscar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Tamanho de Ícones de Barra de Ferramentas">
+							<longdesc>Tamanho dos ícones nas barras de ferramentas, ou &quot;small-toolbar&quot; ou &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Barras de Ferramentas Destacáveis">
+							<longdesc>Se o utilizador pode ou não destacar barras de ferramentas e movê-las.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Barra de Menu Destacável">
+							<longdesc>Se o utilizador pode ou não destacar barras de menu e movê-las.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Botões Têm Ícones">
+							<longdesc>Se os botões podem ou não apresentar um ícone junto ao texto do botão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menus Têm Ícones">
+							<longdesc>Se os menus podem ou não apresentar um ícone junto a uma entrada de menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Estilo de Barra de Ferramentas">
+							<longdesc>Estilo de Barra de Ferramentas. Valores válidos são &quot;both&quot;, &quot;both-horiz&quot;, &quot;icons&quot;, e &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Pode Alterar Atalhos">
+							<longdesc>Se o utilizador pode ou não indicar dinamicamente um novo atalho quando posicionado sobre um item de menu activo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menus São Destacáveis">
+							<longdesc>Se os menus podem ou não ser destacáveis.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Activar Animações">
+							<longdesc>Se as animações deverão ou não ser apresentadas. Nota: Esta é uma chave global, altera o comportamento do gestor de janelas, painel, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Activar Acessibilidade">
+							<longdesc>Se as Aplicações deverão ter suporte de acessibilidade.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema de Ícone de Ficheiro">
+							<longdesc>Tema utilizado para apresentar ícones de ficheiros.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Tipo de Sombreado de Cor">
+							<longdesc>Como sombrear a cor de fundo. Valores possíveis são &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, e &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Cor Secundária">
+							<longdesc>Cor Direita ou de Fundo ao desenhar gradientes, não utilizado na cor sólida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Cor Primária">
+							<longdesc>Cor Esquerda ou de Topo ao desenhar gradientes, ou cor sólida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Opacidade da Imagem">
+							<longdesc>Opacidade com que desenhar a imagem de fundo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Nome de Ficheiro de Imagem">
+							<longdesc>Ficheiro a utilizar para a imagem de fundo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Opções da Imagem">
+							<longdesc>Determina como é renderizada a imagem definida pelo wallpaper_filename. Valores possíveis são &quot;none&quot;, &quot;wallpaper&quot;, &quot;centered&quot;, &quot;scaled&quot;, &quot;stretched&quot;, &quot;zoom&quot;, &quot;spanned&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Desenhar Fundo de Ambiente de Trabalho">
+							<longdesc>Permitir que o GNOME desenhe o fundo do ambiente.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Iniciar Aplicações de Tecnologia Assistiva">
+								<longdesc>Lista de aplicações de tecnologia assistiva a executar ao iniciar uma sessão no ambiente de trabalho GNOME.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Emitir beep quando é premido um modificador.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Desactivar se forem premidas duas teclas simultaneamente.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Intervalo mínimo em milisegundos">
+								<longdesc>Não aceitar uma tecla como premida excepto se premida por mais de @delay milisegundos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Atraso inicial em milisegundos">
+								<longdesc>Quantos milisegundos aguardar antes das teclas de movimento do rato começarem a responder.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Durante quanto tempo acelerar, em milisegundos">
+								<longdesc>Quantos milisegundos demora ir de 0 até à velocidade máxima.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixels por segundo">
+								<longdesc>Quantos pixels por segundo mover à velocidade máxima.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="intervalo mínimo em milisegundos">
+								<longdesc>Ignorar pressões múltiplas ma _mesma_ tecla no espaço de @delay milisegundos.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Nomes das áreas de trabalho (obsoleta)">
+								<longdesc>Uma lista com os nomes das primeiras áreas de trabalho do gestor de janelas. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="O número de áreas de trabalho (obsoleta)">
+								<longdesc>O número de áreas de trabalho que o gestor de janelas deverá utilizar. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Gestor de janelas do utilizador (obsoleta)">
+								<longdesc>Gestor de janelas a tentar primeiro. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Gestor de janelas de recurso (obsoleta)">
+								<longdesc>Gestor de janelas de recurso se o gestor de janelas do utilizador não for encontrado. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Tarefas necessitam de consola">
+								<longdesc>Se a aplicação de tarefas por omissão necessita de uma consola para ser executada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Tarefas por omissão">
+								<longdesc>Aplicação de tarefas por omissão</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Calendário necessita de consola">
+								<longdesc>Se a aplicação de calendário por omissão necessita de uma consola para ser executada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Calendário por omissão">
+								<longdesc>Aplicação de calendário por omissão</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Navegador compreende remoto">
+								<longdesc>Se o navegador por omissão compreende netscape remoto.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Navegador necessita de consola">
+								<longdesc>Se o navegador por omissão necessita de uma consola para ser executado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Navegador por omissão">
+								<longdesc>Navegador por omissão para todos os URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Iniciar a aplicação preferida de tecnologia de assistência Visual">
+									<longdesc>GNOME deverá iniciar a aplicação preferida de tecnologia de assistência Visual ao iniciar sessão.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicação preferida de tecnologia de assistência Visual">
+									<longdesc>Aplicação preferida de tecnologia de assistência Visual a ser utilizada para iniciar sessão, menu ou linha de comando.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Iniciar a aplicação preferida de tecnologia de assistência à Mobilidade">
+									<longdesc>GNOME deverá iniciar a aplicação preferida de tecnologia de assistência à Mobilidade ao iniciar a sessão.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicação preferida de tecnologia de assistência à Mobilidade">
+									<longdesc>Aplicação preferida de tecnologia de assistência à Mobilidade a ser utilizada para iniciar sessão, menu ou linha de comando.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplicação visualizadora por omissão de componente">
+								<longdesc>A aplicação a utilizar para visualizar ficheiros que requerem um componente para que possam ser visualizadas. O parâmetro %s será substituído pelo URI do ficheiro, o parâmetro %c será substituído pelo IID do componente.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumentos Exec">
+								<longdesc>Argumento utilizado para executar aplicações na consola definida pela tecla &apos;exec&apos;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicação de consola">
+								<longdesc>Aplicação de consola a utilizar ao iniciar aplicações que requeiram uma.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;h323&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;h323&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;h323&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;callto&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;callto&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;callto&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;aim&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;aim&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;aim&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;mailto&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;mailto&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;mailto&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;https&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;https&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;https&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;http&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;http&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;http&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;man&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;man&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;man&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;info&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;info&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;info&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;ghelp&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;ghelp&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;ghelp&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;trash&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;trash&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;trash&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Atalho de teclado para repor tamanho normal da fonte">
+							<longdesc>Tecla de atalho para repor o tamanho normal da fonte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Atalho de teclado para reduzir o tamanho da fonte">
+							<longdesc>Tecla de atalho para reduzir o tamanho da fonte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Atalho de teclado para aumentar o tamanho da fonte">
+							<longdesc>Tecla de atalho para aumentar o tamanho da fonte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Atalho de teclado para iniciar a ajuda">
+							<longdesc>Tecla de atalho para iniciar a ajuda. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 12">
+							<longdesc>Tecla de atalho para ir para o separador 12. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 11">
+							<longdesc>Tecla de atalho para ir para o separador 11. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 10">
+							<longdesc>Tecla de atalho para ir para o separador 10. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 9">
+							<longdesc>Tecla de atalho para ir para o separador 9. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 8">
+							<longdesc>Tecla de atalho para ir para o separador 8. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 7">
+							<longdesc>Tecla de atalho para ir para o separador 7. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 6">
+							<longdesc>Tecla de atalho para ir para o separador 6. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 5">
+							<longdesc>Tecla de atalho para ir para o separador 5. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 4">
+							<longdesc>Tecla de atalho para ir para o separador 4. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 3">
+							<longdesc>Tecla de atalho para ir para o separador 3. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 2">
+							<longdesc>Tecla de atalho para ir para o separador 2. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 1">
+							<longdesc>Tecla de atalho para ir para o separador 1. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Atalho para destacar o separador actual.">
+							<longdesc>Tecla de atalho para destacar o separador actual. Expressa como uma expressão no mesmo formato que o utilizado nos ficheiros de recursos do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Atalho para mover o separador actual à direita.">
+							<longdesc>Tecla de atalho para mover à direita o separador actual. Expressa como uma expressão no mesmo formato que o utilizado nos ficheiros de recursos do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Atalho para mover o separador actual à esquerda.">
+							<longdesc>Tecla de atalho para mover à esquerda o separador actual. Expressa como uma expressão no mesmo formato que o utilizado nos ficheiros de recursos do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Atalho de teclado para ir para o separador seguinte">
+							<longdesc>Tecla de atalho para ir para o separador seguinte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Atalho de teclado para ir para o separador anterior">
+							<longdesc>Tecla de atalho para ir para o separador anterior. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Atalho de teclado para reiniciar e limpar a consola">
+							<longdesc>Tecla de atalho para reiniciar e limpar a consola. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Atalho de teclado para reiniciar a consola">
+							<longdesc>Tecla de atalho para reiniciar a consola. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Atalho de teclado para definir o título da consola">
+							<longdesc>Tecla de atalho para definir o título da consola. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Atalho de teclado para alternar a visibilidade da barra de menu">
+							<longdesc>Tecla de atalho para alternar a visibilidade da barra de menu. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Atalho de teclado para alternar modo de ecrã completo">
+							<longdesc>Tecla de atalho para alternar para modo de ecrã completo. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Atalho de teclado para colar texto">
+							<longdesc>Tecla de atalho para colar o conteúdo da área de transferência. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Atalho de teclado para copiar texto">
+							<longdesc>Tecla de atalho para copiar texto para a área de transferência. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Atalho de teclado para fechar uma janela">
+							<longdesc>Tecla de atalho para fechar uma janela. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Atalho de teclado para fechar um separador">
+							<longdesc>Tecla de atalho utilizada para fechar um separador. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Atalho de teclado para gravar o conteúdo do separador actual num ficheiro">
+							<longdesc>Tecla de atalho para gravar o conteúdo do separador actual num ficheiro. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Atalho de teclado para criar um novo perfil">
+							<longdesc>Tecla de atalho para apresentar o diálogo de criação de perfil. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Atalho de teclado para abrir uma nova janela">
+							<longdesc>Tecla de atalho para abrir uma nova janela. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Atalho de teclado para abrir um novo separador">
+							<longdesc>Tecla de atalho para abrir um novo separador. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Codificação por omissão">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Se utilizar ou não a fonte de sistema">
+								<longdesc>Se verdadeiro, a consola irá utilizar a fonte por omissão do ambiente de trabalho, caso seja monoespaçada (caso contrário, a mais semelhante).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Se utilizar ou não as cores do tema para o widget de consola">
+								<longdesc>Se verdadeiro, o tema de cores utilizado para as caixas de introdução de texto será utilizado na consola, em vez das cores indicadas pelo utilizador.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efeito da tecla Delete">
+								<longdesc>Define que código gera a tecla delete. Valores possíveis são &quot;ascii-del&quot; para o caracter ASCII DEL, &quot;control-h&quot; para o Control-H (o caracter ASCII BS), &quot;escape-sequence&quot; para a sequência de escape normalmente associada ao backspace ou delete. &quot;escape-sequence&quot; é normalmente considerada a definição correcta para a tecla de Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efeito da tecla de Backspace">
+								<longdesc>Define que código gera a tecla de backspace. Valores possíveis são &quot;ascii-del&quot; para o caracter ASCII DEL, &quot;control-h&quot; para o Control-H (o caracter ASCII BS), &quot;escape-sequence&quot; para a sequência de escape normalmente associada ao backspace ou delete. &quot;ascii-del&quot; é normalmente considerada a definição correcta para a tecla de Basckspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Quanto escurecer a imagem de fundo">
+								<longdesc>Um valore entre 0.0 e 1.0 que indica quanto escurecer a imagem de fundo. 0.0 significa não escurecer, 1.0 significa escurecer totalmente. Na implementação actual, apenas são possíveis dois níveis de escurecimento, pelo que a definição se comporta como uma boleana, em que 0.0 desactiva o efeito de escurecimento.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Se rolar ou não a imagem de fundo">
+								<longdesc>Se verdadeiro, rolar a imagem de fundo junto com o texto; se falso, manter a imagem numa posição fixa e rolar o texto sobre esta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Imagem de fundo">
+								<longdesc>Nome de ficheiro de uma imagem de fundo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Tipo de fundo">
+								<longdesc>Tipo de fundo de consola. Pode ser &quot;solid&quot; para uma cor sólida, &quot;image&quot; para uma imagem, ou &quot;transparent&quot; para transparência real se estiver em execução um gestor de janelas composto ou, caso contrário, pseudo-transparência.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Fonte">
+								<longdesc>Um nome de fonte Pango. Exemplos são &quot;Sans 12&quot; ou &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Paleta para aplicações de consola">
+								<longdesc>Consolas têm uma paleta de 16 cores que as aplicações dentro da consola podem utilizar. Esta é essa paleta, no formato de uma lista de nomes de cores separados por vírgulas. Nomes de cores deverão ser no formato hexadecimal, por ex: &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ícone para a janela de consola">
+								<longdesc>Ícones a utilizar para separadores/janelas que contenham este perfil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Comando personalizado a utilizar em vez da consola">
+								<longdesc>Executar este comando em vez da consola, se use_custom_command for verdadeiro.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="A aparência do cursor">
+								<longdesc>Os valores possíveis são &quot;block&quot; para utilizar um bloco como cursor, &quot;ibeam&quot; para utilizar um cursor que é uma linha vertical, ou &quot;underline&quot; para utilizar um cursor que é um sublinhado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Se piscar ou não o cursor">
+								<longdesc>Os valores possíveis são &quot;system&quot; para utilizar as definições globais de piscar de cursor, ou &quot;on&quot; ou &quot;off&quot; para definir o modo explicitamente.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Se executar ou não um comando personalizado em vez da consola">
+								<longdesc>Se verdadeiro, o valor da definição de custom_command será utilizado em vez de iniciar uma consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Se actualizar ou não os registos de sessão ao iniciar um comando de consola">
+								<longdesc>Se verdadeiro, os registos de sistema de início de sessão utmp e wtmp serão actualizados ao iniciar um comando dentro da consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Se iniciar ou não o comando dentro da consola como um início de sessão">
+								<longdesc>Se verdadeiro, o comando dentro da consola será iniciado como uma consola de início de sessão. (argv[0] terá um hífen à sua frente).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="O que fazer com a consola quando o comando filho termina">
+								<longdesc>Valores possíveis são &quot;close&quot; para fechar a consola e &quot;restart&quot; para reiniciar o comando.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Se rolar ou não para o fundo quando existem novos resultados">
+								<longdesc>Se verdadeiro, sempre que existirem novos resultados a consola irá rolar até ao fundo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Se rolar ou não para o fundo ao premir uma tecla">
+								<longdesc>Se verdadeiro, premir uma tecla coloca a barra de rolamento no fundo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Se deverá ou não ser mantido um número ilimitado de linhas para rolar atrás">
+								<longdesc>Se verdadeiro, as linhas para rolar atrás nunca serão descartadas. O histórico de rolar atrás é mantido temporariamente no disco, pelo que o sistema poderá ficar sem espaço em disco caso seja escrito muito texto na consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Número de linhas a manter para rolar atrás">
+								<longdesc>Número de linhas a manter para rolar atrás. Pode rolar atrás numa consola este número de linhas; linhas que não caibam na pilha de rolar atrás são descartadas. Se scrollback_unlimited for verdadeira, este valor é ignorado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posição da barra de rolamento">
+								<longdesc>Onde colocar a barra de rolamento da consola. Valores possíveis são &quot;left&quot;, &quot;right&quot; e &quot;hidden&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Número de linhas por omissão">
+								<longdesc>Número de linhas nas novas janelas de consola. Não tem efeito se a chave use_custom_default_size não estiver activa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Número de colunas por omissão">
+								<longdesc>Número de colunas nas novas janelas de consola. Não tem efeito se a chave use_custom_default_size não estiver activa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Se utilizar ou não o tamanho personalizado de consola para as novas janelas">
+								<longdesc>Se verdadeiro, as novas janelas de consola terão o tamanho personalizado especificado pelas chaves default_size_columns e default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Caracteres que são considerados &quot;parte de uma palavra&quot;">
+								<longdesc>Ao seleccionar texto por palavra, sequências destes caracteres são considerados uma palavra. Intervalos podem ser dados como &quot;A-Z&quot;. Hífens literais (que não exprimam um intervalo) deverão ser o primeiro caracter indicado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Se silenciar ou não a campainha de consola">
+								<longdesc>Se verdadeiro, não emitir um ruido quando as aplicações enviam a sequência escape para a campainha de consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Se permitir ou não texto negrito">
+								<longdesc>Se verdadeiro, permitir que aplicações na consola tornem o texto negrito.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Título da consola">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="O que fazer com título dinâmico">
+								<longdesc>Se a aplicação na consola definir o título (normalmente os utilizadores têm a sua consola configurada para o definir), o título dinamicamente definido pode apagar o título configurado, ficar antes deste, após este, ou substitui-lo. Os valores possíveis são &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, e &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Se o texto a negrito deverá ou não utilizar a mesma cor que o texto normal">
+								<longdesc>Se verdadeiro, o texto negrito será apresentado utilizando a mesma cor do texto normal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Cor por omissão do texto negrito na consola">
+								<longdesc>Cor por omissão do texto negrito na consola, como uma especificação de cor (podem ser dígitos hexadecimais estilo HTML ou um nome de cor tal como &quot;red&quot;). Esta chave é ignorada se bold_color_same_as_fg for verdadeiro.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Cor por omissão do fundo da consola">
+								<longdesc>Cor por omissão do fundo da consola, como uma especificação de cor (podem ser dígitos hexadecimais estilo HTML ou um nome de cor tal como &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Cor por omissão do texto na consola">
+								<longdesc>Cor por omissão do texto na consola, como uma especificação de cor (podem ser dígitos hexadecimais estilo HTML ou um nome de cor tal como &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Se apresentar ou não a barra de menu em novas janelas/separadores">
+								<longdesc>Verdadeiro se a barra de menu deve ser apresentada em novas janelas, para janelas/separadores com este perfil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Nome legível do perfil">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Se pedir ou não confirmação ao fechar janelas de consola">
+							<longdesc>Se pedir confirmação ao fechar uma janela de consola que tenha mais do que um separador aberto.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Lista de codificações disponíveis">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Se o atalho por omissão GTK de acesso à barra de menu está activo">
+							<longdesc>Normalmente pode aceder à barra de menu com F10. Isto pode também ser personalizado via gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;). Esta opção permite que o atalho por omissão de barra de menu seja desactivado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Se a barra de menu tem teclas de acesso">
+							<longdesc>Se ter ou não atalhos Alt+letra para a barra de menu. Isto pode interferir com algumas aplicações em execução dentro da consola pelo que é possível desactivar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Perfil a utilizar para novas consolas">
+							<longdesc>Perfil a ser utilizado ao abrir uma nova janela ou separador. Tem de existir na profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Lista de perfis">
+							<longdesc>Lista de perfis conhecidos do gnome-terminal. A lista contém expressões que denominam subdirectórios relativos a /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nemo-open-terminal">
+				<entry name="display_mc_item">
+					<local_schema short_desc="Se um item de menu para o Midnight Commander deve ser apresentado">
+						<longdesc>Se definido como verdadeiro, e se o gestor de ficheiros da consola &quot;Midnight Commander&quot; se encontrar instalado, um menu &quot;Abrir no Midnight Commander&quot; será apresentado no menu de contexto.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="desktop_opens_home_dir">
+					<local_schema short_desc="Se abrir uma consola no ambiente de trabalho abre uma consola na pasta pessoal do utilizador">
+						<longdesc>Se definido como verdadeiro, abrir uma consola no ambiente de trabalho irá abrir uma consola na pasta pessoal do utilizador. Caso contrário, a consola será aberta no directório do ambiente de trabalho. Note que esta chave é irrelevante caso o directório do ambiente de trabalho seja o mesmo que a pasta pessoal do utilizador.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

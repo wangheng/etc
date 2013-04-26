@@ -1,0 +1,4 @@
+USER=root
+PROGRAM=/usr/sbin/preupgrade-cli
+SESSION=true
+KEEP_ENV_VARS=http_proxy,ftp_proxy

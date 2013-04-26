@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB-arbeidsgruppe">
+						<longdesc>Arbeidsgruppe eller domene brukeren er del av i Windows-nettverket. Brukeren må logge ut for at endringer skal tre i kraft.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Ekstra domener som skal sjekkes for DNS-SD-tjenester">
+						<longdesc>Kommaseparert liste med DNS-SD-domener som skal være synlige i lokasjonen «network:///».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Hvordan vises lokale DNS-SD-tjenester">
+						<longdesc>Mulige verdier er «merged», «separate» og «disabled».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL for automatisk konfigurasjon av proxy">
+						<longdesc>URL som oppgir verdier for konfigurasjon av proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port for SOCKS-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/proxy/socks_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Vertsnavn for SOCKS-proxy">
+						<longdesc>Maskinnavn for SOCKS-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port for FTP-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/proxy/ftp_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Vertsnavn for FTP-proxy">
+						<longdesc>Maskinnavn for FTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port for HTTPS-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/proxy/secure_host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Vertsnavn for HTTPS-proxy">
+						<longdesc>Maskinnavn for HTTPS-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Konfigurasjonsmodus for proxy">
+						<longdesc>Velg konfigurasjonsmodus for proxy. Verdier som er støttet er «none», «manual», «auto».</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Verter som ikke skal bruke proxy">
+						<longdesc>Denne nøkkelen inneholder en liste med verter som har direkte forbindelse i stedet for å gå via proxy (hvis denne er aktiv). Verdiene kan være vertsnavn, domener (med jokertegn som *.domene.no), IP-adresse for verten (både IPv4 og IPv6) og nettverksadresser med en nettmaske (som 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Passord for HTTP-proxy">
+						<longdesc>Passord som skal oppgis ved autentisering for bruk av HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Brukernavn for HTTP-proxy">
+						<longdesc>Brukernavn som skal oppgis som autentisering ved bruk av HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autentiser forbindelser til proxytjener">
+						<longdesc>Hvis sann vil tilkoblinger til proxytjener kreve autentisering. Brukernavn/passord-kombinasjonen er definert i «/system/http_proxy/authentication_user» og «/system/http_proxy/authentication_password».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port for HTTP-proxy">
+						<longdesc>Port på maskinen som brukes som proxy og er definert i «/system/http_proxy/host».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Vertsnavn for HTTP-proxy">
+						<longdesc>Maskinnavn for HTTP-proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Bruk HTTP-proxy">
+						<longdesc>Aktiverer proxy-innstillinger ved aksess via HTTP til Internett.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Om låsing av tastaturet er aktivert">
+							<longdesc>Om låsing av tastaturet er aktivert.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Tillat utsetting av pauser">
+							<longdesc>Om skrivepausen kan utsettes eller ikke.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Pausetid">
+							<longdesc>Antall minutter skrivepausen skal vare.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Skrivetid">
+							<longdesc>Antall minutter med skriving før pausemodus starter.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Deaktiver alle eksterne miniatyrfunksjoner">
+							<longdesc>Sett til sann for å deaktivere alle eksterne programmer for miniatyrer, uavhengig av om de er individuelt aktive eller ikke.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Maks størrelse på buffer for miniatyrer i megabyte. Sett til -1 for å deaktivere opprydding.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Maks alder for miniatyrer i bufferen i dager. Sett til -1 for å deaktivere opprydding.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Lyder for tilbakemelding om inndata">
+							<longdesc>Om lyder skal spilles av ved inndatahendelser.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Navn på lydtema">
+							<longdesc>XDG lydtema som skal brukes for lydhendelser.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Lyder for hendelser">
+							<longdesc>Om lyder skal spilles av ved brukerhendelser.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Aktiver ESD">
+							<longdesc>Aktiver oppstart av lydtjener.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Forvalgte spor for mikser">
+							<longdesc>Forvalgte spor for mikser som brukes av tastaturbindinger for multimedia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Forvalgt mikserenhet">
+							<longdesc>Forvalgt mikserenhet som brukes av tastaturbindinger for multimedia.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Markørstørrelse">
+								<longdesc>Størrelse på markøren referert til av cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema for markør">
+								<longdesc>Navn på markørtema. Brukes kun av X-tjenere som støtter Xcursor. For eksempel XFree86 4.3 og senere.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Skrift for markør">
+								<longdesc>Skriftnavn for markøren. Hvis denne ikke er satt brukes forvalgt skrift. Denne verdien videresendes kun til X-tjeneren ved oppstart av en økt, så den har ingen effekt før ved neste innlogging hvis den endres i en økt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Lokaliser peker">
+								<longdesc>Uthever pekerens nåværende plassering når Ctrl-tasten trykkes ned og slippes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Tid for dobbeltklikk">
+								<longdesc>Lengde på et dobbeltklikk.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Terskel for dra-operasjon">
+								<longdesc>Avstand før draoperasjon startes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Bevegelsesterskel">
+								<longdesc>Avstand i piksler som pekeren må bevege seg før akselerert musbevegelse aktiveres. -1 er systemets forvalgte verdi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Enkeltklikk">
+								<longdesc>Multipliserer for akselerasjon av musbevegelse. En verdi på -1 er forvalgt for systemet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Enkeltklikk">
+								<longdesc>Enkeltklikk for å aktivere ikoner.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Orientering for musknapper">
+								<longdesc>Bytt om høyre og venstre musknapp for venstrehendte mus.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Husk tilstand for NumLock">
+								<longdesc>GNOME vil huske tilstand for NumLock mellom økter hvis denne settes til «true».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Filnavn for egendefinert tastaturpip">
+								<longdesc>Filnavn for lyd for tastaturpip som skal spilles.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>mulige verdier er «on», «off» og «custom».</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Slå av URL- og MIME-håndterere">
+							<longdesc>Forhindre kjøring av håndterere for URL og MIME-type.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Slå av låsing av skjermen">
+							<longdesc>Hindre brukeren i å låse skjermen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Deaktiver brukerbytting">
+							<longdesc>Hindre bruker fra å bytte til en annen konto mens økten er aktiv.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Dekativer skriveroppsett">
+							<longdesc>Hindre at bruker endrer innstillinger for skrivere. Dette vil for eksempel deaktivere tilgang til «Skriveroppsett»-dialoger i alle programmer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Deaktiver utskrift">
+							<longdesc>Hindre at bruker skriver ut dokumenter. Dette vil for eksempel deaktivere tilgang til «Skriv ut»-dialogene i alle programmer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Deaktiver lagring av filer til disk">
+							<longdesc>Hindre at bruker lagrer filer til disk. Dette vil for eksempel deaktivere «Lagre som»-dialogen i alle programmer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Deaktiver kommandolinjen">
+							<longdesc>Forhindre bruker fra å aksessere terminalen eller oppgi en kommandolinje som skal kjøres. Dette vil for eksempel deaktivere tilgang til panelets «Kjør program»-dialog.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Vis menyen «Unicode kontrolltegn»">
+							<longdesc>Om kontekstmeny for oppføringer og tekstvisninger skal vise alternativer for å sette inn Unicode kontrolltegn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Vis menyen «Inndatametoder»">
+							<longdesc>Om kontekstmeny for oppføringer og tekstvisninger skal vise alternativer for å bytte inndatametode.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Hurtigtast for menylinje">
+							<longdesc>Tastatursnarvei for å åpne menylinjene.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Modul for GtkFileChooser">
+							<longdesc>Modul som skal brukes som filsystemmodell for GtkFileChooser-komponenten. Mulige verdier er «gio», «gnome-vfs» og «gtk+».</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Statuslinje til høyre">
+							<longdesc>Om statuslinje skal vises til høyre.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Bruk egendefinert skrift.">
+							<longdesc>Om egendefinert skrift skal brukes i gtk+-programmer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Skrift med lik tegnavstand">
+							<longdesc>Navn på en skrift med lik tegnavstand for bruk i f.eks. terminaler.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Skrift for dokument">
+							<longdesc>Navn på forvalgt skrift som brukes for visning av dokumenter.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM-modul">
+							<longdesc>Navn på modul for inndatametode som brukes av GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM statusstil">
+							<longdesc>Navn på statusstil for inndatametode som brukes av gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM forhåndsredigeringsstil">
+							<longdesc>Navn på forhåndsredigeringsstil for inndatametode som brukes av gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Forvalgt skrift">
+							<longdesc>Navn på forvalgt skrift som brukes av gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+-tema">
+							<longdesc>Basisnavn på forvalgt tema som brukes av gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+-tema">
+							<longdesc>Basisnavn på forvalgt tema som brukes av gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Ikontema">
+							<longdesc>Ikontema som skal brukes for panelet, nautilus etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Tid for markørblinking">
+							<longdesc>Lengde på blinksyklus for markør i millisekunder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Markørblinking">
+							<longdesc>Om markøren skal blinke.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Ikonstørrelse for verktøylinjen">
+							<longdesc>Størrelse på ikoner på verktøylinjen. Enten «small-toolbar» eller «large-toolbar».</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Verktøylinjen kan tas av">
+							<longdesc>Om bruker kan ta løs verktøylinjer og flytte dem rundt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Menylinjen kan tas av">
+							<longdesc>Om bruke kan ta løs menylinjer og flytte dem rundt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Knapper har ikoner">
+							<longdesc>Om knapper kan vise et ikon i tillegg til knappeteksten.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menyer har ikoner">
+							<longdesc>Om menyer skal vise et ikon ved siden av en menyoppføring.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Stil for verktøylinjen">
+							<longdesc>Stil for verktøylinje. Gyldige verdier er «both», «both-horiz», «icon» og «text».</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Kan endre snarveitaster">
+							<longdesc>Om bruker kan oppgi en snarveitast dynamisk når markøren er plassert over en aktiv menyoppføring.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menyer har avrivingskant">
+							<longdesc>Om menyer skal kunne rives løs.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Aktiver animasjoner">
+							<longdesc>Om animasjoner skal vises. Merk: Dette er en global nøkkel. Den endrer oppførsel for vindushåndtereren, panelet etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Aktiver tilgjengelighet">
+							<longdesc>Om programmer skal ha støtte for tilgjengelighet.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Ikontema for fil">
+							<longdesc>Tema som brukes for å vise filikoner.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Type skyggelegging av farger">
+							<longdesc>Hvordan bakgrunnsfargen skal skyggelegges. Mulige verdier er «horizontal-gradient», «vertical-gradient» og «solid».</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Sekundærfarge">
+							<longdesc>Høyre eller nedre farge ved tegning av gradienter. Ikke brukt for helfylt farge.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Primærfarge">
+							<longdesc>Venstre eller øverste farge ved tegning av gradienter, eller den helfylte fargen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Ugjennomsiktighet for bildet">
+							<longdesc>Ugjennomsiktighet for tegning av bakgrunnsbildet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Filnavn for bilde">
+							<longdesc>Fil som skal brukes som bakgrunnsbilde.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Alternativer for bilde">
+							<longdesc>Bestemmer hvordan bildet satt av wallpaper_filename skal rendres. Mulige verdier er «none», «wallpaper», «centered», «scaled», «stretched», «zoom» og «spanned».</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Tegn skrivebordsbakgrunn">
+							<longdesc>La GNOME tegne skrivebordsbakgrunnen.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Oppstart av programmer med hjelpeteknologi">
+								<longdesc>Liste over programmer med hjelpeteknologi som skal startes ved innlogging til GNOME skrivebordet.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Pip når en endringstast trykkes ned.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Deaktiver hvis to taster trykkes ned samtidig.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Minste intervall i millisekunder">
+								<longdesc>Ikke godta en tast som nedtrykket før den holdes minst @delay millisekunder.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Initiell pause i millisekunder">
+								<longdesc>Antall millisekunder ventetid før taster for musbevegelse begynner å virke.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Lengde på aksellerasjon i millisekunder">
+								<longdesc>Antall millisekunder det tar å gå fra 0 til maksimal hastighet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Piksler per sekund">
+								<longdesc>Antall piksler per sekund i bevegelse ved maksimal hastighet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="minste intervall i millisekunder">
+								<longdesc>Ignorer flere tastetrykk med samme tast innen @delay millisekunder.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Navn på arbeidsområder (fases ut)">
+								<longdesc>En liste med navn for de første arbeidsområdene i vindushåndtereren. Denne nøkkelen er ikke anbefalt brukt etter GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Antall arbeidsområder (fases ut)">
+								<longdesc>Antall arbeidsområder vindushåntereren skal bruke. Denne nøkkelen skal fases ut etter GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Brukers vindushåndterer (fases ut)">
+								<longdesc>Vindushåndterer som skal prøves først. Denne nøkkelen skal fases ut etter GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Reserve-vindushåndterer (fases ut)">
+								<longdesc>Reserve-vindushåndterer hvis brukerens vindushåndterer ikke kan finnes. Denne nøkkelen skal fases ut etter GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Oppgaver trenger terminal">
+								<longdesc>Om forvalgt oppgaveprogram trenger en terminal for å kjøre.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Forvalgte oppgaver">
+								<longdesc>Forvalgt oppgaveprogram</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalender trenger terminal">
+								<longdesc>Om forvalgt kalenderprogram trenger en terminal for å kjøre.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt kalender">
+								<longdesc>Forvalgt kalenderprogram</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Nettleser forstår eksterne kommandoer">
+								<longdesc>Om forvalgt leser forstår netscape remote-protokollen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Nettleser trenger terminal">
+								<longdesc>Om forvalgt leser trenger en terminal for å kjøre.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt nettleser">
+								<longdesc>Forvalgt nettleser for alle URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Oppstart av programmer med hjelpeteknologi">
+									<longdesc>Om foretrukket hjelpeteknologi for tilgjengelighet for svaksynte skal startes av GNOME ved innlogging.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Foretrukket program med hjelpeteknologi for tilgjengelighet for svaksynte">
+									<longdesc>Foretrukket hjelpeteknologi for synshemmede som skal brukes ved innlogging, meny, eller kommandolinje.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Oppstart av foretrukket hjelpeteknologi for mobilitet">
+									<longdesc>GNOME skal starte foretrukket hjelpeteknologi for mobilitet ved innlogging.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Foretrukket program for hjelpeteknologi for mobilitet">
+									<longdesc>Foretrukket hjelpeteknologi for bevegelseshemmede som skal brukes ved innlogging, meny, eller kommandolinje.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Forvalgt applikasjon for visning av komponent">
+								<longdesc>Applikasjon som skal brukes for å vise filer som krever en komponent for visning. Parameteren %s vil erstattes med filens URIer, parameteren %c vil erstattes med komponentens IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Kjøringsflagg">
+								<longdesc>Argument som brukes til å kjøre programmer definert av «exec»-nøkkelen i terminalen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminalprogram">
+								<longdesc>Terminalprogram som skal brukes ved oppstart av programmer som krever det.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «h323»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «h323»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «h323»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «h323»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «callto»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «callto»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «callto»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «callto»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «aim»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «aim»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «aim»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «aim»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «mailto»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «mailto»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «mailto»-URLer">
+								<longdesc> True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «mailto»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «https»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «https»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «https»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «https»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «http»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «http»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «http»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «http»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «man»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «man»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «man»-URLer">
+								<longdesc> True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «man»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «info»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «info»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «info»-URLer">
+								<longdesc> True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «info»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «ghelp»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «ghelp»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «ghelp»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «ghelp»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Kjør kommandoen i en terminal">
+								<longdesc>True hvis programmet for å håndtere denne type URL skal kjøres i en terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Håndterer for «papirkurv»-URLer">
+								<longdesc>Kommando som brukes til å håndtere «trash»-URLer, hvis aktivert.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Om oppgitt kommando skal håndtere «trash»-URLer">
+								<longdesc>True hvis programmet oppgitt i «command»-nøkkelen skal håndtere «trash»-URLer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Tastatursnarvei som setter skriften til normal størrelse">
+							<longdesc>Tastatursnarvei for å sette skriften til normal størrelse. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Tastatursnarvei som gjør skriften mindre">
+							<longdesc>Tastatursnarvei for å gjøre skriften mindre. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Tastatursnarvei for å gjøre skriften større">
+							<longdesc>Tastatursnarvei for å gjøre skriften større. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Tastatursnarvei for å åpne hjelp">
+							<longdesc>Tastatursnarvei for å vise hjelp. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 12">
+							<longdesc>Tastatursnarvei for å bytte til fane 12. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 11">
+							<longdesc>Tastatursnarvei for å bytte til fane 11. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 10">
+							<longdesc>Tastatursnarvei for å bytte til fane 10. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 9">
+							<longdesc>Tastatursnarvei for å bytte til fane 9. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 8">
+							<longdesc>Tastatursnarvei for å bytte til fane 8. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 7">
+							<longdesc>Tastatursnarvei for å bytte til fane 7. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 6">
+							<longdesc>Tastatursnarvei for å bytte til fane 6. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 5">
+							<longdesc>Tastatursnarvei for å bytte til fane 5. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 4">
+							<longdesc>Tastatursnarvei for å bytte til fane 4. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 3">
+							<longdesc>Tastatursnarvei for å bytte til fane 3. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 2">
+							<longdesc>Tastatursnarvei for å bytte til fane 2. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Tastatursnarvei som bytter til fane 1">
+							<longdesc>Tastatursnarvei for å bytte til fane 1. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Hurtigtast som løsriver aktiv fane.">
+							<longdesc>Tastatursnarvei for å løsrive denne fanen. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Hurtigtast som flytter aktiv fane til høyre.">
+							<longdesc>Tastatursnarvei for å flytte aktiv fane til høyre. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Hurtigtast som flytter aktiv fane til venstre.">
+							<longdesc>Tastatursnarvei for å flytte aktiv fane til venstre. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Tastatursnarvei som bytter til neste fane">
+							<longdesc>Tastatursnarvei for å bytte til neste fane. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Tastatursnarvei som bytter til forrige fane">
+							<longdesc>Tastatursnarvei for å bytte til forrige fane. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Tastatursnarvei som nullstiller og tømmer terminalen">
+							<longdesc>Tastatursnarvei for å nullstille og tømme terminalen. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Tastatursnarvei som nullstiller terminalen">
+							<longdesc>Tastatursnarvei for å nullstille terminalen. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Tastatursnarvei som setter tittelen for terminalen">
+							<longdesc>Tastatursnarvei for å sette terminalens tittel. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Tastatursnarvei som slår av/på visning av menylinjen.">
+							<longdesc>Tastatursnarvei for å slå av/på visning av menylinjen. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Tastatursnarvei som bytter til/fra fullskjermmodus">
+							<longdesc>Tastatursnarvei for å bytte til fullskjermmodus. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Tastatursnarvei som limer inn kopiert tekst">
+							<longdesc>Tastatursnarvei for å lime inn innholdet på utklippstavlen i terminalen. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Tastatursnarvei for å kopiere tekst">
+							<longdesc>Tastatursnarvei for å kopiere valgt tekst til utklippstavlen. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Tastatursnarvei for å lukke et vindu">
+							<longdesc>Tastatursnarvei for å lukke et vindu. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Tastatursnarvei for å lukke en fane">
+							<longdesc>Tastatursnarvei for å lukke en fane. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Tastatursnarvei for å lagre innhold i aktiv fane til en fil">
+							<longdesc>Tastatursnarvei for å lagre innhold i aktiv fane til en fil. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Tastatursnarvei for å lage en ny profil">
+							<longdesc>Tastatursnarvei for å hente opp dialogen for oppretting av dialoger. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Tastatursnarvei som åpner et nytt vindu">
+							<longdesc>Tastatursnarvei for å åpne et nytt vindu. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Tastatursnarvei som åpner en ny fane">
+							<longdesc>Tastatursnarvei for å åpne en ny fane. Uttrykkes som en streng av samme format som brukes i ressursfiler for GTK+. Hvis du setter verdien til den spesielle strengen «disabled» vil tastatursnarvei for denne handlingen deaktiveres.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Forvalgt koding">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Om systemskriften skal brukes">
+								<longdesc>Hvis satt til «true» vil terminalen bruke den forvalgte skrifttypen for skrivebordet hvis den er monospace (og hvis ikke den som er mest lik.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Om farger fra systemets tema skal brukes for terminalen">
+								<longdesc>Hvis satt til «true» vil temafargene brukt for skrivefelt bli brukt i terminalen i stede for farger definert av brukeren.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Handling for Delete-tasten">
+								<longdesc>Setter kode som genereres av slettetasten. Mulige verdier er «ascii-del» for ASCII-tegnet DEL, «control-h» for Control-H (alias ASCII BS-tegnet), «escape-sequence» for escape-sekvensen som typisk bindes til rettetast eller slettetast. «escape-sequence» anses normalt som den korrekte innstillingen for slettetasten.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Handling for Backspace-tasten">
+								<longdesc>Setter hvilken kode rettetasten lager. Mulige verdier er «ascii-del» for ASCII DEL tegnet, «control-h» for Control-H (aka ASCII BS tegnet), «escape-sequence» for skiftesekvensen typisk bundet til rettetasten eller slettetasten. «ascii-del» er normalt den rette verdien for rettetasten.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Hvor mye mørkere bakgrunnsbildet skal gjøres">
+								<longdesc>En verdi mellom 0.0 og 1.0 som indikerer hvor mye bagrunnen skal formørkes. 0.0 gir ingen formørking og 1.0 betyr helt formørket. Det er foreløpig kun to nivåer tilgjengelig, så innstillingen fungerer som en av/på bryter.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Om bakgrunnsbildet skal rulles">
+								<longdesc>Hvis satt til «true», rull bakgrunnsbildet med teksten; hvis satt til «false», hold bakgrunnsbildet stille og rull teksten over det.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Bakgrunnsbilde">
+								<longdesc>Filnavn for et bakgrunnsbilde.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Type bakgrunn">
+								<longdesc>Type terminalbakgrunn. Kan være «solid» for en solid farge, «image» for å bruke et bilde eller «transparent» for gjennomsiktighet hvis en compositing vindushåndterer kjører og pseudo-gjennomsiktighet ellers.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Skrift">
+								<longdesc>Et Pango-skriftnavn. For eksempel «Sans 12» eller «Monospace Bold 14».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palett for terminalprogrammer">
+								<longdesc>Terminaler har en 16-fargers palett som programmer som kjører i terminalen kan bruke. Paletten oppgis her i form av en kolon-separert liste med fargenavn. Fargenavn skal oppgis i heksadesimalt format, f.eks «#FF00FF»</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ikon for terminalvinduet">
+								<longdesc>Ikon som skal brukes for faner/vinduer som bruker denne profilen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Egendefinert kommando i stedet for skallet">
+								<longdesc>Kjør denne kommandoen i stedet for et skall hvis «use_custom_command» er satt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Utseende for markør">
+								<longdesc>Mulige verdier er «block» for å bruke en blokkmarkør, «ibeam» for å bruke en vertikal linje eller «underline» for å bruke en horisontal linje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Om markøren skal blinke">
+								<longdesc>Mulige verdier er «system» for å bruke globale innstillinger for blinkende markør, «on» eller «off» for å sette modus eksplisitt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Om en egendefinert kommando skal kjøres i stedet for skallet">
+								<longdesc>Hvis satt til «true» vil verdien til «custom_command» bli brukt i stede for å kjøre et skall.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Om pålogginsoppføringer skal oppdateres når en vanlig terminal startes">
+								<longdesc>Systemets loggføring av innlogging, utmp og wtmp, vil oppdateres når kommandoen i terminalen kjøres hvis denne settes til «true».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Om kommandoen i terminalen skal bli kjørt som et innloggingsskall">
+								<longdesc>Hvis satt til «true» vil kommandoen inni terminalen ble kjørt som et innloggingsskall. (argv[0] vil ha en bindestrek foran seg.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Hva skal gjøres med terminalen når barneprosessen avslutter">
+								<longdesc>Mulige verdier er «close» for å lukke terminalen og «restart» for å starte kommandoen på nytt.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Om vinduet skal rulles helt ned når ved nye utdata">
+								<longdesc>Hvis satt til «true» vil terminalen rulle helt ned når det er ny utdata.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Om vinduet skal rulles helt ned når en tast trykkes">
+								<longdesc>Hvis satt til «true» så hopper </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Ta vare på ubegrenset antall linjer med tilbakerulling">
+								<longdesc>Hvis denne er sann vil tilbakerulling aldri forkastes. Historikken lagres på disk midlertidig, så dette vil kunne forårsake at systemet går tomt for diskplass hvis store mengder tekst vises på terminalen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Antall linjer tilbakerulling">
+								<longdesc>Nummer på rullelinjer å ha lagret. Du kan rulle opp i terminalen så mange linjer som dette tallet. Linjer over det tallet blir forkastet. Hvis scrollback_unlimited er sann vil denne overses.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posisjon for rullefeltet">
+								<longdesc>Hvor terminalens rullefelt skal plasseres. Muligheter er «left», «right», og «hidden».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Forvalgt antall rader">
+								<longdesc>Antall rader i nye terminalvinduer. Har ingen effekt hvis ikke use_custom_default_size er slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Forvalgt antall kolonner">
+								<longdesc>Antall kolonner i nye terminalvinduer. Har ingen effekt hvis ikke use_custom_default_size er slått på.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Bruk egendefinert terminalstørrelse for nye vinduer">
+								<longdesc>Hvis satt til «true» vil nyopprettede terminalvinduer ha egendefinert størrelse oppgitt av default_size_columns og default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Tegn som betraktes som «del av et ord»">
+								<longdesc>Når man velger tekst etter ord kan sekvenser av disse tegnene ses på som enkelte ord. Områder kan oppgis som «A-Z». Bindestrek må oppgis som første tegn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Om systempip skal brukes eller ikke">
+								<longdesc>Hvis satt til «true», ikke lag lyd når programmer sender skiftesekvensen for terminalbjellen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Om uthevet tekst tillates">
+								<longdesc>Hvis denne er «true» vil programmer i terminalen kunne sette tekst til uthevet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Tittel for terminalen">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Hva skal gjøres med dynamiske titler">
+								<longdesc>Hvis programmet i terminalen setter tittelen (det er vanlig å la skallet gjøre dette), så kan den dynamiske tittelen slette den forvalgte tittelen, gå før den, gå etter den eller erstatte den. De forskjellige verdiene er «replace», «before», «after» og «ignore».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Uthevet tekst  bruker samme farge som normal tekst">
+								<longdesc>Hvis denne er sann vil uthevet tekst vises med samme farge som normal tekst.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Forvalgt farge for uthevet tekst i terminalen">
+								<longdesc>Forvalgt farge for uthevet tekst i terminalen som en fargespesifikasjon (kan være HTML-type heksadesimale tall eller et fargenavn som «red»). Overses hvis bold_color_same_as_fg er true.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Forvalgt bakgrunnsfarge for terminalen">
+								<longdesc>Forvalgt farge for terminalens bakgrunn som en fargespesifikasjon (kan være HTML-type heksadesimale tall eller et fargenavn som «red»).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Forvalgt farge for tekst i terminalen">
+								<longdesc>Forvalgt farge for tekst i terminalen som en fargespesifikasjon (kan være HTML-type heksadesimale tall eller et fargenavn som «red»).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Om menylinjen skal vises i nye vinduer/faner">
+								<longdesc>Sett til «true» hvis menylinjen skal bli vist i nye vinduer, for vinduer/faner med denne profilen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Lesbart navn for profilen">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Om det skal spørres om bekreftelse når terminaler blir lukket">
+							<longdesc>Om det skal spørres om bekreftelse når en terminal med mer enn en åpen fane lukkes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Liste med tilgjengelige kodinger">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Om forvalgt GTK-snarvei for tilgang til menylinjen er aktivert">
+							<longdesc>Normalt kan du bruke menylinjen med F10. Dette kan også bli tilpasset via gtkrc (gtk-menu-bar-accel = «whatever»). Dette valget lar den forvalgte hurtigtasten til menylinjen bli slått av.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Om menylinjen har snarveitaster">
+							<longdesc>Skal det være en Alt+«bokstav» hurtigtast for menylinjen. Det er mulig at den kan kræsje med programmer som blir kjørt inni terminalen så det er mulig å skru dem av.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profil som brukes for nye terminaler">
+							<longdesc>Profil som skal brukes ved åpning av et nytt vindu eller fane. Må være i profillisten.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Liste med profiler">
+							<longdesc>Liste med profiler som er kjent for gnome-terminal. Listen inneholder strenger som navngir underkataloger relativ til /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

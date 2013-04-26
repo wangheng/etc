@@ -1,0 +1,15 @@
+#!/bin/sh
+
+export LC_ALL=C
+
+if [ "$2" = "up" ]; then
+	/sbin/ip route list dev "$1" | grep -q '^default' &&
+		/usr/libexec/chrony-helper command online > /dev/null 2>&1
+fi
+
+if [ "$2" = "down" ]; then
+	/sbin/ip route list | grep -q '^default' ||
+		/usr/libexec/chrony-helper command offline > /dev/null 2>&1
+fi
+
+exit 0

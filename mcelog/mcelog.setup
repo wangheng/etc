@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# An upstream kernel bug prevents mcelog from starting normally in
+# daemon mode the first time it is run. So, in the systemd service,
+# we want to start it twice - one as a ExecStartPre that will fail.
+# But systemd will abort the process if the "pre" fails, so we use
+# this script - temporarily - to start the first process.
+#
+# Waiting on Andi Kleen to fix upstream.
+#
+/usr/sbin/mcelog --ignorenodev --syslog --foreground
+exit 0

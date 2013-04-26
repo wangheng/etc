@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="ibus">
+				<dir name="engine">
+					<dir name="Chewing">
+						<entry name="spaceAsSelection">
+							<local_schema short_desc="Space to select">
+								<longdesc>
+                    Press Space to select the candidate.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="phraseChoiceRearward">
+							<local_schema short_desc="Choose phrases from backward">
+								<longdesc>
+                    Choose phrases from the back, without moving cursor.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="candPerPage">
+							<local_schema short_desc="Candidate per page">
+								<longdesc>
+                    Number of candidate per page.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="plainZhuyin">
+							<local_schema short_desc="Plain Zhuyin mode">
+								<longdesc>
+                    In plain Zhuyin mode, automatic candidate selection and related options are disabled or ignored.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="numpadAlwaysNumber">
+							<local_schema short_desc="Number pad always input number">
+								<longdesc>
+                    Always input numbers when number keys from key pad is inputted.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="syncCapsLockLocal">
+							<local_schema short_desc="Sync between CapsLock and IM">
+								<longdesc>
+                    Occasionally, the CapsLock status does not match the IM, this option determines how these status be synchronized. Valid values:
+                    &quot;disable&quot;: Do nothing.
+                    &quot;keyboard&quot;: IM status follows keyboard status.
+                    &quot;IM&quot;: Keyboard status follows IM status.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="forceLowercaseEnglish">
+							<local_schema short_desc="Force lowercase in En mode">
+								<longdesc>
+                    Ignore CapsLock status and input lowercase by default.
+                    It is handy if you wish to enter lowercase by default. Uppercase can still be inputted with Shift.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="maxChiSymbolLen">
+							<local_schema short_desc="Maximum Chinese characters">
+								<longdesc>
+                    Maximum Chinese characters in pre-edit buffer, including inputing Zhuyin symbols
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="escCleanAllBuf">
+							<local_schema short_desc="Esc clean all buffer">
+								<longdesc>
+                    Escape key cleans the text in pre-edit-buffer.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="easySymbolInput">
+							<local_schema short_desc="Easy symbol input">
+								<longdesc>
+                    Easy symbol input.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="addPhraseDirection">
+							<local_schema short_desc="Add phrases in front">
+								<longdesc>
+                    Add phrases in the front.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="autoShiftCur">
+							<local_schema short_desc="Auto move cursor">
+								<longdesc>
+                    Automatically move cursor to next character.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="hsuSelKeyType">
+							<local_schema short_desc="Hsu&apos;s selection key">
+								<longdesc>
+                    Hsu&apos;s keyboard selection keys, 1 for asdfjkl789, 2 for asdfzxcv89 .
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="selKeys">
+							<local_schema short_desc="Selection keys">
+								<longdesc>
+                    Keys used to select candidate. For example &quot;asdfghjkl;&quot;, press &apos;a&apos; to select the 1st candidate, &apos;s&apos; for 2nd, and so on.
+                </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="KBType">
+							<local_schema short_desc="Keyboard Type">
+								<longdesc>
+                    Select Zhuyin keyboard layout.
+                </longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

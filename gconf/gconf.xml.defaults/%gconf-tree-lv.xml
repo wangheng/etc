@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB darba grupa">
+						<longdesc>Windows tīklošanas darba grupa vai domēns, kura sastāvā ir lietotājs. Lai jaunā darba grupa strādātu pilnīgi, lietotājam vajadzētu iziet no sistēmas un ienākt atpakaļ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Papildus domēni,  DNS-SD servisu meklēšanai">
+						<longdesc>Komata atdalīts DNS-SD domēnu saraksts, ko vajadzētu redzēt šeit: &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kā attēlot vietējo DNS-SD servisu">
+						<longdesc>Iespējamās vērtības ir &quot;merged&quot;, &quot;separate&quot; un &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automātiska starpnieka konfigurācija URL">
+						<longdesc>URL kas apgādā ar starpniekkonfigurācijas vērtībām.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/proxy/socks_host&quot; , lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/proxy/ftp_host&quot; , lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Drošs HTTP starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/proxy/secure_host&quot;  ,lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Drošs HTTP starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri drošu HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Starpnieka konfigurācijas režīms">
+						<longdesc>Izvēlieties starpnieka konfigurācijas režīmu. Atbalstītās vērtības ir &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Ne-starpnieka saimniekdatori">
+						<longdesc>Šī atslēga satur resursdatoru sarakstu, kas ir savienoti tieši, labāk nekā caur starpnieku (ja tas ir aktīvs). Vērtības var būt saimniekdatoru vārdi, domēni (izmantojot aizstājējzīmes, kā *.foo.com), resursdatoru IP adreses (kā IPv4 un IPv6) un tīklu adreses ar tīkla masku (piemēram, 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP starpnieka parole">
+						<longdesc>Parole identificējoties, veicot HTTP starpniekošanu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP starpnieka lietotāja vārds">
+						<longdesc>Lietotāja vārds, lai izietu identifikāciju,veicot HTTP starpniekošanu (proxying).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Identificējiet starpnieka servera savienojumus">
+						<longdesc>Ja patiess, tad savienojumiem ar starpniekserveri, nepieciešama identifikācija. Lietotāja vārds/parole kombinācija ir definēta ar &quot;/system/http_proxy/authentication_user&quot; un &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP starpnieka ports">
+						<longdesc>Mašīnas ports definēts &quot;/system/http_proxy/host&quot; , lai jūs varētu iziet cauri starpniekam.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP starpnieka saimniekdatora vārds">
+						<longdesc>Mašīnas vārds, lai starpietu cauri HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Izmantot HTTP starpnieku">
+						<longdesc>Ieslēdz starpnieka uzstādījumus, kad piekļūst HTTP cauri tīmeklim.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Vai tastatūras noslēgšana ir ieslēgta">
+							<longdesc>Vai tastatūras noslēgšana ir ieslēgta.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Ļaut pārcelt rakstīšanas pārtraukumus">
+							<longdesc>Vai rakstīšanas pauzes ekrānu var pārcelt uz vēlāku laiku.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Pārtraukuma laiks">
+							<longdesc>Cik garai būtu jābūt rakstīšanas pauzei (minūtēs).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Rakstīšanas laiks">
+							<longdesc>Pēc cik ilga rakstīšanas laika minūtēs sāksies pārtraukuma režīms.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Atslēgt visus ārējos sīktēlu veidotājus">
+							<longdesc>Iestatiet uz patiess, lai atslēgtu visas ārējās sīktēlu veidošanas programmas, neatkarīgi no tā, vai tās ir atsevišķi ieslēgtas/izslēgtas.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Maksimālais sīktēlu, kas ir kešatmiņā, izmērs megabaitos. Iestatiet uz -1, lai atslēgtu tīrīšanu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Maksimālais sīktēlu, kas ir kešatmiņā, vecums dienās. Iestatiet uz -1, lai atslēgtu tīrīšanu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Ievades atgriezeniskās saites skaņas">
+							<longdesc>Vai atskaņot skaņas ievades notikumiem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Skaņu tēmas nosaukums">
+							<longdesc>XDG skaņu tēma, ko izmantot notikumu skaņām.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Skaņas notikumiem">
+							<longdesc>Vai atskaņot skaņas lietotāja notikumiem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Ieslēgt ESD">
+							<longdesc>Ieslēgt skaņas servera startēšanu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Noklusētie miksera celiņi">
+							<longdesc>Noklusētie miksera celiņi, ko izmantot multimediju taustiņu sasaistei.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Noklusētā miksera ierīce">
+							<longdesc>Noklusētā miksera ierīce, ko izmantot multimediju taustiņu sasaistei.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Kursora izmērs">
+								<longdesc>cursor_theme norādītais kursora izmērs.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Kursora tēma">
+								<longdesc>Kursora tēmas nosaukums. To izmanto tikai Xservers, kas atbalsta Xcursor, kā, piemēram, Xfree86 4.3 un vēlāki.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Kursora fonts">
+								<longdesc>Kursora fonta nosaukums. Ja nav iestatīts, tiek lietots noklusētais fonts. Šī vērtība tiek novirzīta uz X serveri tikai palaižot sesiju, tāpēc, mainot to sesijas vidū, nekas nenotiks līdz nākamajai reizei, kad jūs pieteiksities.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Rādīt kursoru">
+								<longdesc>Izceļ pašreizējo kursora atrašanās vietu, kad Ctrl taustiņš tiek nospiests un atlaists.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Dubultklikšķa laiks">
+								<longdesc>Dubultklikšķa ilgums.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Vilkšanas slieksnis">
+								<longdesc>Attālums, pirms tiek sākta vilkšana.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Kustības slieksnis">
+								<longdesc>Attālums pikseļos, kas kursoram ir jānoiet, pirms paātrinātā peles kustība tiek aktivizēta. Sistēmas noklusētā vērtība ir -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Viens klikšķis">
+								<longdesc>Paātrinātāja reizinātājs peles kustībai. Sistēmas noklusētā vērtība ir -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Viens klikšķis">
+								<longdesc>Viens klikšķis, lai atvērtu ikonas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Peles pogas orientācija">
+								<longdesc>Samainīt vietām labo un kreiso peles pogu – kreiļu pelēm.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Atcerēties NumLock stāvokli">
+								<longdesc>Ja iestatīts kā patiess, GNOME atcerēsies NumLock taustiņa stāvokli, mainot sesijas.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Faila nosaukums pielāgotajam tastatūras zvanam">
+								<longdesc>Atskaņojamā zvana skaņas faila nosaukums.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>iespējamās vērtības ir &quot;on&quot;, &quot;off&quot;, un &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Atslēgt URL un MIME tipa apstrādātājus">
+							<longdesc>Novērst jebkuru URL vai MIME tipa apstrādātājošu lietotņu palaišanu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Atslēgt ekrāna noslēgšanu">
+							<longdesc>Neļaut lietotājam noslēgt savu ekrānu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Atslēgt lietotāju pārslēgšanu">
+							<longdesc>Neļaut lietotājam pārslēgties uz cita lietotāja kontu, kamēr viņa paša sesija ir aktīva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Atslēgt drukāšanas iestatīšanu">
+							<longdesc>Neļauj lietotājam izmainīt drukāšanas iestatījumus. Piemēram, tiks atslēgta &quot;Drukāšanas iestatīšana&quot; visos aplikāciju logos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Atslēgt drukāšanu">
+							<longdesc>Neļauj lietotājam drukāt. Piemēram, tiks atslēgta pieeja visu lietotņu &quot;Drukāt&quot; dialogam.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Atslēgt failu saglabāšanu diskā">
+							<longdesc>Neļauj lietotājam saglabāt failus diskā. Piemēram, tiks atslēgta pieeja &quot;Saglabāt kā&quot; dialogiem visās lietotnēs.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Atslēgt komandrindu">
+							<longdesc>Neļauj lietotājam piekļūt terminālim vai likt izpildīt komandrindu. Piemēram, tas atslēgtu pieeju paneļa dialogam &quot;Palaist lietotni&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Rādīt izvēlni &apos;Unikoda kontroles rakstzīme&apos;">
+							<longdesc>Vai ierakstu konteksta izvēlnēm un tekstu skatiem vajadzētu piedāvāt ievietot kontroles rakstzīmes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Rādīt izvēlni &apos;Ievades metodes&apos;">
+							<longdesc>Vai ierakstu konteksta izvēlnēm un tekstu skatiem vajadzētu piedāvāt mainīt ievades metodi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Izvēlnes joslas paātrinātājs">
+							<longdesc>Izvēlnes joslas atvēršanai izmantojamās taustiņu kombinācijas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser modulis">
+							<longdesc>Modulis, ko izmantot kā failu sistēmas modeli GtkFileChooser sīkrīkam. Iespējamās vērtības ir &quot;gio&quot;, &quot;gnome-vfs&quot; un &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Statusa josla pa labi">
+							<longdesc>Vai rādīt statusa joslas mērītāju labajā malā.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Lietot pielāgotu fontu">
+							<longdesc>Vai lietot lietotāja izvēlētu fontu gtk+ lietotnēs.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Fiksēta platuma fonts">
+							<longdesc>Tādās vietās kā terminālis izmantojamā fiksētā platuma fonta nosaukums.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Dokumenta fonts">
+							<longdesc>Noklusētā fonta nosaukums, ko izmanto dokumentu lasīšanai.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK TZ modulis">
+							<longdesc>GTK+ izmantotā ievades metodes moduļa nosaukums.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK TZ statusa stils">
+							<longdesc>GTK+ ievades metodes statusa stila nosaukums, ko lieto gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK TZ pirms rediģēšanas stils">
+							<longdesc>GTK+ ievades metodes pirms rediģēšanas stila nosaukums, ko lieto gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Noklusētais fonts">
+							<longdesc>Noklusētā fonta nosaukums, ko lieto gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ tēma">
+							<longdesc>Bāzes nosaukums noklusētajai tēmai, ko lieto gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ tēma">
+							<longdesc>Bāzes nosaukums noklusētajai tēmai, ko lieto gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Ikonu tēma">
+							<longdesc>Ikonu tēma, ko lietot panelim, nautilus utt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Kursora mirgošanas laiks">
+							<longdesc>Kursora mirgošanas cikla garums, milisekundēs.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Kursora mirgošana">
+							<longdesc>Vai kursoram būtu jāmirgo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Rīkjoslas ikonu izmērs">
+							<longdesc>Rīkjoslas ikonu izmērs, vai nu &quot;small-toolbar&quot; vai arī &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Atdalāmas rīkjoslas">
+							<longdesc>Vai lietotājs var atvienot rīku joslas un pārvietot tās apkārt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Atdalāma izvēlnes josla">
+							<longdesc>Vai lietotājs var atvienot izvēlņu joslas un pārvietot tās apkārt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Pogām ir ikonas">
+							<longdesc>Vai uz pogām var rādīt ikonas blakus tekstiem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Izvēlnēm ir ikonas">
+							<longdesc>Vai izvēlnē var rādīt ikonas pie izvēlnes ierakstiem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Rīkjoslas stils">
+							<longdesc>Rīkjoslas stils. Derīgās vērtības ir &quot;both&quot;, &quot;both-horiz&quot;, &quot;icons&quot;, un &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Var mainīt paātrinājumu">
+							<longdesc>Vai lietotājs var dinamiski rakstīt jaunu paātrinātāju, kad novietots virs aktīvā izvēlnes elementa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Izvēlnes ir pārceļamas">
+							<longdesc>Vai izvēlnēm ir jābūt pārceļamām.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Ieslēgt animācijas">
+							<longdesc>Vai būtu jāattēlo animācijas. Piezīme: šī ir globāla atslēga, tā izmaina logu pārvaldnieka, paneļu u.c. uzvedību.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Ieslēgt pieejamību">
+							<longdesc>Vai lietotnēm vajadzētu būt pieejamības atbalstam.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Faila ikonas tēma">
+							<longdesc>Tēma, kuru izmantot faila ikonu attēlošanai.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Krāsas ēnošanas tips">
+							<longdesc>Kā ēnot fona krāsu. Iespējamās vērtības ir &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, un &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Sekundārā krāsa">
+							<longdesc>Labā vai apakšas krāsa, kad zīmē pārejas. Netiek lietota viendabīgai krāsai.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Primārā krāsa">
+							<longdesc>Kreisā vai augšējā krāsa (kad tiek izmantota pāreja), vai viendabīga krāsa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Attēla necaurspīdīgums">
+							<longdesc>Necaurspīdīgums, ar ko zīmēt fona attēlu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Attēla faila nosaukums">
+							<longdesc>Fails, kuru izmantot kā fona attēlu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Attēla opcijas">
+							<longdesc>Nosaka, kā tiks renderēti attēli, kurus iestata wallpaper_filename. Iespējamās vērtības ir &quot;none&quot;, &quot;wallpaper&quot;, &quot;centered&quot;, &quot;scaled&quot;, &quot;stretched&quot;, &quot;zoom&quot; un &quot;spanned&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Zīmēt darbvirsmas fonu">
+							<longdesc>Likt GNOME zīmēt darbvirsmas fonu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Palaišanās palīgtehnoloģiju lietotnes">
+								<longdesc>Saraksts ar palīdzošajām lietotnēm, ko būtu jāpalaiž piesakoties GNOME darbvirsmai.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Nopīkstēties, kad nospiests modifikatora taustiņš.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Atslēgt, ja divi taustiņi tiek nospiesti vienlaicīgi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Minimālais intervāls milisekundēs">
+								<longdesc>Uztvert taustiņa spiedienu tikai, ja tas paturēts @delay milisekundes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Sākotnējā aizture milisekundēs">
+								<longdesc>Cik milisekundes gaidīt pirms peles kustības taustiņi sāk darboties.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Paātrinājuma ilgums milisekundēs">
+								<longdesc>Cik milisekundēs jāuzņem ātrums no 0 līdz maksimālajam.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pikseļi sekundē">
+								<longdesc>Cik pikseļus sekundē pārvietot pie maksimālā ātruma.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="minimālais intervāls milisekundēs">
+								<longdesc>Ignorēt _tā paša_ taustiņa spiedienus, ja tie atkārtojas intervālā, mazāka par @delay milisekundēm.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Darba vietu vārdi (novecojis)">
+								<longdesc>Pirmā logu pārvaldnieka darba vietu nosaukumu saraksts. Šī atslēga netiek lietota kopš GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Darba vietu skaits (novecojis)">
+								<longdesc>Darba vietu skaits, ko logu pārvaldniekam būtu jāizmanto. Šī atslēga netiek izmantota kopš GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Lietotāja logu pārvaldnieks (novecojis)">
+								<longdesc>Vispirms mēģināmais logu pārvaldnieks. Šī atslēga netiek izmantota kopš GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Logu rezerves pārvaldnieks (novecojis)">
+								<longdesc>Logu rezerves pārvaldnieks gadījumam, ja lietotāja logu pārvaldnieks nav atrodams. Šī atslēga vairs netiek lietota kopš GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Uzdevumam nepieciešama komandrinda">
+								<longdesc>Vai noklusētajai uzdevumu lietotnei ir nepieciešama komandrinda, lai darbotos</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Noklusētie uzdevumi">
+								<longdesc>Noklusētā uzdevumu lietotne</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalendāram nepieciešama komandrinda">
+								<longdesc>Vai noklusētajai kalendāra lietotnei ir nepieciešama komandrinda, lai darbotos</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Noklusētais kalendārs">
+								<longdesc>Noklusētā kalendāra lietotne</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Pārlūks saprot attālināti">
+								<longdesc>Vai noklusētais pārlūks saprot netscape tālvadību.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Pārlūkam nepieciešams terminālis">
+								<longdesc>Vai noklusētajam pārlūkam ir nepieciešama komandrinda, lai darbotos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Noklusētais pārlūks">
+								<longdesc>Noklusētais pārlūks visām adresēm.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Palaist vēlamo vizuālās palīdzības lietotni">
+									<longdesc>GNOME palaidīs vēlamās vizuālās palīgtehnoloģiju lietones piesakoties.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Vēlamā vizuālās palīdzības lietotne">
+									<longdesc>Vēlamā vizuālās palīdzības lietotne, ko lietot piesakoties, izvēlnē vai komandrindā.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Palaist izvēlēto mobilitātes palīdzības lietotni">
+									<longdesc>GNOME ielādes laikā palaižamās izvēlētās mobilitātes programmas.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Izvēlēta mobilitātes palīdzības lietotne">
+									<longdesc>Vēlamā mobilitātes palīgtehnoloģijas lietotne, ko izmantot piesakoties, izvēlnē vai komandrindā.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Noklusēta komponente pārlūka lietotnei">
+								<longdesc>Lietotne, ko izmanto, lai aplūkotu datnes, kas pieprasa komponenti, lai aplūkotu tās. Parametrs %s būs aizvietots ar datnes URI, parametrs %c būs aizvietots ar komponenta IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec parametri">
+								<longdesc>Parametri, kas izmantoti, lai izpildītu programmas terminālī, definētā ar &apos;exec&apos; atslēgu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Termināļa lietotne">
+								<longdesc>Termināļa programma, kuru izmantot, kad tiek palaista lietotne, kurai tas ir vajadzīgs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;h323&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;h323&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;h323&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;callto&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;callto&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;callto&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;aim&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar  &quot;aim&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;aim&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;mailto&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar  &quot;mailto&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;mailto&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;https&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;https&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;https&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;http&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;http&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;http&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc=" &quot;man&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;man&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar  &quot;man&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;man&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;info&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;info&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;info&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;ghelp&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;ghelp&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;ghelp&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Palaist komandu terminālī">
+								<longdesc>Patiess, ja komandai, kas izmantota, lai apietos ar šo URL tipu, jāpalaižas terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;miskastes&quot; URL apstrādātājs">
+								<longdesc>Komanda, kas tiek izmantota apejoties ar &quot;miskastes&quot; URL,ja ieslēgta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Vai norādītai komandai nepieciešams apieties ar &quot;miskastes&quot; URL">
+								<longdesc>Patiess, ja komandai norādītai &quot;komanda&quot; atslēgā vajadzētu apieties ar &quot;miskastes&quot; URL.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Tastatūras īsinājumtaustiņš, lai fontu pārtaisītu normālā izmērā">
+							<longdesc>Tastatūras īsinājumtaustiņš fonta lieluma atgriešanai normālā izmērā. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Īsinājumtaustiņš fonta samazināšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš fonta samazināšanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Īsinājumtaustiņš fonta palielināšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš fonta palielināšanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Īsinājumtaustiņš palīdzības parādīšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš palīdzības izsaukšanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 12">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz divpadsmito cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 11">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz vienpadsmito cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 10">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz desmito cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 9">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz devīto cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 8">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz astoto cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 7">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz septīto cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 6">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz sesto cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 5">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz piekto cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 4">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz ceturto cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 3">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz trešo cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 2">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz otro cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Īsinājumtaustiņš, lai pārslēgtos un cilni 1">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz pirmo cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Paātrinātājs, lai atvienotu pašreizējo cilni.">
+							<longdesc>Paātrinājuma taustiņš, lai atvienotu pašreizējo cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs taustiņu saīsne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Paātrinātājs, kas domāts pašreizējās cilnes pārvietošanai uz labo pusi.">
+							<longdesc>Paātrinājuma taustiņš, lai pārvietotu pašreizējo cilni uz labo pusi. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs taustiņu saīsne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Paātrinātājs, kas domāts pašreizējās cilnes pārvietošanai uz kreiso pusi.">
+							<longdesc>Paātrinājuma taustiņš, lai pārvietotu pašreizējo cilni uz kreiso pusi. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs taustiņu saīsne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Tastatūras īsinājumtaustiņš, lai pārslēgtos uz nākamo cilni">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz nākamo cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Tastatūras īsinājumtaustiņš, lai pārslēgtos uz iepriekšējo cilni">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai pārslēgtos uz iepriekšējo cilni. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Tastatūras īsinājumtaustiņš, lai atstatītu un atbrīvotu termināli">
+							<longdesc>Tastatūras īsinājumtaustiņš termināļa atstatīšanai un atbrīvošanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Īsinājumtaustiņš termināļa atstatīšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš termināļa atstatīšanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Īsinājumtaustiņš termināļa virsraksta iestatīšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš termināļa virsraksta iestatīšanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Tastatūras īsinājumtaustiņš izvēlnes joslas redzamības pārslēgšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš izvēlnes joslas redzamības pārslēgšana. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Tastatūras īsinājumtaustiņš pilnekrāna režīma pārslēgšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš, kas pārslēdz pilnekrāna režīmu. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Īsinājumtaustiņš teksta ielīmēšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš starpliktuves satura ielīmēšanai termināļa logā. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Īsinājumtaustiņš teksta kopēšanai">
+							<longdesc>Tastatūras īsinājumtaustiņš izvēlētā teksta kopēšanai uz starpliktuvi. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Īsinājumtaustiņš loga aizvēršanai">
+							<longdesc>Tastatūras īsinājumtaustiņš loga aizvēršanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Īsinājumtaustiņš cilnes aizvēršanai">
+							<longdesc>Tastatūras īsinājumtaustiņš cilnes aizvēršanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Īsinājumtaustiņš, lai saglabātu pašreizējās cilnes saturu datnē">
+							<longdesc>Tastatūras īsinājumtaustiņš, lai saglabātu pašreizējās cilnes saturu datnē. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Īsinājumtaustiņš jauna profila izveidei">
+							<longdesc>Tastatūras īsinājumtaustiņš profila izveides dialoglodziņa atvēršanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs taustiņu saīsne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Īsinājumtaustiņš jauna loga atvēršanai">
+							<longdesc>Tastatūras īsinājumtaustiņš jauna loga atvēršanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Īsinājumtaustiņš jaunas cilnes atvēršanai">
+							<longdesc>Tastatūras īsinājumtaustiņš jaunas cilnes atvēršanai. Izteikts simbolu virknes veidā tajā pašā formātā, kādu lieto GTK+ resursu datnēm. Ja iestatāt opciju uz īpašo simbolu virkni “disabled”, tad šai darbībai nebūs tastatūras īsinājumtaustiņa.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="encoding">
+							<local_schema short_desc="Noklusējuma kodējums">
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Vai izmantot sistēmas fontu">
+								<longdesc>Ja patiess, terminālis izmantos globālo darba virsmas fontu, ja tas ir monospace (vai arī vistuvāko pēc līdzības, kādu tas var atrast).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Vai lietot pašreizējā motīva krāsas termināļa logdaļai">
+								<longdesc>Ja patiess, motīva krāsu saskaņa, kas tiek lietota teksta ievades laukos, tiks izmantota terminālī lietotāja uzdoto krāsu vietā.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Dzēšanas taustiņa efekts">
+								<longdesc>Iestata, kādu kodu radīs dzēšanas taustiņš. Atļautās vērtības ir “ascii-del” ASCII DEL simbolam, “control-h” Control-H (jeb ASCII BS simbolam), “escape-sequence” atsoļa sekvencei, parasti saistīts ar atpakaļatkāpi vai dzēšanas taustiņu. “escape-sequence” tiek uzskatīts par pareizo iestatījumu Delete taustiņam.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Atpakaļatkāpes taustiņa efekts">
+								<longdesc>Iestata, kādu kodu radīs atpakaļatkāpes taustiņš. Iespējamās vērtības ir “ascii-del”, lai tas būtu ASCII DEL simbols, “control-h”, lai tas būtu Control-H (jeb ASCII BS simbols), “escape-sequence”, lai tas būtu iziešanas funkcija, parasti piesaistīts atpakaļatkāpei vai izdzēšanai. “ascii-del” tiek uzskatīts par pareizo iestatījumu atpakaļatkāpes taustiņam.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Cik daudz tumšāku pataisīt fona attēlu">
+								<longdesc>Skaitlis robežās no 0.0 līdz 1.0 norāda, cik tumši jāiekrāso fona bilde. 0.0 nozīmē bez iekrāsojuma, 1.0 nozīmē pilnīgi tumši. Pašreizējā realizācijā ir tikai divi tumšuma līmeņi. Tātad šis iestatījums darbojas kā Būla mainīgais, kur 0.0 izslēdz ietumšošanas efektu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Vai ritināt fona attēlu">
+								<longdesc>Ja patiess, ritināt fona attēlu kopā ar priekšplāna tekstu; ja aplams, attēls tiek paturēts fiksētā pozīcijā un ritināts tiek teksts virs tā.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Fona attēls">
+								<longdesc>Fona attēla datnes nosaukums.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Fona veids">
+								<longdesc>Termināļa fona veids. Var būt “solid”, lai iegūtu viendabīgu krāsu, “image”, lai iegūtu bildi vai “transparent”, lai iegūtu pseido-caurspīdīgumu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Fonts">
+								<longdesc>Pango fonta nosaukums. Piemēram, “Sans 12” vai “Monospace Bold 14”.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Terminālo lietotņu palete">
+								<longdesc>Termināļos ir 16 krāsu palete, kuru var izmantot termināļa lietotnes. Šī ir tā palete, kurā ir saraksts ar koliem atdalītu krāsu nosaukum. Krāsu nosaukumiem vajadzētu būt pierakstītiem heksadecimālā formā, piemēram, “#FF00FF”</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Termināļa loga ikona">
+								<longdesc>Ikona, kuru lietot šo profilu saturošām cilnēm/logiem.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Pielāgotā komanda, kuru palaist manas čaulas vietā">
+								<longdesc>Izpildīt šo komandu čaulas komandas vietā, ja lieto use_custom_command ir patiess.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Kursora izskats">
+								<longdesc>Iespējamās vērtības ir “block”, lai izmantotu bloka kursoru, “ibeam”, lai izmantotu vertikālu līniju vai “underline”, lai izmantotu pasvītrojuma kursoru.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Vai kursoram ir jāmirgo">
+								<longdesc>Iespējamās vērtības ir “system”, lai izmantotu globālos mirgošanas iestatījumus, vai arī “on” (ieslēgts) vai “off” (izslēgts).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Vai palaist pielāgotu komandu manas čaulas vietā">
+								<longdesc>Ja patiess, paša_veidota_komandas vērtība tiks lietota strādājošas čaulas vietā.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Vai atjaunināt ierakstīšanās ierakstus, kad tiek palaista termināļa komanda">
+								<longdesc>Ja patiess, sistēmas ierakstīšanās ieraksti utmp un wtmp tiks atjaunināti, kad komanda tiks palaista terminālī.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Vai palaist komandu terminālī kā ierakstīšanās čaulu">
+								<longdesc>Ja patiess, komanda terminālī tiks palaista kā ierakstīšanās čaula. (argv[0] priekšā būs defise.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Ko darīt ar termināli, kad bērna komanda beidz darbu">
+								<longdesc>Iespējamās vērtības ir “close”, lai aizvērtu termināli, un “restart”, lai atkal palaistu komandu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Vai aizritināt ritjoslu līdz lejai, kad parādās jauna izvade">
+								<longdesc>Ja patiess, katrreiz, kad kaut kas jauns tiks izvadīts termināļa logā, ritjosla aizritināsies līdz apakšai.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Vai aizritināt ritjoslu līdz lejai, kad tiek piespiests kāds tastatūras taustiņš">
+								<longdesc>Ja patiess, nospiežot taustiņu, novieto ritjoslu apakšā.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Vai ritināšanas atmiņā paturēt neierobežotu skaitu rindu">
+								<longdesc>Ja patiess, atpakaļritināšanas rindas nekad netiks izmestas. Atpakaļritināšanas vēsture tiks uz laiku saglabāta diskā, tāpēc tas var izraisīt diska vietas trūkumu, ja terminālī ir daudz izvades.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Rindu skaits, ko paturēt ritināšanas atmiņā">
+								<longdesc>Ritināšanas rindu daudzums, ko paturēt. Jūs varat ritināt atpakaļ tieši tik daudz rindas. Tās rindas, kas neietilpst rindiņu atpakaļritināšanā, tiek izmestas. Ja scrollback_unlimited ir patiess, šī vērtība tiek ignorēta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Ritjoslas novietojums">
+								<longdesc>Kur novietot termināļa ritjoslu. Iespējamās vērtības ir “left” (pa kreisi), “right” (pa labi) un “hidden” (slēpta).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Noklusējuma rindu skaits">
+								<longdesc>Rindu skaits tikko izveidota termināļa logā. Nedarbojas, ja nav aktivēts use_custom_default_size.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Noklusējuma kolonnu skaits">
+								<longdesc>Kolonnu skaits tikko izveidota termināļa logā. Nedarbojas, ja nav aktivēts use_custom_default_size.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Vai izmantot pielāgotu jauna termināļa loga izmēru ">
+								<longdesc>Ja patiess, jaunizveidotajiem termināļa logiem būs pielāgots izmērs:default_size_columns (kolonnām) un default_size_rows (rindām).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Rakstzīmes, kuras tiek uzskatītas par “vārda daļu“">
+								<longdesc>Simbolu virknes tiek uzskatītas par vārdiem, ja teksts tiek izvēlētas pa vārdam. Intervālus var uzdot kā “A-Z“. Burtiskai defisei (neizsaka intervālu) vajadzētu būt pirmajam padotajam simbolam.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Vai apklusināt termināļa zvanu">
+								<longdesc>Ja patiess, neatskaņot signālu, kad lietotnes sūta atsoļa secību termināļa zvanam.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Vai atļaut treknu tekstu">
+								<longdesc>Ja patiess, lietotnēm atļauts terminālī tekstu pārveidot treknā rakstā.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Termināļa virsraksts">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Ko darīt ar dinamiskiem virsrakstiem">
+								<longdesc>Ja lietotne terminālī iestata virsrakstu (lielākajā daļā gadījumu cilvēki čaulās ir noteikuši, ka tā var darīt), jaunais dinamiski veidotais virsraksts var izdzēst, ievietoties pirms, pēc vai aizvietot iepriekš definēto virsrakstu. Iespējamās vērtības ir “replace” (aizvietot), “before” (pirms), “after” (pēc) un “ignore” (ignorēt).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Vai treknam tekstam izmantot to pašu krāsu, ko parastam tekstam">
+								<longdesc>Ja patiess, treknās drukas teksts tiks attēlots, izmantojot to pašu krāsu, kā parasts teksts.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Noklusējuma treknā teksta krāsa terminālī">
+								<longdesc>Noklusējuma termināļa treknā teksta krāsa, kā krāsu specifikācija (var būt HTML-stila heksadecimāli cipari vai krāsas vārds kā piemēram &quot;red&quot; ). Tiek ignorēts, ja bold_color_same_as_fg ir patiess.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Noklusējuma termināļa fona krāsa">
+								<longdesc>Noklusējuma termināļa fona krāsa, kā krāsu specifikācija (var būt HTML-stila heksadecimāli cipari vai krāsas vārds, piemēram “red”).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Noklusējuma teksta krāsa terminālī">
+								<longdesc>Noklusējuma termināļa teksta krāsa, kā krāsu specifikācija (var būt HTML-stila heksadecimāli cipari vai krāsas vārds, piemēram, “red”).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Vai rādīt izvēlnes joslu jaunos logos/cilnēs">
+								<longdesc>Patiess logiem/cilnēm šajā profilā, ja izvēlnes joslai vajadzētu tikt rādītai jaunos logos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Cilvēkam saprotams profila nosaukums">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Vai prasīt apstiprinājumu, kad termināļa logs tiek vērts ciet">
+							<longdesc>Vai prasīt apstiprinājumu aizvērt termināļa logu, kurā ir vairāk, nekā viena cilne atvērtas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Pieejamie kodējumi">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Vai standarta GTK saīsne, kas domāta izvēlnes joslas piekļuvei, ir aktivēta">
+							<longdesc>Noklusētais īsinājumtaustiņš izvēlnes joslas piekļuvei ir F10. Šo īsinājumtaustiņa definīciju var nomainīt ar gtkrc palīdzību (gtk-menu-bar-accel = &quot;jusu_taustins&quot; ). Šī opcija ļauj deaktivēt standarta izvēlnes joslas īsinājumtaustiņu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Vai izvēlnes joslai ir pieejas taustiņi">
+							<longdesc>Vai vajag Alt+burts pieejas taustiņus izvēlnes joslai. Šāda veida taustiņu kombinācijas var traucēt lietotnēm, kuras darbojas terminālī, tāpēc ir iespēja tās atslēgt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Lietojamais profils, palaižot jaunus termināļus">
+							<longdesc>Profils, kuru lietot, kad tiek atvērts jauns logs vai cilne. Tam jāatrodas profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Profilu saraksts">
+							<longdesc>Gnome terminālim zināmo profilu saraksts. Saraksts satur simbolu virknes, kas ir nosaukumi apakšmapēm, kas atrodas mapē /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

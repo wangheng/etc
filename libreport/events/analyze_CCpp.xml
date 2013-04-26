@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+    <name>Analyze C/C++ Crash</name>
+    <description>Send core dump to remote retrace server for analysis or perform local analysis if the remote analysis fails</description>
+    <description xml:lang="as">বিশ্লেষণৰ বাবে দূৰৱৰ্তী ৰিট্ৰেইচ চাৰ্ভাৰলে কেন্দ্ৰীয় ডাম্প পঠাওক অথবা দূৰৱৰ্তী বিশ্লেষণ ব্যৰ্থ হলে স্থানীয় বিশ্লেষণ পৰিৱেশন কৰক</description>
+    <description xml:lang="bn_IN">বিশ্লেষণের জন্য দূরবর্তী retrace সার্ভারের মধ্যে কোর-ডাম্প পাঠানো হবে অথবা দূরবর্তী বিশ্লেষণ বিফল হলে স্থানীয় বিশ্লেষণ সঞ্চালিত হবে</description>
+    <description xml:lang="cs">Odešle obraz paměti k analýze na vzdálený retrace server, nebo spustí lokální analýzu pokud vzdálená analýza selže</description>
+    <description xml:lang="de">Speicherauszug an entfernten Retrace-Server zur Untersuchung senden oder lokale Analyse durchführen, falls die entfernte Analyse fehlschlägt</description>
+    <description xml:lang="es">Enviado el volcado del core al servidor remoto retrace para análisis o lleve a cabo un análisis local si el análisis remoto falla</description>
+    <description xml:lang="fr">Envoyer le coredump au serveur retrace distant pour analyse ou effectuer une analyse locale si l'analyse distante échoue</description>
+    <description xml:lang="gu">સ્થાનિક વિશ્ર્લેષણને ચલાવવા અથવા વિશ્ર્લેષણ માટે દૂરસ્થ રિટ્રેસ સર્વરમાં કૉર ડમ્પ મોકલો જો દૂરસ્થ વિશ્ર્લેષણ નિષ્ફળ જાય</description>
+    <description xml:lang="hi">दूरस्थ रिट्रेस सर्वर में कोर डंप भेजें यदि दूरस्थ विश्लेषण विफल रहता है तो विश्लेषण या स्थानीय विश्लेषण के लिए।</description>
+    <description xml:lang="hu">Küldje a core dump-ot a távoli Retrace kiszolgálónak analízisre vagy készítse el helyben az analízist, ha a távoli folyamat sikertelen lenne</description>
+    <description xml:lang="it">Invia il core dump al retrace server remoto per l'analisi oppure effettua l'analisi localmente se quella remota fallisce</description>
+    <description xml:lang="ja">分析するためコアダンプをリモートの retrace サーバーに送信する、またはリモートの分析に失敗した場合はローカルの分析を実行する</description>
+    <description xml:lang="kn">ಕೋರ್ ಡಂಪ್ ಅನ್ನು ವಿಶ್ಲೇಷಣೆಗಾಗಿ ದೂರಸ್ಥ ರಿಟ್ರೇಸ್ ಪೂರೈಕೆಗಣಕಕ್ಕೆ ಕಳುಹಿಸು ಅಥವ ದೂರಸ್ಥ ವಿಶ್ಲೇಷಣೆಯು ವಿಫಲಗೊಂಡಲ್ಲಿ ಸ್ಥಳೀಯ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಿರ್ವಹಿಸು</description>
+    <description xml:lang="ko">원격 분석을 실패하는 경우 로컬 분석을 수행하기 위해 원격 역추적 서버에 코어 덤프를 전송합니다 </description>
+    <description xml:lang="lt">Siųsti pagrindo išklotinę į nutolusį pertrasavimo serverį analizei arba atlikti vietinę analizę, jei nuotolinė analizė nepavyksta</description>
+    <description xml:lang="ml">നിരീക്ഷിയ്ക്കുന്നതിനായി റിമോട്ട് റീട്രെയിസ് സര്‍വറിലേക്കു് കോര്‍ ഡംപ് അയയ്ക്കുക അല്ലെങ്കില്‍ ഇതു് പരാജപ്പെട്ടാല്‍, നിങ്ങളുടെ സിസ്റ്റത്തിലുള്ള നിരീക്ഷണം നടപ്പിലാക്കുക</description>
+    <description xml:lang="mr">रिमोट विश्लेषण अपयशी ठरल्यास विश्लेषण किंवा स्थानीय विश्लेषण सुरू करण्यासाठी कोर डम्पला रिमोट रिट्रेस् सर्व्हरकरीता पाठवा</description>
+    <description xml:lang="nl">Verstuur de coredump naar de retrace-server op afstand voor analyse, of voer lokale analyse uit indien de analyse op afstand mislukt</description>
+    <description xml:lang="or">ସୁଦୂର ଅନୁସନ୍ଧାନ ସର୍ଭର ପାଖକୁ ବିଶ୍ଳେଷଣ ପାଇଁ କୋରଡମ୍ପ ପଠାନ୍ତୁ ଅଥବା ସୁଦୂର ବିଶ୍ଳେଷଣ ବିଫଳ ହେଲେ ସ୍ଥାନୀୟ ବିଶ୍ଳେଷଣ କରନ୍ତୁ</description>
+    <description xml:lang="pa">ਕੋਰ ਡੰਪ ਨੂੰ ਰਿਮੋਟ ਸਰਵਰ ਤੇ ਜਾਂਚ ਲਈ ਭੇਜੋ</description>
+    <description xml:lang="pl">Wysyła zrzut core do serwera ponownego śledzenia w celu wykonania analizy lub wykonuje analizę lokalnie, jeśli zdalna analiza się nie powiedzie</description>
+    <description xml:lang="pt_BR">Enviar o dump para o servidor retrace remoto para análise ou realizar análises locais, caso a análise remota falhar.</description>
+    <description xml:lang="ru">Передача дампа памяти удалённому серверу для анализа. В случае неудачи выполнить анализ локально</description>
+    <description xml:lang="ta">கோர் டம்ப்பை பகுப்பாய்வுக்காக தொலைநிலை ரிடிரேஸ் சேவையகத்திற்கு அனுப்பவும் அல்லது தொலைநிலை பகுப்பாய்வு தோல்வியடைந்தால் கணினிக்குள்ளான பகுப்பாய்வைச் செய்யவும்</description>
+    <description xml:lang="te">కోర్ డంప్‌ను దూరస్థ రీట్రేస్ సేవికకు పంపి విశ్లేషణ జరుపుము లేదా దూరస్థ విశ్లేషణ విఫలమైతే స్థానిక విశ్లేషమ జరపండి</description>
+    <description xml:lang="uk">Надіслати дамп ядра на віддалений сервер повторного трасування для аналізу або виконати локальний аналіз, якщо виконати віддалений аналіз не вдасться.</description>
+    <description xml:lang="zh_CN">向远程回溯服务器发送核心转储供分析，或者在远程分析失败时执行本地分析。</description>
+    <description xml:lang="zh_TW">傳送核心傾印至遠端回追伺服器來分析，若遠端分析失敗或可執行本地端分析</description>
+    <long-description>Uploads coredump to a server, which generates backtrace and returns it. If user doens't want to upload his coredump to anywhere the event performs local analysis. Local analysis is run event if remote analysis fails. Pros: no need for debuginfo downloads. Retrace server's database of debuginfos is more complete. Retrace server may generate better backtraces. Cons: coredump you upload contains all the data from the crashed program, including your private data, if any.</long-description>
+    <long-description xml:lang="as">কেন্দ্ৰীয়ডাম্প এটা চাৰ্ভাৰলে আপল'ড কৰে, যি বেকট্ৰেইচ সৃজন কৰে আৰু ইয়াক ঘুৰাই দিয়ে। যদি ব্যৱহাৰকাৰীয়ে তাৰ কেন্দ্ৰীয়ডাম্পক ঘটনায় স্থানীয় বিশ্লেষণ কৰা ঠাইত আপল'ড কৰিব নিবিচাৰে। স্থানীয় বিশ্লেষণ ঘটনা হিচাপে চলোৱা হয় যদি দূৰৱৰ্তী বিশ্লেষণ ব্যৰ্থ হয়। সুবিধা: debuginfo ডাউনল'ডসমূহৰ প্ৰয়োজন নাই। debuginfos ৰ ৰিট্ৰেইচ চাৰ্ভাৰৰ ডাটাবেইচ অধিক সম্পূৰ্ণ। ৰিট্ৰেইচ চাৰ্ভাৰে অধিক ভাল বেকট্ৰেইচ সৃজন কৰিব পাৰে। অসুবিধা: আপিনি আপল'ড কৰা কেনদ্ৰীয় ডাম্পে স্খলিত প্ৰগ্ৰামৰ পৰা সকলো তথ্য আপল'ড কৰে, আপোনাৰ ব্যক্তিগত তথ্য অন্তৰ্ভুক্ত কৰাকৈ, যদি থাকে।</long-description>
+    <long-description xml:lang="bn_IN">সার্ভারের মধ্যে coredump আপলোড করে এবং সার্ভারে backtrace প্রস্তুত করে ফেরৎ দেওয়া হয়। ব্যবহারকারী যদি coredump করতে ইচ্ছুক না হন তাহলে স্থানয়ী সিস্টেমে বিশ্লেষণ করা হয়। দূরবর্তী বিশ্লেষণ বিফল হলেও স্থানীয় বিশ্লেষণ সঞ্চালিত হয়। সুবিধা: debuginfo ডাউনলোড করার প্রয়োজন নেই। Retrace সার্ভারের ডাটাবেস অনেক বেশি পরিপূর্ণ ও সার্ভার থেকে উন্নত backtrace প্রাপ্ত হবে। অসুবিধা: আপলোড করা coredump-র মধ্যে গোপনীয় তথ্য সহ বিপর্যস্ত প্রোগ্রামের সকল তথ্য অন্তর্ভুক্ত করা হয়।</long-description>
+    <long-description xml:lang="de">Überträgt den Speicherauszug an einen Retrace-Server, der eine Ablaufverfolgung erstellt und zurücksendet. Die Debuginfo-Datenbank des Retrace-Servers ist in der Regel vollständiger. Dagegen spricht, dass der zu übertragende Speicherauszug alle Daten des abgestürzten Programms enthält, eventuell auch vertrauliche Daten.</long-description>
+    <long-description xml:lang="es">Subiendo el volvado del core al servidor, que generara un copia de la traza y lo devolverá. Si el usuario no desea subir su volcado del core a ningún sitio el evento llevará a cabo un análisis local. El análisis local es ejecutado por el evento si el análisis remoto falla. Pros: no necesita descarga de información de depuración. La base de datos de información de depuración del servidor Retrace es más completa. El servidor Retrace puede generar mejores trazas de vuelta. Contras: el volcado de core que sube contiene todos los datos del programa que ha fallado, incluyendo sus datos privados, si los hay.</long-description>
+    <long-description xml:lang="fr">Télécharge coredump sur un serveur, qui génère une backtrace et la retourne. Si l'utilisateur ne souhaite pas télécharger le coredump où que ce soit, l'événement effectuera une analyse locale. L'analyse locale est exécutée même si l'analyse distante échoue. Avantages : il n'est pas nécessaire d'effectuer des téléchargements debuginfo. La base de données du serveur Retrace des debuginfos est plus complète. Le serveur Retrace peut générer de meilleures backtraces. Inconvénients : les coredumps téléchargés contiennent toutes les données du programme en panne, y compris les données privées s'il y en a.</long-description>
+    <long-description xml:lang="gu">સર્વરમાં કૉરડમ્પને અપલોડ કરે છે, કે જે બેકટ્રેસને ઉત્પન્ન કરે છે અને તેને પાછુ કરે છે. જો વપરાશકર્તા કોઇપણ જગ્યાએ તેનાં કૉરડમ્પને અપલોડ કરવા માંગતા ન હોય તો ઘટના સ્થાનિક વિશ્ર્લેષણને ચલાવે છે. સ્થાનિક વિશ્ર્લેષણ ચાલતી ઘટના થે જો દૂરસ્થ વિશ્ર્લેષણ નિષ્ફળ જાય. ગુણ: ડિબગ જાણકારી ડાઉનલોડ કરવુ જરૂરી નથી. ડિબગ જાણકારીનાં રિટ્રેસ સર્વરનાં ડેટાબેઝ વધારે પૂર્ણ છે. રિટ્રેસ સર્વર વધારે સારું બેકટ્રેસને માંથી બધી માહિતીને સમાવે છે, તમારી ખાનગી માહિતીને સમાવી રહ્યુ છે, જો કોઇપણ હોય.</long-description>
+    <long-description xml:lang="hi">कोरडंप सर्वर में अपलोड करता है, जो बैकट्रेस बनाता है और इसे वापस करता है. यदि कोई उपयोक्ता अपने कोरडंप को कहीं भी अपलोड नहीं करना चाहते हैं तो किया गया कार्यक्रम स्थानीय विश्लेषण करता है. स्थानीय विश्लेषण रन इवेंट है यदि दूसर्थ विश्लेषण विफल रहा है. पक्ष: डिबगइंफो डाउनलोड की कोई जरूरत नहीं. डिबगइंफो का रिट्रेस सर्वर डाटाबेस अधिक संपूर्ण है. रिट्रेस सर्वर बेहतर बैकट्रेस बना सकता है. विपक्ष: आपके द्वारा अपलोड किया कोरडंप क्रैश हुए प्रोग्राम से सभी डाटा को समाहित करता है जिसमें आपका गोपनीयता आँकड़ा भी है यदि कोई मौजूद है.</long-description>
+    <long-description xml:lang="hu">Feltölti a coredump-ot a kiszolgálóra, ami nyomkövetési adatokat állít elő, és azt küldi vissza. Ha a felhasználó nem kívánja feltölteni az adatait bárhová is, az esemény helyben készíti el az analízist. Helyi analízis indul akkor is, ha távoli elemzés sikertelen. Előnye: nincs szükség a debuginfo csomagok letöltésére. A nyomkövető kiszolgálók debuginfo adatbázisa még teljesebb, így a távoli szerverek jobb nyomkövetési adatot állíthatnak elő. Hátránya: a feltöltött adatokkal személyes adatok is kerülhetnek a feltöltésbe, ha van ilyen.</long-description>
+    <long-description xml:lang="it">Carica il coredump sul server, generando un backtrace e successivamente ritornandolo. Se l'utente non vuole inviare il suo coredump all'esterno, viene effettuata una analisi locale. La analisi locale è usata anche quando quella remota fallisce. Pro: non c'è bisogno di scaricare le informazioni di debug. Il database delle informazioni di debug sul retrace server è più completo. Il retrace server può generare backtrace migliori. Contro: il coredump da caricare contiene tutti i dati del programma, incluso dati privati quando presenti.</long-description>
+    <long-description xml:lang="ja">コアダンプをサーバーにアップロードします。backtrace が生成され返されます。コアダンプをどこにもアップロードしたくない場合、 ローカルの分析が行われます。リモートの分析に失敗した場合にもローカルの分析が実行されます。長所: デバッグ情報のダウンロードが必要ありません。デバッグ情報に関する Retrace サーバーのデータベースがより完全なものになります。 Retrace サーバーの方がより適切なバックとレスを生成できる可能性があります。短所: アップロードするコアダンプにはプライベートなデータなどクラッシュしたプログラムからの全データが含まれます。</long-description>
+    <long-description xml:lang="kn">ಕೋರ್ ಡಂಪ್ ಅನ್ನು ಪೂರೈಕೆಗಗಣಕಕ್ಕೆ ಏರಿಸು, ಇದು ಬ್ಯಾಕ್‌ಟ್ರೇಸ್ ಅನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ ಮತ್ತು ಅದನ್ನು ಮರಳಿಸುತ್ತದೆ. ಬಳಕೆದಾರರು ತಮ್ಮ ಕೋರ್ ಡಂಪ್ ಅನ್ನು ಎಲ್ಲಿಯೂ ಏರಿಸಲು ಬಯಸದೇ ಇದ್ದಲ್ಲಿ ಸ್ಥಳೀಯ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. ದೂರಸ್ಥ ವಿಶ್ಲೇಷಣೆಯು ವಿಫಲಗೊಂಡಲ್ಲಿ ಸ್ಥಳೀಯ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. ಅನುಕೂಲಗಳು: ದೋಷನಿದಾನ ಮಾಹಿತಿಯನ್ನು ಇಳಿಸಿಕೊಳ್ಳುವ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ. ದೋಷನಿದಾನ ಮಾಹಿತಿಗಳ ರಿಟ್ರೇಸ್ ಪೂರೈಕೆಗಣಕದ ದತ್ತಸಂಚಯವು ಹೆಚ್ಚು ಪರಿಪೂರ್ಣವಾಗಿರುತ್ತವೆ. ರಿಟ್ರೇಸ್ ಪೂರೈಕೆಗಣಕವು ಉತ್ತಮ ಬ್ಯಾಕ್‌ಟ್ರೇಸ್‌ಗಳನ್ನು ಉತ್ಪಾದಿಸಬಲ್ಲದು. ಕೊರತೆಗಳು: ನೀವು ಏರಿಸುವ ಕೋರ್ ಡಂಪ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಖಾಸಗಿ ಮಾಹಿತಿಯೂ ಸೇರಿದಂತೆ ಕುಸಿತಗೊಂಡ ಪ್ರೊಗ್ರಾಮ್‌ನ ಎಲ್ಲಾ ಮಾಹಿತಿಯು ಇರುತ್ತದೆ.</long-description>
+    <long-description xml:lang="ko">코어 덤프를 서버에 업로드하려면 백 트레이스를 생성하고 이를 반환합니다. 사용자가 코어 덤프를 아무곳에 업로드하고자 하지 않을 경우 로컬 분석이 수행됩니다. 원격 분석이 실패해도 로컬 분석이 실행됩니다.장점: debuginfo를 다운로드할 필요가 없습니다. Retrace 서버의 debuginfo 데이터베이스는 보다 완벽합니다. Retrace 서버는 보다 나은 백트레이스를 생성합니다. 단점: 업로드한 코어 덤프에는 (존재할 경우) 개인 데이터를 포함하여 손상된 프로그램에서의 모든 데이터가 포함되어 있습니다.      </long-description>
+    <long-description xml:lang="lt">Nusiunčia pagrindo išklotinę į serverį, kuris sugeneruoja pėdsaką ir jį įvykdo. Jei naudotojas nenori niekur nusiųsti savo pagrindo išklotinės, įvykis vykdo vietinę analizę. Vietinės analizės įvykis vykdomas, jei nuotolinė analizė nepavyksta. Privalumai: nereikia parsiųsti derinimo informacijos. Pertrasavimo serverio duomenų bazė yra pilnesnė. Pertrasavimo serveris gali sugeneruoti geresnius pėdsakus. Trūkumai: jūsų siunčiama pagrindo išklotinė turi visus lūžusios programos duomenis, įskaitant jūsų privačius duomenis.</long-description>
+    <long-description xml:lang="ml">ബാക്ക്ട്രെയിസ് തയ്യാറാക്കി തിരികെ നല്‍കുന്ന സര്‍വറിലേക്കു് coredump അപ്‌ലോ‍ഡ് ചെയ്യുന്നു. ഉപയോക്താവിനു് coredump എവിടെയും അപ്‌ലോഡ് ചെയ്യേണ്ടതില്ലെങ്കില്‍, ഇവന്റ് സിസ്റ്റത്തില്‍ നിരീക്ഷണം നടത്തുന്നു. റിമോട്ട് നിരീക്ഷണം പരാജയപ്പെട്ടാലും സിസ്റ്റത്തില്‍ നിരീക്ഷണം നടപ്പിലാക്കുന്നു. പ്രശ്നങ്ങള്‍: debuginfo ഡൌണ്‍ലോഡുകളുടെ ആവശ്യമില്ല. debuginfo-നുള്ള റീട്രെയിസ് സര്‍വറിന്റെ ഡേറ്റാബെയിസ് പൂര്‍ണ്ണമാണു്. റീട്രെയിസ് സര്‍വര്‍ മെച്ചപ്പെട്ട ബാക്ക്ട്രെയിസുകള്‍ ലഭ്യമാക്കുന്നു. ഫലങ്ങള്‍: നിങ്ങള്‍ അപ്‌ലോഡ് ചെയ്യുന്ന coredump-ല്‍, നിങ്ങളുടെ സ്വകാര്യ ഡേറ്റാ ഉള്‍പ്പടെ, ക്രാഷ് ചെയ്ത് പ്രോഗ്രാമിലുള്ള എല്ലാ ഡേറ്റയും അടങ്ങുന്നു.</long-description>
+    <long-description xml:lang="mr">सर्व्हरकरीता कोरडम्प अपलोड करतो, जे बॅकट्रेस् निर्माण करते व रिटर्न करते. वापरकर्त्याला कोरडम्प कुठेहि अपलोड करायचे नसल्यास इव्हेंट स्थानीय विश्लेषण सुरू करतो. रिमोट विश्लेषण अपयशी झाल्यावरहि स्थानीय विश्लेषण चालवले जाते. फायदे: debuginfo डाउनलोड्सकरीता आवश्यकता नाही. debuginfoचे रिट्रेस सर्व्हर डाटाबेस जास्त पूर्ण आहे. रिट्रेस सर्व्हर उत्तम बॅकट्रेस निर्माण करू शकतो. तोटे: अपलोड केलेल्या कोरडम्पमध्ये क्रॅश्ड् प्रोग्रामपासूनचे सर्व डाटा समाविष्टीत असते, व्यक्तिगत डाटा देखील समाविष्टीत असते, असल्यास.</long-description>
+    <long-description xml:lang="nl">Uploadt de coredump naar een server, die de backtrace genereert en deze vervolgens terugstuurt. Als de gebruiker zijn coredump nergens naar toe wil uploaden dan zal het voorval lokale analyse uitvoeren. Lokale analyse wordt uitgevoerd als analyse op afstand mislukt. Voordelen: er wordt geen debuginfo gedownload. De database van de retrace-server is completer. De retrace-server kan betere backtraces aanmaken. Nadelen: de coredump die je uploadt bevat alle data van het gecrashte programma, mogelijk inclusief persoonlijke data.</long-description>
+    <long-description xml:lang="or">ସର୍ଭରରେ କୋରଡମ୍ପକୁ ଧାରଣ କରିଥାଏ, ଯାହାକି ବ୍ୟାକଟ୍ରେସ ସୃଷ୍ଟି କରିଥାଏ ଏବଂ ତାହାକୁ ଫେରାଇଥାଏ। ଯଦି ବ୍ୟବହାରକାରୀ ଏହି କୋରଡମ୍ପକୁ କେଉଁଠି ଧାରଣ କରିନଥାଏ ତେବେ ଘଟଣା ସ୍ଥାନୀୟ ବିଶ୍ଳେଷଣ କରିଥାଏ। ସ୍ଥାନୀୟ ବିଶ୍ଳେଷଣ ଘଟଣାକୁ ଚଲାଇଥାଏ ଯଦି ସୁଦୂର ବିଶ୍ଳେଷଣ ବିଫଳ ହୋଇଥାଏ। ସମର୍ଥକ: ତ୍ରୁଟି ନିବାରଣ ଆହରଣ ଆବଶ୍ୟକ ନାହିଁ। ତ୍ରୁଟି ନିବାରଣ ସୂଚନାର ରିଟ୍ରେସ ସର୍ଭରର ତଥ୍ୟାଧାର ସମ୍ପୂର୍ଣ୍ଣ ଅଛି। ରିଟ୍ରେସ ସର୍ଭର ହୁଏତଃ ଉତ୍ତମ ବ୍ୟାକଟ୍ରେସ ସୃଷ୍ଟି କରିପାରେ। ବିପକ୍ଷ: ଆପଣ ଧାରଣ କରିଥିବା କୋରଡମ୍ପନଷ୍ଟ ପ୍ରଗାମରୁ ସମସ୍ତ ତଥ୍ୟ ଧାରଣ କରିଥାଏ, ଆପଣଙ୍କର ବ୍ୟକ୍ତିଗତ ତଥ୍ୟକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି, ଯଦି କିଛି ଥାଏ।</long-description>
+    <long-description xml:lang="pa">Uploads coredump to a server, which generates backtrace and returns it. If user doens't want to upload his coredump to anywhere the event performs local analysis. Local analysis is run event if remote analysis fails. Pros: no need for debuginfo downloads. Retrace server's database of debuginfos is more complete. Retrace server may generate better backtraces. Cons: coredump you upload contains all the data from the crashed program, including your private data, if any.</long-description>
+    <long-description xml:lang="pl">Wysyła zrzut core do serwera, którzy tworzy wyjątek i go zwraca. Jeśli użytkownik nie chce wysyłać swojego zrzutu, to zdarzenie wykonuje analizę lokalną. Lokalna analiza jest wykonywana także wtedy, gdy zdalna analiza się nie powiedzie. Zalety: nie trzeba pobierać pakietów debuginfo. Baza danych pakietów debuginfo serwera ponownego śledzenia jest bardziej kompletna. Może on tworzyć lepsze wyjątki. Wady: wysyłane zrzuty core zawierają wszystkie dane programu, który uległ awarii, w tym potencjalnie prywatne dane.</long-description>
+    <long-description xml:lang="pt_BR">Carrega o coredump em um servidor, que gera o backtrace e retorna-o. Se o usuário não desejar carregar seu coredump para qualquer lugar que o evento realize análise local. A análise local é executada se a análise remota falhar. Prós: não é necessário fazer downloads de debuginfo. O banco de dados do servidor Retrace de debuginfos é mais completo. O Servidor Retrace pode gerar melhores backtraces. Cons: o coredump que você carrega contém todos os dados do programa de travamento, incluindo seus dados pessoais, caso haja algum.</long-description>
+    <long-description xml:lang="ru">Отправляет дамп памяти на сервер для генерации протокола сбоя. По желанию анализ события может быть произведен локально. Локальный анализ также будет выполнен, если не удастся выполнить его удаленно. Достоинства: не требуется загружать debuginfo. База данных на остлеживающем сервере более полная, поэтому сервер может создавать более точные отчёты. Недостатки: отправляемый дамп содержит все данные сбойной программы, в том числе и конфиденциальные.</long-description>
+    <long-description xml:lang="ta">கோர் டம்ப்பை ஒரு சேவையகத்திற்குப் பதிவேற்றும், அது பின்தடமறிதலை உருவாக்கி திருப்பி வழங்கும். பயனர் தனது கோர் டம்ப்பை எங்கும் பதிவேற்ற விரும்பாவிட்டால், அப்போது கணினிக்குள்ளான பகுப்பாய்வு மேற்கொள்ளப்படும். தொலைநிலை பகுப்பாய்வு தோல்வியடைந்தால் கணினிக்குள்ளான பகுப்பாய்வு நடத்தப்படும். நன்மைகள்: வழுநீக்கல் தகவல் பதிவிறக்கங்களுக்கு அவசியம் இல்லை. வழுநீக்கல் தகவல்களின் ரிடிரேஸ் சேவையகத்தின் தரவுத்தளம் முழுமையாக இருக்கும். ரிடிரேஸ் சேவையகம் ஆகச்சிறந்த பின்தடமறிதலை உருவாக்கக்கூடும். குறைகள்: கோர் டம்ப்பில் உங்களது தனிப்பட்ட தரவு ஏதேனும் இருப்பின் அதையும் உட்பட செயலிழந்த நிரலிலிருந்து பெறப்பட்ட அனைத்து தரவும் இருக்கும்.</long-description>
+    <long-description xml:lang="te">కోర్‌డంప్‌ను సేవికకు యెక్కించును, అది బ్యాక్‌ట్రేస్ పుట్టించి దానిని తిప్పియిచ్చును. ఒకవేళ వాడుకరి వారి కోర్‌డంప్ యెక్కించుటకు యిష్టపడకపోతే ఆ ఘటన స్థానిక విశ్లేషణ జరుపును. దూరస్థ విశ్లేషణ విఫలమైతే స్థానిక విశ్లేషణ నడుచును. లాభాలు: డీబగ్‌సమాచారం డౌన్‌లోడ్లు అవసరంలేదు. డీబగ్‌సమాచారపు సేవిక డాటాబేస్ రీట్రేస్ పూర్తిగా చేయును. రీట్రేస్ సేవిక వుత్తమ బ్యాక్‌ట్రేసెస్ పుట్టించవచ్చు. నష్టాలు: మీరు యెక్కించిన కోర్‌డంప్ క్రాష్డ్ ప్రోగ్రామ్ నందలి మొత్తం దత్తాంశం కలిగివుంటుంది, మీ వ్యక్తిగత దత్తాంశంతో సహా, యేదైనా వుంటే.</long-description>
+    <long-description xml:lang="uk">Вивантажує дамп ядра на сервер, який створює дані зворотнього трасування і повертає їх на ваш комп’ютер. Якщо користувач не бажає вивантажувати дамп ядра, буде виконано локальний аналіз події. Локальний аналіз також буде виконано, якщо не вдасться виконати аналіз на віддаленому сервері. Переваги: не потрібно отримувати і встановлювати діагностичні пакунки, база діагностичних даних на сервері є повнішою за вашу. Сервер зворотного трасування може створити кращу картину для зворотного трасування. Недоліки: вивантажені вами дані дампу ядра можуть містити всі дані з програми, роботу якої було завершено у аварійному режимі, зокрема конфіденційні для вас дані.</long-description>
+    <long-description xml:lang="zh_CN">向服务器上传 coredump，这样会生成 backtrace 并返回。如果用户不想向任何服务器上传他的 coredump，则该事件会执行本地分析。即使远程分析失败也可以运行本地分析。优点：不需要下载 debuginfo。Retrace 服务器的 debuginfo 数据库更全面。Retrace 服务器可能生成更好的 backtrace。缺点：您上传的 coredump 包含崩溃程序的所有数据，隐私数据也无法幸免。</long-description>
+    <long-description xml:lang="zh_TW">上傳核心傾印資料至伺服器，該伺服器會產生回追資料並回傳。如果使用者此刻不想上傳核心傾印資料至其他地方，事件會改以本地端分析執行。優點：不需要下載 debuginfo 套件、回追伺服器資料庫中的 debuginfo 比較完整、回追伺服器可能會產生比較良好的追蹤資料。缺點：您需要上傳核心傾印檔案，該檔案包含當掉程式的所有資料，包括您的私人資料 (如果有的話)。</long-description>
+    <creates-items>backtrace</creates-items>
+    <gui-review-elements>no</gui-review-elements>
+
+    
+    <sending-sensitive-data>no</sending-sensitive-data>
+
+    
+    <options>
+        <option type="text" name="RETRACE_SERVER_URL">
+           <label>Retrace server URL</label>
+           <label xml:lang="as">চাৰ্ভাৰ URL ৰিট্ৰেইচ কৰক</label>
+           <label xml:lang="bg">URL на сървър за обратно проследяване</label>
+           <label xml:lang="bn">Retrace সার্ভারের URL</label>
+           <label xml:lang="bn_IN">Retrace সার্ভারের URL</label>
+           <label xml:lang="bs">URL retrace servera</label>
+           <label xml:lang="cs">URL retrace serveru</label>
+           <label xml:lang="da">Retrace-server-URL</label>
+           <label xml:lang="de">Adresse des Retrace-Servers</label>
+           <label xml:lang="en_GB">Retrace server URL</label>
+           <label xml:lang="es">Url del servidor de re-trazado</label>
+           <label xml:lang="et">Taasjälituse serveri URL</label>
+           <label xml:lang="fi">Retrace-palvelimen URL</label>
+           <label xml:lang="fr">URL du serveur retrace</label>
+           <label xml:lang="gu">રિટ્રેસ સર્વર URL</label>
+           <label xml:lang="he">כתובת ה־URL של שרת המעקב־מחדש</label>
+           <label xml:lang="hi">रिट्रेस सर्वर URL</label>
+           <label xml:lang="hu">Nyomkövető szerver URL</label>
+           <label xml:lang="it">URL del Retrace server</label>
+           <label xml:lang="ja">Retrace サーバーのURL</label>
+           <label xml:lang="kn">ರಿಟ್ರೇಸ್ ಪರಿಚಾರಕ URL</label>
+           <label xml:lang="ko">Retrace 서버 URL </label>
+           <label xml:lang="lt">Pertrasavimo serverio URL</label>
+           <label xml:lang="lt_LT">Trasavimo serverio URL</label>
+           <label xml:lang="ml">സര്‍വര്‍ യുആര്‍എല്‍ റീട്രെയിസ് ചെയ്യുക</label>
+           <label xml:lang="mr">रिट्रेस सर्व्हर URL</label>
+           <label xml:lang="nb">URL til Retrace-tjener</label>
+           <label xml:lang="nl">URL van de retrace-server</label>
+           <label xml:lang="or">ଅନୁସନ୍ଧାନ ସର୍ଭର URL</label>
+           <label xml:lang="pa">ਰੀਟਰੇਸ ਸਰਵਰ URL</label>
+           <label xml:lang="pl">Adres URL serwera ponownego śledzenia</label>
+           <label xml:lang="pt">URL do servidor retrace</label>
+           <label xml:lang="pt_BR">URL do servidor de retraçamento</label>
+           <label xml:lang="ru">URL отслеживающего сервера</label>
+           <label xml:lang="sk">URL Retrace servru</label>
+           <label xml:lang="sv">Spårningsserver-URL</label>
+           <label xml:lang="ta">ரீட்ரெஸ் சேவையக URL</label>
+           <label xml:lang="te">రీట్రేస్ సర్వర్ URL</label>
+           <label xml:lang="tr">Tekrar izlenecek sunucu URL</label>
+           <label xml:lang="uk">Адреса сервера повторного трасування</label>
+           <label xml:lang="zh_CN">追溯服务器网址</label>
+           <label xml:lang="zh_TW">回追伺服器網址</label>
+           <default-value>retrace.fedoraproject.org</default-value>
+           <allow-empty>no</allow-empty>
+           <description>Address of the retrace server</description>
+           <description xml:lang="as">ৰিট্ৰেইচ চাৰ্ভাৰৰ ঠিকনা</description>
+           <description xml:lang="bg">Адрес на сървър за обратно проследяване</description>
+           <description xml:lang="bn">retrace সার্ভারের ঠিকানা</description>
+           <description xml:lang="bn_IN">retrace সার্ভারের ঠিকানা</description>
+           <description xml:lang="bs">Adresa retrace servera</description>
+           <description xml:lang="cs">Adresa retrace serveru</description>
+           <description xml:lang="da">Adresse på retrace-serveren</description>
+           <description xml:lang="de">Adresse des Retrace-Servers</description>
+           <description xml:lang="en_GB">Address of the retrace server</description>
+           <description xml:lang="es">Dirección del servidor de re-trazado</description>
+           <description xml:lang="et">Taasjälituse serveri aadress</description>
+           <description xml:lang="fi">Retrace-palvelimen osoite</description>
+           <description xml:lang="fr">Adresse du serveur retrace</description>
+           <description xml:lang="gu">રિટ્રેસ સર્વરનું સરનામું</description>
+           <description xml:lang="he">כתובת שרת ה־retrace</description>
+           <description xml:lang="hi">रिट्रेस सर्वर का पता</description>
+           <description xml:lang="hu">A nyomkövető szerver címe</description>
+           <description xml:lang="id">Alamat dari retrace server</description>
+           <description xml:lang="it">Indirizzo del Retrace server</description>
+           <description xml:lang="ja">Retrace サーバーのアドレス</description>
+           <description xml:lang="kn">ರಿಟ್ರೇಸ್ ಪರಿಚಾರಕದ ವಿಳಾಸ</description>
+           <description xml:lang="ko">Retrace 서버 주소 </description>
+           <description xml:lang="lt">Pertrasavimo serverio adresas</description>
+           <description xml:lang="lt_LT">Trasavimo serverio adresas</description>
+           <description xml:lang="ml">റീട്രെയിസ് സര്‍വറിന്റെ വിലാസം</description>
+           <description xml:lang="mr">रिट्रेस सर्व्हरचा पत्ता</description>
+           <description xml:lang="nl">Adres van de retrace-server</description>
+           <description xml:lang="or">ଅନୁସନ୍ଧାନ ସର୍ଭର ଠିକଣା</description>
+           <description xml:lang="pa">ਰੀਟਰੇਸ ਸਰਵਰ ਦਾ ਐਡਰੈੱਸ</description>
+           <description xml:lang="pl">Adres serwera ponownego śledzenia</description>
+           <description xml:lang="pt">Endereço do servidor retrace</description>
+           <description xml:lang="pt_BR">Endereço do servidor de retraçamento</description>
+           <description xml:lang="ru">Адрес отслеживающего сервера</description>
+           <description xml:lang="sk">Adresa retrace servru</description>
+           <description xml:lang="sv">Adress till spårningsservern</description>
+           <description xml:lang="ta">ரீட்ரெஸ் சேவையகத்திற்கான முகவரி</description>
+           <description xml:lang="te">రిట్రేస్ సర్వర్ యొక్క చిరునామా</description>
+           <description xml:lang="tr">Tekrar izlenecek sunucunun adresi</description>
+           <description xml:lang="uk">Адреса сервера повторного трасування</description>
+           <description xml:lang="zh_CN">追溯服务器地址</description>
+           <description xml:lang="zh_TW">回追伺服器的位址</description>
+       </option>
+       <option type="text" name="RETRACE_SERVER_INSECURE">
+           <label>Insecure</label>
+           <label xml:lang="as">অসুৰক্ষিত</label>
+           <label xml:lang="bg">Незащитена</label>
+           <label xml:lang="bn">অসুরক্ষিত</label>
+           <label xml:lang="bn_IN">অসুরক্ষিত</label>
+           <label xml:lang="cs">Nezabezpečený</label>
+           <label xml:lang="da">Usikker</label>
+           <label xml:lang="de">Unsicher</label>
+           <label xml:lang="en_GB">Insecure</label>
+           <label xml:lang="es">Inseguro</label>
+           <label xml:lang="et">Ebaturvaline</label>
+           <label xml:lang="fi">Suojaamaton</label>
+           <label xml:lang="fr">Non-sécurisée</label>
+           <label xml:lang="gu">અસુરક્ષિત</label>
+           <label xml:lang="hi">असुरक्षित </label>
+           <label xml:lang="hu">Nem biztonságos</label>
+           <label xml:lang="id">Tidak aman</label>
+           <label xml:lang="it">Non sicura</label>
+           <label xml:lang="ja">安全ではありません</label>
+           <label xml:lang="kn">ಅಸುರಕ್ಷಿತ</label>
+           <label xml:lang="ko">비보안 </label>
+           <label xml:lang="lt">Nesaugus</label>
+           <label xml:lang="lv">Nedrošs</label>
+           <label xml:lang="ml">അസുരക്ഷിതം</label>
+           <label xml:lang="mr">असुरक्षित</label>
+           <label xml:lang="nb">Usikker</label>
+           <label xml:lang="nl">Onveilig</label>
+           <label xml:lang="or">ଅସୁରକ୍ଷିତ</label>
+           <label xml:lang="pa">ਅਸੁਰੱਖਿਅਤ</label>
+           <label xml:lang="pl">Niezabezpieczone</label>
+           <label xml:lang="pt">Inseguro</label>
+           <label xml:lang="pt_BR">Inseguro</label>
+           <label xml:lang="ru">Незащищенное</label>
+           <label xml:lang="sk">Nezabezpečené</label>
+           <label xml:lang="sv">Osäker</label>
+           <label xml:lang="ta">பாதுகாப்பற்ற</label>
+           <label xml:lang="te">సురక్షితంకాని</label>
+           <label xml:lang="tr">Güvensiz</label>
+           <label xml:lang="uk">Незахищене</label>
+           <label xml:lang="zh_CN">不安全</label>
+           <label xml:lang="zh_TW">不安全</label>
+           <allow-empty>yes</allow-empty>
+           <description>Whether or not to use insecure connection</description>
+           <description xml:lang="as">অসুৰক্ষিত সংযোগ ব্যৱহাৰ কৰা হব নে</description>
+           <description xml:lang="bg">Да ползвам ли или не незащитена връзка</description>
+           <description xml:lang="bn">অসুরক্ষিত সংযোগ ব্যবহার করা হবে কি না</description>
+           <description xml:lang="bn_IN">অসুরক্ষিত সংযোগ ব্যবহার করা হবে কি না</description>
+           <description xml:lang="cs">Použít nezabezpečeného připojení?</description>
+           <description xml:lang="da">Om der skal bruges usikker forbindelse eller ej</description>
+           <description xml:lang="de">Ob eine unsichere Verbindung verwendet werden soll</description>
+           <description xml:lang="en_GB">Whether or not to use insecure connection</description>
+           <description xml:lang="es">Utilizar o no una conexión insegura</description>
+           <description xml:lang="et">Kas kasutada või mitte ebaturvalist ühendust</description>
+           <description xml:lang="fi">Käytetäänkö suojaamatonta yhteyttä</description>
+           <description xml:lang="fr">Utiliser une connexion non-sécurisée ou non</description>
+           <description xml:lang="gu">શું અસુરક્ષિત જોડાણને વાપરવું કે નહિં</description>
+           <description xml:lang="hi">क्या असुरक्षित कनेक्शन का उपयोग करना है या नहीं</description>
+           <description xml:lang="hu">Függetlenül attól, hogy használ vagy sem nem biztonságos kapcsolatot</description>
+           <description xml:lang="it">Usare, o meno, una connessione non sicura</description>
+           <description xml:lang="ja">安全ではない接続を使用するまたは使用しない</description>
+           <description xml:lang="kn">ಅಸುರಕ್ಷಿತ ಸಂಪರ್ಕವನ್ನು ಬಳಸಬೇಕೆ ಅಥವ ಬೇಡವೆ</description>
+           <description xml:lang="ko">비보안 연결을 사용할 지에 대한 여부 </description>
+           <description xml:lang="lt">Ar naudoti nesaugų ryšį</description>
+           <description xml:lang="ml">അസുരക്ഷിതമായ കണക്ഷന്‍ ഉപയോഗിയ്ക്കണമോ വേണ്ടേ എന്നു്</description>
+           <description xml:lang="mr">असुरक्षित जोडणीचा वापर करायचा किंवा नाही</description>
+           <description xml:lang="nl">De onveilige verbinding wel of niet gebruiken</description>
+           <description xml:lang="or">ଅସୁରକ୍ଷିତ ସଂଯୋଗକୁ ବ୍ୟବହାର କରିବା ଉଚିତ କି ନୁହଁ</description>
+           <description xml:lang="pa">ਅਸੁਰੱਖਿਅਤ ਕੁਨੈਕਸ਼ਨ ਵਰਤਣਾ ਹੈ ਜਾਂ ਨਹੀਂ</description>
+           <description xml:lang="pl">Określa, czy używać niezabezpieczonego połączenia</description>
+           <description xml:lang="pt">Usar ou não uma ligação insegura</description>
+           <description xml:lang="pt_BR">Usar ou não conexão insegura.</description>
+           <description xml:lang="ru">Использование незащищенного подключения</description>
+           <description xml:lang="sk">Použiť nezabezpečené pripojenie?</description>
+           <description xml:lang="sv">Huruvida en osäker förbindelse skall användas eller ej</description>
+           <description xml:lang="ta">பாதுகாப்பாற்ற இணைப்பை பயன்படுத்தவா அல்லது வேண்டாமா</description>
+           <description xml:lang="te">సురక్షితం కాని అనుసంధానంను వుపయోగించాలా వద్దా</description>
+           <description xml:lang="uk">Визначає, чи можна використовувати незахищене з’єднання</description>
+           <description xml:lang="zh_CN">是否使用不安全连接</description>
+           <description xml:lang="zh_TW">是否使用不安全的連線</description>
+           <note-html>Write "insecure" to allow insecure connection &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="as">অসুৰক্ষিত সংযোগ &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt; ৰ অনুমতি দিবলে "insecure" লিখক</note-html>
+           <note-html xml:lang="bg">Напишете "insecure" за да разрешите незащитена връзка &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="bn">অসুরক্ষিত সংযোগ ব্যবহারের অনুমোদন প্রদান করার জন্য "insecure" লিখুন &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="bn_IN">অসুরক্ষিত সংযোগ ব্যবহারের অনুমোদন প্রদান করার জন্য "insecure" লিখুন &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="cs">K povolení nezabezpečeného spojení použijte pole <a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" >Nezabezpečený</a></note-html>
+           <note-html xml:lang="da">Skriv "insecure" for at tillade en usikker forbindelse &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(advarsel)&lt;/a&gt;</note-html>
+           <note-html xml:lang="de">Tragen Sie »insecure« ein, um unsichere Verbindungen zu erlauben &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(Warnung)&lt;/a&gt;</note-html>
+           <note-html xml:lang="en_GB">Write "insecure" to allow insecure connection &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="es">Escribir "insegura" para aceptar una conexión insegura &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="et">Kirjuta "insecure" lubamaks ebaturvalist ühendust &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="fi">Kirjoita ”insecure” suojaamattoman yhteyden sallimiseksi &lt;https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection&gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="fr">Écrire "non-sécurisé" pour autoriser les connexions non-sécurisées &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="gu">અસુરક્ષિત જોડાણને પરવાનગી આપવા માટે "અસુરક્ષિત" લખો &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="hi">"insecure" लिखें असुरक्षित कनेक्शन की अनुमति देने के लिए &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="hu">Írjon "insecure"-t hogy engedélyezze a nem biztonságos kapcsolatot &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="it">Scrivere "insecure" per abilitare una connessione non sicura &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="ja">安全ではない接続を許可する場合は「insecure」と書きます &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="kn">ಅಸುರಕ್ಷಿತ ಸಂಪರ್ಕ &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt; ಅನ್ನು ಅನುಮತಿಸಲು "insecure" ಅನ್ನು ಬರೆಯಿರಿ</note-html>
+           <note-html xml:lang="ko">비보안 연결을 허용하기 위해 "insecure"라고 씁니다 &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="lt">Parašykite „insecure“ nesaugiems prisijungimams leisti &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(įspėjimas)&lt;/a&gt;</note-html>
+           <note-html xml:lang="ml">അസുരക്ഷിതമായ കണക്ഷന്‍ &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt; അനുവദിയ്ക്കുന്നതിനായി "അസുരക്ഷിതം" എഴുതുക</note-html>
+           <note-html xml:lang="mr">असुरक्षित जोडणी &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(सावधानता)&lt;/a&gt; स्वीकारण्यासाठी "insecure" लिहा</note-html>
+           <note-html xml:lang="nl">Schrijf "insecure" voor toestaan van onveilige verbinding &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(waarschuwing)&lt;/a&gt;</note-html>
+           <note-html xml:lang="or">ଅସୁରକ୍ଷିତ ସଂଯୋଗକୁ ଅନୁମତି ଦେବା ପାଇଁ "ଅସୁରକ୍ଷିତ" ଲେଖନ୍ତୁ &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="pa">Write "insecure" to allow insecure connection &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="pl">Wpisanie "insecure" umożliwia użycie połączenia niezabezpieczonego &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(ostrzeżenie)&lt;/a&gt;</note-html>
+           <note-html xml:lang="pt">Escreve "inseguro" para permitir ligações inseguras &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(aviso)&lt;/a&gt;</note-html>
+           <note-html xml:lang="pt_BR">Escrever "inseguro" para permitir conexão insegura &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="ru">Введите «insecure», чтобы разрешить незащищенное подключение &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(предупреждение)&lt;/a&gt;</note-html>
+           <note-html xml:lang="sk">Pre povolenie nezabezpečeného pripojenia napíšte "insecure" - &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="sv">Skriv ”insecure” för att tillåta en osäker förbindelse &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="ta">பாதுகாப்பற்ற இணைப்பை அனுமதிக்க "பாதுகாப்பற்றதை" எழுதவும் &lt;ஒரு href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(எச்சரிக்கை)&lt;/a&gt;</note-html>
+           <note-html xml:lang="te">సురక్షితం కాని అనుసంధానం అనుమతించుటకు "insecure" వ్రాయి &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="tr">Güvensiz bağlantıya izin vermek için "güvensiz" yaz &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="uk">Вкажіть «Незахищене», щоб дозволити незахищене з’єднання &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(попередження)&lt;/a&gt;</note-html>
+           <note-html xml:lang="zh_CN">在所有不安全连接中写入 "insecure" &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+           <note-html xml:lang="zh_TW">寫入「insecure」來允許不安全的連線 &lt;a href="https://fedorahosted.org/abrt/wiki/AbrtRetraceServerInsecureConnection" &gt;(warning)&lt;/a&gt;</note-html>
+       </option>
+
+    </options>
+</event>

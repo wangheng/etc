@@ -1,0 +1,738 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB iş qrupu">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Avtomatik vəkil quraşdırma URL-si">
+						<longdesc>Vəkil qurğu qiymətlərini verən URL</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS vəkil qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/socks_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS vəkil qovşaq adı">
+						<longdesc>Socks üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP vəkil qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/ftp_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP vəkil qovşaq adı">
+						<longdesc>FTP üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="E&apos;tibarlı HTTP vəkil qovşaq qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/secure_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="E&apos;tibarlı HTTP vəkil qovşaq adı">
+						<longdesc>E&apos;tibarlı HTTP üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Vəkil quraşdırma modu">
+						<longdesc>Vəkil quraşdırma modu. Dəstəklənən qiymətlər: &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Vəkil olmayan qovşaqlar">
+						<longdesc>This key contains a list of hosts which are connected to directly, rather than via the proxy (if it is active). The values can be hostnames, domains (using an initial wildcard like *.foo.com), IP host addresses (both IPv4 and IPv6) and network addresses with a netmask (something like 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP vəkil şifrəsi">
+						<longdesc>HTTP vəkilləndirməsində göndəriləcək şifrə.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP vəkil istifadəçi adı">
+						<longdesc>HTTP vəkilləndirməsində göndəriləcək istifadəçi adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Vəkil vericisi bağlantılarını tanıt">
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP vəkil qapısı">
+						<longdesc>The port on the machine defined by &quot;/system/http_proxy/host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP vəkil qovşaq adı">
+						<longdesc>HTTP üçün vəkilin sistem adı.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP vəkili işlət">
+						<longdesc>Enables the proxy settings when accessing HTTP over the Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Klaviyatura qıfıllamasının fəal olması">
+							<longdesc>Klaviyatura qıfıllamasının fəal olması.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Fasilələrin təxirə salınmasına icazə ver">
+							<longdesc>Yazma fasiləsi ekranının təxirə salına bilməsi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Fasilə vaxtı">
+							<longdesc>Yazma fasiləsinin davam edəcəyi vaxt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Yazma vaxtı">
+							<longdesc>Fasilənin başlaması üçün keçməsi lazım olan vaxt.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Bütün xarici ön nümayişçiləri qeyri-fəallaşdır">
+							<longdesc>Bütün xarici ön nümayişçiləri qeyri-fəallaşdırmaq üçün seçin</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Hadisələr üçün səslər">
+							<longdesc>İstifadəçi hadisələrində səslərin çalınıb çalınmaması.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD-ni Fəallaşdır">
+							<longdesc>Səs vericisi başladıla bilmədi.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Kursor böyüklüyü">
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Kursor örtüyü">
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Kursor yazı növü">
+								<longdesc>Kursorun yazı növü adı. Əgər seçilməyibsə ön qurğulu yazı növü işlədiləcək. Bu dəyərdəki dəyişmələr ancaq X-ə bir sonrakı girişinizdə fəal olacaq. Yəni, iclasın ortasında bunu dəyişmək o anda nəticə verməyəcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Oxun Yerini Göstər">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Cüt Tıqlama Zamanı">
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Daşıma Başlanğıcı">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Hərəkət Başlanğıcı">
+								<longdesc>Sürətləndilirmiş siçan hərəkəti fəallaşdırılana qədər göstəricinin hərəkət etməsi məcbur olan piksel olaraq məsafə. -1 dəyəri sistemin ön qurğulu dəyəridir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Tək Tıq">
+								<longdesc>Sıçan hərəkəti üçün sürət artırma. -1 dəyəri sistemin ön qurğulu qiymətidir.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Tək Tıq">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Sıçan düyməsinin istiqaməti">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Klaviatura Zınqırovu Özəl Fayl adı">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>mümkün qiymətlər &quot;fəal&quot;, &quot;qeyri-fəal&quot; və &quot;xüsusi&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Çap qurğularını bağla">
+							<longdesc>Çap qurğularını dəyişdirməyə icazə vermə. Məsələn proqramların &quot;Çap Qurğuları&quot; dialoqlarını qeyri-fəallaşdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Çap imkanını bağla">
+							<longdesc>Çap etmə icazə vermə. Məsələn proqramların &quot;Çap Et&quot; dialoqlarını qeyri-fəallaşdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Diskə fayl qeyd etmə imkanını bağla">
+							<longdesc>Diskə qeyd etməyə icazə vermə. Məsələn proqramların &quot;Fərqli Qeyd Et&quot; dialoqlarını qeyri-fəallaşdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Əmr sətirini bağla">
+							<longdesc>Əmr icra etməyə ya da terminalı işlətməyə icazə vermə. Məsələn &quot;Proqram İcra Et&quot; dialoqlarını qeyri-fəallaşdır.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser üçün modul">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Vəziyyət Çubuğu Sağda Olsun">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Şəxsi yazı növü işlət">
+							<longdesc>gtk+ proqramlarında çəxsi yazı növünün işlədilib işlədilməməsi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Sabit enli yazı növü">
+							<longdesc>Terminal kimi mövqelərdə işlətmək üçün sabit enli yazı növü.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM Vəziyyət Tərzi">
+							<longdesc>GTK+ tərəfindən işlədilən gtk+ giriş üsulunun Vəziyyət Tərzi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM Önredaktə Tərzi">
+							<longdesc>GTK+ tərəfindən işlədilən gtk+ giriş üsulunun Önredaktə Tərzi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Əsas Yazı Növü">
+							<longdesc>gtk+ tərəfindən istifadə edilən ön qurğulu yazı növünün adı.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ Örtüyü">
+							<longdesc>gtk+ nın əsas örtüsünün əsas adı.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ Örtüyü">
+							<longdesc>gtk+ nın əsas örtüsünün əsas adı.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Timsal Örtüyü">
+							<longdesc>Panel, nautilus və s. ilə işlədiləcək timsal örtüsü.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Oxun Yanıb-Sönmə Zamanı">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Ox Yanıb-Sönən">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Ləvazimat Çubuğu Timsallarının Böyüklüyü">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Ləvazimat çubuğu ayrıla bilsin">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Menyu çubuğu ayrıla bilsin">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menyularda Timsallar Olsun">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Ləvazimat Çubuğu Tərzi">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Sürət dəyişdirilə bilsin">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menyularda Qopardma Yerləri Olsun">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animasiyaları Fəallaşdır">
+							<longdesc>Animasiyaların göstərilməsi. Diqqət: Bu qlobal açardır, o pəncərə idarəçisinin, panelin və s. davranışlarını dəyişdirir.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Yetişmə Qabiliyyətini Fəallaşdır">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Fayl Timsal Örtüyü">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Rəng Kölgələmə Növü">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="İkinci Rəng">
+							<longdesc>Gradientlər çəkilərkən Sağ ya da Aşağı rəng. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Əsas Rəng">
+							<longdesc>Qradientlər ya da sadə rəng çəkilərkən sol ya da üst rəng.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Rəsmin Matlığı">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Rəsmin fayl adı">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Rəsmin Seçənəkləri">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Masa Üstü Arxa Planını Çək">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Başlanğıc Yardımcı Texnoloji Tə&apos;minatları">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>İki düymə eyni anda basılsa qeyri fəallaşdır.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="millisaniyə olaraq minimal interval">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Səyyah uzaqdakini başa düşür">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Səyyahın terminala ehtiyacı var">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Əsas Səyyah">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Ön qurğulu tərkib hissəsi nümayiş proqramı">
+								<longdesc>The application to use for viewing files that require a component to view them. The parameter %s will be replaced by the file&apos;s URIs, the parameter %c will be replaced by the component IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec Arqumentləri">
+								<longdesc>Terminalda proqramları icra etmək üçün &apos;exec&apos; açarı tərəfindən tə&apos;yin edilən arqument.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminal proqramı">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Yazı növünü normal böyüklüyə gətirmək üçün klaviatura qısa yolu">
+							<longdesc>Yazı növünü normal böyüklüyə gətirmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Yazı növünü kiçiltmək üçün klaviatura qısa yolu">
+							<longdesc>Yazı növünü kiçiltmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Yazı növünü böyütmək üçün klaviatura qısa yolu">
+							<longdesc>Yazı növünü böyütmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Yardımı işə salmaq üçün klaviatura qısa yolu">
+							<longdesc>Yardımı başladmaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="On ikinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>On ikinici səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="On birinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>On birinci səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Onuncu səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Onuncu səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Doqquzuncu səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Doqquzuncu səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Səkkizinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Səkkizinci səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Yeddinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Yeddinci səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Altıncı səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Altıncı səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Beşinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Beşinci səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Dördüncü səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Dördüncü səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Üçüncü səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Üçüncü səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="İkinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>İkinci səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Birinci səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Birinci səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Sonrakı səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Sonrakı səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Öncəki səkməyə keçmək üçün klaviatura qısa yolu">
+							<longdesc>Öncəki səkməyə keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Terminalı sıfırlamaq və təmizləmək üçün klaviatura qısa yolu">
+							<longdesc>Terminalı sıfırlamaq və təmizləmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Terminalı sıfırlamaq üçün üçün klaviatura qısa yolu">
+							<longdesc>Terminalı sıfırlamaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Terminal başlığını dəyişdirmək üçün klaviatura qısa yolu">
+							<longdesc>Terminala başlıq vermək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Menyu çubuğunun göstərilməsi üçün klaviatura qısa yolu">
+							<longdesc>Menyu çubuğunu gizlədib göstərmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Tam ekran moduna keçmək üçün klaviatura qısa yolu">
+							<longdesc>Tam ekran moduna keçmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Mətni yapışdırmaq üçün klaviatura qısa yolu">
+							<longdesc>Ara yaddaşdakı mətni yapışdırmaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Mətni köçürmək üçün klaviatura qısa yolu">
+							<longdesc>Seçili mətni ara yaddaşa köçürmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Pəncərəni bağlamaq klaviatura qısa yolu">
+							<longdesc>Pəncərəni bağlamaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Səkməni bağlamaq üçün klaviatura qısa yolu">
+							<longdesc>Səkməni bağlamaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Yeni profil yaradmaq üçün klaviatura qısa yolu">
+							<longdesc>Profil yaradma dialoqunu göstərmək üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Yeni pəncərə açmaq üçün klaviatura qısa yolu">
+							<longdesc>Yeni pəncərə açmaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Yeni səkmə açmaq üçün klaviatura qısa yolu">
+							<longdesc>Yeni səkmə açmaq üçün sür&apos;ətləndirici düymə. Əgər bu seçimi &quot;disabled&quot; olaraq müəyyən etsəniz, bu gedişat üçün heç bir qısa yol mövcud olmayacaqdır.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Sistem yazı növünün istifadə edilməsi">
+								<longdesc>Seçilidirsə, terminal masa üstünün ön qurğulu tə&apos;yin edilmiş sabit enli yazı növünü işlədəcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Terminal pəncərəsi üçün örtük rənglərinin istifadə edilməsi">
+								<longdesc>Seçilidirsə, istifadəçi tə&apos;yinli rənglər yerinə mətn giriş qutuları üçün işlədilən rəng sxemi terminal üçün də istifadə ediləcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Delete düyməsinin tə&apos;siri">
+								<longdesc>Delete düyməsinin hansı kodu yaradacağını müəyyən edir. Mümkün qiymətlər: &quot;ascii-del&quot; ASCII DEL hərfi üçün, &quot;control-h&quot; Control-H (ASCII BS hərfi adı ilə də bilinən) üçün, &quot;escape-sequence&quot; qaçış sekvensini Backspace ya da Del düymələrinə bağlamaq üçün. Ümumiyyətlə &quot;escape-sequence&quot; Delete düyməsi üçün düzgün qurğu sayılır.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Backspace düyməsinin tə&apos;siri">
+								<longdesc>Backspace düyməsinin hansı kodu yaradacağını müəyyən edir. Mümkün qiymətlər: &quot;ascii-del&quot; ASCII DEL hərfi üçün, &quot;control-h&quot; Control-H (ASCII BS hərfi adı ilə də bilinən) üçün, &quot;escape-sequence&quot; qaçış sekvensini Backspace ya da Del düymələrinə bağlamaq üçün. Ümumiyyətlə &quot;ascii-del&quot; Backspace düyməsi üçün düzgün qurğu sayılır.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Arxa plan rəsminin nə qədər tüntləşdiriləcəyi">
+								<longdesc>Rəsmin nə qədər tündləşdiriləcəyini müəyyən edən 0.0 ilə 1.0 arasındakı qiymət. 0.0 tündləşdirmə yoxdur deməkdir, 1.0 tamamilə tünd deməkdir. </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Arxa plan rəsminin sürüşməsi">
+								<longdesc>Seçilidirsə, yazı ilə bərabər arxa plan rəsmini də sürüşdür. Əks halda isə, rəsmi sabit tut və mətni onun üstündə sürüşdür.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Arxa plan rəsmi">
+								<longdesc>Arxa plan rəsminin fayl adı.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Arxa plan növü">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Yazı növü">
+								<longdesc>Pango yazı növü adı. Məsələn: &quot;Sans 12&quot;ya da &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Terminal tə&apos;minatları üçün palitra">
+								<longdesc>Terminal içində icra edilən tə&apos;minatların işlətməsi üçün terminallar 16 rəngli palitraya sahib olur. Bu palitrada rəng adları vergüllə biri birindən ayrılıb. RƏng adları səkkizli şəkildə olmalıdır. Mis.: &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Terminal pəncərəsi üçün timsal">
+								<longdesc>Bu profili daxil edən səkmə/pəncərələr üçün timsal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Qabıq yerinə istifadə ediləcək xüsusi əmr">
+								<longdesc>use_custom_command seçilidirsə, bu əmri qabıq yerinə icra et.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Kursorun yanıb sönməsi">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Qabıq yerinə xüsusi əmrin icra edilməsi">
+								<longdesc>Seçilidirsə, xüsusi_əmr qurğusunun qiyməti qabıq icrası yerinə istifadə ediləcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Terminal əmri icra ediləndə giriş qeydlərinin yenilənməsi">
+								<longdesc>Seçilidirsə, terminal içində əmr işə salınanda utmp/wtmp yenilənəcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Terminalda əmrin giriş qabığı olaraq icra edilməsi">
+								<longdesc>Seçilidirsə, terminal içindəki əmr giriş qabığı olaraq icra ediləcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Törəmə əmrdən çıxılanda terminal ilə nə ediləcəyi">
+								<longdesc>Mümkün qiymətlər: &quot;close&quot; terminalı bağlamaq üçün, və &quot;restart&quot; əmri yenidən başlatmaq üçün.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Yeni çıxış alınanda alta sürüşməsi">
+								<longdesc>Seçilidirsə, terminaldakı hər yeni çıxışda, terminal aşağı sürüşəcək.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Düymə basılanda alta sürüşməsi">
+								<longdesc>Seçilidirsə, düyməyə basaraq sürüşdürmə çubuğu ən alta gətirilə bilər.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Arxaya sürüşmədə saxlanılacaq sətir miqdarı">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Sürüşmə çubuğunun mövqeyi">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="&quot;sözün parçası&quot; qəbul edilən hərflər">
+								<longdesc>Mətni kəlmələrlə seçəndə, bu hərflərin düzülüşləri tək kəlmə sayılır. Aralıqlar &quot;A-Z&quot; olaraq verilə bilər.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Terminal zənginin səssiz olması">
+								<longdesc>Seçilidirsə, tə&apos;minatlar terminal zənginə Escape sekvensi verəndə səs çıxartma.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Qalın yazıya icazə ver">
+								<longdesc>Seçilidirsə, terminaldakı tə&apos;minatlara yazını qalın etmə icazəsi ver.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Terminalın başlığı">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Dinamik etiket ilə nə ediləcəyi">
+								<longdesc>Əgər terminaltadı tə&apos;minat başlığı seçirsə, dinamik olaraq seçilən başlıq quraşdırılar başlığı silə bilər, ondan əvvəl gələ bilər, ondan sonra gələ bilər ya da onu əvəz edə bilər. Mümkün qiymətlər: &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, və &quot;ignore&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Terminalın ön qurğulu arxa plan rəngi">
+								<longdesc>Terminal arxa planının ön qurğulu rəngi. HTML tərzi HEX ədədlər ya da &quot;red&quot; kimi rəng adı işlədilə bilər.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Terminaldakı mətnin ön qurğulu rəngi">
+								<longdesc>Terminaldakı mətnin ön qurğulu rəngi. HTML tərzi HEX ədədlər ya da &quot;red&quot; kimi rəng adı işlədilə bilər.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Yeni pəncərə/səkmələrdə menyu çubuğunun göstərilməsi">
+								<longdesc>Bu profilə sahib olan pəncərə/səkmələrində menyu çubuğunun göstərilməsiüçün bu qiymət seçili olmalıdır.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Profilin insan tərəfindən oxuna bilən adı">
+								<longdesc>Profilin insan tərəfindən oxuna bilən adı.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Terminal pəncərələri bağlanırkən təsdiq istənməsi">
+							<longdesc>Birdən çox səkməsi olan terminal pəncərəsi bağlanırkən təsdiq istənməsi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Mövcud kodlamalar siyahısı">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Menyu çubuğuna standart GTK yetişmə qısa yolunun fəallığı">
+							<longdesc>Əsasən menyu çubuğuna F10 düyməsi ilə yetişə bilərsiniz. Bunu gtkrc vasitəsiylə də xüsusiləşdirə bilərsiniz. (gtk-menu-bar-accel = &quot;düymə&quot;). Bu seçim, standart menyu çubuğu qısa yolunu bağlama imkanı verir.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Menyu çubuğunun yetişmə düymələrinə malikiyyəti">
+							<longdesc>Menyu çubuğu üçün Alt+hərf yetişmə düymələrinin olması. Bə&apos;zən bunlar terminalda icra edilən tə&apos;minatlarla toqquşa bilər ona görə də qeyri-fəallaşdırıla bilərlər.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Yeni terminal işə salınarkən istifadə ediləcək profil">
+							<longdesc>Yeni pəncərə ya da səkmə açarkən istifadə ediləcək profil. profile_list&apos;də yer almalıdır.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Profil siyahısı">
+							<longdesc>gnome-terminal&apos;a mə&apos;lum olan profillər siyahısı. Bu siyahıda /apps/gnome-terminal/profiles ünvanına görə sıralanmış qovluqların adları mövcuddur.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

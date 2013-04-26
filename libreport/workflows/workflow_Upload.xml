@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+    <name>Upload the problem data to a server</name>
+    <name xml:lang="ja">問題データをサーバーにアップロードする</name>
+    <name xml:lang="zh_CN">提交问题数据至服务器</name>
+    <description>Analyze the problem locally and upload the data via scp or ftp</description>
+    <description xml:lang="ja">問題をローカルに分析し、SCP または FTP 経由でデータをアップロードする</description>
+    <description xml:lang="zh_CN">本地分析问题并通过 scp 或 ftp 上传数据</description>
+
+    <events>
+        <event>collect_*</event>
+        <event>analyze_CCpp</event>
+        <event>report_Uploader</event>
+    </events>
+</workflow>

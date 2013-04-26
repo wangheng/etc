@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="د ليکنې لېوی-کچ کولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="د ليکنې وړولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="د ليکنې لويولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="د مرستې پرانيستلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="راتلونکي ټوپ ته ونجولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="مخکني ټوپ ته ونجولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="د پايالي د بياټاکلو او پاکولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="د پايالي د بياټاکلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="د پايالي د سرليک ټاکلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="د غورنۍ پټې د ښکارېدنې څرنګتياونجولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="د ټولې پردې اکر څرګنتياونجولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="د ليکنې سرېښلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="د ليکنې لمېسلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="د کړکۍ بندولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="د ټوپ بندولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="د نوي پېژنيال جوړولو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="د نوې کړکۍ پرانيستلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="د نوي ټوپ پرانيستلو لپاره د کليدړې لنډلار">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="که چېرې غونډال ليکبڼه کارول پکار وي">
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="د ړنګول کيلۍ اغېزه">
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="کيلۍ اغېزه Backspace د">
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="شاليد انځور">
+								<longdesc>.د شاليد انځور دوتنه نوم</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="شاليد ډول">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="ليکبڼه">
+								<longdesc>.دي &quot;Monospace Bold 14&quot; يا &quot;Sans 12&quot; يو پېنګو ليکبڼه نوم. بېلګې يې</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="د پايالو کاريالونو لپاره رنګدبلی">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="د پايال کړکۍ لپاره انځورن">
+								<longdesc>.انځورن چې د هغه ټوپونو/کړکېو لپاره وکارول شي چې دا پېژنيال لري</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="هغه دوديزه بولۍ چې د سيپۍ په ځای وکارول شي">
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="که چېرې ځری پړکول پکار وي">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="که چېرې د سيپۍ په ځای کوم دوديزه بولۍ ځغلول پکار وي">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="د رغښتپټې ځای">
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="که چېرې ډبله ليکنه پرېښودل پکار وي">
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="د پايالي سرليک">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="خوځند سرليک سره څه وکړو">
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="د پايالي شاليد تلواله رنګ">
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="په پايالي کې د ليکنې تلواله رنګ">
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="که چېرې په نويو کړکېو/ټوپونو کې غورنۍ پټه ښودل پکار وي">
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc=".د دې پېژنيال لوستل کېدونکی نوم">
+								<longdesc>.د دې پېژنيال لوستل کېدونکی نوم</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="د پايال کړکېو د بندولو پر مهال که د باورييلو پوښتنه پکار وي">
+							<longdesc>.د هغه پايال کړکېو د بندولو پر مهال چې د يو نه ډېر ټوپونه ولري که د باورييلو پوښتنه پکار وي</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="د شته کوډييزونو لړ">
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="که چېرې د غورنۍ پټې لپاره لاسرس کيلۍ پکار وي">
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="هغه پېژنيال چې د نويو پايالو لپاره وکارول شي">
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="د پېژنيالونو لړ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Sons po ls evenmints">
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD en alaedje">
+							<longdesc>Mete en ouve li sierveu di sons a l&apos; enondaedje.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Grandeu do cursoe">
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tinme pol cursoe">
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Fonte pol cursoe">
+								<longdesc>No del fonte do cursoe. Si nén defini, li prémetowe fonte est eployeye. Cisse valixhance chal est evoyeye å sierveu X al comince di tchaeke session, dj&apos; ô bén, li candjî å mitan d&apos; ene session n&apos; årè nol efet disk&apos; a l&apos; elodjaedje shuvant.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Tins do dobe clitchaedje">
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Simpe clitch">
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Simpe clitch">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Oryintåcion des botons del sori">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Dismete l&apos; apontiaedje del sicrirece">
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Dismete l&apos; imprimaedje">
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Dismete li schapaedje des fitchîs sol deure plake">
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Dismete li roye di cmande">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Bår ås messaedjes sol droete">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Eployî fonte da vosse">
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Prémetowe fonte">
+							<longdesc>No del prémetowe fonte eployeye pa gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tinme Gtk+">
+							<longdesc>No d&apos; båze do prémetou tinme eployî pa gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tinme Gtk+">
+							<longdesc>No d&apos; båze do prémetou tinme eployî pa gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tinme imådjetes">
+							<longdesc>Tinme des imådjetes pol sicriftôr, li manaedjeu di fitchîs, evnd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Tins di gligntaedje do cursoe">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Gligntant cursoe">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Grandeu des imådjetes del bår ås usteyes">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Bår ås usteyes distaetchåve">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Bår di menus distaetchåve">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menus avou des imådjetes">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Stîle del bår ås usteyes">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Pout candjî les tapes rascourtis">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Mete en alaedje les animåcions">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tinme imådjetes di fitchîs">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="secondary_color">
+						<local_schema short_desc="Deujhinme coleur">
+							<longdesc>Coleur pol droete ou l&apos; valeye po les degradés, nén eployî po les coleurs simpes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Prumire coleur">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="No do fitchî del imådje">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Tchuzes del imådje">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="applications">
+					<dir name="terminal">
+						<entry name="exec">
+							<local_schema short_desc="Programe di terminå">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Tape di rascourti po mete li fonte a s&apos; grandeu normåle">
+							<longdesc>Tape di rascourti po mete li fonte a s&apos; grandeu normåle. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Tape di rascourti po raptiti l&apos; fonte">
+							<longdesc>Tape di rascourti po raptiti l&apos; fonte. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Tape di rascourti po ragrandi l&apos; fonte">
+							<longdesc>Tape di rascourti po ragrandi l&apos; fonte. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Tape di rascourti po håyner l&apos; aidance">
+							<longdesc>Tape di rascourti po håyner l&apos; aidance. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Tape di rascourti po potchî al dozinme linwete">
+							<longdesc>Tape di rascourti po potchî al dozinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Tape di rascourti po potchî a l&apos; onzinme linwete">
+							<longdesc>Tape di rascourti po potchî a l&apos; onzinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Tape di rascourti po potchî al dijhinme linwete">
+							<longdesc>Tape di rascourti po potchî al dijhinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Tape di rascourti po potchî al nouvinme linwete">
+							<longdesc>Tape di rascourti po potchî al nouvinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Tape di rascourti po potchî a l&apos; ûtinme linwete">
+							<longdesc>Tape di rascourti po potchî a l&apos; ûtinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Tape di rascourti po potchî al setinme linwete">
+							<longdesc>Tape di rascourti po potchî al setinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Tape di rascourti po potchî al shijhinme linwete">
+							<longdesc>Tape di rascourti po potchî al shijhinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Tape di rascourti po potchî al cénkinme linwete">
+							<longdesc>Tape di rascourti po potchî al cénkinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Tape di rascourti po potchî al cwatrinme linwete">
+							<longdesc>Tape di rascourti po potchî al cwatrinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Tape di rascourti po potchî al troejhinme linwete">
+							<longdesc>Tape di rascourti po potchî al troejhinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Tape di rascourti po potchî al deujhinme linwete">
+							<longdesc>Tape di rascourti po potchî al deujhinme linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Tape di rascourti po potchî al prumire linwete">
+							<longdesc>Tape di rascourti po potchî al prumire linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Tape di rascourti po distaetchî l&apos; linwete do moumint.">
+							<longdesc>Tape di rascourti po distaetchî l&apos; linwete do moumint. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Tape di rascourti po displaecî l&apos; linwete do moumint viè l&apos; droete.">
+							<longdesc>Tape di rascourti po displaecî l&apos; linwete do moumint viè l&apos; droete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Tape di rascourti po displaecî l&apos; linwete do moumint viè l&apos; hintche.">
+							<longdesc>Tape di rascourti po displaecî l&apos; linwete do moumint viè l&apos; hintche. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Tape di rascourti po potchî al linwete shuvante">
+							<longdesc>Tape di rascourti po potchî al linwete shuvante. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Tape di rascourti po potchî al linwete di dvant">
+							<longdesc>Tape di rascourti po potchî al linwete di dvant. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Tape di rascourti po renonder et netyî l&apos; terminå">
+							<longdesc>Tape di rascourti po renonder et netyî l&apos; terminå. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Tape di rascourti po renonder l&apos; terminå">
+							<longdesc>Tape di rascourti po renonder l&apos; terminå. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Tape di rascourti po defini li tite do terminå">
+							<longdesc>Tape di rascourti po defini l&apos; tite do terminå. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Tape di rascourti po vey/catchî li bår ås menus">
+							<longdesc>Tape di rascourti po catchî ou mostrer li bår ås menus. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Tape di rascourti po forrimpli l&apos; waitroûle">
+							<longdesc>Tape di rascourti po passer e môde forrimplixhaedje del waitroûle. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Tape di rascourti po-z aclaper do tecse">
+							<longdesc>Tape di rascourti po-z aclaper çou k&apos; i gn a dins l&apos; tchapea emacralé. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Tape di rascourti po copyî do tecse">
+							<longdesc>Tape di rascourti po copyî li tecse tchoezi dins l&apos; tchapea emacralé. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Tape di rascourti po clôre on purnea">
+							<longdesc>Tape di rascourti po clôre on purnea. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Tape di rascourti po clôre ene linwete">
+							<longdesc>Tape di rascourti po clôre ene linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Tape di rascourti po-z askepyî on novea profil">
+							<longdesc>Tape di rascourti po drovi l&apos; purnea d&apos; askepiaedje des profils. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Tape di rascourti po drovi on novea purnea">
+							<longdesc>Tape di rascourti po drovi on novea purnea. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Tape di rascourti po drovi ene nouve linwete">
+							<longdesc>Tape di rascourti po drovi ene nouve linwete. Defineye come ene tchinne di tecse dins l&apos; minme cogne ki les fitchîs di rsoûce po GTK+. Si vos metoz li tchinne sipeciåle «disabled» (dismetou), adon i gn årè nou rascourti po ciste accion la.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Est çk&apos; i fåt eployî li fonte do sistinme">
+								<longdesc>Si metou, li terminå eployrè li prémetowe fonte a espåçmint ewal do scribanne (ou l&apos; pus rshonnant k&apos; i pôreut trover).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Est çk&apos; i fåt eployî les coleurs do tinme di l&apos; ahesse di terminå">
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efet del tape «Delete»">
+								<longdesc>Definixh li côde evoyî pal tape Delete. Les possibès valixhances sont «ascii-del» po-z evoyî li caractere ASCII DEL, «control-h» po-z evoyî Control-H (dj&apos; ô bén, li caractere ASCII BS), «escape-sequence» po-z evoyî ene secwince d&apos; echapmint tipicmint aloyeye a l&apos; accion d&apos; disfacer l&apos; caractere shuvant. Normålmint «escape-sequence» est veyou come estant l&apos; bon apontiaedje pol tape Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efet del tape «BackSpace»">
+								<longdesc>Definixh li côde evoyî pal tape Backspace. Les possibès valixhances sont «ascii-del» po-z evoyî li caractere ASCII DEL, «control-h» po-z evoyî Control-H (dj&apos; ô bén, li caractere ASCII BS), «escape-sequence» po-z evoyî ene secwince d&apos; echapmint tipicmint aloyeye a l&apos; accion d&apos; disfacer l&apos; caractere di dvant. Normålmint «ascii-del» est veyou come estant l&apos; bon apontiaedje pol tape Backspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Livea di noerixhaedje po l&apos; imådje di fond do terminå">
+								<longdesc>Ene valixhance inte 0.0 eyet 1.0 ki definixh li livea di noeristé po l&apos; imådje eployeye come fond do terminå. 0.0 vout dire èn nén noeri, 1.0 vout dire noeri pår. Dins l&apos; eplemintåcion do moumint, i gn a k&apos; deus liveas di noeristé, çou ki fwait ki les valixhances si cdujhèt come on bouleyin, avou 0.0 ki dismete l&apos; efet di noerixhaedje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Est çk&apos; i fåt erôler l&apos; imådje di fond">
+								<longdesc>Si metou, l&apos; imådje di fond bodje avou l&apos; tecse di dvant cwand l&apos; purnea est erôlé ou foyté avou l&apos; bår d&apos; acinseur; si dismetou, l&apos; imådje ni bodje nén eyet l&apos; tecse bodje pa dzeur.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Imådje di fond">
+								<longdesc>No do fitchî imådje pol fond do terminå.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Sôre di fond">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Fonte">
+								<longdesc>On no d&apos; fonte Pango (no del fonte, si stîle eyet s&apos; grandeu). Metans «Sans 12» ou «Monospace Bold 14».</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palete po les programes ki s&apos; enondèt sol terminå">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Imådjete pol purnea do terminå">
+								<longdesc>Imådjete a-z eployî po les linwetes/purneas k&apos; ovrèt avou ci profil chal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Comande da vosse a-z eployî chal estô d&apos; on shell">
+								<longdesc>Enonder cisse comande la purade ki l&apos; shell, si «use_custom_command» (eployî comande da vosse) est vraiy.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Est çk&apos; i fåt enonder on programe da vosse estô d&apos; on shell">
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema>
+								<longdesc>Si metou, li comande å dvins do terminå serè enondêye come on shell d&apos; elodjaedje (li no do programe passé al comande d&apos; enondaedje (argv[0]) årèt-st ene loyeure («-») pa dvant).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema>
+								<longdesc>Les valixhances possibes sont «close» (clôre) po clôre li terminå, eyet «restart» (renonder) po renonder l&apos; comande.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema>
+								<longdesc>Si metou, tchôkî so ene tape fwait aler l&apos; acinseur disk&apos; al valeye.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Eplaeçmint d&apos; l&apos; acinseur">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Caracteres ki sont veyous come fjhant pårteye des mots">
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Est çk&apos; i fåt fé taire li xhuflet do terminå">
+								<longdesc>Si metou, ni fwait nén aler l&apos; xhuflet cwand les programes evoyént li secwince ESC do xhuflet do terminå.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Est çk&apos; i fåt permete des cråssès letes ou nén">
+								<longdesc>Si metou, permete ås programes enondés dins ç&apos; terminå chal di mete li fonte e cråssès letes.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Tite pol terminå">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Cwè fé avou les tites dinamikes">
+								<longdesc>Si l&apos; programe dins l&apos; terminå definixh li tite (å pus sovint c&apos; est l&apos; inicialijhaedje do shell ki fwait çoula), li tite defini dinamicmint pout disfacer l&apos; ci k&apos; a stî apontyî dvant, si mete pa dvant, pa drî ou co l&apos; replaecî. Les valixhances possibes sont «replace» (replaecî), «before» (pa divant), «after» (pa drî) ou «ignore» (passer houte).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Prémetowe coleur di fond pol terminå">
+								<longdesc>Prémetowe coleur di fonte do terminå (defineye come ene valixhance RVB hecsa a môde HTML, oudonbén on no d&apos; coleur kinoxhou do sistinme come «red»).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Prémetowe coleur pol tecse do terminå">
+								<longdesc>Prémetowe coleur pol tecse do terminå (defineye come ene valixhance RVB hecsa a môde HTML, oudonbén on no d&apos; coleur kinoxhou do sistinme come «red»).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Est çk&apos; i fåt håyner ene bår di menu dins les noveas purneas/linwetes">
+								<longdesc>Vraiy si l&apos; bår ås menus doet esse håynêye dins les noveas purneas, po les purneas ou linwetes avou ç&apos; profil ci.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="No do profil dins ene cogne lijhåve påzès djins">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="active_encodings">
+						<local_schema short_desc="Djivêye des ecôdaedjes k&apos; i gn a">
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profil a-z eployî cwand on drouve on novea terminå">
+							<longdesc>Li profil a-z eployî cwand on drouve on novea purnea ou linwete. I doet esse dins l&apos; djivêye di profils («profile_list»).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Djivêye des profils">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

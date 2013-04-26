@@ -1,0 +1,5 @@
+# dist macros.
+
+%fedora		18
+%dist		.fc18
+%fc18		1
